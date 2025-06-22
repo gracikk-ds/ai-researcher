@@ -6,3 +6,5 @@ venv/
 .ruff_cache/
 .vscode/
 __pycache__/
+pdfs/
+credentials/
