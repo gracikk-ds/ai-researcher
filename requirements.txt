@@ -1,4 +1,11 @@
+arxiv==2.2.0
 click==8.1.7
+google-cloud-aiplatform==1.71.1
+google-cloud-storage==2.1.0
+google-genai==1.16.1
+google_cloud_resource_manager==1.6.1
+grpcio_status==1.49.0rc1
+loguru==0.7.2
 numpy==1.25.0
 pydantic==2.1.1
 pydantic-settings==2.0.3
@@ -6,5 +13,4 @@ python-dotenv==1.0.0
 torch==2.1.0
 torchvision==0.16.0
 tqdm==4.66.1
-loguru==0.7.2
-arxiv==2.2.0
+vertexai==1.71.1
