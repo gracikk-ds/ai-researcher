@@ -38,7 +38,9 @@ def img_block(img_path: str, desc: str) -> str:
     Returns:
         str: Markdown block.
     """
-    rel_path = os.path.relpath(img_path)
+    rel_path = os.path.relpath(img_path).replace("site", "")
+    rel_path = f"{rel_path} | relative_url"
+    rel_path = "{{ '" + rel_path + "' }}"
     return f"![{desc}]({rel_path})\n\n*{desc}*\n\n"
 
 
@@ -69,7 +71,8 @@ def add_images_to_md(md_path: str, images_dir: str) -> None:
         md_content = md_file.read()
 
     # Insert Figure 1 at the top
-    new_md = ""
+    paper_name = md_path.split("/")[-1].split(".")[0]
+    new_md = f"---\ntitle: {paper_name}\nlayout: default\n---\n"
     if fig1:
         _, img_path, desc = fig1
         new_md += img_block(img_path, desc) + "\n"
@@ -87,10 +90,10 @@ def add_images_to_md(md_path: str, images_dir: str) -> None:
         new_md += img_block(img_path, desc) + "\n"
 
     # Write back to the markdown file
-    md_path_with_images = md_path.replace(".md", "_with_images.md")
-    with open(md_path_with_images, "w", encoding="utf-8") as md_file:  # noqa: WPS440
+    # md_path_with_images = md_path.replace(".md", "_with_images.md")
+    with open(md_path, "w", encoding="utf-8") as md_file:  # noqa: WPS440
         md_file.write(new_md)
 
 
 if __name__ == "__main__":
-    add_images_to_md("response_mgie_gemini-2.5-pro.md", "images/mgie")
+    add_images_to_md("site/_reports/response_mgie_gemini-2.5-pro.md", "site/images/mgie")
