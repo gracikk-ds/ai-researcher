@@ -36,6 +36,7 @@ class GeminiApiClient:  # noqa: WPS230,WPS214
         system_prompt: Optional[str] = None,
         temperature: float = 0.3,
         thinking_budget: Optional[int] = None,
+        site_reports_dir: str = "site/_reports",
     ):
         """Initialize GeminiClient with Vertex AI connection, model, and defaults.
 
@@ -44,6 +45,7 @@ class GeminiApiClient:  # noqa: WPS230,WPS214
             system_prompt: The system prompt to use.
             temperature: The temperature to use.
             thinking_budget: The thinking budget to use.
+            site_reports_dir: The directory to save the reports to.
         """
         self._load_project_id_from_creds()
         self.model_name = model_name
@@ -57,7 +59,7 @@ class GeminiApiClient:  # noqa: WPS230,WPS214
         self.temperature = temperature
         self.thinking_budget = thinking_budget if thinking_budget is not None else -1
         self.bucket = GoogleBucket(bucket_prefix="pdfs")
-
+        self.site_reports_dir = site_reports_dir
         self._system_prompt = system_prompt
         self.file_uris: List[str] = []
         self.total_input_token_count: int = 0
@@ -176,11 +178,8 @@ class GeminiApiClient:  # noqa: WPS230,WPS214
         """
         pdf_stem = Path(pdf_local_path).stem if pdf_local_path is not None else None
         if pdf_stem is not None:
-            with open(
-                f"response_{pdf_stem}_{self.model_name}.md",
-                "w",
-                encoding="utf-8",
-            ) as response_file:  # noqa: WPS221
+            md_path = os.path.join(self.site_reports_dir, f"response_{pdf_stem}_{self.model_name}.md")  # noqa: WPS221
+            with open(md_path, "w", encoding="utf-8") as response_file:  # noqa: WPS221
                 response_file.write(response)
 
     def __call__(  # noqa: C901
