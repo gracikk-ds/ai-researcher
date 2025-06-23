@@ -3,9 +3,7 @@ title: MGIE
 layout: default
 ---
 
-![Figure 1: We introduce MLLM-Guided Image Editing (MGIE) to improve instruction-based image editing for various editing aspects. The top is the input instruction, and the right is the jointly derived expressive instruction by MGIE.](images/mgie/figure_1.png)
-
-*Figure 1: We introduce MLLM-Guided Image Editing (MGIE) to improve instruction-based image editing for various editing aspects. The top is the input instruction, and the right is the jointly derived expressive instruction by MGIE.*
+![Figure 1: We introduce MLLM-Guided Image Editing (MGIE) to improve instruction-based image editing for various editing aspects. The top is the input instruction, and the right is the jointly derived expressive instruction by MGIE.]({{ '/images/mgie/figure_1.png' | relative_url }})
 
 
 ## 1. Motivation of the Paper
