@@ -39,8 +39,8 @@ def img_block(img_path: str, desc: str) -> str:
         str: Markdown block.
     """
     rel_path = os.path.relpath(img_path).replace("site", "")
-    rel_path = f"{rel_path} | relative_url"
-    rel_path = "{{ '" + rel_path + "' }}"
+    rel_path = f"'{rel_path}' | relative_url"
+    rel_path = "{{ " + rel_path + " }}"
     return f"![{desc}]({rel_path})\n\n*{desc}*\n\n"
 
 
