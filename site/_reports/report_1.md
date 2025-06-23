@@ -1,9 +1,11 @@
 ---
-title: MGIE
+title: MLLM-Guided Image Editing (MGIE)
 layout: default
 ---
 
 ![Figure 1: We introduce MLLM-Guided Image Editing (MGIE) to improve instruction-based image editing for various editing aspects. The top is the input instruction, and the right is the jointly derived expressive instruction by MGIE.]({{ '/images/mgie/figure_1.png' | relative_url }})
+
+*Figure 1: We introduce MLLM-Guided Image Editing (MGIE) to improve instruction-based image editing for various editing aspects. The top is the input instruction, and the right is the jointly derived expressive instruction by MGIE.*
 
 
 ## 1. Motivation of the Paper
@@ -40,26 +42,26 @@ The paper presents several insightful ablation studies to validate its design ch
 *   **Instruction-Input Trade-off:** The authors analyzed the trade-off between preserving the original image and following the edit instruction. MGIE demonstrated a superior trade-off curve, achieving better edit relevance for any given level of input image consistency compared to the baseline.
 
 ## Paper Figures
-![Figure 2: Overview of MLLM-Guided Image Editing ( MGIE ), which leverages MLLMs to enhance instruction-based image editing. MGIE learns to derive concise expressive instructions and provides explicit visual-related guidance for the intended goal. The diffusion model jointly trains and achieves image editing with the latent imagination through the edit head in an end-to-end manner.](images/mgie/figure_2.png)
+![Figure 2: Overview of MLLM-Guided Image Editing ( MGIE ), which leverages MLLMs to enhance instruction-based image editing. MGIE learns to derive concise expressive instructions and provides explicit visual-related guidance for the intended goal. The diffusion model jointly trains and achieves image editing with the latent imagination through the edit head in an end-to-end manner.]({{ '/images/mgie/figure_2.png' | relative_url }})
 
 *Figure 2: Overview of MLLM-Guided Image Editing ( MGIE ), which leverages MLLMs to enhance instruction-based image editing. MGIE learns to derive concise expressive instructions and provides explicit visual-related guidance for the intended goal. The diffusion model jointly trains and achieves image editing with the latent imagination through the edit head in an end-to-end manner.*
 
 
-![Figure 3: Trade-off curve for image editing . We set α X as 7.5 and vary α V in [1 . 0 , 2 . 2] . For both edit (X-axis) and input consistency (Yaxis), higher is better.](images/mgie/figure_3.png)
+![Figure 3: Trade-off curve for image editing . We set α X as 7.5 and vary α V in [1 . 0 , 2 . 2] . For both edit (X-axis) and input consistency (Yaxis), higher is better.]({{ '/images/mgie/figure_3.png' | relative_url }})
 
 *Figure 3: Trade-off curve for image editing . We set α X as 7.5 and vary α V in [1 . 0 , 2 . 2] . For both edit (X-axis) and input consistency (Yaxis), higher is better.*
 
 
-![Figure 4: CLIP-S across images (input / goal) and expressive instructions.](images/mgie/figure_4.png)
+![Figure 4: CLIP-S across images (input / goal) and expressive instructions.]({{ '/images/mgie/figure_4.png' | relative_url }})
 
 *Figure 4: CLIP-S across images (input / goal) and expressive instructions.*
 
 
-![Figure 5: Human eval of expressive instructions quality.](images/mgie/figure_5.png)
+![Figure 5: Human eval of expressive instructions quality.]({{ '/images/mgie/figure_5.png' | relative_url }})
 
 *Figure 5: Human eval of expressive instructions quality.*
 
 
-![Figure 6: Human eval of image editing results in terms of instruction following, ground-truth relevance, and overall quality.](images/mgie/figure_6.png)
+![Figure 6: Human eval of image editing results in terms of instruction following, ground-truth relevance, and overall quality.]({{ '/images/mgie/figure_6.png' | relative_url }})
 
 *Figure 6: Human eval of image editing results in terms of instruction following, ground-truth relevance, and overall quality.*
