@@ -11,7 +11,7 @@ from loguru import logger
 from PIL import Image
 
 MIN_IMAGE_SIZE: int = 50
-MAX_IMAGE_HEIGHT: int = 320
+MAX_IMAGE_HEIGHT: int = 416
 
 
 def filter_images_by_size(blk: dict, img_index: int, page_index: int) -> bool:
@@ -117,11 +117,8 @@ def extract_images(pdf_path: str, output_folder: str = "images") -> None:  # noq
     output_folder = os.path.join(output_folder, pdf_stem)
     os.makedirs(output_folder, exist_ok=True)
 
-    img_count = 0
     # Iterate through each page
     for page_index, page in enumerate(doc, start=1):
-        if page_index >= 8 or img_count > 5:
-            break
         # Reading-order blocks of this page
         blocks = page.get_text("dict")["blocks"]
         for blk_idx, blk in enumerate(blocks, start=1):
@@ -137,11 +134,8 @@ def extract_images(pdf_path: str, output_folder: str = "images") -> None:  # noq
             save_image(image_bytes, image_path)
             with open(os.path.join(output_folder, f"figure_{figure_number}.txt"), "w") as description_file:
                 description_file.write(f"{description}")
-            img_count += 1
-            if img_count > 5:
-                break
-    logger.info(f"\nCompleted extraction of {img_count} images from '{pdf_path}'")
+    logger.info(f"\nCompleted extraction of images from '{pdf_path}'")
 
 
 if __name__ == "__main__":
-    extract_images("pdfs/mgie.pdf", "images")
+    extract_images("pdfs/mgie.pdf", "site/images")
