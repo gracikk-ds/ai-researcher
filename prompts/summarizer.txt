@@ -1,6 +1,6 @@
 Summarize the research paper. The length of the summary should be 1 page or ~200-300 words.
 Use clear and concise language.
-Try to follow the structure and conventions below:
+Follow the structure and conventions below. NO other unrelated text should be added.
 
 ## 1. Motivation of the Paper
     - What gap or practical problem are the authors addressing?
@@ -11,12 +11,12 @@ Try to follow the structure and conventions below:
     - Key assumptions or theoretical foundations.
 
 ## 3. Datasets Used / Presented
-    - Name, size, and domain of each dataset.
+    - Name, size, domain of each dataset, and how it was used.
 
 ## 4. Main Results
     - Main quantitative insights and metrics in human-readable format.
-    - Author-claimed impact or takeaway sentence. Your one-line verdict on how convincing the evidence is.
+    - Author-claimed impact or takeaway sentence.
 
 ## 5. Ablation Studies  *(If none are reported, write “Not performed”)*
-    - Summarize each ablation experiment: what variable was removed/changed and why.
+    - Summarize each ablation experiment.
     - Report the corresponding performance change or qualitative impact in human-readable format.
