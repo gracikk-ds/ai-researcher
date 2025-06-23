@@ -2,6 +2,7 @@
 
 import json
 import os
+from pathlib import Path
 from typing import List, Optional
 
 from dotenv import load_dotenv
@@ -23,7 +24,7 @@ from src.utils.price_caculation import calculate_inference_price
 load_dotenv()
 
 
-class GeminiApiClient:
+class GeminiApiClient:  # noqa: WPS230,WPS214
     """Gemini Api Client class."""
 
     prediction_timeout: int = 120
@@ -31,9 +32,10 @@ class GeminiApiClient:
 
     def __init__(
         self,
-        model_name: str = "gemini-2.5-flash",
+        model_name: str = "gemini-2.5-pro",
         system_prompt: Optional[str] = None,
         temperature: float = 0.3,
+        thinking_budget: Optional[int] = None,
     ):
         """Initialize GeminiClient with Vertex AI connection, model, and defaults.
 
@@ -41,6 +43,7 @@ class GeminiApiClient:
             model_name: The model to use.
             system_prompt: The system prompt to use.
             temperature: The temperature to use.
+            thinking_budget: The thinking budget to use.
         """
         self._load_project_id_from_creds()
         self.model_name = model_name
@@ -52,6 +55,7 @@ class GeminiApiClient:
             http_options=HttpOptions(timeout=self.prediction_timeout * 1000),
         )
         self.temperature = temperature
+        self.thinking_budget = thinking_budget if thinking_budget is not None else -1
         self.bucket = GoogleBucket(bucket_prefix="pdfs")
 
         self._system_prompt = system_prompt
@@ -122,13 +126,13 @@ class GeminiApiClient:
         self.file_uris = []
 
     def ask(self, user_prompt: str) -> str:
-        """Send a prompt to Gemini, with optional system and PDF inputs.
+        """Send a prompt to Gemini, with optional system, PDF, and image inputs.
 
         Args:
             user_prompt (str): The user prompt to send to Gemini.
 
         Returns:
-            The generated text response.
+            str: The generated text response.
         """
         contents: List[Content] = []
 
@@ -152,37 +156,71 @@ class GeminiApiClient:
             contents=contents,  # type: ignore
             config=GenerateContentConfig(
                 temperature=self.temperature,
-                thinking_config=ThinkingConfig(thinking_budget=0),
+                thinking_config=ThinkingConfig(thinking_budget=self.thinking_budget),
             ),
         )
-        self.total_input_token_count += response.usage_metadata.prompt_token_count  # type: ignore
-        self.total_output_token_count += response.usage_metadata.candidates_token_count  # type: ignore
+        self.total_input_token_count += getattr(response.usage_metadata, "prompt_token_count", 0)
+        self.total_output_token_count += getattr(response.usage_metadata, "candidates_token_count", 0)
+        self.total_output_token_count += getattr(response.usage_metadata, "thoughts_token_count", 0)
         self.total_requests += 1
         self.info()
 
         return response.text  # type: ignore
 
-    def __call__(self, user_prompt: str, pdf_local_path: Optional[str] = None) -> str:
-        """Send a prompt to Gemini, with optional system and PDF inputs.
+    def save_response(self, response: str, pdf_local_path: Optional[str] = None) -> None:
+        """Save the response to a markdown file.
+
+        Args:
+            response (str): The response to save.
+            pdf_local_path (Optional[str]): The local path to the PDF file to attach.
+        """
+        pdf_stem = Path(pdf_local_path).stem if pdf_local_path is not None else None
+        if pdf_stem is not None:
+            with open(
+                f"response_{pdf_stem}_{self.model_name}.md",
+                "w",
+                encoding="utf-8",
+            ) as response_file:  # noqa: WPS221
+                response_file.write(response)
+
+    def __call__(  # noqa: C901
+        self,
+        user_prompt: str,
+        pdf_local_path: Optional[str] = None,
+        save_to_file: bool = True,
+    ) -> str:
+        """Send a prompt to Gemini, with optional system, PDF, and image inputs.
 
         Args:
             user_prompt (str): The user prompt to send to Gemini.
             pdf_local_path (Optional[str]): The local path to the PDF file to attach.
+            save_to_file (bool): Whether to save the response to a markdown file.
 
         Returns:
-            The generated text response.
+            str: The generated text response.
         """
+        # Attach the PDF file if provided
         if pdf_local_path is not None:
             pdf_uri = self.bucket.upload_file(pdf_local_path)
             self.attach_pdf(pdf_uri)
+
+        # Send the prompt to Gemini
         response = self.ask(user_prompt)
+
+        # Remove the PDF file from the bucket
         if pdf_local_path is not None:
             self.clear_pdfs()
             self.bucket.remove_file(pdf_uri)
+
+        # Save the response to a markdown file
+        if save_to_file:
+            self.save_response(response, pdf_local_path)
+
         return response
 
 
 if __name__ == "__main__":
     client = GeminiApiClient()
-    response = client("Make 5 sentence length summary of the following of the paper", pdf_local_path="pdfs/mgie.pdf")
-    print(response)
+    with open("prompts/summarizer.txt", "r", encoding="utf-8") as summary_file:
+        summary_prompt = summary_file.read()
+    response = client(summary_prompt, pdf_local_path="pdfs/mgie.pdf")
