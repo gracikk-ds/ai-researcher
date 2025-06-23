@@ -1,0 +1,43 @@
+name: Build & Deploy Jekyll site
+on:
+  push:
+    branches: [main]        # adjust if you use a different default branch
+permissions:
+  contents: read            # for checkout
+  pages: write              # allow deployment
+  id-token: write           # OIDC for the deploy step
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up GitHub Pages metadata
+        uses: actions/configure-pages@v5   # provides ${{ env.PAGES_* }} vars
+        # :contentReference[oaicite:4]{index=4}
+
+      - name: Build Jekyll
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: site           # matches _config.yml
+          destination: _site     # default, repeat for clarity
+        # :contentReference[oaicite:5]{index=5}
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+        # :contentReference[oaicite:6]{index=6}
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deploy
+        uses: actions/deploy-pages@v4      # latest required version
+        # :contentReference[oaicite:7]{index=7}
