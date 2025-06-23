@@ -1,5 +1,5 @@
 ---
-title:  "AI Researcher – MGIE"
+title: MGIE
 layout: default
 ---
 
