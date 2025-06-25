@@ -86,7 +86,7 @@ def first_text_after(blocks: List[dict], start_idx: int) -> str:
             ).strip()
             description = re.sub(r"\s+", " ", description)
             description = re.sub(r"\n", " ", description)
-            return re.sub(r"- ", "", description)
+            return re.sub(r"- ", "", description)  # noqa: WPS360
     return ""
 
 
