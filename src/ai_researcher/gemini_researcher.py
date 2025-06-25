@@ -50,15 +50,18 @@ class GeminiApiClient:  # noqa: WPS230,WPS214
         self._load_project_id_from_creds()
         self.model_name = model_name
         aiplatform.init(project=self.project, location=self.location)
+        logger.info("aiplatform has been initialized.")
         self.client = genai.Client(
             vertexai=True,
             project=self.project,
             location=self.location,
             http_options=HttpOptions(timeout=self.prediction_timeout * 1000),
         )
+        logger.info("gemini client has been initialized.")
         self.temperature = temperature
         self.thinking_budget = thinking_budget if thinking_budget is not None else -1
         self.bucket = GoogleBucket(bucket_prefix="pdfs")
+        logger.info("google bucket has been initialized.")
         self.site_reports_dir = site_reports_dir
         self._system_prompt = system_prompt
         self.file_uris: List[str] = []
@@ -127,15 +130,19 @@ class GeminiApiClient:  # noqa: WPS230,WPS214
         """Clear all attached document URIs."""
         self.file_uris = []
 
-    def ask(self, user_prompt: str) -> str:
+    def ask(self, user_prompt: str, thinking_budget: Optional[int] = None) -> str:
         """Send a prompt to Gemini, with optional system, PDF, and image inputs.
 
         Args:
             user_prompt (str): The user prompt to send to Gemini.
+            thinking_budget (Optional[int]): The thinking budget to use.
 
         Returns:
             str: The generated text response.
         """
+        if thinking_budget is None:
+            thinking_budget = self.thinking_budget
+
         contents: List[Content] = []
 
         # System instruction
@@ -152,18 +159,21 @@ class GeminiApiClient:  # noqa: WPS230,WPS214
 
         # User message
         contents.append(Content(role="user", parts=[Part(text=user_prompt)]))
-
+        logger.info(f"Sending prompt to Gemini: {user_prompt}")
         response = self.client.models.generate_content(
             model=self.model_name,
             contents=contents,  # type: ignore
             config=GenerateContentConfig(
                 temperature=self.temperature,
-                thinking_config=ThinkingConfig(thinking_budget=self.thinking_budget),
+                thinking_config=ThinkingConfig(thinking_budget=thinking_budget),
             ),
         )
-        self.total_input_token_count += getattr(response.usage_metadata, "prompt_token_count", 0)
-        self.total_output_token_count += getattr(response.usage_metadata, "candidates_token_count", 0)
-        self.total_output_token_count += getattr(response.usage_metadata, "thoughts_token_count", 0)
+        prompt_token_count = getattr(response.usage_metadata, "prompt_token_count", 0)
+        candidates_token_count = getattr(response.usage_metadata, "candidates_token_count", 0)
+        thoughts_token_count = getattr(response.usage_metadata, "thoughts_token_count", 0)
+        self.total_input_token_count += prompt_token_count if prompt_token_count is not None else 0
+        self.total_output_token_count += candidates_token_count if candidates_token_count is not None else 0
+        self.total_output_token_count += thoughts_token_count if thoughts_token_count is not None else 0
         self.total_requests += 1
         self.info()
 
