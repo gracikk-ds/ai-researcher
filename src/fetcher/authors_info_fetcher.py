@@ -93,12 +93,17 @@ class AuthorInfoFetcher:
         max_retries = 5
         backoff = 2
         for attempt in range(max_retries):
-            response = requests.get(
-                f"{self.api_base}/author/{author_id}/papers",
-                params={"fields": "title", "limit": 1000},  # type: ignore
-                headers=self._headers(),
-                timeout=10,
-            )
+            try:
+                response = requests.get(
+                    f"{self.api_base}/author/{author_id}/papers",
+                    params={"fields": "title", "limit": 1000},  # type: ignore
+                    headers=self._headers(),
+                    timeout=10,
+                )
+            except requests.exceptions.RequestException as exp:
+                logger.error(f"Error fetching author papers for {author_id}: {exp}")
+                return None
+
             if response.status_code == 429:
                 logger.warning(
                     f"[429 Too Many Requests] Retrying author '{author_id}' in {backoff} seconds "  # noqa: WPS237

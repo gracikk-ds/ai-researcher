@@ -141,7 +141,12 @@ class CitationCounter:
         params = {"query": str(title), "limit": str(1), "fields": "title,citationCount"}
         backoff = 1
         for attempt in range(max_retries):  # noqa: WPS440
-            response = requests.get(search_url, params=params, headers=headers, timeout=10)
+            try:
+                response = requests.get(search_url, params=params, headers=headers, timeout=10)
+            except requests.exceptions.RequestException as exp:
+                logger.error(f"Error fetching citation count for {title}: {exp}")
+                return None
+
             if response.status_code == 429:
                 logger.warning(
                     f"[429 Too Many Requests] Retrying title '{title}' in {backoff} seconds "  # noqa: WPS237
