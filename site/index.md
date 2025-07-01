@@ -3,7 +3,7 @@ layout: default
 title: Reports
 ---
 
-<ul>
+<ul class="report-list">
 {% for rep in site.reports %}
   <li class="report-item">
     <h3 class="report-title">
