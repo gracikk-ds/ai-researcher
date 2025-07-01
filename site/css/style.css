@@ -1,0 +1,31 @@
+/* === report list tweaks === */
+.report-list {
+    list-style: none;     /* remove bullets */
+    padding-left: 0;      /* remove default UL indent */
+    margin: 0;
+  }
+
+  .report-item {
+    margin-bottom: 2.5rem;   /* space between reports */
+  }
+
+  .report-title {
+    font-size: 1.6rem;       /* bump up link size */
+    margin: 0 0 0.4rem;
+    line-height: 1.3;
+  }
+
+  .report-title a {
+    text-decoration: none;   /* optional: remove underline */
+    color: #0366d6;          /* same blue as GitHub links */
+  }
+
+  .report-title a:hover {
+    text-decoration: underline;
+  }
+
+  .report-description {
+    margin: 0;               /* tighter paragraphs */
+    font-size: 1.05rem;
+    line-height: 1.6;
+  }
