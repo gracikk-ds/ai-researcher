@@ -6,8 +6,8 @@ from typing import List, Optional
 
 import arxiv
 from loguru import logger
-from tqdm import tqdm
 
+from src.ai_researcher.classifier import Classifier
 from src.fetcher.authors_info_fetcher import AuthorInfoFetcher
 from src.fetcher.citations_count import CitationCounter
 from src.utils.schemas import Author, Paper
@@ -17,29 +17,40 @@ class ArxivFetcher:
     """Class to fetch and filter arXiv papers based on keywords, categories, and date range."""
 
     arxiv_delay_seconds: int = 3
-    predefined_keywords: List[str] = ["image editing", "image edit"]
+    predefined_keywords: List[str] = [
+        "image editing",
+        "image edit",
+        "editing images",
+        "editing image",
+        "edit the image",
+        "edit image",
+        "edit an image",
+        "image generation and editing",
+        "image-editing",
+        "editing model",
+    ]
     predefined_categories: List[str] = ["cs.CV", "cs.LG", "cs.CL", "cs.AI", "cs.MM"]
 
     def __init__(
         self,
-        maximum_results: int = 365,
         page_size: int = 500,
-        max_date_difference_days: int = 200,
+        path_to_prompt: str = "prompts/classifier.txt",
         save_dir: str = "data/arxiv_papers",
+        skipped_file_path: str = "data/skipped_papers_by_keywords.txt",
     ):
         """
         Initialize the ArxivFetcher with search parameters.
 
         Args:
-            maximum_results (int): Maximum number of papers to return.
             page_size (int): Number of results per page for the arXiv client.
-            max_date_difference_days (int): Maximum number of days between start and end dates.
+            path_to_prompt (str): Path to the prompt file for the classifier.
             save_dir (str): Directory to save the papers to.
+            skipped_file_path (str): Path to the file to save the skipped papers to.
         """
-        self.maximum_results = maximum_results
         self.page_size = page_size
-        self.max_date_difference_days = max_date_difference_days
         self.save_dir = save_dir
+        self.skipped_file_path = skipped_file_path
+        self.classifier = Classifier(path_to_prompt)
         self.authors_fetcher = AuthorInfoFetcher()
         self.citations_counter = CitationCounter()
 
@@ -92,7 +103,7 @@ class ArxivFetcher:
             end_date (str): End date (YYYY-MM-DD) for filtering papers.
 
         Raises:
-            ValueError: The difference between the dates is greater than the maximum allowed difference.
+            ValueError: The start date is after the end date.
 
         Returns:
             tuple[datetime, datetime]: The start and end dates as datetime objects.
@@ -101,12 +112,6 @@ class ArxivFetcher:
         end_date_obj = datetime.strptime(end_date, "%Y-%m-%d")
         if start_date_obj > end_date_obj:
             raise ValueError("Start date must be before end date.")
-
-        if (end_date_obj - start_date_obj).days > self.max_date_difference_days:
-            raise ValueError(
-                f"The difference between start and end dates must be less than {self.max_date_difference_days} days.",
-            )
-
         return start_date_obj, end_date_obj
 
     def _fetch_authors_info(
@@ -148,11 +153,12 @@ class ArxivFetcher:
             return authors, max_h_index, max_paper_count, max_citation_count
         return authors, None, None, None
 
-    def _filter_papers(self, summary: str, exclude_keywords: Optional[List[str]]) -> bool:
+    def _filter_papers(self, title: str, summary: str, exclude_keywords: Optional[List[str]]) -> bool:
         """
         Filter the papers based on the exclude keywords.
 
         Args:
+            title (str): The title of the paper.
             summary (str): The summary of the paper.
             exclude_keywords (Optional[List[str]]): List of keywords to exclude.
 
@@ -161,9 +167,31 @@ class ArxivFetcher:
         """
         if exclude_keywords is not None:
             for keyword in exclude_keywords:
-                if keyword.lower() in summary.lower().split():
+                exclude_by_title = keyword.lower() in title.lower().split()
+                exclude_by_summary = keyword.lower() in summary.lower().split()
+                if exclude_by_title or exclude_by_summary:
+                    logger.info(f"Skipping paper {title} because its title or summary contains exclude keywords")
+                    with open(self.skipped_file_path, "a") as file:
+                        file.write(f"{title}\n")  # noqa: WPS220
                     return True
         return False
+
+    def _save_papers(
+        self,
+        papers: List[Paper],
+        start_date_obj: datetime,
+        end_date_obj: datetime,
+        save_to_jsonl: bool,
+    ) -> None:
+        if save_to_jsonl:
+            os.makedirs(self.save_dir, exist_ok=True)
+            if papers:
+                start_date_str = start_date_obj.strftime("%m-%Y")
+                end_date_str = end_date_obj.strftime("%m-%Y")
+                self.save_papers_to_jsonl(
+                    papers,
+                    f"relevant_papers_{start_date_str}_{end_date_str}.jsonl",
+                )
 
     def fetch_papers(  # noqa: WPS231,WPS210,C901
         self,
@@ -173,7 +201,7 @@ class ArxivFetcher:
         exclude_keywords: Optional[List[str]] = None,
         categories: Optional[List[str]] = None,
         save_to_jsonl: bool = True,
-    ) -> tuple[List[Paper], List[Paper]]:
+    ) -> List[Paper]:
         """
         Return a list of enriched arXiv paper Pydantic models.
 
@@ -186,9 +214,7 @@ class ArxivFetcher:
             save_to_jsonl (bool): Whether to save the papers to a JSONL file.
 
         Returns:
-            tuple[List[Paper], List[Paper]]:
-                - List of highly relevant papers,
-                - List of relevant papers.
+            List[Paper]: List of relevant papers.
         """
         if keywords is None:
             keywords = self.predefined_keywords
@@ -207,23 +233,26 @@ class ArxivFetcher:
         )
 
         papers: List[Paper] = []
-        highly_relevant_papers: List[Paper] = []
         search_results = client.results(search)
-        for index, result in tqdm(enumerate(search_results, start=1), desc="Fetching papers"):
-            highly_relevant = False
-            if index > self.maximum_results:
-                break
+        search_month_and_year = end_date_obj.strftime("%m-%Y")
+        for result in search_results:
             summary = " ".join(result.summary.split())
             title = " ".join(result.title.split())
-            if self._filter_papers(title, exclude_keywords):
-                logger.info(f"Skipping paper {title} because its title contains exclude keywords")
+
+            if search_month_and_year != result.published.strftime("%m-%Y"):
+                logger.info(f"Looking for papers in {search_month_and_year}...")
+                search_month_and_year = result.published.strftime("%m-%Y")
+
+            # Filter papers by exclude keywords
+            if self._filter_papers(title, summary, exclude_keywords):
                 continue
-            if self._filter_papers(summary, exclude_keywords):
-                logger.info(f"Skipping paper {title} because its summary contains exclude keywords")
+
+            # Classify paper
+            if not self.classifier.classify(title, summary):
                 continue
-            if "edit" in title.lower():
-                highly_relevant = True
+
             authors, max_h_index, max_paper_count, max_citation_count = self._fetch_authors_info(result)
+            citation_count = self.citations_counter.get_citation_count(result.title, result.entry_id)
             paper = Paper(
                 title=title,
                 authors=authors,
@@ -235,28 +264,13 @@ class ArxivFetcher:
                 arxiv_url=result.entry_id,
                 pdf_url=result.pdf_url,
                 categories=result.categories,
-                citation_count=self.citations_counter.get_citation_count(result.title, result.entry_id),
+                citation_count=citation_count,
             )
-            if highly_relevant:
-                highly_relevant_papers.append(paper)
-            else:
-                papers.append(paper)
+            papers.append(paper)
 
-            if save_to_jsonl:
-                os.makedirs(self.save_dir, exist_ok=True)
-                start_date_str = start_date_obj.strftime("%Y-%m-%d")
-                end_date_str = end_date_obj.strftime("%Y-%m-%d")
-                if highly_relevant_papers:
-                    self.save_papers_to_jsonl(
-                        highly_relevant_papers,
-                        f"highly_relevant_papers_{start_date_str}_{end_date_str}.jsonl",
-                    )
-                if papers:
-                    self.save_papers_to_jsonl(
-                        papers,
-                        f"relevant_papers_{start_date_str}_{end_date_str}.jsonl",
-                    )
-        return highly_relevant_papers, papers
+            # Save papers to JSONL file
+            self._save_papers(papers, start_date_obj, end_date_obj, save_to_jsonl)
+        return papers
 
 
 # if __name__ == "__main__":

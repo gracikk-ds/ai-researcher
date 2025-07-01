@@ -14,15 +14,17 @@ class AuthorInfoFetcher:
     api_base: str = "https://api.semanticscholar.org/graph/v1"
     fields = ["authorId", "name", "hIndex", "paperCount", "citationCount"]
 
-    def __init__(self, api_key: Optional[str] = None) -> None:
+    def __init__(self, api_key: Optional[str] = None, verbose: bool = False) -> None:
         """
         Initialize the AuthorInfoFetcher.
 
         Args:
             api_key (Optional[str]): Semantic Scholar API key. If not provided, will use
                 the SEMANTIC_SCHOLAR_API_KEY environment variable.
+            verbose (bool): Whether to print verbose output.
         """
         self.api_key = api_key or os.getenv("SEMANTIC_SCHOLAR_API_KEY")
+        self.verbose = verbose
 
     def _headers(self) -> dict:
         if self.api_key:
@@ -45,7 +47,7 @@ class AuthorInfoFetcher:
         else:
             logger.error(f"[Error {status_code}] Unexpected error for {context}.")
 
-    def _handle_response(  # noqa: WPS231,WPS212
+    def _handle_response(  # noqa: WPS231,WPS212,C901
         self,
         response,
         context: str,
@@ -72,7 +74,8 @@ class AuthorInfoFetcher:
                         if author.get("name") == context:  # noqa: WPS220
                             filtred_authors.append({field: author.get(field) for field in self.fields})  # noqa: WPS220
                 if not filtred_authors:
-                    logger.warning(f"No author found for {context}")
+                    if self.verbose:
+                        logger.warning(f"No author found for {context}")  # noqa: WPS220
                     return None
                 return filtred_authors
             return [{field: data.get(field) for field in self.fields}]
@@ -90,7 +93,7 @@ class AuthorInfoFetcher:
         Returns:
             Optional[Dict]: Dictionary with author papers, or None if not found.
         """
-        max_retries = 5
+        max_retries = 3
         backoff = 2
         for attempt in range(max_retries):
             try:
@@ -105,10 +108,11 @@ class AuthorInfoFetcher:
                 return None
 
             if response.status_code == 429:
-                logger.warning(
-                    f"[429 Too Many Requests] Retrying author '{author_id}' in {backoff} seconds "  # noqa: WPS237
-                    f"(attempt {attempt+1}/{max_retries})...",  # noqa: WPS326
-                )
+                if self.verbose:
+                    logger.warning(
+                        f"[429 Too Many Requests] Retrying author '{author_id}' in {backoff} seconds "  # noqa: WPS237
+                        f"(attempt {attempt+1}/{max_retries})...",  # noqa: WPS326
+                    )
                 time.sleep(backoff)
                 backoff *= 2
                 continue
@@ -121,7 +125,7 @@ class AuthorInfoFetcher:
             backoff *= 2
         return None
 
-    def search_author(self, name: str, author_paper: str) -> Optional[Dict]:  # noqa: WPS231
+    def search_author(self, name: str, author_paper: str) -> Optional[Dict]:  # noqa: WPS231,C901
         """
         Search for an author by name and fetch info for the top match.
 
@@ -139,21 +143,22 @@ class AuthorInfoFetcher:
             "fields": "authorId,name,hIndex,paperCount,citationCount",
         }
         headers = self._headers()
-        max_retries = 5
+        max_retries = 3
         backoff = 1
 
         for attempt in range(max_retries):
             response = requests.get(url, params=params, headers=headers, timeout=10)  # type: ignore
             if response.status_code == 429:
-                logger.warning(
-                    f"[429 Too Many Requests] Retrying author search '{name}' in {backoff} seconds "  # noqa: WPS237
-                    f"(attempt {attempt+1}/{max_retries})...",  # noqa: WPS326
-                )
+                if self.verbose:
+                    logger.warning(
+                        f"[429 Too Many Requests] Retrying author search '{name}' in {backoff} seconds "  # noqa: WPS237
+                        f"(attempt {attempt+1}/{max_retries})...",  # noqa: WPS326
+                    )
                 time.sleep(backoff)
                 backoff *= 2
                 continue
-            finded_authors = self._handle_response(response, context=name, is_search=True)
             break
+        finded_authors = self._handle_response(response, context=name, is_search=True)
 
         if finded_authors is not None:
             for author in finded_authors:
