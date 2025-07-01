@@ -132,16 +132,7 @@ class Entrypoint:
 
 if __name__ == "__main__":
     entrypoint = Entrypoint()
-
-    for year in range(2025, 2026):
-        halves = [
-            (f"{year}-01-01", f"{year}-06-30"),
-            (f"{year}-07-01", f"{year}-12-31"),
-        ]
-        if year == 2025:
-            halves = [
-                (f"{year}-01-01", f"{year}-04-09"),
-            ]
-        for start_date, end_date in halves:
-            logger.info(f"Fetching papers from {start_date} to {end_date}")
-            entrypoint.start_research(start_date=start_date, end_date=end_date)
+    start_date = "2025-04-01"
+    end_date = "2025-04-09"
+    logger.info(f"Fetching papers from {start_date} to {end_date}")
+    entrypoint.start_research(start_date=start_date, end_date=end_date)
