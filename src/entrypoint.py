@@ -74,15 +74,16 @@ class Entrypoint:
             title = paper.title.replace(" ", "_")
             month_year = datetime.strptime(paper.published, "%Y-%m-%d").strftime("%m-%Y")
             path_to_pdf = Path("data/pdfs") / f"{month_year}" / f"{title}.pdf"
-            path_to_images = Path("site/images") / f"{month_year}"
-            try:
-                download_pdf(paper.pdf_url, path_to_pdf)
-                output_folder = extract_images(str(path_to_pdf), str(path_to_images))
-            except Exception as exp:
-                logger.error(f"Error downloading {paper.pdf_url}: {exp}")
-                continue
+            path_to_images = Path("site/images") / f"{month_year}" / f"{title}"
+            if not path_to_pdf.exists():
+                try:
+                    download_pdf(paper.pdf_url, path_to_pdf)
+                    extract_images(str(path_to_pdf), str(path_to_images))
+                except Exception as exp:
+                    logger.error(f"Error downloading {paper.pdf_url}: {exp}")
+                    continue
             pdf_paths.append(str(path_to_pdf))
-            images_paths.append(output_folder)
+            images_paths.append(str(path_to_images))
             published_dates.append(paper.published)
         return pdf_paths, images_paths, published_dates
 

@@ -66,19 +66,14 @@ def extract_figure_number(description: str) -> str:
     return ""
 
 
-def extract_images(pdf_path: str, output_folder: str = "images") -> str:  # noqa: WPS210,WPS231,C901
+def extract_images(pdf_path: str, output_folder: str = "images") -> None:  # noqa: WPS210,WPS231,C901
     """Extract images from a PDF file into an output folder.
 
     Args:
         pdf_path: Path to the input PDF file
         output_folder: Folder to save extracted images
-
-    Returns:
-        str: The path to the output folder
     """
     doc = fitz.open(pdf_path)
-    pdf_stem = Path(pdf_path).stem
-    output_folder = os.path.join(output_folder, pdf_stem)
     os.makedirs(output_folder, exist_ok=True)
 
     # Iterate through each page
@@ -135,7 +130,6 @@ def extract_images(pdf_path: str, output_folder: str = "images") -> str:  # noqa
         if img_num >= max_images:
             break
     logger.info(f"\nCompleted extraction of images from '{pdf_path}'")
-    return output_folder
 
 
 # if __name__ == "__main__":
