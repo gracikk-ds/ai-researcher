@@ -1,5 +1,5 @@
 ---
-title: Concept_Lancet:_Image_Editing_with_Compositional_Representation_Transplant
+title: Concept Lancet: Image Editing with Compositional Representation Transplant
 layout: default
 ---
 ![Figure 1. Given a source image and the editing task, our proposed CoLan generates a concept dictionary and performs sparse decomposition in the latent space to precisely transplant the target concept.]({{ '/images/04-2025/Concept_Lancet:_Image_Editing_with_Compositional_Representation_Transplant/figure_1.png' | relative_url }})
@@ -68,5 +68,3 @@ CoLan significantly improves the performance of existing editing backbones. When
 ![Figure 9. Visualizations of edited images with decreasing strength of the concept [fresh] extracted from our CoLan-150K dataset. The values on top correspond to the coefficient w fresh for removing the concept d fresh . CoLan solves w ∗ fresh of − 0 . 977 for the apple and − 1 . 16 for the lotus.]({{ '/images/04-2025/Concept_Lancet:_Image_Editing_with_Compositional_Representation_Transplant/figure_9.png' | relative_url }})
 
 *Figure 9. Visualizations of edited images with decreasing strength of the concept [fresh] extracted from our CoLan-150K dataset. The values on top correspond to the coefficient w fresh for removing the concept d fresh . CoLan solves w ∗ fresh of − 0 . 977 for the apple and − 1 . 16 for the lotus.*
-
-
