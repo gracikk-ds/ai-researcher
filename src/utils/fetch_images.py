@@ -1,11 +1,13 @@
 """Extract images from a PDF file into an output folder."""
 
+import io
 import os
 import re
 from pathlib import Path
 
 import fitz
 from loguru import logger
+from PIL import Image
 
 MIN_IMAGE_SIZE: int = 10
 
@@ -38,9 +40,7 @@ def get_block_description(block: dict) -> str:
     Returns:
         str: The text appearing in the block
     """
-    description = " ".join(
-        span["text"] for line in block["lines"] for span in line["spans"]  # noqa: WPS221
-    ).strip()
+    description = " ".join(span["text"] for line in block["lines"] for span in line["spans"]).strip()  # noqa: WPS221
     if "Figure" not in description and "Fig." not in description:
         return ""
     description = re.sub(r"\s+", " ", description)
@@ -66,12 +66,15 @@ def extract_figure_number(description: str) -> str:
     return ""
 
 
-def extract_images(pdf_path: str, output_folder: str = "images") -> None:  # noqa: WPS210,WPS231,C901
+def extract_images(pdf_path: str, output_folder: str = "images") -> str:  # noqa: WPS210,WPS231,C901
     """Extract images from a PDF file into an output folder.
 
     Args:
         pdf_path: Path to the input PDF file
         output_folder: Folder to save extracted images
+
+    Returns:
+        str: The path to the output folder
     """
     doc = fitz.open(pdf_path)
     pdf_stem = Path(pdf_path).stem
@@ -115,11 +118,15 @@ def extract_images(pdf_path: str, output_folder: str = "images") -> None:  # noq
                     continue
             else:
                 continue
-            image_name = f"figure_{figure_number}.png"  # noqa: WPS237
+            image_name = f"figure_{figure_number}.jpg"  # noqa: WPS237
             image_path = os.path.join(output_folder, image_name)
             rect = fitz.Rect(coords[0] - 10, coords[1] - 10, coords[2] + 10, coords[3] + 10)
             pix = page.get_pixmap(dpi=300, clip=rect, alpha=False)
-            pix.save(image_path)
+            img_bytes = pix.tobytes("ppm")  # Get image as PPM bytes
+            image = Image.open(io.BytesIO(img_bytes))
+            image = image.convert("RGB")  # Ensure no alpha channel for JPEG
+            image.save(image_path, "JPEG", quality=70)
+            # pix.save(image_path, quality=70)
             with open(os.path.join(output_folder, f"figure_{figure_number}.txt"), "w") as description_file:
                 description_file.write(f"{description}")
             is_inside_picture = False
@@ -128,6 +135,7 @@ def extract_images(pdf_path: str, output_folder: str = "images") -> None:  # noq
         if img_num >= max_images:
             break
     logger.info(f"\nCompleted extraction of images from '{pdf_path}'")
+    return output_folder
 
 
 # if __name__ == "__main__":

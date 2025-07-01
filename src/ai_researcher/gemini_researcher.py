@@ -191,8 +191,11 @@ class GeminiApiClient:  # noqa: WPS230,WPS214
             Optional[str]: The path to the markdown file.
         """
         pdf_stem = Path(pdf_local_path).stem if pdf_local_path is not None else None
-        if pdf_stem is not None:
-            md_path = os.path.join(self.site_reports_dir, f"{pdf_stem}.md")  # noqa: WPS221
+        month_dir_name = os.path.basename(os.path.dirname(pdf_local_path)) if pdf_local_path is not None else None
+        if pdf_stem is not None and month_dir_name is not None:
+            base_dir = os.path.join(self.site_reports_dir, month_dir_name)
+            os.makedirs(base_dir, exist_ok=True)
+            md_path = os.path.join(base_dir, f"{pdf_stem}.md")  # noqa: WPS221
             with open(md_path, "w", encoding="utf-8") as response_file:  # noqa: WPS221
                 response_file.write(response)
             return md_path

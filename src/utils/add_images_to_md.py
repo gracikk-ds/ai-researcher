@@ -41,10 +41,10 @@ def img_block(img_path: str, desc: str) -> str:
     rel_path = os.path.relpath(img_path).replace("site", "")
     rel_path = f"'{rel_path}' | relative_url"
     rel_path = "{{ " + rel_path + " }}"
-    return f"![{desc}]({rel_path})\n\n*{desc}*\n\n"
+    return f"![{desc}]({rel_path})"
 
 
-def add_images_to_md(md_path: str, images_dir: str) -> None:
+def add_images_to_md(md_path: str, images_dir: str, published_date: str) -> None:
     """
     Add images and their descriptions from images_dir to a markdown file at md_path.
 
@@ -53,9 +53,10 @@ def add_images_to_md(md_path: str, images_dir: str) -> None:
     Args:
         md_path (str): Path to the markdown file.
         images_dir (str): Path to the directory containing images and .txt descriptions.
+        published_date (str): The published date of the paper.
     """
     paper_name = md_path.split("/")[-1].split(".")[0]
-    new_md = f"---\ntitle: {paper_name}\nlayout: default\n---\n"
+    new_md = f"---\ntitle: {paper_name}\nlayout: default\ndate: {published_date}\n---\n"
     figures = load_images_and_descriptions(images_dir)
     if not figures:
         logger.warning(f"No figures found in {images_dir}")
