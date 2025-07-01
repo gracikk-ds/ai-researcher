@@ -54,6 +54,8 @@ def add_images_to_md(md_path: str, images_dir: str) -> None:
         md_path (str): Path to the markdown file.
         images_dir (str): Path to the directory containing images and .txt descriptions.
     """
+    paper_name = md_path.split("/")[-1].split(".")[0]
+    new_md = f"---\ntitle: {paper_name}\nlayout: default\n---\n"
     figures = load_images_and_descriptions(images_dir)
     if not figures:
         logger.warning(f"No figures found in {images_dir}")
@@ -75,8 +77,6 @@ def add_images_to_md(md_path: str, images_dir: str) -> None:
         md_content = md_file.read()
 
     # Insert Figure 1 at the top
-    paper_name = md_path.split("/")[-1].split(".")[0]
-    new_md = f"---\ntitle: {paper_name}\nlayout: default\n---\n"
     if fig1:
         _, img_path, desc = fig1
         new_md += img_block(img_path, desc) + "\n"
@@ -100,4 +100,8 @@ def add_images_to_md(md_path: str, images_dir: str) -> None:
 
 
 if __name__ == "__main__":
-    add_images_to_md("site/_reports/response_mgie_gemini-2.5-pro.md", "site/images/mgie")
+    mds_paths = [f"site/_reports/{md}" for md in sorted(os.listdir("site/_reports"))]
+    images_paths = [f"site/images/04-2025/{images}" for images in sorted(os.listdir("site/images/04-2025"))]
+
+    for md_path, images_path in zip(mds_paths, images_paths):
+        add_images_to_md(md_path, images_path)

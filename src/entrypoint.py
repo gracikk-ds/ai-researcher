@@ -72,7 +72,7 @@ class Entrypoint:
             title = paper.title.replace(" ", "_")
             month_year = datetime.strptime(paper.published, "%Y-%m-%d").strftime("%m-%Y")
             path_to_pdf = Path("data/pdfs") / f"{month_year}" / f"{title}.pdf"
-            path_to_images = Path("site/images") / f"{month_year}" / f"{title}"
+            path_to_images = Path("site/images") / f"{month_year}"
             try:
                 download_pdf(paper.pdf_url, path_to_pdf)
                 extract_images(str(path_to_pdf), str(path_to_images))
