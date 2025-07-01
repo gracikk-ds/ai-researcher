@@ -37,6 +37,7 @@ class GeminiApiClient:  # noqa: WPS230,WPS214
         temperature: float = 0.3,
         thinking_budget: Optional[int] = None,
         site_reports_dir: str = "site/_reports",
+        verbose: bool = False,
     ):
         """Initialize GeminiClient with Vertex AI connection, model, and defaults.
 
@@ -46,6 +47,7 @@ class GeminiApiClient:  # noqa: WPS230,WPS214
             temperature: The temperature to use.
             thinking_budget: The thinking budget to use.
             site_reports_dir: The directory to save the reports to.
+            verbose: Whether to log the prompt to Gemini.
         """
         self._load_project_id_from_creds()
         self.model_name = model_name
@@ -68,6 +70,7 @@ class GeminiApiClient:  # noqa: WPS230,WPS214
         self.total_input_token_count: int = 0
         self.total_output_token_count: int = 0
         self.total_requests: int = 0
+        self.verbose = verbose
 
     def _load_project_id_from_creds(self) -> None:
         """Load the project id from the credentials.
@@ -114,9 +117,7 @@ class GeminiApiClient:  # noqa: WPS230,WPS214
             total_input_token_count=self.total_input_token_count,
             total_output_token_count=self.total_output_token_count,
         )
-        logger.info(
-            f"Total processed: {self.total_requests}. Spent: {inference_price:.4f}$",
-        )
+        logger.info(f"Total processed: {self.total_requests}. Spent: {inference_price:.4f}$")
 
     def attach_pdf(self, gcs_uri: str) -> None:
         """Attach a PDF (or text file) for native processing.
@@ -159,7 +160,8 @@ class GeminiApiClient:  # noqa: WPS230,WPS214
 
         # User message
         contents.append(Content(role="user", parts=[Part(text=user_prompt)]))
-        logger.info(f"Sending prompt to Gemini: {user_prompt}")
+        if self.verbose:
+            logger.info(f"Sending prompt to Gemini: {user_prompt}")
         response = self.client.models.generate_content(
             model=self.model_name,
             contents=contents,  # type: ignore
@@ -175,7 +177,6 @@ class GeminiApiClient:  # noqa: WPS230,WPS214
         self.total_output_token_count += candidates_token_count if candidates_token_count is not None else 0
         self.total_output_token_count += thoughts_token_count if thoughts_token_count is not None else 0
         self.total_requests += 1
-        self.info()
 
         return response.text  # type: ignore
 
