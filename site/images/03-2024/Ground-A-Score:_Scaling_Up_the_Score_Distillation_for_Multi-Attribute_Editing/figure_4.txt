@@ -1,0 +1,1 @@
+Fig. 4: The benchmark result of Ground-A-Score with other baseline models using the same editing prompts.

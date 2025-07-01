@@ -1,0 +1,1 @@
+Figure 7. The qualitative results of the ablation study. Without our “ n -source-ton -target” method, the model overfits easily. Both x j and [ F, C ] ease the difficulties of the training. The improvements we adopt help the model to generate more fine-grained results.

@@ -1,0 +1,1 @@
+Figure 1: Comparison between LoRA [ 7 ] and our propsoed PaRa on T2I personalization for learning a new concept of bear, i . e ., “ [V] ”. For a fair comparison, we set the rank as 4 and adopt the same latent noise for both methods. LoRA scale is set to 1.0.

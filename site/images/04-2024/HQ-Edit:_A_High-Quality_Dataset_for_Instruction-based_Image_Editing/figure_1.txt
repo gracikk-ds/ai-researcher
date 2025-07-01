@@ -1,0 +1,1 @@
+Fig. 1: (a) (d): example images and edit instructions from HQ-Edit. (e): we compare the dataset quality between our HQ-Edit and existing ones. Note that “Alignment” and “Coherence” are our newly developed metrics (introduced in Sec. 3.4 ) for measuring image/text qualities.

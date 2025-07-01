@@ -1,0 +1,1 @@
+Figure 1: Creating different edits with Layered Diffusion Brushes. Our tool is capable of creating and stacking a wide range of independent edits, including object addition, removal, or replacement, colour and style changes/combining, and object attribute modification. Each edit is performed independently, and users are able to switch between the edits seamlessly.

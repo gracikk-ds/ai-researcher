@@ -1,0 +1,1 @@
+Figure 3. Overview of our proposed DiffEditor, which is composed of a trainable image prompt encoder and a diffusion sampling with editing guidance that does not require training.

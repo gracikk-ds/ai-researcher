@@ -1,0 +1,1 @@
+Figure 1: Given a few reference images of the same identity, our framework learns a personalized identity prior and applies diverse non-rigid image editing for a test image guided by a textual description, leading to high identity-preserved edited results.

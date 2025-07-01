@@ -1,0 +1,1 @@
+Fig. 4: Testing-time finetuning framework with different finetuning components. The sample images are from Custom-Edit [196].

@@ -1,0 +1,1 @@
+Figure 6. Progressive image editing (top) and image generation (bottom) using LazyDiffusion . Each panel illustrates a generative progression compared to the preceding state of the canvas to its left. LazyDiffusion markedly accelerates local image edits (approximately × 10 ), rendering diffusion models more apt for userin-the-loop applications.

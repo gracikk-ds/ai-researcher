@@ -1,0 +1,1 @@
+Figure 4: Object removal comparison with inpainting. Our model successfully removes the masked object, while the baseline inpainting model replaces it with a different one. Using a mask that covers the reflections (extended mask) may obscure important details from the model.

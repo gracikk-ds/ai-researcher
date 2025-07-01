@@ -1,0 +1,1 @@
+Figure 8: Image-guided editing: Any item in the image can be replaced by another item from the same or different images.

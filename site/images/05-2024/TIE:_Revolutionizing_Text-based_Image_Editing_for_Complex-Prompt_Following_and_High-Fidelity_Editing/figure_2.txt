@@ -1,0 +1,1 @@
+Figure 2: Illustration of data preparation for CoT fine-tuning.

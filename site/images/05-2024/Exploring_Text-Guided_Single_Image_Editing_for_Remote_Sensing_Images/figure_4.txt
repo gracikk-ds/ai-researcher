@@ -1,0 +1,1 @@
+Fig. 4. The architecture of the proposed DDPM model. The fullyconvolutional model is based on four blocks and uses the time step t and scale s as the condition to train.

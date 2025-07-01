@@ -1,0 +1,1 @@
+Figure 6. Qualitative illustrations of the usage of M refine in artifact suppression refinement. (a) and (b) show text removal within board elements, while (c) shows the removal of regions near styled text.

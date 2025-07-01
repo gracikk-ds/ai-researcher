@@ -1,0 +1,1 @@
+Figure 6. Image Editing and Reasoning Instruction Generation. If the input image has no caption, BLIP2 will give an image caption. Spacy extracts the candidate categories in the caption. Then, Grounding DINO locates the objects in the image. GPT-3.5 produces 1) selected category, 2) target category, and 3) reasoning instruction. Finally, GLIGEN generates the edited image.

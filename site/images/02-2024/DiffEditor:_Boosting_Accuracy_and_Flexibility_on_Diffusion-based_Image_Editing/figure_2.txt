@@ -1,0 +1,1 @@
+Figure 2. Illustration of editing flexibility limitations in DragDiff [ 39 ] and DragonDiff [ 28 ], as well as our improvement.

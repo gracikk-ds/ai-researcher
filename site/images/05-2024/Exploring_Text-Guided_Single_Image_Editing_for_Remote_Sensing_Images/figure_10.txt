@@ -1,0 +1,1 @@
+Fig. 10. Generated images of the our proposed method, the Stable Diffusion, Kandinsky, FLUX, MGIE and IC-Edit under three scenarios. The above images show the results of full image editing under three scenarios: “A fire in the forest”, “The bridge is collapsed” and “The river is flooding”.

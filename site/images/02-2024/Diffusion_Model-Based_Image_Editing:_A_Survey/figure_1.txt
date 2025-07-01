@@ -1,0 +1,1 @@
+Fig. 1: Statistical overview of research publications in diffusion model-based image editing. Top: learning strategies. Middle: input conditions. Bottom: editing tasks.

@@ -1,0 +1,1 @@
+Figure 9: We have the flexibility of controlling pose and view change by inputting a depth image. Some interesting examples are provided in Figure 9 for better understanding, from which we can see that the generation follows the provided depth condition.

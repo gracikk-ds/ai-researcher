@@ -1,0 +1,1 @@
+Figure 5. Here we show more experimental results of our method. The editing target and the amount of given training pairs are recorded on the top of each result unit, and the relative generated images are displayed below. More visual results are shown in our appendix.

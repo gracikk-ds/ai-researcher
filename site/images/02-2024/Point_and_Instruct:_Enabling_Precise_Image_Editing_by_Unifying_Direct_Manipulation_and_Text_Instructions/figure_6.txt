@@ -1,0 +1,1 @@
+Figure 6: Our approach enables a user to disambiguate a particular object from other similar objects, move it, and change its appearance. In contrast, text-only editing approaches like InstructPix2Pix [ 3 ] and LLM Grounded Diffusion [ 16 ] fail to localize the manipulation to the correct object, despite requiring a much longer and more difficult to write edit instruction.

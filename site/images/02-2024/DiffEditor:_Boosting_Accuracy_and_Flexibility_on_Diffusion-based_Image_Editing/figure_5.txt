@@ -1,0 +1,1 @@
+Figure 5. The impact of different components on the editing flexibility of DragonDiff [ 28 ].

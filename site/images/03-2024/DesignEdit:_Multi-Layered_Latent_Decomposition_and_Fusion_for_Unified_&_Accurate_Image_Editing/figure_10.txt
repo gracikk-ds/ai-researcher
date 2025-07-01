@@ -1,0 +1,1 @@
+Figure 10. Qualitative comparison on the M AGIC B RUSH dataset. We chose the mask-provided instruction-guided removal tasks to evaluate the inpainting ability of our method. The third column shows the removal results provided by DALL · E2 serving as ground truth. We compare the results of LaMa, ControlNet-Inpainting, SDXL-inpainting, Uni-paint with ours.

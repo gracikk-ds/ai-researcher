@@ -1,0 +1,1 @@
+Figure 6: Generation results of combining PaRa with LoRA. Top: the results of first applying PaRa and then LoRA; Bottom: the results of first applying LoRA and then PaRa.

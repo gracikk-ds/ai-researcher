@@ -1,0 +1,1 @@
+Figure 1: Illustration of existing diffusion-based image editing methods, where a manually or off-line generated mask is often used to control the editing area.

@@ -1,0 +1,1 @@
+Fig. 1: Demo results of the proposed InstructGIE framework on various image manipulation tasks to both humans and scenes. By our proposed method, our model can generalize to generate the desired output with great detail qualities.

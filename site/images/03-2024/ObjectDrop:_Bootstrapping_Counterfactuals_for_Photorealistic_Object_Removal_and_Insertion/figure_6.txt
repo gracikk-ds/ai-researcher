@@ -1,0 +1,1 @@
+Figure 6: Intra-image object insertion baseline comparison. We preserve the object identity better and achieve more photorealistic shadows and reflections than baselines Paint-by-Example and AnyDoor.

@@ -1,0 +1,1 @@
+Figure 2. Editing multi-view images of a boot, with a loose depth map [ 4 ]. We show a sample of three images from the set.

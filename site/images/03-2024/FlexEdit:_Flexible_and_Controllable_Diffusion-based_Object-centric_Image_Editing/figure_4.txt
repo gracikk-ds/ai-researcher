@@ -1,0 +1,1 @@
+Fig. 4: Visualization of different versions of cross-attention maps and dynamic binary masks for edited object, i.e. truck during the denoising diffusion process.

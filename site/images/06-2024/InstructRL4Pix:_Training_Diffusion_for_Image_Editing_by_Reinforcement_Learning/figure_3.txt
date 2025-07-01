@@ -1,0 +1,1 @@
+Figure 3. Sample progressions of the same cue and random seeds during training. The attention map of the samples will tend to localize more faithfully to the correct editing region.

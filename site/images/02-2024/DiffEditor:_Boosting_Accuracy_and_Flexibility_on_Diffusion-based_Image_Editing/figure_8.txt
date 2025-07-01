@@ -1,0 +1,1 @@
+Figure 8. Visual comparison between our method and other methods on appearance replacing, object pasting and object moving tasks.

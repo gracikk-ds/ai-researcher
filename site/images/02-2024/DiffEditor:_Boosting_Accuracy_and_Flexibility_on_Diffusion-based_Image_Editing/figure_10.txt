@@ -1,0 +1,1 @@
+Figure 10. The first and second rows show the effectiveness of the image prompt in DDIM inversion and image editing, respectively.

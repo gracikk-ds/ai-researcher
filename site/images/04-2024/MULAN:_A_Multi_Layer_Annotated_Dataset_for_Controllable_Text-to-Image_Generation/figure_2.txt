@@ -1,0 +1,1 @@
+Figure 2. Illustration of our RGBA decomposition objective.

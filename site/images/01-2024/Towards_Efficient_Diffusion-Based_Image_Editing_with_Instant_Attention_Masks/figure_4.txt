@@ -1,0 +1,1 @@
+Figure 4: The proposed instant mask generation. An indexing process is first performed based on the semantic similarities between the start token and the other ones (upper left). Refinement is then operated between the index and the remaining ones (lower left). Finally, the mask is obtained via the adaptive aggregation of all attention maps.

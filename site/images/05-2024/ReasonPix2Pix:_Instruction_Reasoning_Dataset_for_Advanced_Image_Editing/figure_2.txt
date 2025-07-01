@@ -1,0 +1,1 @@
+Figure 2. Previous method, InstructPix2Pix, is capable of tackling instruction “add a pair of sunglasses” , but it generates absolutely wrong result for the instruction “she prefers face mask to sunglasses” .

@@ -1,0 +1,1 @@
+Figure 1: Subject-driven editing and generation examples from our model, which is trained on our proposed dataset and does not require any fine-tuning at test-time. Editing masks are also presented.

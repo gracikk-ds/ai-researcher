@@ -1,0 +1,1 @@
+Figure 2: The visualization of the attention maps in Stable Diffusion. The target word of “ cat ” has the best attention map, but it needs to be manually identified during applications. The start token is relevant but still very noisy.

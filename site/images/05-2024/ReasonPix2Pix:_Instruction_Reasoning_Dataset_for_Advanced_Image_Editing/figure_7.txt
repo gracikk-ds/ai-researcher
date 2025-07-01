@@ -1,0 +1,1 @@
+Figure 7. Data Sample. Our data has 1) reasoning instruction, 2) more variances between input and edited image, and 3) more realistic images.

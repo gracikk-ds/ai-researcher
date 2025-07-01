@@ -1,0 +1,1 @@
+Figure 2: Comparison of conventional full cross-attention and grouped cross-attention. Query, key, and value are shown as one-dimensional vectors. For grouped cross-attention, each item (corresponding to certain pixels/patches) only attends to the text prompt (two tokens) assigned to it.

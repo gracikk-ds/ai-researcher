@@ -1,0 +1,1 @@
+Fig. 4: Pipeline of the Multi-Layered Composable Image Construction. We use the InstructBLIP [5] for image captioning. These prompts guide open-set segmentation via DetCLIP+SAM to produce image layers and masks and the background image is refined by using the Stable Diffusion inpainting model [26].

@@ -1,0 +1,1 @@
+Figure 3. All modules of our framework are trained jointly and endto-end. During training, all samples mentioned in the illustration are selected from the whole training dataset, while x j is provided by users and will be transferred to get y j for the inference time.

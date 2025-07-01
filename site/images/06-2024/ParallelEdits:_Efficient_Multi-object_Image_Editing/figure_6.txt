@@ -1,0 +1,1 @@
+Figure 6: Comparison across different numbers of editing aspects. We also include the comparison in PIE-Bench dataset. Our proposed method is robust to different numbers of editing aspects.

@@ -1,0 +1,1 @@
+Figure 7: Examples of the proposed dataset, including image editing (left) and generation (right) samples. Text prompts are not shown here due to the limited space.

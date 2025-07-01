@@ -1,0 +1,1 @@
+Figure 5: Our Refiner can refine the subject details, without the loss of text-alignment.

@@ -1,0 +1,1 @@
+Fig. 2: A Chart Image and edit-prompt are taken as input by the ChartReformer model, which predicts visual attributes and data for the corresponding edited chart. A Replotter software takes in these predicted parameters and generates the edited chart-image

@@ -1,0 +1,1 @@
+Figure 2. Instead of training the model on the paired samples themselves, we train the model on the directed transformations among samples from the same domain. In the figure we highlight the training objects in green to show the differences between ours and the existing method. In this way we expand the learnable space to an exponential extent approximately.

@@ -1,0 +1,1 @@
+Figure 1: Original image presents a red car. When the input text instruction is an image of a yellow bus , Stable Diffusion focuses on modifying the color but preserves the old shape. By analyzing the scene description of the image, concepts that users intend to edit are located and forgotten in the denoising steps for an improved output.

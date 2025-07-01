@@ -1,0 +1,1 @@
+Fig. 6. Our approach demonstrates strong performance in both rigid and non-rigid editing scenarios, guided by text prompts or reference images.

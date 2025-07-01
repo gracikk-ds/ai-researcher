@@ -1,0 +1,1 @@
+Figure 8: Illustration of training single ToffeeNet model with both editing and generation pairs.

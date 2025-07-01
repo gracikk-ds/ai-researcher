@@ -1,0 +1,1 @@
+Figure 7: Cross-image object insertion. Similarly to the results of intra-image object insertion, our method preserves object identity better and synthesizes more photorealistic shadows and reflections than the baselines.

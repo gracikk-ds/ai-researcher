@@ -1,0 +1,1 @@
+Figure 4: Visualization comparison with stable diffusion (SD) SOTA models.

@@ -1,0 +1,1 @@
+Figure 7. Qualitative comparison between our DiffEditor and other methods in face manipulation. The current and target points are labeled with red and blue . The white line indicates distance. The MSE distance between the result and the target is labeled in yellow.

@@ -1,0 +1,1 @@
+Figure 4: Point & Instruct casts the problem of image editing as a natural language generation task. (A) The input image and instruction are serialized into a textual form, and (B) an LLM accepts the input layout and instruction and produces a transformed layout. Finally, (C) a layout-to-image generation system is used to generate an edited image from the transformed layout.

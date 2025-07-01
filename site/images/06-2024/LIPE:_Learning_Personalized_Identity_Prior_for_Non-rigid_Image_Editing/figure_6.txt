@@ -1,0 +1,1 @@
+Figure 6: Comparisons with previous work on human face. Left to right: Reference images, Test image, Imagic [ 30 ], MasaCtrl [ 9 ], DreamCtrl, MyStyle [ 51 ], and Our method. The text on the arrow represents the target prompt utilized during the editing process, aligning with the semantic direction of the StyleGAN[16] utilized in MyStyle[51].

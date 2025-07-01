@@ -1,0 +1,1 @@
+Figure 11: Examples of image editing with ToffeeNet. We can control editing regions by feeding different masks into the model. The identity is well-preserved when the subject is being edited.

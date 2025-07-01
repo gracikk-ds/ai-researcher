@@ -1,0 +1,1 @@
+Figure 5: Impact of Forgetting Guidance values on CLIP-T across different Datasets

@@ -1,0 +1,1 @@
+Fig. 2: Overall architecture of InstructGIE. The lower pipeline is for both training and inference processes where the model obtains unified editing instructions outputted by Instruction Unification Module U and combines with visual prompted input Img VPcon

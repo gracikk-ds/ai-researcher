@@ -1,0 +1,1 @@
+Figure 6: Exemplar-based style editing comparisons The inputs include a style exemplar and an original image displayed on the left-bottom corner of exemplar images. StyleBooth achieves both accurate style extraction and transformation and identical content preservation.

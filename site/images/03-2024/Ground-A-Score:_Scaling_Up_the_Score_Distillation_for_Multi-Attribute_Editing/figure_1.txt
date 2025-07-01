@@ -1,0 +1,1 @@
+Fig. 1: Multi-attribute image editing results by Ground-A-Score.

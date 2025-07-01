@@ -1,0 +1,1 @@
+Figure 5: Visualization of output results of NexTGPT, DialogGen-SD, and DialogGen-Hunyuan on the DialogBen benchmark. DialogGen has better performance in generating output of correct modality and higher semantic coherence.

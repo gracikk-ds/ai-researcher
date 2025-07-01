@@ -1,0 +1,1 @@
+Fig. 2: We show an editing scenario when edited object monkey and source object bear are distinct in shape. Our FlexEdit could achieve flexible shape transformation editing while preserving high fidelity to the source image’s background information.

@@ -1,0 +1,1 @@
+Fig. 2: ByteEdit formulates a comprehensive feedback learning framework that facilitating aesthetics, image-text matching, consistency and inference speed.

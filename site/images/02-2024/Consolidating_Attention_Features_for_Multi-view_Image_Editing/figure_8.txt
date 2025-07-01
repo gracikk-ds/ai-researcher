@@ -1,0 +1,1 @@
+Figure 8. Ablation study results. Our full method creates more consistent images, while accurately preserving the original scene.

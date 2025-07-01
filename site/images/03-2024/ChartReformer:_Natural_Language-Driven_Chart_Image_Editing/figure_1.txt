@@ -1,0 +1,1 @@
+Fig. 1: Examples of chart editing results from our methods. In total, our methods define and cover four types of chart editing: style, layout, format and data-centric edit.

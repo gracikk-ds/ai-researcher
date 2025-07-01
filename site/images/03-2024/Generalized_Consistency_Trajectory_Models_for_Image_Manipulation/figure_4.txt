@@ -1,0 +1,1 @@
+Figure 4: Qualitative evaluation of image-to-image translation on Edges → Shoes (top), Night → Day (middle) and Facades (bottom). NFE = 5 for I 2 SB and Palette.

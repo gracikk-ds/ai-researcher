@@ -1,0 +1,1 @@
+Fig. 5. The architecture of the embedding model of the time-step t and scale s .

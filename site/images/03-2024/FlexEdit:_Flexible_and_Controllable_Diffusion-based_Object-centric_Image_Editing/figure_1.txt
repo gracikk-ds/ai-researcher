@@ -1,0 +1,1 @@
+Fig. 1: Our framework could achieve robust and flexible control over several text-guided object-centric editing scenarios, including a) replacing objects with controllable size and position , b) adding new objects in a natural way without additional mask input , and c) removing objects without compromising the quality of the original image.

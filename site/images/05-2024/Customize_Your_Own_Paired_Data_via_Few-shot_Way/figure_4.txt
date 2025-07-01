@@ -1,0 +1,1 @@
+Figure 4. Essentially, our model is trained to find certain manifold where the projections of f x and f y are equal. Horizontal flip is shown on the upper left as a simple example, and normal cases are shown on the lower right.

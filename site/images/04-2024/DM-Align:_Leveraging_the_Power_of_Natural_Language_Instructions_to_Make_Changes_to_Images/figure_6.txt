@@ -1,0 +1,1 @@
+Figure 6: Semantic image editing: Dream dataset. Source captions: (1) c 1 . A soldier in front of a building. (2) c 1 . A pot with flowers. (3) c 1 . A girl throwing a volleyball.

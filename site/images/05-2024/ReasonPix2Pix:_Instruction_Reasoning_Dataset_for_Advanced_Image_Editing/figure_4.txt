@@ -1,0 +1,1 @@
+Figure 4. One sample from InstructPix2Pix dataset. For each paired image, it contains 1) the input image and input caption, 2) the edited image and edited caption, and 3) instructions.
