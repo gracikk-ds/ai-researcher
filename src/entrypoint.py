@@ -4,6 +4,7 @@ from datetime import datetime
 from pathlib import Path
 from typing import List, Optional, Tuple
 
+import click
 from loguru import logger
 
 from src.ai_researcher.gemini_researcher import GeminiApiClient
@@ -133,9 +134,63 @@ class Entrypoint:
         return papers
 
 
+@click.command()
+@click.option("--start-date", required=True, help="Start date (YYYY-MM-DD) for filtering papers.")
+@click.option("--end-date", required=True, help="End date (YYYY-MM-DD) for filtering papers.")
+@click.option(
+    "--gemini-model-name",
+    default="gemini-2.5-pro",
+    help="The name of the Gemini model to use.",
+)
+@click.option(
+    "--site-reports-dir",
+    default="site/_reports",
+    help="The directory to save the reports to.",
+)
+@click.option("--keywords", multiple=True, help="Keywords for arxiv search. Can be specified multiple times.")
+@click.option(
+    "--exclude-keywords",
+    multiple=True,
+    help="Keywords to exclude from the search. Can be specified multiple times.",
+)
+@click.option(
+    "--categories",
+    multiple=True,
+    help="Categories for arxiv search. Can be specified multiple times.",
+)
+def main(  # noqa: WPS216
+    start_date: str,
+    end_date: str,
+    gemini_model_name: str = "gemini-2.5-pro",
+    site_reports_dir: str = "site/_reports",
+    keywords: Optional[list[str]] = None,
+    exclude_keywords: Optional[list[str]] = None,
+    categories: Optional[list[str]] = None,
+):
+    """
+    CLI to run the Entrypoint research pipeline.
+
+    Args:
+        start_date (str): Start date (YYYY-MM-DD) for filtering papers.
+        end_date (str): End date (YYYY-MM-DD) for filtering papers.
+        gemini_model_name (str): The name of the Gemini model to use.
+        site_reports_dir (str): The directory to save the reports to.
+        keywords (Optional[list[str]]): The keywords for arxiv search.
+        exclude_keywords (Optional[list[str]]): The keywords to exclude from the search.
+        categories (Optional[list[str]]): The categories for arxiv search.
+    """
+    entrypoint = Entrypoint(gemini_model_name=gemini_model_name, site_reports_dir=site_reports_dir)
+    papers = entrypoint.start_research(
+        start_date=start_date,
+        end_date=end_date,
+        keywords=list(keywords) if keywords else None,
+        exclude_keywords=list(exclude_keywords) if exclude_keywords else None,
+        categories=list(categories) if categories else None,
+    )
+    click.echo(f"Fetched {len(papers)} papers.")
+    for paper in papers:
+        click.echo(f"- {paper.title} ({paper.published})")
+
+
 if __name__ == "__main__":
-    entrypoint = Entrypoint()
-    start_date = "2025-01-01"
-    end_date = "2025-07-01"
-    logger.info(f"Fetching papers from {start_date} to {end_date}")
-    entrypoint.start_research(start_date=start_date, end_date=end_date)
+    main()
