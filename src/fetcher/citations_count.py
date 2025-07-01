@@ -15,15 +15,17 @@ class CitationCounter:
     api_base: str = "https://api.semanticscholar.org/graph/v1"
     arxiv_re = re.compile(r"arxiv\.org/(?:abs|pdf)/([0-9]{4}\.[0-9]{5})(?:v\d+)?", re.I)
 
-    def __init__(self, api_key: Optional[str] = None) -> None:
+    def __init__(self, api_key: Optional[str] = None, verbose: bool = False) -> None:
         """
         Initialize the CitationCounter.
 
         Args:
             api_key (Optional[str]): Semantic Scholar API key. If not provided, will use the
                 SEMANTIC_SCHOLAR_API_KEY environment variable.
+            verbose (bool): Whether to print verbose output.
         """
         self.api_key = api_key or os.getenv("SEMANTIC_SCHOLAR_API_KEY")
+        self.verbose = verbose
 
     def _headers(self) -> dict:
         """
@@ -98,7 +100,7 @@ class CitationCounter:
             self._print_status_error(response.status_code, context)
         return None
 
-    def get_citation_count(self, title: str, arxiv_url: str) -> Optional[int]:  # noqa: WPS231
+    def get_citation_count(self, title: str, arxiv_url: str) -> Optional[int]:  # noqa: WPS231,C901,WPS212
         """
         Return the current citation count for a given paper, or None if not found.
 
@@ -110,7 +112,7 @@ class CitationCounter:
             Optional[int]: The citation count, or None if not found.
         """
         headers = self._headers()
-        max_retries = 5
+        max_retries = 3
         backoff = 1
 
         # Step 1: Try by arXiv ID (fast, exact)
@@ -125,10 +127,11 @@ class CitationCounter:
                     timeout=10,
                 )
                 if response.status_code == 429:
-                    logger.warning(
-                        f"[429 Too Many Requests] Retrying arXiv ID {arxiv_id} in {backoff} seconds "  # noqa: WPS237
-                        f"(attempt {attempt+1}/{max_retries})...",  # noqa: WPS326
-                    )
+                    if self.verbose:
+                        logger.warning(  # noqa: WPS220
+                            f"[429 Too Many Requests] Retrying ID {arxiv_id} in {backoff} seconds "  # noqa: WPS237
+                            f"(attempt {attempt+1}/{max_retries})...",  # noqa: WPS326
+                        )
                     time.sleep(backoff)
                     backoff *= 2
                     continue
@@ -148,10 +151,11 @@ class CitationCounter:
                 return None
 
             if response.status_code == 429:
-                logger.warning(
-                    f"[429 Too Many Requests] Retrying title '{title}' in {backoff} seconds "  # noqa: WPS237
-                    f"(attempt {attempt+1}/{max_retries})...",  # noqa: WPS326
-                )
+                if self.verbose:
+                    logger.warning(
+                        f"[429 Too Many Requests] Retrying title '{title}' in {backoff} seconds "  # noqa: WPS237
+                        f"(attempt {attempt+1}/{max_retries})...",  # noqa: WPS326
+                    )
                 time.sleep(backoff)
                 backoff *= 2
                 continue
