@@ -10,6 +10,7 @@ from loguru import logger
 from src.ai_researcher.classifier import Classifier
 from src.fetcher.authors_info_fetcher import AuthorInfoFetcher
 from src.fetcher.citations_count import CitationCounter
+from src.fetcher.lists_of_keywords import EXCLUDE_KEYWORDS, PREDEFINED_KEYWORDS
 from src.utils.schemas import Author, Paper
 
 
@@ -17,18 +18,8 @@ class ArxivFetcher:
     """Class to fetch and filter arXiv papers based on keywords, categories, and date range."""
 
     arxiv_delay_seconds: int = 3
-    predefined_keywords: List[str] = [
-        "image editing",
-        "image edit",
-        "editing images",
-        "editing image",
-        "edit the image",
-        "edit image",
-        "edit an image",
-        "image generation and editing",
-        "image-editing",
-        "editing model",
-    ]
+    predefined_keywords: List[str] = PREDEFINED_KEYWORDS
+    exclude_keywords: List[str] = EXCLUDE_KEYWORDS
     predefined_categories: List[str] = ["cs.CV", "cs.LG", "cs.CL", "cs.AI", "cs.MM"]
 
     def __init__(
@@ -220,6 +211,8 @@ class ArxivFetcher:
             keywords = self.predefined_keywords
         if categories is None:
             categories = self.predefined_categories
+        if exclude_keywords is None:
+            exclude_keywords = self.exclude_keywords
 
         start_date_obj, end_date_obj = self.check_start_end_dates_diff(start_date, end_date)
         query_string = self._build_arxiv_query(keywords, categories, start_date_obj, end_date_obj)
