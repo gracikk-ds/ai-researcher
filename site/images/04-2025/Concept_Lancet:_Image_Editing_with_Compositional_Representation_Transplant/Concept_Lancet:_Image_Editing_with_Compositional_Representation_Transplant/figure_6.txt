@@ -1,0 +1,1 @@
+Figure 6. The histograms of solved magnitudes of the concept atoms in CoLan decomposition (text embedding space). As there are tens of concepts in a single dictionary, the histogram includes the concepts whose CoLan coefficients have the top 10 largest magnitudes.

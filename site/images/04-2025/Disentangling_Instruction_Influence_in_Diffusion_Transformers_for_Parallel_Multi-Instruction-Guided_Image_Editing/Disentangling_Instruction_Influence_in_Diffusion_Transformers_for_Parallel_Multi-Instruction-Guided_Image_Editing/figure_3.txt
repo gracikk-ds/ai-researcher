@@ -1,0 +1,1 @@
+Figure 3. The visualization of attention map between the instruction tokens and noise image tokens ¯ A ZP and among noise image tokens ¯ A ZZ . Attention weights are extracted from the penultimate layer. “Avg” represents the averaging attention map across all heads.

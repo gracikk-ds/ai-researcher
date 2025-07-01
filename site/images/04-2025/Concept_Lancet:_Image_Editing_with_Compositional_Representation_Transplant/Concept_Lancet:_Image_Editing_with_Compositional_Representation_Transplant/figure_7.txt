@@ -1,0 +1,1 @@
+Figure 7. Visual comparisons of CoLan in the score space (first row) and text embedding space (second row) of InfEdit. Texts in gray are the original captions of the source images from PIE-Bench, and texts in blue are the corresponding edit task (replace, add, remove).

@@ -1,0 +1,1 @@
+Figure 2. CREA Framework . We introduce a collaborative multi-agent framework for creative image editing and generation. Our framework consists of four stages, 1.a Pre-Generation Planning, 1.b Creative Image Generation/Editing, 2. Post-Generation Evaluation and 3. Self-Enhancement. Here, K is the number of maximum iterations.

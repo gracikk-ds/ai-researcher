@@ -1,0 +1,1 @@
+Figure 9. Visualizations of edited images with decreasing strength of the concept [fresh] extracted from our CoLan-150K dataset. The values on top correspond to the coefficient w fresh for removing the concept d fresh . CoLan solves w ∗ fresh of − 0 . 977 for the apple and − 1 . 16 for the lotus.

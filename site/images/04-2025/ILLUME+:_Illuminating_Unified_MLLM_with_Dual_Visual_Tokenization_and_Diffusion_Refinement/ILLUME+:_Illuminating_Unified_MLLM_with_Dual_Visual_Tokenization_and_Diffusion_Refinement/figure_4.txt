@@ -1,0 +1,1 @@
+Figure 4: Illustration of our progressive training pipeline. We first pre-train the dual-tokenizer system by reconstruction of the semantic and pixel information. We then fine-tune the diffusion model as a high-quality image decoder. The MLLM training consists of three main stages that gradually increase task resolution and complexity.

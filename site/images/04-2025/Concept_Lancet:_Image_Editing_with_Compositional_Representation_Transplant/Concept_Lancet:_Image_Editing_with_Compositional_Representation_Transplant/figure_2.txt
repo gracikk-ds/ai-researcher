@@ -1,0 +1,1 @@
+Figure 2. Representation manipulation in diffusion models involves adding an accurate magnitude of edit direction (e.g., Image (3) by CoLan) to the latent source representation. Figure 5 and Figure 7 show more examples.

@@ -1,0 +1,1 @@
+Figure 4: Quantitative results of model editing under the Reason-Edit benchmark [ 22 ]. We compare the performance of GPT4o with seven other SOTA image editing models. We see that GPT4o significantly outperforms other models.
