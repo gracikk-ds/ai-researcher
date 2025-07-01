@@ -1,0 +1,1 @@
+(d) Predicted “good” inpaintings Fig. 4. Predicted good and bad salient masks and inpaintings

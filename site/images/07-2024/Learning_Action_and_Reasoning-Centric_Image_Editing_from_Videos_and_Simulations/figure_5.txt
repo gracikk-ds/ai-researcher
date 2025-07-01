@@ -1,0 +1,1 @@
+Figure 5: Prompt: Put the white porcelain ramekin on the right hand of the brown shoe. We show attention maps for three levels of U-Net layers: Down, Middle, Upper.

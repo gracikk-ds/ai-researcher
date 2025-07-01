@@ -1,0 +1,1 @@
+Figure 7. Visual comparisons with state-of-the-art methods. Our method is effective in generating texture-consistent backgrounds and photo-realistic objects.

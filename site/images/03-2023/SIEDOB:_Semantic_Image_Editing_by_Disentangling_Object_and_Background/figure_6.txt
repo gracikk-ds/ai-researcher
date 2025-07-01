@@ -1,0 +1,1 @@
+Figure 6. Structure of Fusion Network. The red line indicates the skip connection.

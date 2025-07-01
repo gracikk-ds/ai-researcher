@@ -1,0 +1,1 @@
+Figure 6: Human evaluation framework (a) Input Image with Edit Instruction (b) Example of a bad edit

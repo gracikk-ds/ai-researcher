@@ -1,0 +1,1 @@
+Fig. 1: Comparing with different concurrent image editing methods on the real natural world images, it is obvious that the object in the editing result of our KV Inversion can meet the edit prompt corresponding to the action editing, while retaining the original real image object.

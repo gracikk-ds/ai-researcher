@@ -1,0 +1,1 @@
+Figure 11. Effects of interpolating spectral shifts ( Σ δ ′ = diag ( ReLU ( σ + α δ 1 + (1 − α ) δ 2 )) ) or weight deltas ( W ′ = W + α ∆ W 1 + (1 − α )∆ W 2 = αW 1 + (1 − α ) W 2 ).

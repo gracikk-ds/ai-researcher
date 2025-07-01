@@ -1,0 +1,1 @@
+Figure 6. This figure shows the results of this sample input image (black-and-white) to our model with different hyperparameters.

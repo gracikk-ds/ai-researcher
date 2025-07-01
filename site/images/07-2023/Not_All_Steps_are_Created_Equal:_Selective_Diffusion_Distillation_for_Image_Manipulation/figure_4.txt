@@ -1,0 +1,1 @@
+Figure 4. Effect of our Hybrid Quality Score (HQS) . Left : The curve of HQS at different timesteps when the prompt is “angry”. Right : Gradient visualization of the corresponding timestep and editing results of training our image manipulator using only this timestep.

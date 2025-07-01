@@ -1,0 +1,1 @@
+Fig. 1. Examples of two-layer images. Prompts are displayed on the top of images. Each example includes foreground (fg), background (bg), and mask component to compose a two-layer image. From left to right of each example: fg, bg, mask, and composed image.

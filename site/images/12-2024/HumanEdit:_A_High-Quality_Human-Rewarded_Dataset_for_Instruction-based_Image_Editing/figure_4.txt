@@ -1,0 +1,1 @@
+Figure 4: (a) The distribution chart of the first 30 objects in the editing instructions for HumanEdit. (b) The word cloud representation of the objects present in the editing instructions for HumanEdit.

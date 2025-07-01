@@ -1,0 +1,1 @@
+Figure 2: We show the practical workflow of Forgedit, with testing images from EditEval. In most cases, simple vector subtraction would finish the job. For other hard cases, the default forgetting strategies, ’encoderattn’ or ’decoderattn’ according to editing intention on structrue or appearance, could solve the problems.

@@ -1,0 +1,1 @@
+Figure 6. Visual comparison for object-centered shadow synthesis on the DESOBA test set [ 13 ], our Moving DESOBA test set, and Video DESOBA. Zoom in to see the details. For more results, please refer to the supplementary materials.

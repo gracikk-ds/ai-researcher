@@ -1,0 +1,1 @@
+Fig. 6: Comparisons of methods on Cityscapes dataset for adding objects setting. Our method can add objects with diverse styles which improves realism.

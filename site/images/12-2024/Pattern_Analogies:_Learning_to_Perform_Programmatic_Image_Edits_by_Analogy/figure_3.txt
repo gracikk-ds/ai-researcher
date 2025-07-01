@@ -1,0 +1,1 @@
+Figure 3. Custom program samplers for two pattern styles. Our samplers produce diverse and high-quality patterns, enabling generalization to real-world patterns.

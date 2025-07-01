@@ -1,0 +1,1 @@
+Figure 3. General framework of Selective Diffusion Distillation (SDD) . Top: selection stage . We build an HQS indicator to select appropriate timesteps. Bottom: distillation stage . We use the selected timesteps and the pretrain diffusion model p θ to train the image manipulator f ϕ .

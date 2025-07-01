@@ -1,0 +1,1 @@
+Figure 9. Visual results of drag editing : DreamOmni accurately performs translation, rotation, and scaling edits.

@@ -1,0 +1,1 @@
+Figure 2: Differences between text control information and general ControlNet control information, including anime line drawings, M-LSD lines, and Canny edges. General controls focus on the overall structure and tolerate localized errors, while text control requires precise detail.

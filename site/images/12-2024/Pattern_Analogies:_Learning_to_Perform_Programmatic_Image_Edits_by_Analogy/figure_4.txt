@@ -1,0 +1,1 @@
+Figure 4. We create synthetic analogical quartets ( A, A ′ , B, B ′ ) with consistent edits between A and B pairs, providing data for training an analogical editing models.

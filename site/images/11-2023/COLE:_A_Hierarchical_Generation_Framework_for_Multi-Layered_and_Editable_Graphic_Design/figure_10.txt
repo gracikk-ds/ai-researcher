@@ -1,0 +1,1 @@
+Figure 10. Illustrating the GPT-4V(ision) scores. We mark the results of our C OLE ( ● ), DeepFloyd/IF+GPT-4 ( ● ), SDXL+GPT-4 ( ● ), DALL · E3 +GPT-4 ( ● ) and CanvaGPT ( ● ), using colored markers. (See the appendix for the zoomed-out version)

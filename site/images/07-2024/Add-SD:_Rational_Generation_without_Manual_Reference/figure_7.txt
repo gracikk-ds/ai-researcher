@@ -1,0 +1,1 @@
+Fig. 7 The instance count for each categories before and after generation and corresponding growth rate over the original on COCO and LVIS datasets.

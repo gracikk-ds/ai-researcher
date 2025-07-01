@@ -1,0 +1,1 @@
+Figure 2. Overall architecture of HIVE. The first step is to train a baseline HIVE without human feedback. In the second step, we collect human feedback to rank variant outputs for each image-instruction pair, and train a reward model to learn the rewards. In the third step, we fine-tune diffusion models by integrating the estimated rewards.

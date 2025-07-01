@@ -1,0 +1,1 @@
+Figure 6: Ablations on region-based editing . We report CLIPout as the main metric.

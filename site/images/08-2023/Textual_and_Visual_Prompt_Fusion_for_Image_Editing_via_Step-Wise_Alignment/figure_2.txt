@@ -1,0 +1,1 @@
+Fig. 2: Consistent editing: Once a reference image is provided, our method enables consistent and controllable editing to the reference image. In contrast, NTI fails to generate the corresponding style for the glasses.

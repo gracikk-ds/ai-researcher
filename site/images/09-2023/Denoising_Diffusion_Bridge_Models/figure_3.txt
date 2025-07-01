@@ -1,0 +1,1 @@
+Figure 3: Qualitative comparison with the most relevant baselines.

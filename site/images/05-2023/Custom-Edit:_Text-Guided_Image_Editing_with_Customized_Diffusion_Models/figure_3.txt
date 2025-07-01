@@ -1,0 +1,1 @@
+Figure 3. Custom-Edit results. Our method transfers the reference’s appearance to the source image with unprecedented fidelity. The structures of the source are well preserved. We obtain source prompts using BLIP2 [ 13 ]. Except for the pencil drawing example, we use local editing of P2P with automatically generated masks.

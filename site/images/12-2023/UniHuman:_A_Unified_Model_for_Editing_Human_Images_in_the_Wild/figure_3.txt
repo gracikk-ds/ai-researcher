@@ -1,0 +1,1 @@
+Figure 3. Representative examples from different datasets. Our LH-400K includes people of diverse ages and backgrounds.

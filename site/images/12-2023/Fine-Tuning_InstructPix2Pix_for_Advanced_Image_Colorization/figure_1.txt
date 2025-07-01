@@ -1,0 +1,1 @@
+Figure 1. Example of colorization for human faces from the IMDBWIKI dataset ( Rothe et al. , 2018 ). The task is a pixel-level task that should assign a color to each pixel in the input image. The top row shows the input of the task, a black-and-white image, and the bottom row is the ground truth labels for the input images.

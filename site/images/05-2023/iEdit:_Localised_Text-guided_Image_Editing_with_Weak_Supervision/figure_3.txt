@@ -1,0 +1,1 @@
+Figure 3: Proposed image editing framework. Our framework takes as input the image pairs from the constructed dataset, their corresponding masks and the edit prompt. We optimise ϵ θ to predict the noises ϵ 1 and ϵ 2 for background and foreground, respectively. ⊙ denotes element-wise multiplication of the image and mask.

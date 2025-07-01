@@ -1,0 +1,1 @@
+Figure 6: We present several failure cases, including artifacts on faces and significant disparities in the camera angles of the images.

@@ -1,0 +1,1 @@
+Figure 1. Our Custom-Edit allows high-fidelity text-guided editing, given a few references. Edited images with BLIP2 [ 13 ] captions show the limitation of textual guidance in capturing the finegrained appearance of the reference.

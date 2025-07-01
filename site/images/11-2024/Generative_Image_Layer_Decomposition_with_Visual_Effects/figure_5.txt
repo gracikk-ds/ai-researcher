@@ -1,0 +1,1 @@
+Figure 5. Object removal comparison with instruction-driven methods. Combining with a text-based grounding method, our model can effectively remove target objects and preserve background integrity, while existing instruction-based editing methods, such as EmuEdit [ 36 ], MGIE [ 9 ], and OmniGen [ 44 ], may struggle to fully remove the target or maintain background consistency.

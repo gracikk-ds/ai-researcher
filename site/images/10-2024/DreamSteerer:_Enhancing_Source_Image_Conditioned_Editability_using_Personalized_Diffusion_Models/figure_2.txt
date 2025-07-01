@@ -1,0 +1,1 @@
+Figure 2: Source class bias of DreamBooth trained for "plushie_tortoise".

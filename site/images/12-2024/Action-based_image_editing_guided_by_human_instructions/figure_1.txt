@@ -1,0 +1,1 @@
+Figure 1. Given a text instruction describing an action, we propose EditAction , a method for editing the position and posture of objects in an input image to visually depict the action while preserving the appearance of the objects involved in the action.

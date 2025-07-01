@@ -1,0 +1,1 @@
+Figure 2: Pipeline: given a user instruction, a language processor first parses the instruction into a segmentation prompt , an input caption , and an edited caption . A segmenter then generates a mask based on the segmentation prompt. The mask along with the input and edited captions are then going to an image editor to produce the final output.

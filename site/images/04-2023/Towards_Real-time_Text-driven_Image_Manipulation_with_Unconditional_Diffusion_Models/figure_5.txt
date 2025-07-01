@@ -1,0 +1,1 @@
+Figure 5: Image quality (NIQE) of x 0 ( t 0 ; ˆ θ ) estimate w.r.t. training iterations. For both methods, the estimates get better but improvements are way more pronounced for the proposed method.

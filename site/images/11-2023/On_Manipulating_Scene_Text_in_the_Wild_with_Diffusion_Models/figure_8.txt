@@ -1,0 +1,1 @@
+Figure 8. ‘MAIN’, ‘STOP’ −→ ‘NIPS’, ‘ICML’. The input image is represented by green box , the result by ’Imagic with SynText’ is shown by blue box and ours by red box .

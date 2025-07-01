@@ -1,0 +1,1 @@
+Fig. 6. F, B, m components and composed images for two-layer images sampled from CaT 2 I-AE-SD (512). Prompts are omitted. From top to down: F , b , and m . For more samples cf. the supplement.

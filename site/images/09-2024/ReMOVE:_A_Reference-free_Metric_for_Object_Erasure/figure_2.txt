@@ -1,0 +1,1 @@
+Figure 2. Randomness in Object Inpainting using SD-Inpaint : Samples of diffusion-based image inpainting using SD-Inpaint [ 31 ] generated across varying seeds. The object intended for inpainting is substituted with a different object rather than replacing it with the background. In some cases (column 6), the model replaces the object with background pixels as desired.

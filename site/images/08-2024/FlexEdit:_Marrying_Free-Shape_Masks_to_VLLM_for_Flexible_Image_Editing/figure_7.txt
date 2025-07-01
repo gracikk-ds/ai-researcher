@@ -1,0 +1,1 @@
+Figure 7: Example of the different types of the free-shape mask from FSMI-Edit benchmark.

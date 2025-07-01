@@ -1,0 +1,1 @@
+Figure 2: The current approach exhibits several deficiencies, including a lack of alignment between the generated text and the intended target text, as well as suboptimal layout organization.

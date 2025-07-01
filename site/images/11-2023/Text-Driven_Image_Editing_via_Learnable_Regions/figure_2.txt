@@ -1,0 +1,1 @@
+Figure 2. Effects of variations in editing regions on generated image quality. Region 1 and Region 2 are two prior regions drawn from the self-attention map of DINO [ 7 ]. Region (ours) , shown in the second-to-last column, represents the regions produced by our model which have the best overall quality.

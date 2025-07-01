@@ -1,0 +1,1 @@
+Figure 4. Source-Reference Trade-Off. Custom-Diffusion shows the best trade-off, indicating the effectiveness of training only language-relevant parameters. We exhibit qualitative comparisons and samples with various strengths in Sec. A.2 .

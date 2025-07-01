@@ -1,0 +1,1 @@
+Figure 1: Examples of text editing. DiffUTE achieves the best result among existing models.

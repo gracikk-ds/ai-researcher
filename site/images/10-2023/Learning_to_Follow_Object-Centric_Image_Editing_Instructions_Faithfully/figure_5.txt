@@ -1,0 +1,1 @@
+Figure 5: (a) Bounding Box supervision (b) Segmentation Mask supervision. Edit instruction: make the skirt red .

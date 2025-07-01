@@ -1,0 +1,1 @@
+Figure 1: M AGIC B RUSH provides 10K manually annotated real image editing triplets (source image, instruction, target image), supporting both single-turn and multi-turn instruction-guided editing.

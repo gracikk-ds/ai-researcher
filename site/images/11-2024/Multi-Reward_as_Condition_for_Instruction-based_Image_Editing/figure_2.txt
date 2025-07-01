@@ -1,0 +1,1 @@
+Figure 2: Generation process of reward data. Given the editing triplets, reward data was generated using GPT-4o by setting prompts from different perspectives.

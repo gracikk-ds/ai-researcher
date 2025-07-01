@@ -1,0 +1,1 @@
+Fig. 6: Ablation experiments of reference image: The top half depicts the process without a reference image, while the bottom includes a reference image. Pixels are more concentrated on the attribute’s features.

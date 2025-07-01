@@ -1,0 +1,1 @@
+Figure 4. Qualitative results of five SOTA methods on NeIn’s evaluation samples (first two samples) and random image-prompt pairs (last two samples). The fine-tuned InstructPix2Pix ( 3 rd column) and MagicBrush ( 5 th column) on NeIn’s training set are highlighted.

@@ -1,0 +1,1 @@
+Figure 6: Attention refinement and reweighting. In the given text prompt, only one noun word is learnable. The flowers below the cake are playing as distractors which distort the cross-attention maps while Null-Text Inversion [ 28 ] is applied. As a comparison, our method DPL successfully filters the cross-attention by our background leakage loss.

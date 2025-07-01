@@ -1,0 +1,1 @@
+Figure 5. Ablation Study. We perform experiments to evaluate the effectiveness of our color removal and texture removal operations. Images generated without our image information removal module are outlined by the blue bounding box. See Section 4.2 for discussion.

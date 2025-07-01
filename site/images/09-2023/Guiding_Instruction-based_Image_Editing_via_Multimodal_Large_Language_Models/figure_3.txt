@@ -1,0 +1,1 @@
+Figure 3: Trade-off curve for image editing . We set α X as 7.5 and vary α V in [1 . 0 , 2 . 2] . For both edit (X-axis) and input consistency (Yaxis), higher is better.

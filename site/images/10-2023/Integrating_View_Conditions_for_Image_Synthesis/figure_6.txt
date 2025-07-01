@@ -1,0 +1,1 @@
+Figure 6: Qualitative ablation studies on the effects of 2-stage synthesis , where ”2-Stage-Mid” denotes the initial inpainting result of the 2-stage synthesis, ”2-Stage-Final” denotes the subsequent inpainting result of the 2-stage synthesis, and ”1-Stage” denotes the approach that we choose, which involves using only one inpainting step per synthesis.

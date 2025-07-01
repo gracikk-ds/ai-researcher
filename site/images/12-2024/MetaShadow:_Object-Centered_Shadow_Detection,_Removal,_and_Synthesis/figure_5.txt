@@ -1,0 +1,1 @@
+Figure 5. Visual comparison for object-centered shadow detection and removal tasks on the DESOBA test set. † means fine-tuned on our multi-source dataset strategy. Zoom in to see the details. For more results, please refer to the supplementary materials.

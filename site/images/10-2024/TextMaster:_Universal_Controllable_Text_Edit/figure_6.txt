@@ -1,0 +1,1 @@
+Figure 6: The text modification area depicted in the image is merely 30 pixels in height; however, TextMaster is capable of executing high-quality edits within this constrained space.

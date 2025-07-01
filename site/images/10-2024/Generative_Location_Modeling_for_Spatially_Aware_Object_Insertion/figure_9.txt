@@ -1,0 +1,1 @@
+Figure 9: Controlled location sampling for positional instructions, achieved by restricting the allowed sampling region. Instruction-tuned models often fail to follow positional instructions.

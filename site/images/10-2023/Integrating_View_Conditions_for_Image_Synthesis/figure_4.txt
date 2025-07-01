@@ -1,0 +1,1 @@
+Figure 4: Qualitative ablation studies on the effects of core components in image synthesis , where ”Personal” denotes the personalization module, ”Color CN” denotes the ControlNet which controls the color, ”Edge CN” denotes the ControlNet which controls the edge, ”CNs” denotes all the ControlNets, and ”Full Model” denotes with all components.

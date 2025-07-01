@@ -1,0 +1,1 @@
+Figure 3. The figure shows how our proposed latent iteration framework is able to semantically modify the first image, consistent with the text caption provided by the user at each time step. Please see Sec. 4.2 for more details.

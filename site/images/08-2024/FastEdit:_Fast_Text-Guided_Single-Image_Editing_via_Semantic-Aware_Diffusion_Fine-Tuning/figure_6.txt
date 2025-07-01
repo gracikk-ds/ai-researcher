@@ -1,0 +1,1 @@
+Figure 6. Conditional feature interpolation. Increasing η with the same seed, we see the resulted images are closer to the model’s original understanding towards the target text.

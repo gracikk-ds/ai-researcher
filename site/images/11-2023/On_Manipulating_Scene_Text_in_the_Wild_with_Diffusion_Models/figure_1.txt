@@ -1,0 +1,1 @@
+Figure 1. Top: Comparison between state-of-the-art methods and our method from given input image and target text on scene text manipulation. Bottom: Comparison between baseline text-toimage Latent Diffusion Model (LDM) [ 30 ] represented with blue box and our method represented with red box on scene text domain from given random noise and text condition as an input.

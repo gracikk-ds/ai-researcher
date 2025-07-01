@@ -1,0 +1,1 @@
+Figure 5. We test ambiguous prompts (points and blank) on in-the-wild images. With point prompts, our model adjusts foreground properties for affordance-aware insertion, while it autonomously finds suitable positions when no prompt is given.

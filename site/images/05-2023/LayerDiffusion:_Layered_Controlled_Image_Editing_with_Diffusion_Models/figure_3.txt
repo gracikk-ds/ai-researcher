@@ -1,0 +1,1 @@
+Figure 3: Given a complex text description, the original image (left) is capable of performing multiple editing actions and maintaining similar characteristics of a specific subject. Note that the mask in the bottom left corner is used to change the size of the selected object.

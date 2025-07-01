@@ -1,0 +1,1 @@
+Figure 4: An overview of keywords in edit instructions. The inner circle depicts the types of edits and outer circle showcases the most frequent words used within each type.

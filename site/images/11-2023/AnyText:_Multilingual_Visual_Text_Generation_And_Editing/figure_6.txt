@@ -1,0 +1,1 @@
+Figure 6: Comparative examples between GlyphDraw, ControlNet, and AnyText in Chinese text generation, all taken from the original GlyphDraw paper.

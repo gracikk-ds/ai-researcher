@@ -1,0 +1,1 @@
+Figure 3: Comparison of the model architectures of ControlNet (Left) and Prompt Diffusion (Right). More details on the network structures of Prompt Diffusion-induced modules can be found in Appendix C.

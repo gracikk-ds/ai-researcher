@@ -1,0 +1,1 @@
+Figure 12: Limitations. Biases of the diffusion model or limitations in language understanding affect the DDS optimization. Top: we would like to change the color of the curtains in the bedroom, but the color of the pillows is also changed. Bottom: replacing the dog’s reﬂection with a shadow also causes changes in the lighting, weather and background details.

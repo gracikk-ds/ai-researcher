@@ -1,0 +1,1 @@
+Figure 9: In the single image editing datasets creation process, we use Adobe Photoshop to draw different shaped masks in specified areas of the scene image [pic1] based on the task requirements. Then we write prompts based on the task to serve as input instructions.

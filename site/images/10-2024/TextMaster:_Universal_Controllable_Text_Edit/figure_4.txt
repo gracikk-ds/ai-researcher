@@ -1,0 +1,1 @@
+Figure 4: The attention response map processing flow: A1, A2, and A3 represent the attention response maps for each token at layers 3, 23, and 24 within the up block, respectively.

@@ -1,0 +1,1 @@
+Figure 4: Instruction details . (a) Instruction Optimization: We only optimize a part of the instruction embedding c T , called <ins> . (b) Instruction Concatenation: During test time, we can add extra information into the learned instruction c T to further guide the edit.

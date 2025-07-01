@@ -1,0 +1,1 @@
+Figure 3: Variation of latent difference with iteration steps.

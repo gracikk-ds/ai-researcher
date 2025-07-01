@@ -1,0 +1,1 @@
+Figure 6. Second row: Changing the relative weight of ﬁrst and second components while keeping the third component constant.

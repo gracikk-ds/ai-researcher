@@ -1,0 +1,1 @@
+Figure 3. Visual comparison of black-and-white input images (the first row), images colorized by original InstructPix2pix ( Brooks et al. , 2023 ) (the second row) and colorized by our finetuned model (the third row). Our method is able to accomplish visually pleasant colorization and our result is significantly better than the original version.

@@ -1,0 +1,1 @@
+Figure 3: Iteratively replacing objects of an image step by step using Editing Everything.

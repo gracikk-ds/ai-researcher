@@ -1,0 +1,1 @@
+Figure 4. Result of text scene manipulation on row 1: ICDAR2015 [ 15 ], row 2: IIIT5K [ 21 ], and row 3: SVT [ 27 ]. The input image is represented by green box and the edited version by red box .

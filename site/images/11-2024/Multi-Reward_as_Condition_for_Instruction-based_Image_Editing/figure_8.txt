@@ -1,0 +1,1 @@
+Figure 8: Evaluation process. The generated edited image, original image, and instruction are input into GPT. Three prompts are designed to evaluate from three different aspects. For each aspect, determine whether the criteria are met and assign a score (ranging from 0 to 5).

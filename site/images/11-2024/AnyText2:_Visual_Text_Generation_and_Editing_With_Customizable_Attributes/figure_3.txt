@@ -1,0 +1,1 @@
+Figure 3. By adjusting the strength coefficient α from 0 to 1 shows that the text-image fusion is gradually improving.

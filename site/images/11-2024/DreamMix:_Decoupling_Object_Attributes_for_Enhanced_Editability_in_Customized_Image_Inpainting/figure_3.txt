@@ -1,0 +1,1 @@
+Figure 3. Pipeline of Attribute Decoupling Mechanism (ADM). We obtain the attribute word list using a VLM agent [ 24 ] and create regular data with more diverse text formats and image contents.

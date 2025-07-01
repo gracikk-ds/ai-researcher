@@ -1,0 +1,1 @@
+Fig. 10. Ablation study on the object removal module. From left to right: (a) Input images; (b) Simplified scene graphs and user edits; (c) SD inpainting; (d) Without non-object prompt; (e) Without attention guidance; (f) Ours. The input images are from ©Unsplash.

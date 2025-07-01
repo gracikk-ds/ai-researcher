@@ -1,0 +1,1 @@
+Figure 6: Human eval of image editing results in terms of instruction following, ground-truth relevance, and overall quality.

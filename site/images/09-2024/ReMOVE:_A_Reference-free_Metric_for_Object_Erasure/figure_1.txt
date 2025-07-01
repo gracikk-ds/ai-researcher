@@ -1,0 +1,1 @@
+Figure 1. Motivation for ReMOVE : Comparison of ReMOVE with CLIPScore, illustrating the latter’s lack of distinction (denoted by ✓ and ✗ ) between two inpainting methods: method

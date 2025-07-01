@@ -1,0 +1,1 @@
+Figure 10: Zero shot image editing qualitative comparison. We compare our approach to SDEdit [ 21 ] Plug-andPlay (PnP) [ 41 ] and prompt-to-prompt [ 12 ]. Our method showcases its ability to better apply both structural and color changes described in the target text prompt while simultaneously preserving high ﬁdelity to the input image.

@@ -1,0 +1,1 @@
+Figure 4. Training of the U-Net model employed by EditAction. Given an input and an edited image, the model is trained to enhance alignment with the action-based text instruction while preventing hallucinations that may result from fine-tuning on smallscale datasets.

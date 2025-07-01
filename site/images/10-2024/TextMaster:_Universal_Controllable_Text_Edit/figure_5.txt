@@ -1,0 +1,1 @@
+Figure 5: This image presents qualitative comparison results utilizing the AnyText method. Additional comparative results with alternative methods can be found in the supplementary material.

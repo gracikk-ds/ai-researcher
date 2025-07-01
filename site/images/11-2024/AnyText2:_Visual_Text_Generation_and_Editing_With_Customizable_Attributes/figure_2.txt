@@ -1,0 +1,1 @@
+Figure 2. The framework of AnyText2, which is designed with a WriteNet+AttnX architecture to integrate text generation capability into pre-train diffusion models, and there is a Text Embedding Module to provide various conditional control for text generation.

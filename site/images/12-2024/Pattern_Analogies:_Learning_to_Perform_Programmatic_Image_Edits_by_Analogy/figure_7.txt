@@ -1,0 +1,1 @@
+Figure 7. T RI F USER effectively edits patterns from novel pattern styles not present in the training dataset. T RI F USER shows a noteworthy ability to generalize beyond its training distribution.

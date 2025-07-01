@@ -1,0 +1,1 @@
+Figure 7: Sample generations for an image from (a) instruct-pix2pix dataset (b) Magicbrush dataset. The images displayed are following order (i) input-image, (ii) Grounded-Inpainting, (iii) X-Decoder, (iv) InstructPix2Pix, (v) InstructPix2Pix+BoundingBox, (vi) InstructPix2Pix+EntityMask

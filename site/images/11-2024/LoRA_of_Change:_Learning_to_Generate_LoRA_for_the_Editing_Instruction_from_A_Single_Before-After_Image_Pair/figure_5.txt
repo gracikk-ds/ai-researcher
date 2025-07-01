@@ -1,0 +1,1 @@
+Figure 5. Hypernetwork H for LoRA generation. The transformer decoder D consists of M = 6 blocks.

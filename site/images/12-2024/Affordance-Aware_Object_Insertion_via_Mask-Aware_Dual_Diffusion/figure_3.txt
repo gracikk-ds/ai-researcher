@@ -1,0 +1,1 @@
+Figure 3. Mask-aware Dual Diffusion Model (MADD). The RGB image feature z and object mask m are jointly denoised, conditioning on the embeddings of the foreground object f , background object b , and the prompt p . (green: reverse process t → t − 1 )

@@ -1,0 +1,1 @@
+Fig. 4: Real image editing results of different editing methods on real human shape images. It is obvious that our KV Inversion can achieve very good action editing performance on humanoid objects, and the semantics of the actions corresponding to its limbs are almost imperceptible to editing.

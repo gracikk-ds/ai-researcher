@@ -1,0 +1,1 @@
+Figure 5: Illustration on the effect of the proposed components on editing with a DreamBooth baseline (1st row shows the editing results; 2nd row shows the editing directions, where brown means zero).

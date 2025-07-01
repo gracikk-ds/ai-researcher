@@ -1,0 +1,1 @@
+Figure 2. Performing singular value decomposition (SVD) on weight matrices. In an intermediate layer of the model, (a) the convolutional weights W tensor (b) serve as an associative memory [ 8 ]. (c) SVD is performed on the reshaped 2-D matrix W .

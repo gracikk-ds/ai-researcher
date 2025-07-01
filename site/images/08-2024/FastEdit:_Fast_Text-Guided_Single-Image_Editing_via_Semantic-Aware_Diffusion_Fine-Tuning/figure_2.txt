@@ -1,0 +1,1 @@
+“… da Vinci...” “… a big grin.” “… stars in the sky.” “… wearing glasses.” Figure 2. Different target texts applied to the same images. FastEdit edits the same image differently based on the semantic discrepancy between input image and the target texts.

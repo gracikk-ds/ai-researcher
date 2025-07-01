@@ -1,0 +1,1 @@
+Fig. 7. FreeEdit uses language instructions for convenient editing control without the introduction of manual masks, also capable of doing it when there are multiple objects in the original images.

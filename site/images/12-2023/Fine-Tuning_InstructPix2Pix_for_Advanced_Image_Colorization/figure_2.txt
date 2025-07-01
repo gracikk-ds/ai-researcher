@@ -1,0 +1,1 @@
+Figure 2. Model architecture of InstructPix2Pix. For our finetuning on the task of colorization, we froze the VAE (encoder and decoder) and the CLIP text encoder. The U-Net is not frozen and is finetuned in the process.

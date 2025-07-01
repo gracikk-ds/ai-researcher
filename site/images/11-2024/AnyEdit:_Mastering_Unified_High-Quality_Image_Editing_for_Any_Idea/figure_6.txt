@@ -1,0 +1,1 @@
+Figure 6. Comparison of our image editing method against Unicontrolnet [ 86 ] for visual editing tasks on AnyEdit-Test.

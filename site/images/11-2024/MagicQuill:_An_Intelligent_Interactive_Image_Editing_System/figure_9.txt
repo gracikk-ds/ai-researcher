@@ -1,0 +1,1 @@
+Figure 9. Comparative user ratings between our system and the baseline, with standard deviation shown as error bars.

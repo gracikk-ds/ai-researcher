@@ -1,0 +1,1 @@
+Figure 5. Comparison of the colorization abilities on a sample image at different training steps of finetuning. The first row shows the input image and the original colorized image, and the second row shows the early, middle, and late stages of finetuning, from left to right respectively.

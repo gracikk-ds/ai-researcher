@@ -1,0 +1,1 @@
+Figure 7. Multi-layer Decomposition and Creative layer-editing. By sequentially applying our model, we can decompose multiple foreground layers with distinct visual effects, which can then be used for further creative editing tasks.

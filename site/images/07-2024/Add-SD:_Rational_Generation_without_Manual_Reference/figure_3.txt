@@ -1,0 +1,1 @@
+Fig. 3 Visualization of RemovalDataset. The first row shows the removal of a single object from COCO images. The second row involves removing partial instances to facilitate multiple generations. The LVIS dataset is similar to COCO but includes more fine-grained categories. The VG and RefCOCO datasets specify target captions containing attribute and relation information.

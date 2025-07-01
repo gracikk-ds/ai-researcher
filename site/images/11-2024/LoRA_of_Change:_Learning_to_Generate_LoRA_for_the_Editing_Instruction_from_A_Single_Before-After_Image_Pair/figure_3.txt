@@ -1,0 +1,1 @@
+Figure 3. Comparison of qualitative examples across the 6 editing types between our LoC and two SOTAs.

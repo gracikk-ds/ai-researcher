@@ -1,0 +1,1 @@
+Figure 7: We compare several image editing methods using the CLIP and subjective user perception scores. Our method achieves a relatively higher score.

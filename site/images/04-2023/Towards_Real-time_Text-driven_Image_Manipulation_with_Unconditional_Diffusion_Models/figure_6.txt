@@ -1,0 +1,1 @@
+Figure 6: Visualization of x 0 ( t 0 ; ˆ θ ) estimates after ﬁnetuning for x 0 of different perceptual quality. The estimates tend to inherit the perceptual details of the source images.

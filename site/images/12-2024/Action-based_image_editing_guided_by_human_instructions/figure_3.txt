@@ -1,0 +1,1 @@
+Figure 3. Left side: HC dataset; Right side: LC dataset. Red indicates the object targeted by the action. Green and blue shows the starting and the ending points of the action.

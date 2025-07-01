@@ -1,0 +1,1 @@
+Figure 8: Prompt reweighting on the real images of MS COCO dataset by weighting down (left) and weighting up (right).

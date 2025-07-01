@@ -1,0 +1,1 @@
+Figure 1: Image editing via visual prompting. Given a pair of before-and-after images of an edit, our approach (bottom) can learn and apply that edit along with the user’s text prompt to enable a more accurate and intuitive image editing process compared to text-only conditioned approaches (top).

@@ -1,0 +1,1 @@
+Figure 1. Our proposed CoDi efficiently distills a conditional diffusion model from an unconditional one, enabling rapid generation of high-quality images under various conditional settings. We demonstrate CoDi’s capabilities through generated results across various tasks.

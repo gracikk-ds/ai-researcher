@@ -1,0 +1,1 @@
+Figure 3: Illustration of generating text in curved or irregular regions, left images are text positions provided by the user.

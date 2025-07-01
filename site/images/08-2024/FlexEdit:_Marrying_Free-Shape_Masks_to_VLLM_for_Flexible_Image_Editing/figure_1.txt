@@ -1,0 +1,1 @@
+Figure 1: Free-shape mask can simplify the user input when dealing with location related instruction, and more flexible for user input. The compared methods are SmartEdit and Largen respectively.

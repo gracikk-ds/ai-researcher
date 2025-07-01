@@ -1,0 +1,1 @@
+Fig. 8. User study results. Left: User study for the reference-based image editing task, we compare FreeEdit with existing mask-based methods AnyDoor [26], PaintByExample [24], MimicBrush [13]. Right: User study for the object removal task, we compare FreeEdit with InstructPix2Pix [21] and SD-Inpainting [9].

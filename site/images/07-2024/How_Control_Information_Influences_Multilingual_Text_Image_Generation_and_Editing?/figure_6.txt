@@ -1,0 +1,1 @@
+Figure 6: (a) The Spatial Convolution Block. (b) The Frequency Enhancement Convolution Block.

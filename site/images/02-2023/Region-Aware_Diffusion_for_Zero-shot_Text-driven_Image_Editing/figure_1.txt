@@ -1,0 +1,1 @@
+Fig. 1. The results of the proposed region-aware diffusion model (RDM). The texts adhere to the phrase rule “A → B”, indicating that RDM transforms entity A into entity B.

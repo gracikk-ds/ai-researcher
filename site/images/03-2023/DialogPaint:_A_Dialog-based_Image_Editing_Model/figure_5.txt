@@ -1,0 +1,1 @@
+Fig. 5 Model Architecture for Dialogue-Based Image Editing

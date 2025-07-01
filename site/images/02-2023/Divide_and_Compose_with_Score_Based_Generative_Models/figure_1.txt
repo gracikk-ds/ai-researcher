@@ -1,0 +1,1 @@
+Figure 1. Using all score components results in faithful reconstruction, but with interesting variations

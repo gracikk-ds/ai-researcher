@@ -1,0 +1,1 @@
+Figure 1: Existing image editing datasets and our method. Best viewed with zoom-in.

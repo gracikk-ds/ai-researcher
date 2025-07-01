@@ -1,0 +1,1 @@
+Figure 3: Qualitative comparison with reference-based image synthesis methods , where ”PbE” denotes Paint-by-Example [Yang et al. , 2023] and ”PbS” denotes Paint-by-Sketch [Kim et al. , 2023].

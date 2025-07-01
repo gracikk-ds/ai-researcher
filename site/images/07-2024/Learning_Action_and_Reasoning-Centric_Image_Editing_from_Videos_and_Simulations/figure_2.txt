@@ -1,0 +1,1 @@
+Figure 2: Our A U RO R A dataset covers action, reasoning and object-centric edits via 4 sub-datasets.

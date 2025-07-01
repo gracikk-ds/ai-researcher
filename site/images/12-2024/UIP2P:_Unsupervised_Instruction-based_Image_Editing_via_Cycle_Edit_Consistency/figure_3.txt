@@ -1,0 +1,1 @@
+Figure 3. Overview of the UIP2P training framework. The model learns instruction-based image editing by utilizing forward and reverse instructions. Starting with an input image and a forward instruction, the model generates an edited image using IP2P. A reverse instruction is then applied to reconstruct the original image, enforcing Cycle Edit Consistency (CEC).

@@ -1,0 +1,1 @@
+Figure 7. Ablation result of our method on Syntext dataset. The label ’SynText’ and ’Text’ denote a utilization of SynText dataset and text recognition guidance, respectively.

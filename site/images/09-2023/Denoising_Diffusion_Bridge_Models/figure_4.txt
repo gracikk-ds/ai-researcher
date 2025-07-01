@@ -1,0 +1,1 @@
+Figure 4: Ablation studies on Euler step ratio s and guidance scale w : w = 1 for all ablation on s and s is set to the best-performing value for each dataset for ablation on w .

@@ -1,0 +1,1 @@
+Figure 4: Although cross-attention maps produce acceptable results in certain cases (up) with minor leakage, the object masks from self-cross attention matching are not always accurate due to the leakage problem (down). However, as the cross-attention maps tend to concentrate on the foreground objects, the background masks remain reliable.

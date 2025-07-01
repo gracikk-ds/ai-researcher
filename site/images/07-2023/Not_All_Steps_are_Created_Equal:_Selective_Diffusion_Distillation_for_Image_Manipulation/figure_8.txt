@@ -1,0 +1,1 @@
+Figure 8. Visual result of Ablation Study . The average HQS score of timesteps used for training increases from left to right and so does the accuracy of manipulation.

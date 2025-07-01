@@ -1,0 +1,1 @@
+Figure 2: Paired dataset construction. To construct a paired dataset for training, we generate captions with BLIP. Then, captions are manipulated by replacing nouns or adjectives with antonyms or co-hyponyms. We assign the pseudo-target image by using CLIP embeddings of the edit prompt and the source image to retrieve nearest neighbours.

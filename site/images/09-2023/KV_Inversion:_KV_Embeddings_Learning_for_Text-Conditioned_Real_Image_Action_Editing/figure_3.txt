@@ -1,0 +1,1 @@
+Fig. 3: The intermediate predicted x 0 during the sampling process. KV Inversion can ensure the performance of both reconstruction and editing.

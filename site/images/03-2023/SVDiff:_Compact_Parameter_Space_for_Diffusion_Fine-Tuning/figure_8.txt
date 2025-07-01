@@ -1,0 +1,1 @@
+Figure 8. Effects of combining spectral shifts ( Σ δ ′ = diag ( ReLU ( σ + δ 1 + δ 2 )) ) and weight deltas ( W ′ = W + ∆ W 1 + ∆ W 2 ) in one model. The combined model retains individual subject features but may mix styles for similar subjects. The results also suggests that the task arithmetic property [ 30 ] of language models also holds in StableDiffusion.

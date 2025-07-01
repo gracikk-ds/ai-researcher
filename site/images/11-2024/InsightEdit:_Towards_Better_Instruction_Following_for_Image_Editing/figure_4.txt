@@ -1,0 +1,1 @@
+Figure 4. Qualitative comparison on AdvancedEdit. InsightEdit shows superior instruction following and background consistency capability.

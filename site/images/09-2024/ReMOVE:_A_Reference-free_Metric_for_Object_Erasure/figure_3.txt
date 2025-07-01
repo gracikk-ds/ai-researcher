@@ -1,0 +1,1 @@
+Figure 3. Randomness in Object Inpainting with Other Methods : Samples of diffusion-based image inpainting using multiple methods. The object intended for inpainting is often substituted with a different object rather than replacing it with the background.

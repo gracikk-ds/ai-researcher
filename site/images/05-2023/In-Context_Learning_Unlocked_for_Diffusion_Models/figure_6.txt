@@ -1,0 +1,1 @@
+Figure 6: We perform Prompt Diffusion on two completely new tasks: style transfer and misaligned input-output example pairs. The first two rows show the style transfer results while the last two rows show the misaligment results.

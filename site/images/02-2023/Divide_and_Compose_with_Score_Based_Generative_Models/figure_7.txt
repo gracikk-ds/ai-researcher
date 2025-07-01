@@ -1,0 +1,1 @@
+Figure 7. Visualizing three and ﬁve components in Cifar10 datase through image generation from components.

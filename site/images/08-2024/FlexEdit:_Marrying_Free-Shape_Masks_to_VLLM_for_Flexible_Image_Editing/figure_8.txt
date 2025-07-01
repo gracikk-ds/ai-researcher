@@ -1,0 +1,1 @@
+Figure 8: In the multiple images editing datasets creation process, we use Adobe Photoshop to extract the full mask from the result image, then redraw the mask in different shape, and write prompts based on the task to serve as input instructions.

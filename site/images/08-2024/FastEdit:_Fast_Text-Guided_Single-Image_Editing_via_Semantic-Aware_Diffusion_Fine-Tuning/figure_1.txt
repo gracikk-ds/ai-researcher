@@ -1,0 +1,1 @@
+Figure 1. FastEdit – Text-Guided Single-Image Editing in 17 seconds. We show the pairs of 512 × 512 input images, and the given target texts with corresponding edited results. Compared with the baseline methods, FastEdit fine-tunes only 0.37% parameters for 50 iterations. Arbitrary target texts are supported for the fine-tuned model, due to its embedding optimization-free nature.

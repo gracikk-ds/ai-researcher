@@ -1,0 +1,1 @@
+Figure 2. System framework consisting of three integrated components: an Editing Processor with dual-branch architecture for controllable image inpainting, a Painting Assistor for real-time intent prediction, and an Idea Collector offering versatile brush tools. This design enables intuitive and precise image editing through brushstroke-based interactions.

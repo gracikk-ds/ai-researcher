@@ -1,0 +1,1 @@
+Figure 5: Qualitative evaluation of multi-turn editing scenario. We provide all baselines their desired input formats (e.g., masks and local descriptions for GLIDE).

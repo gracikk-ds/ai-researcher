@@ -1,0 +1,1 @@
+Figure 5. The manipulation results of SDD of various domains (CelebA-HQ [ 23 ], AFHQ-cat [ 8 ], LSUN-car [ 47 ]) and various attributes. We keep the image fidelity and make it coherent with the text.

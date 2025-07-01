@@ -1,0 +1,1 @@
+Figure 9. Examples of flexible user editing. Left to right: original image (1-st, 5-th), object editing (2-ed, 6-th), text editing (3-rd, 7-th), and combined editing (4-th, 8-th).

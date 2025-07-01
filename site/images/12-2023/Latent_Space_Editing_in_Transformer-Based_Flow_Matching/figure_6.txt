@@ -1,0 +1,1 @@
+Figure 6: Appending new prompts sequentially . We can inject semantic meaning directly into the subject while keeping it almost unchanged. To do so, we start by sampling the first image based on the initial prompt. Then, we append the remaining prompts one by one.

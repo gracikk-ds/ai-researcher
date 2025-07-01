@@ -1,0 +1,1 @@
+Figure 1. (a) Given an input image and a binary object mask, our model is able to decompose the image into a clean background layer and a transparent foreground layer with preserved visual effects such as shadows and reflections. (b) Subsequently, our decomposition empowers complex and controllable layer-wise editing such as spatial, color and/or style editing.

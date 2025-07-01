@@ -1,0 +1,1 @@
+Figure 2: E DIT V AL contains 648 unique image-edit operations across 19 classes from MS-COCO spanning a variety of real-world edits. Edit types span simple categories like adding or replacing an object to more complex ones such as changing an action, viewpoint or replacing the position of an object.

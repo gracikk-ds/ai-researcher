@@ -1,0 +1,1 @@
+Fig. 7. Ablation study on different concept learning methods. From left to right: (a) Input images; (b) Simplified scene graphs and user edits; (c) Detailed prompt without textual inversion; (d) Textual inversion without detailed prompt; (e) Ours, which uses a detailed description plus textual inversion. The input images are from ©Unsplash.

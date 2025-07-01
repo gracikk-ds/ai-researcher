@@ -1,0 +1,1 @@
+Fig. 6 Performance Contrast: DialogPaint vs. InstructPix2Pix with Identical Single-Turn Instructions

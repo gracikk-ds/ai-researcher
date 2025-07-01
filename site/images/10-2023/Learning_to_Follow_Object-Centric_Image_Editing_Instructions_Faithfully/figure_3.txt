@@ -1,0 +1,1 @@
+Figure 3: Examples of noisy edit instructions and image-pairs: (a) Make her look like an android ; (b) Make the rocky mountains look like a chessboard ; (c) Replace her with a bird ; (d) Have it be a lighthouse .

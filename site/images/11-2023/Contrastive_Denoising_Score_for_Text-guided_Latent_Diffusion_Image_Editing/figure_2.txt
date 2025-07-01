@@ -1,0 +1,1 @@
+Figure 2. Overall pipeline of CDS . We extract the intermediate features of the self-attention layers and calculate ℓ con . This loss enables us to regulate structural consistency and generate reliable images.

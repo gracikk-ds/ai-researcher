@@ -1,0 +1,1 @@
+Figure 1: Editing high-resolution multi-aspect images with O MNI -E DIT . O MNI -E DIT is an instruction-based image editing generalist capable of performing diverse editing tasks across different aspect ratios and resolutions. It accurately follows instructions while preserving the original image’s fidelity. We suggest zooming in for better visualization.

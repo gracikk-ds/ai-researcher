@@ -1,0 +1,1 @@
+Figure 9. More in-the-wild affordance-insertion examples. The model can generate an affordance-feasible solution to insert the foreground objects according to the background scene.

@@ -1,0 +1,1 @@
+Figure 4. Example of Background Retention: With the original LDM method, inserting an object into an image (black) alters the background and creates incoherent blocks around the added object (red). Our background retention method (green) effectively preserves background details of input image.

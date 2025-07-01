@@ -1,0 +1,1 @@
+Fig. 1: Our method can remove objects from a scene (highlighted with red boxes), generate panoramas and inpaint a semantic class with different styles, and add objects to a scene again in different styles.

@@ -1,0 +1,1 @@
+Figure 8. We re-purpose the local editing capability of EMILIE to insert objects into specific locations of a source image. For this, we combine EMILIE with GracoNet [ 36 ] which predicts the location of the object to be inserted. We can see from the results that the insertions done by EMILIE is more composed to the background.

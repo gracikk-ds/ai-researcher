@@ -1,0 +1,1 @@
+Figure 4: Image reconstruction with stochastic (DDPM) and deterministic (DDIM) encoding methods for different diffusion steps t 0 . The reconstructions obtained from DDPM encodings for t 0 ≤ 450 are still consistent with the original images and suit well for most image manipulations.

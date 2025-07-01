@@ -1,0 +1,1 @@
+Figure 1. We propose InsightEdit , an end-to-end instruction-based image editing model, trained on high-quality data and designed to fully harness the capabilities of Multimodal Large Language Models (MLLM), achieving high-quality edits with strong instruction-following and background consistency.

@@ -1,0 +1,1 @@
+Figure 7. We illustrate the ability of EMILIE to do local editing on images from EditBench [ 30 ] benchmark. We compare against recent state-of-the-art methods, DiffEdit (ICLR ‘23) [ 4 ] and Blended Latent Diffusion (SIGGRAPH ‘23) [ 1 ]. Our simple gradient modification approach is able to consistently improve the quality of generation when compared to these approaches.
