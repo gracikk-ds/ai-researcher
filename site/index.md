@@ -5,8 +5,12 @@ title: Reports
 
 <ul>
 {% for rep in site.reports %}
-  <li>
-    <a href="{{ rep.url | relative_url }}">{{ rep.title }}</a>
+  <li class="report-item">
+    <h2 class="report-title">
+      <a href="{{ rep.url | relative_url }}">
+        {{ rep.title | replace: "_", " " }}
+      </a>
+    </h2>
     {% assign html         = rep.content | replace: '\r\n', '\n' %}
     {% assign parts        = html | split: '<h2 id="1-motivation-of-the-paper">' %}
     {% if parts.size > 1 %}
