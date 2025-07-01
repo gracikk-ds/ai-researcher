@@ -1,1 +1,0 @@
-Figure 11: CLIP-S across images and expressive instructions by the “ how ” or “ what ” prompt.

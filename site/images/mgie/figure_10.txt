@@ -1,1 +1,0 @@
-Figure 10: CLIP-S across images and expressive instructions (full / short / summarized).

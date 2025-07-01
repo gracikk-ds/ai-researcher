@@ -1,1 +1,0 @@
-Figure 9: CLIP-S across images and expressive instructions by different sizes of MGIE.
