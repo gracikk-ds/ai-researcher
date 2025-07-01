@@ -17,7 +17,7 @@ def load_images_and_descriptions(images_dir: str) -> List[Tuple[str, str, str]]:
     """
     figures: List[Tuple[str, str, str]] = []
     for fname in sorted(os.listdir(images_dir)):
-        if fname.endswith(".png"):
+        if fname.endswith(".jpg"):
             base = fname[:-4]
             txt_path = os.path.join(images_dir, base + ".txt")
             img_path = os.path.join(images_dir, fname)
