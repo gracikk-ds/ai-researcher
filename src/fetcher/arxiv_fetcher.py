@@ -263,6 +263,7 @@ class ArxivFetcher:
 
             # Save papers to JSONL file
             self._save_papers(papers, start_date_obj, end_date_obj, save_to_jsonl)
+        self.classifier.gemini_researcher.info()
         return papers
 
 
