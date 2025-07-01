@@ -1,1 +1,0 @@
-Figure 8. The histograms of solved magnitudes of the concept atoms in CoLan decomposition (score space). The histogram includes the concepts whose CoLan coefficients have the top 10 largest magnitudes.

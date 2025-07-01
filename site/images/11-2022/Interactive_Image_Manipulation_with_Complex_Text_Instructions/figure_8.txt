@@ -1,0 +1,1 @@
+Figure 8. Comparison of the results before and after inpainting.

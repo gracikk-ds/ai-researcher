@@ -1,0 +1,1 @@
+Figure 3. Results of Image Generation using Object Saliency Noise. We observe the Diffusion Model to output images in the constrained orientation for multiple classes.

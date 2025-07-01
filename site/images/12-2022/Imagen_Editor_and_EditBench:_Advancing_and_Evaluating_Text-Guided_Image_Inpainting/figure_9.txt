@@ -1,0 +1,1 @@
+Figure 9. Single-image human evaluations on EditBench MaskSimple by object type . As a cohort, models are better at objectrendering than text-rendering.

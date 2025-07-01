@@ -1,0 +1,1 @@
+Figure 2. Visualization of Diffusion Model generation with Random Noise (Row-1) and Ours (Row-2). Note that our noise includes salient regions than being completely random as Row-1.

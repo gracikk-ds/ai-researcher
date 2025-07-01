@@ -1,0 +1,1 @@
+Figure 1. Comparison of (a) Random Gaussian Noise used in Diffusion Models and (b) Object Saliency Noise corresponding to the given reference image. We note (b) to highlight the object region, which supports our approach.

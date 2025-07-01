@@ -1,1 +1,0 @@
-Figure 6. Creative applications of our method beyond image generation and editing. (a) Users can steer the creative process with additional conditions such as ‘Monster’. (b) CREA-generated images can be leveraged for personalization in creative domains.

@@ -1,1 +1,0 @@
-Figure 5. Visual comparisons of CoLan in the text embedding space of P2P-Zero. Texts in gray are the original captions of the source images from PIE-Bench, and texts in blue are the corresponding edit task (replace, add, remove). [x] represents the concepts of interest, and [] represents the null concept.

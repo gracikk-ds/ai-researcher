@@ -1,1 +1,0 @@
-Figure 10. Visualizations of edited images with increasing strength of the concept [green] extracted from our CoLan-150K dataset. The values on top correspond to the coefficient w green for adding the concept vector d green . CoLan solves w ∗ green of 0 . 586 for the apple and 0 . 695 for the rose.

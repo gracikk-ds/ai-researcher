@@ -1,0 +1,1 @@
+Figure 6. The qualitative comparison of ours w/o super-resolution, w super-resolution, and ManiGAN.

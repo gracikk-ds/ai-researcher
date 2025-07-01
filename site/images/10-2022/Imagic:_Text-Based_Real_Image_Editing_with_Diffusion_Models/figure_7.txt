@@ -1,0 +1,1 @@
+Figure 7. Embedding interpolation. Varying η with the same seed, using the pre-trained (top) and ﬁne-tuned (bottom) models.

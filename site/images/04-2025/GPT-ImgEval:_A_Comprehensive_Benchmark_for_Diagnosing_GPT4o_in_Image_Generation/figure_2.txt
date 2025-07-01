@@ -1,1 +1,0 @@
-Figure 2: The overall workflow of our GPT-ImgEval , consisting the GPT-4o Image generation, Evaluation, and Analysis.

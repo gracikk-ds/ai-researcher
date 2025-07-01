@@ -1,0 +1,1 @@
+(b) With Prompt-to-Prompt. Figure 3. Pair of images generated using StableDiffusion [ 52 ] with and without Prompt-to-Prompt [ 17 ]. For both, the corresponding captions are “photograph of a girl riding a horse” and “photograph of a girl riding a dragon” .

@@ -1,0 +1,1 @@
+Figure 10. Single-image human evaluations on EditBench MaskSimple by attribute type . Object masking improves adherence to prompt attributes across-the-board (IM vs. IM RM ).

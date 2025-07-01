@@ -1,1 +1,0 @@
-Figure 4. Qualitative comparisons. The top two rows of images are based on FluxEdit, while the bottom two rows are based on Omnigen. Single results represent use the one instruction to edit the input image.

@@ -1,0 +1,1 @@
+Figure 5. The qualitative comparison of the proposed ours (auto seg.) and related works on the COCO dataset. We can see that ManiGAN manipulates all regions of the image. In contrast, our model is capable of editing images only for a specific object so that it can generate better results.

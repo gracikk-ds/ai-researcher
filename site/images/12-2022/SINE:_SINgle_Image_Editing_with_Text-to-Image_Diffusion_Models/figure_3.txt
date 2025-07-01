@@ -1,0 +1,1 @@
+Figure 3. Editing on single source image from various domains. We employ our method on various images and edit them with two target prompts at 512 × 512 resolution. We show the wide range of edits our approach can be used, including but not limited to style transfer, content add-on, posture change, breed change, etc .

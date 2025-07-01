@@ -1,0 +1,1 @@
+Figure 6. Human evaluation for single model text-image alignment. Full elicits annotators’ overall impression of text-image alignment; Mask-Simple and Mask-Rich check for the correct inclusion of particular attributes and objects, and attribute binding.

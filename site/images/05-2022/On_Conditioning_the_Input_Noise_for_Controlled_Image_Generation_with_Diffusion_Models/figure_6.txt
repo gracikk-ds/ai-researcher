@@ -1,0 +1,1 @@
+Figure 6. Generation Results using inputs from 1) ResNet Feature Maps 2) FGSM Gradient Maps. We can clearly see the above images are not as well deﬁned in 3 .

@@ -1,0 +1,1 @@
+Figure 6: Limitations of SGC-Net. (A) Attribute editing: SGC-Net lacks the ability to modify object attributes. (B) Inserting objects in small RoI: While SGC-Net can effectively alleviate the background guessing issue, we still observe some failure cases on Visual Genome when the RoI is small. See Section 4.4 for discussion.

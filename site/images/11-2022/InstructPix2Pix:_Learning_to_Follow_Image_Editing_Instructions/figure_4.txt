@@ -1,0 +1,1 @@
+Figure 4. Classiﬁer-free guidance weights over two conditional inputs. s I controls similarity with the input image, while s T controls consistency with the edit instruction.

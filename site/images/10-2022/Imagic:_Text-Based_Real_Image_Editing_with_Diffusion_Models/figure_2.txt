@@ -1,0 +1,1 @@
+Figure 2. Different target texts applied to the same image. Imagic edits the same image differently depending on the input text.

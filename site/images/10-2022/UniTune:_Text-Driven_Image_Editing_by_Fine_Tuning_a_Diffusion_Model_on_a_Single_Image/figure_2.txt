@@ -1,0 +1,1 @@
+Fig. 2. UniTune maintains high visual fidelity in unaffected areas of the image when making localized edits (e.g. the faces when adding a train to the background), and high semantic fidelity when making global edits (e.g. when changing the style of the entire image).

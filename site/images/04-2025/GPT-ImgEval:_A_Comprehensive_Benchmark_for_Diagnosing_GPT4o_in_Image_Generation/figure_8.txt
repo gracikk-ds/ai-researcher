@@ -1,1 +1,0 @@
-Figure 8: An "easter-egg" example officially provided by OpenAI, which aligns the potential architecture-(a) in Figure 1 .

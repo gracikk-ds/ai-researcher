@@ -1,0 +1,1 @@
+Figure 9. The qualitative result of before and after modifying the segmentation map.

@@ -1,0 +1,1 @@
+“Have the people swap places” Figure 13. Failure cases. Left to right: our model is not capable of performing viewpoint changes, can make undesired excessive changes to the image, can sometimes fail to isolate the speciﬁed object, and has difﬁculty reorganizing or swapping objects with each other.

@@ -1,1 +1,0 @@
-Figure 1: Examples of leading models on the Reasoning-Informed viSual Editing(RISE) benchmark. RISEBench contains complex and various tasks that pose challenges to current models.

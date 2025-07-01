@@ -1,0 +1,1 @@
+Figure 5: In-the-wild text-to-image editing results. SGC-Net can be adapted to text prompts with localization methods ( e.g ., Grounded-SAM [ 12 , 19 ]). See Section 4.3 for discussion.

@@ -1,0 +1,1 @@
+Figure 8. Comparison between progressively precise textual description and image as guidance. Using image as condition can maintain more ﬁne-grained details.

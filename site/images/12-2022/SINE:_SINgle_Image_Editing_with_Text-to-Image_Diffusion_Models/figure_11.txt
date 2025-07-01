@@ -1,0 +1,1 @@
+Figure 11. More applications. We show how our approach can be applied to various tasks in image editing, such as content removal (a), style generation (b), and style transfer (c).

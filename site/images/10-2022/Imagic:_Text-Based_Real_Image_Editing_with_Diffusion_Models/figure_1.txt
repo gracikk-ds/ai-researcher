@@ -1,0 +1,1 @@
+“A children’s drawing of a waterfall” Figure 1. Imagic – Editing a single real image. Our method can perform various text-based semantic edits on a single real input image, including highly complex non-rigid changes such as posture changes and editing multiple objects. Here, we show pairs of 1024 ˆ 1024 input (real) images, and edited outputs with their respective target texts.

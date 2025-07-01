@@ -1,0 +1,1 @@
+Figure 8. Side-by-side human evaluation of image realism & textimage alignment on EditBench Mask-Rich prompts. For textimage alignment, Imagen Editor is preferred in all comparisons.

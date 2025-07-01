@@ -1,1 +1,0 @@
-Figure 1. Given a source image and the editing task, our proposed CoLan generates a concept dictionary and performs sparse decomposition in the latent space to precisely transplant the target concept.

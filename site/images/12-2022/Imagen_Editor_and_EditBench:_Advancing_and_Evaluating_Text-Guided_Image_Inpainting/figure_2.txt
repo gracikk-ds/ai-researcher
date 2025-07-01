@@ -1,0 +1,1 @@
+Figure 2. Imagenator is an image editing model built by ﬁnetuning Imagen. All of the diffusion models, i.e., the base model and super-resolution (SR) models, condition on high-resolution 1024 × 1024 image and mask inputs. To this end, new convolutional image encoders are introduced.

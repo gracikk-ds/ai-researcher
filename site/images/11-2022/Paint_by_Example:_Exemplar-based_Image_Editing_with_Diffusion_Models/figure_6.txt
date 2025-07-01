@@ -1,0 +1,1 @@
+Figure 6. Visual ablation studies of individual components in our approach. We gradually eliminate the boundary artifacts through these techniques and ﬁnally achieve plausible generated results.
