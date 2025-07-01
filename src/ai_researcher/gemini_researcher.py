@@ -3,7 +3,7 @@
 import json
 import os
 from pathlib import Path
-from typing import List, Optional
+from typing import List, Optional, Tuple
 
 from dotenv import load_dotenv
 from google import genai
@@ -180,25 +180,30 @@ class GeminiApiClient:  # noqa: WPS230,WPS214
 
         return response.text  # type: ignore
 
-    def save_response(self, response: str, pdf_local_path: Optional[str] = None) -> None:
+    def save_response(self, response: str, pdf_local_path: Optional[str] = None) -> Optional[str]:
         """Save the response to a markdown file.
 
         Args:
             response (str): The response to save.
             pdf_local_path (Optional[str]): The local path to the PDF file to attach.
+
+        Returns:
+            Optional[str]: The path to the markdown file.
         """
         pdf_stem = Path(pdf_local_path).stem if pdf_local_path is not None else None
         if pdf_stem is not None:
-            md_path = os.path.join(self.site_reports_dir, f"response_{pdf_stem}_{self.model_name}.md")  # noqa: WPS221
+            md_path = os.path.join(self.site_reports_dir, f"{pdf_stem}.md")  # noqa: WPS221
             with open(md_path, "w", encoding="utf-8") as response_file:  # noqa: WPS221
                 response_file.write(response)
+            return md_path
+        return None
 
     def __call__(  # noqa: C901
         self,
         user_prompt: str,
         pdf_local_path: Optional[str] = None,
         save_to_file: bool = True,
-    ) -> str:
+    ) -> Tuple[str, Optional[str]]:
         """Send a prompt to Gemini, with optional system, PDF, and image inputs.
 
         Args:
@@ -207,7 +212,7 @@ class GeminiApiClient:  # noqa: WPS230,WPS214
             save_to_file (bool): Whether to save the response to a markdown file.
 
         Returns:
-            str: The generated text response.
+            Tuple[str, Optional[str]]: The generated text response and the path to the markdown file.
         """
         # Attach the PDF file if provided
         if pdf_local_path is not None:
@@ -223,14 +228,15 @@ class GeminiApiClient:  # noqa: WPS230,WPS214
             self.bucket.remove_file(pdf_uri)
 
         # Save the response to a markdown file
+        path_to_md = None
         if save_to_file:
-            self.save_response(response, pdf_local_path)
+            path_to_md = self.save_response(response, pdf_local_path)
 
-        return response
+        return response, path_to_md
 
 
-if __name__ == "__main__":
-    client = GeminiApiClient()
-    with open("prompts/summarizer.txt", "r", encoding="utf-8") as summary_file:
-        summary_prompt = summary_file.read()
-    response = client(summary_prompt, pdf_local_path="pdfs/mgie.pdf")
+# if __name__ == "__main__":
+#     client = GeminiApiClient()
+#     with open("prompts/summarizer.txt", "r", encoding="utf-8") as summary_file:
+#         summary_prompt = summary_file.read()
+#     response, md_path = client(summary_prompt, pdf_local_path="pdfs/mgie.pdf")
