@@ -1,0 +1,1 @@
+Figure 4. C ASA (Cross and Self-Attention) Graph Construction workflow. The initial cross-attention maps are upsampled to form a patch-level adjacency graph, then Laplacian regularization enforces spatial consistency. Thresholding the refined maps yields final, more robust attention masks.

@@ -1,0 +1,1 @@
+Figure 4 Training pipeline for SeedEdit3.0. We collect meta-info from multiple data sources and insert it in training by fusion multiple losses.

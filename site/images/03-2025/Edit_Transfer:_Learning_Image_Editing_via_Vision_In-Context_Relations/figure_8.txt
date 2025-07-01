@@ -1,0 +1,1 @@
+Figure 8. Ours vs. w/o fine-tuning. Without fine-tuning, Flux can only capture some of the pose information identified in I t regardless of the relation between I s → I t and ˆ I s . In contrast, with our few-shot fine-tuning, the model effectively learns the visual relation from example pairs and applied to ˆ I s .

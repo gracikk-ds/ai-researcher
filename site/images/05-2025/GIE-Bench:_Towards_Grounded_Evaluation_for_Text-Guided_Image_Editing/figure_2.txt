@@ -1,0 +1,1 @@
+Figure 2: Example image editing instructions and edited results by GPT-Image-1 [1], OmniGen [5], and MGIE [4].

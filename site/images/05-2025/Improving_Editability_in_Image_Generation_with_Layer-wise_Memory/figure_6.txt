@@ -1,0 +1,1 @@
+Figure 6. Improved editability of image through Background Consistency Guidance and Multi-Query Disentangled cross attention. Through recycling the previous step’s latents, we can remove the object that is behind the foreground object, enabling enhanced editability of the image.

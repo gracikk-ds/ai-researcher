@@ -1,0 +1,1 @@
+Fig. 8. Ablations. We ablate parts of our method (multi-resolution and multi-sampling, respectively) on two challenging examples containing thin structures (net and zebra stripes) and albedo entanglement (net has a similar albedo to the white parts of the basketball, in front of a patterned background).

@@ -1,0 +1,1 @@
+Figure 3: Overall framework of MIGE. MIGE consists of two components: a multimodal encoder for processing multimodal instructions and a transformer-based diffusion model for modeling input-output relationships. The encoder incorporates a feature fusion mechanism to integrate visual and semantic features from reference image.

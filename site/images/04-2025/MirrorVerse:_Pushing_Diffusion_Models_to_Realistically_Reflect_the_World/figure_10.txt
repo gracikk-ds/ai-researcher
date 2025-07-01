@@ -1,0 +1,1 @@
+Figure 10. Limitations. Our method performs well in multi-object scenes (more than two objects) but retains some artifacts, which can be reduced by synthesizing the dataset through the proposed data-generation pipeline and further increasing the diversity and scale.

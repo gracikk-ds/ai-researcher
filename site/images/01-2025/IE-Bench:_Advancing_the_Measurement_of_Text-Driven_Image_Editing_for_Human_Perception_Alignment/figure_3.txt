@@ -1,0 +1,1 @@
+Figure 3. Statistics of IE-DB prompts. (a) Word cloud of IE-Bench DB prompts. (b) Proportion of different types

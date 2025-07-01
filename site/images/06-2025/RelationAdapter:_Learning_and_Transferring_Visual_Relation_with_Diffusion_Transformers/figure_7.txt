@@ -1,0 +1,1 @@
+Result Result Result Input Images Input Images Input Images Figure 7: The generated results of RelationAdapter. RelationAdapter can understand the transformations in example image editing pairs and apply them to the original image to achieve high-quality image editing. It demonstrates a certain level of generalization capability on unseen tasks.

@@ -1,0 +1,1 @@
+Figure 1. Our LOCATEdit demonstrates strong performance on various complex image editing tasks.

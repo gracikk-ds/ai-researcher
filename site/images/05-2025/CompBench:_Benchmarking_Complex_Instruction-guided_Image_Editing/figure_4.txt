@@ -1,0 +1,1 @@
+Figure 4: Characteristics and statistics of CompBench. (a) Task taxonomy of CompBench, illustrating the full range of task types. (b) SSIM [ 35 ] comparison among different datasets and benchmarks. Note that UltraEdit [ 45 ] and InstructPix2pix [ 2 ] are datasets, whereas the remaining entries are benchmarks.

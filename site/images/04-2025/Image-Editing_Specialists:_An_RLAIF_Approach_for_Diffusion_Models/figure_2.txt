@@ -1,0 +1,1 @@
+Figure 2. Qualitative comparison. Our method outperforms its counterparts by significantly editing the image while sharply preserving the structure of regions unrelated to the instruction. We exclude the conditioning style image from the visualization since it is not applicable to the other methods. Additional samples are shown in Appendix 6 .

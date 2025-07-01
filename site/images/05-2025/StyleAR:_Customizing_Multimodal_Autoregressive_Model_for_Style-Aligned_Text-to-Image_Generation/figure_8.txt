@@ -1,0 +1,1 @@
+Figure 8: Ablation study of style-enhanced (SE) tokens. We investigate the style-enhanced tokens technique in our StyleAR. The ablation study demonstrates the effectiveness.

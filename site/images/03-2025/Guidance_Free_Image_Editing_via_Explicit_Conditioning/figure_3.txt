@@ -1,0 +1,1 @@
+Figure 3. Inference: We call the denoising model recursively starting from a point sampled from a Gaussian that its mean and variance is a fusion of context image and instruction prompt.

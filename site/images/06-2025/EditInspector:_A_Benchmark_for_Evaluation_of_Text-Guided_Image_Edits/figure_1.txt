@@ -1,0 +1,1 @@
+Figure 1: The assessments for the edit “Let the floor be made of wood” vary across different models, with 2–3 models answering each question correctly. Gemini 1.5 failed to detect any differences between the images, while GPT-4o successfully identified only the main difference. See Appendix A.7 for full-size prompts.

@@ -1,0 +1,1 @@
+Figure 4: Text to ODI comparison between Text2Light [ 8 ], MVDiffusion [ 29 ], PanFusion [ 42 ] and ours. We highlight the left-right inconsistency , repeating objects in different views and top-bottom blurriness/missing with corresponding color boxes. Objects that are missing in some baselines but present in our method are bolded and highlghted in red in the prompts.

@@ -1,0 +1,1 @@
+Fig. 8. Out of Domain Examples. Our fine-tune preserves the generalization of the base model. Here we show PRISM’s intrinsic decomposition on out-of-domain cases such as outdoor, portrait, landscape, and top-down photography.

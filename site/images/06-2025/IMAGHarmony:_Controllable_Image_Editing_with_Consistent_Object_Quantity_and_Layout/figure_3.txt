@@ -1,0 +1,1 @@
+Figure 3: Examples from HarmonyBench. Each sample includes a source image and a validated count-object caption, verified by YOLO-World [ 4 ] and human review.

@@ -1,0 +1,1 @@
+Figure 3: The Proposed Architecture of Hypergraph Module in Encoder for Image Inpainting. The masked image is processed through convolutional layers, residual blocks, and a downsampling block, followed by a hypergraph module that aggregates contextual information through hypergraph convolution (HyPConv). The resulting latent distribution is used for image restoration.

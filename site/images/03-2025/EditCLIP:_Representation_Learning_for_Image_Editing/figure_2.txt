@@ -1,0 +1,1 @@
+Figure 2. An overview of our proposed approach. EditCLIP is pre-trained similarly to CLIP, but the visual encoder processes a concatenated exemplar image pair. After pre-training, EditCLIP can replace the text encoder in InstructPix2Pix [ 4 ] to enable exemplar-based editing.

@@ -1,0 +1,1 @@
+Figure 3. Overview of our proposed Multi-Edit Benchmark for evaluation of iterative editing scenario. (a) explains the dataset generation pipeline through GPT-4 API, and (b) explains the evaluation methodology in visual alignment using CLIP and semantic alignment using LLaVa for single-image and in a layer-wise manner.

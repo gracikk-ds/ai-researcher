@@ -1,0 +1,1 @@
+Figure 1. An illustration of our Complex-Edit Benchmark. This figure presents a structured progression of instruction complexity in image editing tasks, highlighting the transition from atomic edits to highly intricate transformations.

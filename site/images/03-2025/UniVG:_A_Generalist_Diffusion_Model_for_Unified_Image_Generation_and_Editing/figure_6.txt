@@ -1,0 +1,1 @@
+Figure 6. Qualitative examples of layout-guided generation, where the colors of blocks are aligned with the objects in the prompt.

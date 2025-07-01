@@ -1,0 +1,1 @@
+Figure 1. Our model MirrorFusion 2.0, trained on our enhanced dataset SynMirrorV2 surpasses previous state-of-the-art diffusion-based inpainting models at the task of generating mirror reflections. All images were created by appending the prompt: “A perfect plane mirror reflection of ” to the object description. All text prompts can be found in the supplementary.

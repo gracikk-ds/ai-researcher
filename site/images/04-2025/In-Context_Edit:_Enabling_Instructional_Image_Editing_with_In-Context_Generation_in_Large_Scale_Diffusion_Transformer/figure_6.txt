@@ -1,0 +1,1 @@
+Figure 6. Illustration of Inference-Time Scaling Strategy (§ 3.3 ). The upper rows demonstrate that edit success can be assessed within a few initial steps. These early results are used to filter the optimal initial noise with VLM judges.

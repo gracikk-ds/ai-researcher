@@ -1,0 +1,1 @@
+Fig. 4. Impact of timestep choice in the token optimization process. Intermediate timesteps achieve reasonable localization for both big and small parts.

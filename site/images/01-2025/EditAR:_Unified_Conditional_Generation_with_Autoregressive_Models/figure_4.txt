@@ -1,0 +1,1 @@
+Figure 4. Visual comparisons to baseline methods on various image translation tasks. Our method, EditAR, produces photo-realistic results, preserves input details, and offers substantial sample diversity.

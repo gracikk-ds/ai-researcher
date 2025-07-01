@@ -1,0 +1,1 @@
+Figure 6. Regions division. Left: original image and its region division. Right: edited image and its region division. The edited image is segmented into three regions, each marked with a unique color, and the corresponding areas in the original image are highlighted with the same colors

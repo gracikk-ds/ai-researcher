@@ -1,0 +1,1 @@
+Figure 1. Our framework leverages a vision language model (VLM) to guide instruction-based image editing. Our primary innovation is the introduction of region tokens, which enable the VLM to accurately identify edited objects or areas in complex scenarios while preserving high-frequency details in unintended regions during image decoding.

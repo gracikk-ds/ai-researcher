@@ -1,0 +1,1 @@
+Figure 1: Diffusion process. Standard Gaussian noise is added as part of forward diffusion process, followed by denoising using a UNet in the reverse diffusion process, using a CLIP text embedding of the input prompt as conditioning.

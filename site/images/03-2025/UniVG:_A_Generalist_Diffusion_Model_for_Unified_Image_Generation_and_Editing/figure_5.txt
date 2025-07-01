@@ -1,0 +1,1 @@
+Figure 5. Resuling of model scaling with B (416M), L (1.8B), and XL (3.7B); CLIP-T for EmuEdit and ID for Unsplash-50.

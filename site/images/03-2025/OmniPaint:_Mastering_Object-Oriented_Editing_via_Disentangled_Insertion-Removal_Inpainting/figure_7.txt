@@ -1,0 +1,1 @@
+Figure 7. Impact of inference steps and cycle loss weights. (a) Removal (top) and insertion (bottom) results across different neural function evaluations (NFE). (b) Insertion results with varying cycle loss weights γ , with OmniPaint defaulting to γ = 1 . 5 .

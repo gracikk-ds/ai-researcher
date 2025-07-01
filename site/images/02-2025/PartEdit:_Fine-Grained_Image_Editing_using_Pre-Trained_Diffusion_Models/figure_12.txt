@@ -1,0 +1,1 @@
+Fig. 12. Challenging multiple subjects edits (more in fig. 26 ). Examples of Grounded SAM [ Ren et al . 2024 ] integration for "second dog" or "right" respectively.

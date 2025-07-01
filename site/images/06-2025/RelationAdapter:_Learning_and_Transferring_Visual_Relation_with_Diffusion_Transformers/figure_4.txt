@@ -1,0 +1,1 @@
+Figure 4: Overview of the annotation pipeline using GPT-4o. GPT-4o generates a set of source caption , target caption , and edit instruction describing the transformation from I src to I tar .

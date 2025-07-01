@@ -1,0 +1,1 @@
+Figure 1. A chatbot showcasing a potential use case of Multi-Task Upcycling. Our approach efficiently upcycles pre-trained text-to-image models, enabling them to perform multiple image generation tasks using a single backbone.

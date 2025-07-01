@@ -1,0 +1,1 @@
+Figure 5: Visual Comparisons with Text-to-Image Generation Models. Incorporation with our framework enables more precise modeling of counting, attributes, and spatial relationships within objects, producing images that comprehensively align with user prompts.

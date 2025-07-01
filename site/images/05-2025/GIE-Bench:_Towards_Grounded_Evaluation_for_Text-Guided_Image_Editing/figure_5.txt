@@ -1,0 +1,1 @@
+Figure 5: Examples showing three failure modes: functional failure, preservation failure, and combined failure, paired with correct editing.

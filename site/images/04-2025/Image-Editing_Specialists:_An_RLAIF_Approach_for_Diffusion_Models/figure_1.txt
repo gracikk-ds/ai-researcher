@@ -1,0 +1,1 @@
+Figure 1. Representative results showcasing our method’s ability to perform precise and realistic edits. The input image is displayed alongside four diverse edits, highlighting our approach’s capacity to align with user intentions while preserving structural coherence.

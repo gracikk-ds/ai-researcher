@@ -1,0 +1,1 @@
+Figure 4: Example of our pipeline generating an instruction-grounded difference caption with rich metadata. Edit images are split into three zoom levels, with Gemini extracting and prioritizing captions to generate the metadata.

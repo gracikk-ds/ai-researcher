@@ -1,0 +1,1 @@
+Fig. 3 Visualization of the three validation criteria: keyword detection, emotion classification, and text-image retrieval.

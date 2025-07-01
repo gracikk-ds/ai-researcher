@@ -1,0 +1,1 @@
+Figure 3. Qualitative samples of DICE applied on images edited by MGIE [ 16 ] and InstructDiffusion [ 18 ] models.

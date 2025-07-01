@@ -1,0 +1,1 @@
+Figure 4. Failed case and analysis. The attention region edited by CLED [ 43 ] is spread across the entire image rather than focusing on the object. The right column shows the editing results by removing fine-tuning stage.

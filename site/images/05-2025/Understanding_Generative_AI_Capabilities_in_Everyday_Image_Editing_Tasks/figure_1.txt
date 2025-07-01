@@ -1,0 +1,1 @@
+Figure 1: We propose PSR, the largest dataset of realworld image-editing requests and human-made edits. PSR enables the community (and our work) to identify types of requests that can be automated using existing AIs and those that need improvement. PSR is the first dataset to tag all requests with WordNet subjects, realworld editing actions, and creativity levels.

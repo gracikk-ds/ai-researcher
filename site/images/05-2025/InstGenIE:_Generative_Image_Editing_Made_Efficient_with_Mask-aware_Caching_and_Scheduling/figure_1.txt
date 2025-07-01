@@ -1,0 +1,1 @@
+Figure 1. A virtual try-on example of image editing using a SDXL model on H800. InstGenIE achieves a model inference speedup of 1 . 7 × and ensures image quality. The Rightmost image : Naively disregarding unmasked regions in image editing will distort the output image.

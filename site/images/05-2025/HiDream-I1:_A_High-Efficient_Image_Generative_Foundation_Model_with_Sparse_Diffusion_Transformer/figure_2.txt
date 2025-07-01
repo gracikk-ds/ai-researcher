@@ -1,0 +1,1 @@
+Figure 2 | Pipeline of data pre-processing.

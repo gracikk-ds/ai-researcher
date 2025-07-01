@@ -1,0 +1,1 @@
+Fig. 4. Adjusting 𝛼 Provides control over the appearance transition between the source image and the target appearance. When 𝛼 = 0 , the appearance is entirely derived from the source image, and when 𝛼 = 1 , it fully reflects the editing prompt. Intermediate values of 𝛼 allow for a gradual blend, enabling fine-grained control between these two extremes.

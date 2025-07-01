@@ -1,0 +1,1 @@
+Figure 1: Commonly used pipelines for unified image generation and understanding, and potential decoder architectures of GPT4o’s image generation choice. The complete speculation of architectures can be seen in Figure 7 .

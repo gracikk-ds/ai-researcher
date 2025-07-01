@@ -1,0 +1,1 @@
+Figure 3: Overview of the FOCUS framework and training pipeline. The left part shows the unified architecture, which integrates a vanilla encoder, a hierarchical encoder, a pixel encoder, a large language model, a segmentation predictor, and a diffusion decoder for fine-grained perception and controllable image generation.

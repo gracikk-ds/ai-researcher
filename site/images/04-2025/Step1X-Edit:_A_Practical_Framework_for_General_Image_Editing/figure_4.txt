@@ -1,0 +1,1 @@
+Figure 4: Framework of Step1X-Edit . Step1X-Edit leverages the image understanding capabilities of MLLMs to parse editing instructions and generate editing tokens, which are then decoded into images using a DiT-based network.

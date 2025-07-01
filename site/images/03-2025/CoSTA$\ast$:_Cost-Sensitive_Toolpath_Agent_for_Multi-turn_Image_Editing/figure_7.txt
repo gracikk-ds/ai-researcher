@@ -1,0 +1,1 @@
+Figure 7. Comparison of a task with h ( x ) and h ( x ) + g ( x ) , showing how real-time feedback improves path selection and execution.

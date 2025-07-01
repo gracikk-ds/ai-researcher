@@ -1,0 +1,1 @@
+Fig. 2 Visualization of the annotation process which a Chain-ofThought prompting strategy.

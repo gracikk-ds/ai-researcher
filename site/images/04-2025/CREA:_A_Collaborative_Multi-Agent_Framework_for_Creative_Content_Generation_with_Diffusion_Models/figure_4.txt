@@ -1,0 +1,1 @@
+Figure 4. Qualitative Comparison of Creative Image Editing Task. We compare CREA with state-of-the-art editing methods. As shown, CREA successfully reimagines objects into creative variants in a disentangled manner, whereas other approaches either fail to produce distinctly creative edits or introduce unintended alterations.

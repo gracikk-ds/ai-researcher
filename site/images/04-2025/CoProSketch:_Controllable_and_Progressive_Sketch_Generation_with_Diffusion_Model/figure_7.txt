@@ -1,0 +1,1 @@
+Figure 7. Ablation study. (a c): bounding box, full pipeline UDF and sketch. (d): Without UDF representation. (e): Without UDF2Mask. (f): Without UDF2Sketch, use marching squares to extract sketch from UDF. (g): Without UDF2Sketch, use thresholding to extract sketch from UDF.

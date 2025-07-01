@@ -1,0 +1,1 @@
+Figure 6: Visual examples of generation results on the WISE benchmark [ 32 ]. We visualize the qualitative results of GPT4o under different evaluation scenarios, following the WISE benchmark.

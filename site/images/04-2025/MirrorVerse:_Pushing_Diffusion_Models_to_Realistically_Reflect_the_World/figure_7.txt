@@ -1,0 +1,1 @@
+Figure 7. Real World Scenes. We show results for MirrorFusion [ 12 ], our method and our method fine-tuned on the MSD [ 52 ] dataset. We observe that our method can generate reflections capturing the intricacies of complex scenes, such as a cluttered cable on the table and the presence of two mirrors in a 3D scene.

@@ -1,0 +1,1 @@
+Figure 6: Influence of each loss component. The editing instruction is: "Remove the pendant from the dog." From left to right: original image, result without L semAlign , result without L CLIP , and result using all loss terms. Each result includes both the learnable region and the edited image.

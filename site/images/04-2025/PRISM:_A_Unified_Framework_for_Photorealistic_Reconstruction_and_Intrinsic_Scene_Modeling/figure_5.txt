@@ -1,0 +1,1 @@
+Fig. 5. Visual comparison of RGB reconstruction from predicted albedo and irradiance for the white balance alignment. We compare PRISM model against Zeng et al. [ 2024 ] and ground truth reconstructions.

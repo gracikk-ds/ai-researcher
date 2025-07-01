@@ -1,0 +1,1 @@
+Figure 8. Qualitative comparison of image editing tools vs. CoSTA ∗ for text-based tasks, highlighting the advantages of our multimodal support in preserving visual and textual fidelity.

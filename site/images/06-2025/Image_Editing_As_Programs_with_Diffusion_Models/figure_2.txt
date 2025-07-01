@@ -1,0 +1,1 @@
+Figure 2: Results of our preliminary experiments. Figure (a) shows the GPT-4o scores for three editing types across instruction faithfulness and semantic consistency, ranging from 1 to 5. Figure (b) shows the representative failure cases from local semantic editing.

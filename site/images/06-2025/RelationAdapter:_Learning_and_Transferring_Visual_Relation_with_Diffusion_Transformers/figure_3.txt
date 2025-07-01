@@ -1,0 +1,1 @@
+Figure 3: Overview of the four main task categories in our dataset. Each block lists representative sub-tasks (with ellipses indicating more), along with image-pair examples.

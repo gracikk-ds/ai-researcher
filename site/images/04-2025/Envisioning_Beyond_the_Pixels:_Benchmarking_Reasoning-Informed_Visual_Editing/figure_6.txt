@@ -1,0 +1,1 @@
+Figure 6: Examples of several different models’ outputs on RISEBench. The analyzed models demonstrate distinct characteristics in their responses. Specifically, GPT-4o exhibits instances of instruction misunderstanding, while Gemini sometimes struggles with maintaining image consistency. Other models generally show limited ability to comprehend and execute complex instructions.

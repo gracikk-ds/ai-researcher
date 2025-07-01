@@ -1,0 +1,1 @@
+Figure 2. “Data Efficiency” increases inversely with the amount of training data, while CLIP score reflects editing performance. Our method achieves high editing precision with fewer training data.

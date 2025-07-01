@@ -1,0 +1,1 @@
+Figure 1. Sample results of editing Human-Object Interaction in the source image (left). Existing methods overly preserve the structure, making interaction edits ineffective. Our method focuses on modifying interactions while maintaining the subject and object identity.

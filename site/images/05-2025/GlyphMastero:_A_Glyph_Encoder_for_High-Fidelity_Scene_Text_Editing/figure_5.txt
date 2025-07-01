@@ -1,0 +1,1 @@
+Figure 5. Qualitative comparison of scene text editing methods. Our GlyphMastero framework demonstrates superior text style preservation and content replacement accuracy. For Chinese cases (with English translations in brackets), our method achieves more precise text generation than DiffUTE and better style preservation than AnyText.

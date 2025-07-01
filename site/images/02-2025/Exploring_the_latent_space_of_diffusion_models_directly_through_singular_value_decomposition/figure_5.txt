@@ -1,0 +1,1 @@
+Figure 5. Geodesic Distance across subspaces constructed by singular vectors of different datasets at various diffusion time steps. It is noticeable that the variance of stable diffusion is less than diffusion models trained on the CelebA-HQ dataset, thus we tend to consider the geodesic distance on subspaces to maintain semantically similar across all time steps.

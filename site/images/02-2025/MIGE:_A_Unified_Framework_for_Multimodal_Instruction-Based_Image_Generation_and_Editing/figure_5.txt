@@ -1,0 +1,1 @@
+Figure 5: Qualitative comparison for subject-driven image generation (top rows) and instruction-based image editing (bottom rows). We compare the universal model and task-specific models on the two tasks, respectively. The prompts listed in the figure are used for MIGE and vary according to the usage of each model.

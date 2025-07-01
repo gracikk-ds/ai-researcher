@@ -1,0 +1,1 @@
+Figure 5: The first method for detecting artifacts using the Detic model for the edit “turn the stop sign to a lollipop”. Comparing Detic probabilities for objects intersecting the turquoise in-painting mask between the pre-edit (left) and post-edit (right) images reveals two artifacts, the truck and small car, whose probability drops exceeds our threshold.

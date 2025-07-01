@@ -1,0 +1,1 @@
+Figure 2: Inter-Evaluator Agreement (Cohen’s Kappa) Heatmap. Values represent agreement levels between evaluators, where higher values indicate stronger alignment.

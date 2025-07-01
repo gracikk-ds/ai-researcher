@@ -1,0 +1,1 @@
+Figure 5: Flexible Control. Our dual-branch fusion mechanism enables flexible control over the trade-off between diversity and appearance preservation by adjusting the control timestep interval and fusion strength ω . Additionally, the feature dropout mechanisms provide more flexible interfaces for controlling the generation process.

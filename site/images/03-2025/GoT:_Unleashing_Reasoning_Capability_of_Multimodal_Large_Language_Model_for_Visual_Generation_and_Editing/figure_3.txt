@@ -1,0 +1,1 @@
+Figure 3. GoT Framework with Semantic-Spatial Guidance. Left: Our dual-task framework handling both text-to-image generation (T2I) and image editing. Right: The SSGM Diffusion Module, which combines spatial layouts guidance G s , reference image guidance G r , and semantic guidance G t to generate the final image with precise content and spatial control.

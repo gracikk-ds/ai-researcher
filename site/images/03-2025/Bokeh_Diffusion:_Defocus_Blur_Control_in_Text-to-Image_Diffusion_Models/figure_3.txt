@@ -1,0 +1,1 @@
+Fig. 3. Comparison between our generative method and BokehMe [ Peng et al. 2022 ], which depends on external depth estimation.

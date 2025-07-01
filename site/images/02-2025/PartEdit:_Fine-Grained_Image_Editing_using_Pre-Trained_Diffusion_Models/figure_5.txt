@@ -1,0 +1,1 @@
+Fig. 5. Qualitative comparison on synthetic images from the PartEdit benchmark. Our method outperforms both iP2P [ Brooks et al . 2023 ] and P2P [ Hertz et al . 2022 ] on the synthetic setting. Showcasing good localization while integrating seamlessly into the scene, illustrated by the third row with a formal torso edit.

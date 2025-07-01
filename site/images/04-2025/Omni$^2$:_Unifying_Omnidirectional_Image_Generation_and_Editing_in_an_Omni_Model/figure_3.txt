@@ -1,0 +1,1 @@
+Figure 3: Overview of proposed Omni 2 . Input prompt and Image are tokenized through text tokenizer and viewport tokenizer seperately before feeding into a simple yet effective transformer for viewport image generation. During inference, the generated viewports are seamlessly integrated to reconstruct a high-quality omnidirectional image.

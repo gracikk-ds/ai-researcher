@@ -1,0 +1,1 @@
+Figure 3: Qualitative comparisons on the HumanEdit dataset [ 2 ]. A mask is provided for each sample. MIND-Edit achieves superior instruction alignment and visual quality, surpassing or matching other methods even though MagicQuill’s generation branch alone contains twice the parameters of our method.

@@ -1,0 +1,1 @@
+Figure 7. Examples of the R EAL E DIT model on R EAL E DIT test set images compared to other editing models. Our edits are often more semantically correct as well as more visually appealing.

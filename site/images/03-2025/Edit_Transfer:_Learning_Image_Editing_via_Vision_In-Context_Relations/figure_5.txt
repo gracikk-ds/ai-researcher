@@ -1,0 +1,1 @@
+Figure 5. Qualitative comparisons. Compared with TIE and RIE methods, our method consistently outperforms in various non-rigid editing tasks. We provide the detailed text prompt of TIE methods in Section B.1 .

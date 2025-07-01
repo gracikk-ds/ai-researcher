@@ -1,0 +1,1 @@
+Figure 4. Qualitative comparison of MTU based on SDv1.5 (left) and SDXL (right) with corresponding single-task baselines for Image Editing (IE) ( Brooks et al. , 2023 ), Super Resolution (SR) ( Rombach et al. , 2022 ), and Inpainting (IP). ( Yildirim et al. , 2023 )

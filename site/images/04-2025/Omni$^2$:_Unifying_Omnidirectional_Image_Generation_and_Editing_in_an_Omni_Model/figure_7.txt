@@ -1,0 +1,1 @@
+(b) “Add a yellow bookshelf on my left.” Figure 7: Visual comparison of directly applying existing 2D editing methods [5, 18, 43] on ODIs versus our method.

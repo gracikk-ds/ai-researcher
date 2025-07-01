@@ -1,0 +1,1 @@
+Figure 1: Overview of the proposed GIE-Bench pipeline for grounded and fine-grained evaluation of text-guided image editing models. GIE-Bench consists of two components: ( i ) functional correctness evaluation; and ( ii ) content preservation evaluation.

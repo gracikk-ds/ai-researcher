@@ -1,0 +1,1 @@
+Figure 3. (a) Overview: We introduce Multi-task Upcycling (MTU), a method for transforming a pre-trained text-to-image model to support multiple tasks. (b) In MTU, we replace the FFN layer in the pre-trained model with a set of smaller experts, which are dynamically combined using a router mechanism.

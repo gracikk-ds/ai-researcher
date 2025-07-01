@@ -1,0 +1,1 @@
+Figure 4. Illustration of CycleFlow. The mapping F removes the object, predicting an estimated target z ′ 1 , while G reinserts the object, generating estimated target z 1 . Cycle consistency is enforced by ensuring G reconstructs the original latent z 1 from the effect removal output. Dashed arrows indicate the cycle loss supervision.

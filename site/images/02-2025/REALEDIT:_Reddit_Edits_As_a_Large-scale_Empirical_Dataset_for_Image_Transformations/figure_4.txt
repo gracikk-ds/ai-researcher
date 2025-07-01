@@ -1,0 +1,1 @@
+Figure 4. Key differences in the distribution of our test set compared to MagicBrush and Emu Edit test sets. MagicBrush and Emu Edit tend to be similar in distribution to each other, but starkly different from R EAL E DIT .

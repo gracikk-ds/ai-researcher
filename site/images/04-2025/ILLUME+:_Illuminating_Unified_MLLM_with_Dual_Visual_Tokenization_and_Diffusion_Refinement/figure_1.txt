@@ -1,0 +1,1 @@
+Figure 1: ILLUME+ can understand and generate images at any resolution. Compared to our previous work, ILLUME [63], it demonstrates improved texture preservation in image editing tasks.

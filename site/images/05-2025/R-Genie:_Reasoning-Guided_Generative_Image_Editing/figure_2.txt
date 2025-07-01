@@ -1,0 +1,1 @@
+Figure 2: Two examples of the annotated pixel-accurate image-instruction-edit triples. Left: atomic edits. Right: composite edits. More examples are given in the supplementary material.

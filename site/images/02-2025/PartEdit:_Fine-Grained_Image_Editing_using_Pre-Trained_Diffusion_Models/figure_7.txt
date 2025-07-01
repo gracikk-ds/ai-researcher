@@ -1,0 +1,1 @@
+Fig. 7. Visualization of editing 2 parts at the same time. Note that the attention maps showcase average cross-attention across all time steps.

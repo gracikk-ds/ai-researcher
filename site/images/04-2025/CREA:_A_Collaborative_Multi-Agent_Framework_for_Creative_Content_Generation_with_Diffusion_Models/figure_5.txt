@@ -1,0 +1,1 @@
+Figure 5. Qualitative Comparison of Creative Image Generation Task. We compare CREA with ConceptLab, SDXL and Flux. CREA consistently produces diverse and creative generations across multiple domains.

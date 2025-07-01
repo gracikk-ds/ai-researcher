@@ -1,0 +1,1 @@
+Figure 2: Illustration of the text instruction optimization strategy. A prompt informs the MLLM about the upcoming instruction optimization task. Given an image and an instruction from the user, the MLLM refines the instruction by resolving ambiguities based on visual and textual context.

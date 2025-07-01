@@ -1,0 +1,1 @@
+Figure 2: Demonstration of MIGE as a unified framework for processing multimodal instructions and conditional inputs across diverse tasks and scenarios.

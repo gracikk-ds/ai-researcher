@@ -1,0 +1,1 @@
+Figure 2 The framework of Ming-Lite-Uni . Our model fixes the MLLM and fine-tunes the diffusion model through the newly designed multi-scale learnable tokens, multi-scale representation alignment, and connector.

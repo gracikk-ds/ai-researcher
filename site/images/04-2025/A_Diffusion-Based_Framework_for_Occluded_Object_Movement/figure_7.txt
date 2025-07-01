@@ -1,0 +1,1 @@
+Figure 7: Examples of integrating our framework with MasaCtrl and DragDiffusion. Our framework enables two editing methods to perform precise editing in complex scenes.

@@ -1,0 +1,1 @@
+Figure 4 Basic image-text training pairs of Ming-Lite-Uni .

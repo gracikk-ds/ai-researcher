@@ -1,0 +1,1 @@
+Figure 1: Framework of the proposed method . Including description text generation, editing feature semantic alignment, learnable edit region prediction, edited image generation and CLIP supervised loss calculation.

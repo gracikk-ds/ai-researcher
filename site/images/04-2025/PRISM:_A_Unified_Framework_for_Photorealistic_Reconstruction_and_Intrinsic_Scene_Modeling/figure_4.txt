@@ -1,0 +1,1 @@
+Fig. 4. Visual comparison of our PRISM model against baseline methods on synthetic datasets. All input images and ground truths are from the HyperSim dataset, except for the classroom scene (b, right).

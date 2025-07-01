@@ -1,0 +1,1 @@
+Figure 1. We visualize edits made by our model. We introduce R EAL E DIT , a large-scale image editing dataset sourced from Reddit with real-world user edit requests and human-edits. By finetuning on R EAL E DIT , our resultant model outperforms existing models by up to 165 Elo points with human judgment and delivers real world utility to real user requests online.

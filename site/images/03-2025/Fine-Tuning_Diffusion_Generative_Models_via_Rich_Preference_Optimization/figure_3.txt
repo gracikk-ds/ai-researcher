@@ -1,0 +1,1 @@
+Figure 3: Comparison of RichFB generated informative feedback and our adopted textual criticism generate by carefully prompting a capable VLM.

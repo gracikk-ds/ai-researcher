@@ -1,0 +1,1 @@
+Fig. 7. Robustness. Robustness evaluation of our method with respect to the clicked pixel (left subset), the image crop with increasing zoom levels (middle subset), and illumination changes (right subset). The images are challenging due to similar albedo (left), strong shading variations on the cushions (middle) and specular highlights on the toaster (right).

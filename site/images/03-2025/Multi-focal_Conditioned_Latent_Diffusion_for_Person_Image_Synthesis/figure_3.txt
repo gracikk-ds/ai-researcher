@@ -1,0 +1,1 @@
+Figure 3. Qualitative Comparison with several state-of-the-art models on the Deepfashion dataset. The inputs to our models are the target pose p t and the source person image I . From left to right the results are of NTED, CASD, PIDM, CFLD and ours respectively.

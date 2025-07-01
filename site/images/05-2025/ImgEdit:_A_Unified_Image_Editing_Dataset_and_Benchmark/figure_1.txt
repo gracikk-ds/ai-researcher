@@ -1,0 +1,1 @@
+Figure 1: Singleand MultiTurn Edit Types. (Left) Single-turn tasks include add, remove, replace, alter, background change, motion change, style, object extraction, visual edit, and hybrid edit. (Right) Multi-turn tasks include content memory, content understanding, and version backtracking.

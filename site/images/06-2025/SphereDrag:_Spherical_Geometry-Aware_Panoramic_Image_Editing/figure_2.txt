@@ -1,0 +1,1 @@
+Figure 2: Classic point-interactive image editing pipeline

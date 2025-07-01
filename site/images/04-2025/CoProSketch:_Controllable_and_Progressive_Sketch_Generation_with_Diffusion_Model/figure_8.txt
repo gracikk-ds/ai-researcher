@@ -1,0 +1,1 @@
+Figure 8. Comparison between editing in text-to-RGB pipeline(baseline) and text-rough-detailed-RGB pipeline(ours). Our pipeline shows better editing performance.

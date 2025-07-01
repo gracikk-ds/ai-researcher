@@ -1,0 +1,1 @@
+Fig. 3. Sample results generated with PRISM. Our model is capable of text, text+X and X conditioned generation and can inherently perform image decomposition and re-composition under different material, geometry and lighting conditions. Condition channels are highlighted in orange .

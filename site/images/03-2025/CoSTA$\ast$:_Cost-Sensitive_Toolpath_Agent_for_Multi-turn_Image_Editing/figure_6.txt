@@ -1,0 +1,1 @@
+Figure 6. Distribution of image-only (left) and text+image tasks (middle) in our proposed benchmark, and quality comparison of different methods on the benchmark (right). CoSTA ∗ excels in complex multimodal tasks and outperforms all the baselines.

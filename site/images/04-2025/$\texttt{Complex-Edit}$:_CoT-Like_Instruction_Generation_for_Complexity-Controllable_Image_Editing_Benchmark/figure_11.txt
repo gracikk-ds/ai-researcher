@@ -1,0 +1,1 @@
+Figure 11. A real image edited with a C 8 instruction by GPT-4o. Outputs from GPT-4o severely lose the realistic style. See additional results in Fig. 22 .

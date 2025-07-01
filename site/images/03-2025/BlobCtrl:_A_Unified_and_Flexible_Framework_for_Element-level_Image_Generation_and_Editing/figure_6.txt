@@ -1,0 +1,1 @@
+Figure 6: Ablation of Identity Preservation Score Function. Training loss and denoising visualization for scaling a deer, demonstrating how Identity Preservation Score Function enables faster convergence and effective foregroundbackground decoupling during element-level manipulation.

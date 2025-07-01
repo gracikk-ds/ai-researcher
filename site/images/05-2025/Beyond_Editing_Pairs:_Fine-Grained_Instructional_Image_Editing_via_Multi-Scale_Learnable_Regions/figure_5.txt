@@ -1,0 +1,1 @@
+Add the cat a collar Figure 5: Editing results produced by our method using different generative models . For each example, from left to right: original image, FLUX [19], VAR [39], and MaskGIT [8].

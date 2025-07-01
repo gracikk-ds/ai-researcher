@@ -1,0 +1,1 @@
+Fig. 5. Effect of content-adaptive interpolation. Interpolating the keys and values for target image regions without clear correspondence in the source image results in undesirable edits ( b ). Classifying these regions and using only the target keys and values mitigates this issue ( c ).

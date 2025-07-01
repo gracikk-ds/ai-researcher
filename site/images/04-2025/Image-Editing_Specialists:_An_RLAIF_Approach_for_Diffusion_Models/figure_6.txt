@@ -1,0 +1,1 @@
+Figure 6. We plot the trade-off between consistency with the input image (Y-axis) and consistency with the visual prompt (X-axis). For both metrics, higher is better. We fix the same parameters as in [ 12 ] and vary the s I sty ∈ [1 . 0 , 6 . 0]

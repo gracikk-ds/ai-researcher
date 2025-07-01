@@ -1,0 +1,1 @@
+Figure 2. A simplified illustration of diffusion model inference. A darker cells/cuboid means it is masked.

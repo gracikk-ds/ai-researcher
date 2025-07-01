@@ -1,0 +1,1 @@
+Figure 4: Comparisons of feedback approaches and VLM performance for enhanced image editing, evaluated by ImageReward, HPSv2 and PickScore.

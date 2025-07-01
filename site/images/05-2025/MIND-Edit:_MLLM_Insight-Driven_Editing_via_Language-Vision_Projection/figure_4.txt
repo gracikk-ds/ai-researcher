@@ -1,0 +1,1 @@
+Figure 4: Qualitative comparisons on the ComplexMultistepImageEditing dataset [ 11 ], where no mask is provided. MIND-Edit achieves precise semantic alignment in complex editing scenarios.

@@ -1,0 +1,1 @@
+Figure 4: Left: Functional correctness per edit type. Right: Model preservation rankings based on masked MSE (inverted), PSNR, and CLIP scores. We empirically observe that model ranking evaluated by masked CLIP differs from model ranking evaluated by CLIP.

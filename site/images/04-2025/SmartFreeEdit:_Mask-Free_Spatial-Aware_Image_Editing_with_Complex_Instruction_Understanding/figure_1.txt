@@ -1,0 +1,1 @@
+Figure 1: We propose SmartFreeEdit to address the challenge of reasoning instructions and segmentations in image editing, thereby enhancing the practicality of AI editing. Our method effectively handles some semantic editing operations, including adding, removing, changing objects, background changing and global editing.

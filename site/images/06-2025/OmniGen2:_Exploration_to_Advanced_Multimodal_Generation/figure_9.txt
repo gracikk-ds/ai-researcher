@@ -1,0 +1,1 @@
+Figure 9: An illustrative example of evaluating the output image in the OmniContext benchmark.

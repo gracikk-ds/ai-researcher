@@ -1,0 +1,1 @@
+Figure 4. Impact of singular values on their main singular vectors on Stable Diffusion Models (ver 2.1).

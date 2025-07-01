@@ -1,0 +1,1 @@
+Figure 8. Relation between winning rates by users and HATIE, measured on the user study test set. The least square linear fit (red line) and Pearson’s correlation coefficient ( r ) are reported. The cross mark in object fidelity figure exhibits an outlier which has been excluded from correlation calculation.

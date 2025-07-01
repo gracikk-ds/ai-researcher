@@ -1,0 +1,1 @@
+Figure 8. Qualitative examples of auxiliary tasks, including depth estimation, pose estimation, and referring segmentation.

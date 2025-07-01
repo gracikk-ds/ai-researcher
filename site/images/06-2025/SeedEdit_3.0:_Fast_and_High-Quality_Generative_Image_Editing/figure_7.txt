@@ -1,0 +1,1 @@
+Figure 7 Qualitative comparisons. Notice the advantage of SeedEdit3.0 in face, object/human foreground and image detail preservation and alignment.

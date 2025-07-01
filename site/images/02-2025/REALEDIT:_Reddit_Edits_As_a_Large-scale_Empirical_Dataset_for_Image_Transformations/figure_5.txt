@@ -1,0 +1,1 @@
+Figure 5. Real requests completed on Reddit. We deployed our model on r/PhotoshopRequest to complete in-the-wild requests. We received positive feedback from users on the examples above.

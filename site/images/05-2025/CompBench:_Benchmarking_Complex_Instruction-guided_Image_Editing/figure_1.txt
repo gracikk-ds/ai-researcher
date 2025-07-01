@@ -1,0 +1,1 @@
+Figure 1: Examples of CompBench. The figure showcases diverse instruction-guided image editing tasks across nine categories: object addition, object removal, object replacement, multi-object editing, multi-turn editing, implicit reasoning, action editing, location editing and viewpoint editing).

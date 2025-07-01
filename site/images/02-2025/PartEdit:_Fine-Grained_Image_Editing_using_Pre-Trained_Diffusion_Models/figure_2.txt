@@ -1,0 +1,1 @@
+Fig. 2. A visualization for the cross-attention maps of SDXL [ Podell et al . 2024 ] that corresponds to different words of the textual prompt. Object parts such as “head” and “hood” are not well-localized, indicating that the model lacks a sufficient understanding of these parts. DiT-based model analysis in Appendix R .

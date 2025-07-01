@@ -1,0 +1,1 @@
+Figure 11. Ablation study on masked diffusion loss. Top: Editing results by fine-tuning different layers with and without masked diffusion loss. Bottom: Cross-attention map correspond to the “pot” word. Attention regions are spread across the entire image when masked diffusion loss is not applied, and layout transformation fails.

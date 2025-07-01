@@ -1,0 +1,1 @@
+Fig. 9. Comparison of an edit under different mask binarization strategies in our novel layer timestep blending setup.

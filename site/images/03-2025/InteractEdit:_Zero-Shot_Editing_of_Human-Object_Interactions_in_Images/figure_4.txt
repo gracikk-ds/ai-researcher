@@ -1,0 +1,1 @@
+hold skateboard → ride skateboard Figure 4. Qualitative ablation study. The row below image shows the source and target interaction.

@@ -1,0 +1,1 @@
+Figure 1: The illustration of ACE++ framework. The input paradigm of LCU++ is tokenized according to the respective methods of the editor and the creator, achieving different functional suites through full or partial fine-tuning.

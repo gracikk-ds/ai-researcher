@@ -1,0 +1,1 @@
+Figure 7: Visual comparison of different models in dish generation. Row 1 displays authentic photos for readers unfamiliar with the dish, with detailed Chinese dish descriptions available in the appendix. Images in the left three columns have a resolution of 1024×1024 pixels, whereas images in the right two columns are 1024×768 pixels.

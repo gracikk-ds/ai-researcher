@@ -1,0 +1,1 @@
+Figure 8: Comparison between different base model of PDSS. SDXL-Refiner further refines the details of objects within the image.

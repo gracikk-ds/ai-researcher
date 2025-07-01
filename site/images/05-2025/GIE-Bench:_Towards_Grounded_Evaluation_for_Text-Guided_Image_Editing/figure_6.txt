@@ -1,0 +1,1 @@
+Figure 6: Examples of GPT-Image-1’s failure modes.

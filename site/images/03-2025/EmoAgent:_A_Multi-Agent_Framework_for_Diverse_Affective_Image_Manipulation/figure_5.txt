@@ -1,0 +1,1 @@
+Fig. 5. Qualitative comparisons with the SIM and AIM baselines. EmoAgent more effectively conveys target emotions while preserving high-level semantic content, outperforming prior SIMand AIM-based methods.

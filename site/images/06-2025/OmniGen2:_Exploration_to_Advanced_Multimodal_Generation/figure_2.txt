@@ -1,0 +1,1 @@
+Figure 2: Architecture of OmniGen2. OmniGen2 employs separate transformer architectures for autoregressive and diffusion. Two distinct image encoders are utilized: ViT encodes images for input into the text transformer, while VAE encodes images for the diffusion transformer.

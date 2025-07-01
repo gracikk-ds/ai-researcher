@@ -1,0 +1,1 @@
+Figure 7. Demonstration of Our Evaluation Metrics for sample images for each criteria. Tested model is InstructPix2Pix with s T ∈{ 2 . 5 , 5 . 0 , 7 . 5 , 10 . 0 , 12 . 5 } . Higher s T means stronger edit.

@@ -1,0 +1,1 @@
+Figure 9: Ablation study on the value of K steps. As the value of K decreases, the edges of objects become increasingly smooth. However, this comes at the cost of deteriorating detail representation.

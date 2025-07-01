@@ -1,0 +1,1 @@
+Figure 5. Illustration of the convex objective J ( m ) in a 2D slice of the higher-dimensional space. The single global minimum, marked in red, highlights the function’s convex nature.

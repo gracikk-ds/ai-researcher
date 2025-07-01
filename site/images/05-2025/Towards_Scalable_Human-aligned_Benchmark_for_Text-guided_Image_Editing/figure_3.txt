@@ -1,0 +1,1 @@
+Figure 3. Object Class Distribution in Our Dataset. HATIE evaluates fairly by providing evenly distributed dataset.
