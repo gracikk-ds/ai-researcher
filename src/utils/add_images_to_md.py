@@ -66,6 +66,10 @@ def add_images_to_md(md_path: str, images_dir: str) -> None:
     )
     other_figs = [(base, img_path, desc) for (base, img_path, desc) in figures if base != "figure_1"]
 
+    if fig1 is None:
+        fig1 = other_figs[0]
+        other_figs = other_figs[1:]
+
     # Read the original markdown
     with open(md_path, encoding="utf-8") as md_file:
         md_content = md_file.read()
