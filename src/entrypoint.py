@@ -130,9 +130,9 @@ class Entrypoint:
         return papers
 
 
-if __name__ == "__main__":
-    entrypoint = Entrypoint()
-    start_date = "2025-04-01"
-    end_date = "2025-04-09"
-    logger.info(f"Fetching papers from {start_date} to {end_date}")
-    entrypoint.start_research(start_date=start_date, end_date=end_date)
+# if __name__ == "__main__":
+#     entrypoint = Entrypoint()
+#     start_date = "2025-01-01"
+#     end_date = "2025-04-01"
+#     logger.info(f"Fetching papers from {start_date} to {end_date}")
+#     entrypoint.start_research(start_date=start_date, end_date=end_date)
