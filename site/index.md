@@ -7,9 +7,16 @@ title: Reports
 {% for rep in site.reports %}
   <li>
     <a href="{{ rep.url | relative_url }}">{{ rep.title }}</a>
-    <p class="report-description">
-      {{ rep.content | strip_html | truncatewords: 20 }}
-    </p>
+    {% assign html         = rep.content | replace: '\r\n', '\n' %}
+    {% assign parts        = html | split: '<h2 id="1-motivation-of-the-paper">' %}
+    {% if parts.size > 1 %}
+      {%- assign after_hdr = parts[1] | split: '</h2>' -%}
+      {%- assign remainder = after_hdr[1] -%}
+      {%- assign desc_html = remainder | split: '<h2' | first -%}
+      <p class="report-description">
+        {{ desc_html | strip_html | markdownify | truncatewords: 100 }}
+      </p>
+    {% endif %}
   </li>
 {% endfor %}
 </ul>
