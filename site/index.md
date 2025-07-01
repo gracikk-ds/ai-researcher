@@ -26,7 +26,7 @@ title: Reports
         {%- assign remainder = after_hdr[1] -%}
         {%- assign desc_html = remainder | split: '<h2' | first -%}
         <p class="report-description">
-          {{ desc_html | strip_html | markdownify | truncatewords: 100 }}
+          {{ desc_html | strip_html | markdownify }}
         </p>
       {% endif %}
     </li>
