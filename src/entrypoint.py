@@ -57,17 +57,18 @@ class Entrypoint:
             categories = self.arxiv_fetcher.predefined_categories
         return keywords, exclude_keywords, categories
 
-    def download_pdfs(self, papers: List[Paper]) -> Tuple[List[str], List[str]]:
+    def download_pdfs(self, papers: List[Paper]) -> Tuple[List[str], List[str], List[str]]:
         """Download the PDFs for the papers.
 
         Args:
             papers (List[Paper]): The papers to download.
 
         Returns:
-            Tuple[List[str], List[str]]: The path to the PDF and the path to the images.
+            Tuple[List[str], List[str], List[str]]: The path to the PDF, the path to the images, and the published date.
         """
         pdf_paths: List[str] = []
         images_paths: List[str] = []
+        published_dates: List[str] = []
         for paper in papers:
             title = paper.title.replace(" ", "_")
             month_year = datetime.strptime(paper.published, "%Y-%m-%d").strftime("%m-%Y")
@@ -75,25 +76,27 @@ class Entrypoint:
             path_to_images = Path("site/images") / f"{month_year}"
             try:
                 download_pdf(paper.pdf_url, path_to_pdf)
-                extract_images(str(path_to_pdf), str(path_to_images))
+                output_folder = extract_images(str(path_to_pdf), str(path_to_images))
             except Exception as exp:
                 logger.error(f"Error downloading {paper.pdf_url}: {exp}")
                 continue
             pdf_paths.append(str(path_to_pdf))
-            images_paths.append(str(path_to_images))
-        return pdf_paths, images_paths
+            images_paths.append(output_folder)
+            published_dates.append(paper.published)
+        return pdf_paths, images_paths, published_dates
 
-    def generate_reports(self, pdfs: List[str], images: List[str]) -> None:
+    def generate_reports(self, pdfs: List[str], images: List[str], published_dates: List[str]) -> None:
         """Generate the reports for the papers.
 
         Args:
             pdfs (List[str]): The paths to the PDFs.
             images (List[str]): The paths to the images.
+            published_dates (List[str]): The published dates of the papers.
         """
-        for pdf_path, images_path in zip(pdfs, images):
+        for pdf_path, images_path, published_date in zip(pdfs, images, published_dates):
             _, md_path = self.gemini_researcher(self.summary_prompt, pdf_local_path=pdf_path)
             if md_path is not None:
-                add_images_to_md(md_path, images_path)
+                add_images_to_md(md_path, images_path, published_date)
 
     def start_research(
         self,
@@ -122,17 +125,17 @@ class Entrypoint:
         papers = self.arxiv_fetcher.fetch_papers(start_date, end_date, keywords, exclude_keywords, categories)
 
         # Download the PDFs
-        pdf_paths, images_paths = self.download_pdfs(papers)
+        pdf_paths, images_paths, published_dates = self.download_pdfs(papers)
 
         # Generate the reports
-        self.generate_reports(pdf_paths, images_paths)
+        self.generate_reports(pdf_paths, images_paths, published_dates)
 
         return papers
 
 
-# if __name__ == "__main__":
-#     entrypoint = Entrypoint()
-#     start_date = "2025-01-01"
-#     end_date = "2025-04-01"
-#     logger.info(f"Fetching papers from {start_date} to {end_date}")
-#     entrypoint.start_research(start_date=start_date, end_date=end_date)
+if __name__ == "__main__":
+    entrypoint = Entrypoint()
+    start_date = "2025-01-01"
+    end_date = "2025-07-01"
+    logger.info(f"Fetching papers from {start_date} to {end_date}")
+    entrypoint.start_research(start_date=start_date, end_date=end_date)
