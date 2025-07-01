@@ -1,0 +1,26 @@
+---
+title: CompBench:_Benchmarking_Complex_Instruction-guided_Image_Editing
+layout: default
+date: 2025-05-18
+---
+![Figure 1: Examples of CompBench. The figure showcases diverse instruction-guided image editing tasks across nine categories: object addition, object removal, object replacement, multi-object editing, multi-turn editing, implicit reasoning, action editing, location editing and viewpoint editing).]({{ '/images/05-2025/CompBench:_Benchmarking_Complex_Instruction-guided_Image_Editing/figure_1.jpg' | relative_url }})
+## 1. Motivation of the Paper
+The authors address critical limitations in existing benchmarks for instruction-guided image editing. Current benchmarks often lack scene complexity, relying on synthetic or oversimplified real images. They are further constrained by simplistic instructions that fail to capture real-world user requests involving multi-object manipulation, spatial reasoning, or action editing. These deficiencies, combined with frequent visual artifacts in benchmark data, prevent a rigorous and accurate evaluation of a model's true capabilities in handling complex, nuanced editing tasks.
+
+## 2. Key Ideas and Methodology
+The paper introduces **CompBench**, a large-scale benchmark specifically designed for complex instruction-guided image editing. The core methodology is an **MLLM-Human Collaborative Framework**, where Multi-Modal Large Language Models (MLLMs) generate initial editing instructions for complex scenes, which are then validated and refined by human experts to ensure high fidelity and semantic alignment. A key contribution is the **Instruction Decomposition Strategy**, which structures editing intents along four dimensions—location, appearance, dynamics, and objects. This approach converts ambiguous user requests into precise, well-defined instructions without sacrificing natural language expressiveness.
+
+## 3. Datasets Used / Presented
+The paper presents the **CompBench** benchmark, which contains over 3,000 meticulously curated image-instruction pairs. The benchmark is organized into five major categories and nine specialized tasks, such as multi-object editing, action editing, and implicit reasoning. The source data for CompBench is the **MOSE** dataset, a video instance segmentation (VOS) dataset chosen for its complex real-world scenes, dense object interactions, and high-quality masks. The authors use CompBench to conduct an extensive evaluation of 13 state-of-the-art image editing models.
+
+## 4. Main Results
+The extensive evaluation on CompBench reveals that no single model excels across all complex tasks, highlighting the challenges posed by the benchmark. **Step1X-Edit** emerged as the most prominent model, achieving top results in 17 out of 29 metrics. A crucial insight from the results is the strong correlation between performance and architecture: models that integrate MLLMs and possess strong reasoning abilities (e.g., Step1X-Edit, SmartEdit, GoT) consistently outperform others, especially in tasks requiring complex understanding. This underscores that advanced reasoning is fundamental for the next generation of image editing systems.
+
+## 5. Ablation Studies
+Not performed
+
+## 6. Paper Figures
+![Figure 2: Comparison between current datasets or benchmarks and our CompBench. First row: failed cases of other benchmarks. These results fail to maintain background consistencies or introduce noticable artifacts into the editing region. Second row: Examples of other benchmarks. These cases lack scene complexity and instruction comprehensiveness. Third row: Examples of our CompBench. Our benchmark features complex real-world scenarios with precise instructions.]({{ '/images/05-2025/CompBench:_Benchmarking_Complex_Instruction-guided_Image_Editing/figure_2.jpg' | relative_url }})
+![Figure 3: The construction pipeline of CompBench. The pipeline consists of two main stages: (a) Source data collection and preprocessing, wherein high-quality data are identified through image quality filtering, mask decomposition, occlusion and continuity evaluation, followed by thorough human verification. (b) Task-specific data generation using four specialized pipelines within our MLLM-Human Collaborative Framework, where multimodal large language models generate initial editing instructions that are subsequently validated by humans to ensure high-fidelity, semantically aligned instruction-image pairs for complex editing tasks.]({{ '/images/05-2025/CompBench:_Benchmarking_Complex_Instruction-guided_Image_Editing/figure_3.jpg' | relative_url }})
+![Figure 4: Characteristics and statistics of CompBench. (a) Task taxonomy of CompBench, illustrating the full range of task types. (b) SSIM [ 35 ] comparison among different datasets and benchmarks. Note that UltraEdit [ 45 ] and InstructPix2pix [ 2 ] are datasets, whereas the remaining entries are benchmarks.]({{ '/images/05-2025/CompBench:_Benchmarking_Complex_Instruction-guided_Image_Editing/figure_4.jpg' | relative_url }})
+![Figure 5: Overall Model Performance. (a) Top 5 model performace in five major evaluation tasks. (b) Overall model performace across all tasks.]({{ '/images/05-2025/CompBench:_Benchmarking_Complex_Instruction-guided_Image_Editing/figure_5.jpg' | relative_url }})
