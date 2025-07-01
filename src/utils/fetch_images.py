@@ -2,16 +2,12 @@
 
 import os
 import re
-from io import BytesIO
 from pathlib import Path
-from typing import List, Tuple
 
 import fitz
 from loguru import logger
-from PIL import Image
 
-MIN_IMAGE_SIZE: int = 50
-MAX_IMAGE_HEIGHT: int = 416
+MIN_IMAGE_SIZE: int = 10
 
 
 def filter_images_by_size(blk: dict, img_index: int, page_index: int) -> bool:
@@ -33,61 +29,23 @@ def filter_images_by_size(blk: dict, img_index: int, page_index: int) -> bool:
     return False
 
 
-def extract_image_bytes_and_path(
-    blk: dict,
-    figure_number: str,
-    output_folder: str,
-) -> Tuple[bytes, str]:
-    """Extract the image bytes and metadata.
+def get_block_description(block: dict) -> str:
+    """Given a page block, return the text appearing in the block.
 
     Args:
-        blk (dict): The block object
-        figure_number (str): The figure number
-        output_folder (str): The folder to save the image
+        block (dict): Page block
 
     Returns:
-        Tuple[bytes, str]: The image bytes and the path to the image
+        str: The text appearing in the block
     """
-    image_bytes = blk["image"]
-    image_ext = blk["ext"]
-    image_name = f"figure_{figure_number}.{image_ext}"  # noqa: WPS237
-    image_path = os.path.join(output_folder, image_name)
-    return image_bytes, image_path
-
-
-def save_image(image_bytes: bytes, image_path: str) -> None:
-    """Resize  if needed and save the image to the specified path.
-
-    Args:
-        image_bytes (bytes): The image bytes
-        image_path (str): The path to save the image
-    """
-    img = Image.open(BytesIO(image_bytes))
-    if img.height > MAX_IMAGE_HEIGHT:
-        new_width = int(img.width * MAX_IMAGE_HEIGHT / img.height)
-        img = img.resize((new_width, MAX_IMAGE_HEIGHT))
-    img.save(image_path)
-
-
-def first_text_after(blocks: List[dict], start_idx: int) -> str:
-    """Given a list of page blocks, return the first text appearing after start_idx.
-
-    Args:
-        blocks (List[dict]): The list of page blocks
-        start_idx (int): The index of the block to start searching from
-
-    Returns:
-        str: The first text appearing after start_idx
-    """
-    for blk in blocks[start_idx:]:
-        if blk["type"] == 0:  # text
-            description = " ".join(
-                span["text"] for line in blk["lines"] for span in line["spans"]  # noqa: WPS221
-            ).strip()
-            description = re.sub(r"\s+", " ", description)
-            description = re.sub(r"\n", " ", description)
-            return re.sub(r"- ", "", description)  # noqa: WPS360
-    return ""
+    description = " ".join(
+        span["text"] for line in block["lines"] for span in line["spans"]  # noqa: WPS221
+    ).strip()
+    if "Figure" not in description and "Fig." not in description:
+        return ""
+    description = re.sub(r"\s+", " ", description)
+    description = re.sub(r"\n", " ", description)
+    return re.sub(r"- ", "", description)
 
 
 def extract_figure_number(description: str) -> str:
@@ -100,6 +58,9 @@ def extract_figure_number(description: str) -> str:
         str: The figure number
     """
     match = re.search(r"Figure (\d+)", description)
+    if match:
+        return match.group(1)
+    match = re.search(r"Fig\. (\d+)", description)
     if match:
         return match.group(1)
     return ""
@@ -118,24 +79,59 @@ def extract_images(pdf_path: str, output_folder: str = "images") -> None:  # noq
     os.makedirs(output_folder, exist_ok=True)
 
     # Iterate through each page
+    max_pages: int = 10
+    max_images: int = 10
+    img_num = 0
     for page_index, page in enumerate(doc, start=1):
+        if page_index > max_pages:
+            break
         # Reading-order blocks of this page
         blocks = page.get_text("dict")["blocks"]
+        is_inside_picture = False
+        coords = None
         for blk_idx, blk in enumerate(blocks, start=1):
+            if blk["type"] != 1 and not is_inside_picture:
+                continue
+
+            if blk["type"] == 1:
+                if filter_images_by_size(blk, blk_idx, page_index):
+                    continue
+                is_inside_picture = True
+
+            if coords is None:
+                coords = blk["bbox"]
+            else:
+                coords = (
+                    min(coords[0], blk["bbox"][0]),
+                    min(coords[1], blk["bbox"][1]),
+                    max(coords[2], blk["bbox"][2]),
+                    max(coords[3], blk["bbox"][3]),
+                )
+
             if blk["type"] != 1:
+                description = get_block_description(blk)
+                figure_number = extract_figure_number(description)
+                if figure_number == "":
+                    continue
+            else:
                 continue
-            if filter_images_by_size(blk, blk_idx, page_index):
-                continue
-            description = first_text_after(blocks, blk_idx)
-            if "Figure" not in description:
-                continue
-            figure_number = extract_figure_number(description)
-            image_bytes, image_path = extract_image_bytes_and_path(blk, figure_number, output_folder)
-            save_image(image_bytes, image_path)
+            image_name = f"figure_{figure_number}.png"  # noqa: WPS237
+            image_path = os.path.join(output_folder, image_name)
+            rect = fitz.Rect(coords[0] - 10, coords[1] - 10, coords[2] + 10, coords[3] + 10)
+            pix = page.get_pixmap(dpi=300, clip=rect, alpha=False)
+            pix.save(image_path)
             with open(os.path.join(output_folder, f"figure_{figure_number}.txt"), "w") as description_file:
                 description_file.write(f"{description}")
+            is_inside_picture = False
+            coords = None
+            img_num += 1
+        if img_num >= max_images:
+            break
     logger.info(f"\nCompleted extraction of images from '{pdf_path}'")
 
 
-if __name__ == "__main__":
-    extract_images("pdfs/mgie.pdf", "site/images")
+# if __name__ == "__main__":
+#     extract_images(
+#         "data/pdfs/01-2024/Unified_Diffusion-Based_Rigid_and_Non-Rigid_Editing_with_Text_and_Image_Guidance.pdf",
+#         "site/images/01-2024/",
+#     )
