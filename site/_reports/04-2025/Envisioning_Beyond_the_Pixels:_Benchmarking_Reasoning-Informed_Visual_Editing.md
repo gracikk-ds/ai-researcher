@@ -1,6 +1,7 @@
 ---
 title: Envisioning_Beyond_the_Pixels:_Benchmarking_Reasoning-Informed_Visual_Editing
 layout: default
+date: 2024-04-04
 ---
 ![Figure 1: Examples of leading models on the Reasoning-Informed viSual Editing(RISE) benchmark. RISEBench contains complex and various tasks that pose challenges to current models.]({{ '/images/04-2025/Envisioning_Beyond_the_Pixels:_Benchmarking_Reasoning-Informed_Visual_Editing/figure_1.png' | relative_url }})
 
@@ -63,5 +64,3 @@ The paper does not perform traditional ablation studies on a proposed model. Ins
 ![Figure 6: Examples of several different models’ outputs on RISEBench. The analyzed models demonstrate distinct characteristics in their responses. Specifically, GPT-4o exhibits instances of instruction misunderstanding, while Gemini sometimes struggles with maintaining image consistency. Other models generally show limited ability to comprehend and execute complex instructions.]({{ '/images/04-2025/Envisioning_Beyond_the_Pixels:_Benchmarking_Reasoning-Informed_Visual_Editing/figure_6.png' | relative_url }})
 
 *Figure 6: Examples of several different models’ outputs on RISEBench. The analyzed models demonstrate distinct characteristics in their responses. Specifically, GPT-4o exhibits instances of instruction misunderstanding, while Gemini sometimes struggles with maintaining image consistency. Other models generally show limited ability to comprehend and execute complex instructions.*
-
-

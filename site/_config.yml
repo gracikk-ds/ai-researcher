@@ -1,8 +1,8 @@
 title: "Autonomous Reports"
-source: site          # <-- all your markdown & images are here
-destination: _site    # Pages artifact will be created here
+source: site
+destination: _site
 markdown: kramdown
 collections:
   reports:
-    output: true      # every file in site/reports/ becomes its own page
+    output: true
     permalink: /reports/:path/

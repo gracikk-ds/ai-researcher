@@ -1,6 +1,7 @@
 ---
 title: GPT-ImgEval:_A_Comprehensive_Benchmark_for_Diagnosing_GPT4o_in_Image_Generation
 layout: default
+date: 2024-04-05
 ---
 ![Figure 1: Commonly used pipelines for unified image generation and understanding, and potential decoder architectures of GPT4o’s image generation choice. The complete speculation of architectures can be seen in Figure 7 .]({{ '/images/04-2025/GPT-ImgEval:_A_Comprehensive_Benchmark_for_Diagnosing_GPT4o_in_Image_Generation/figure_1.png' | relative_url }})
 
@@ -80,5 +81,3 @@ While not a traditional ablation study, the paper performs a crucial analytical 
 ![Figure 9: The overall workflow of the proposed model-based discrimination method.]({{ '/images/04-2025/GPT-ImgEval:_A_Comprehensive_Benchmark_for_Diagnosing_GPT4o_in_Image_Generation/figure_9.png' | relative_url }})
 
 *Figure 9: The overall workflow of the proposed model-based discrimination method.*
-
-

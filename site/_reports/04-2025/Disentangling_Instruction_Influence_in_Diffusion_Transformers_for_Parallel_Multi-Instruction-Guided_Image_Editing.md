@@ -1,6 +1,7 @@
 ---
 title: Disentangling_Instruction_Influence_in_Diffusion_Transformers_for_Parallel_Multi-Instruction-Guided_Image_Editing
 layout: default
+date: 2024-04-03
 ---
 ![Figure 1. Comparison of our proposed Instruction Influence Disentanglement (IID) framework with step-by-step editing and compositing all instructions into a single one for multi-instruction image editing.]({{ '/images/04-2025/Disentangling_Instruction_Influence_in_Diffusion_Transformers_for_Parallel_Multi-Instruction-Guided_Image_Editing/figure_1.png' | relative_url }})
 
@@ -48,5 +49,3 @@ The authors claim their framework enables effective, parallelized multi-instruct
 ![Figure 4. Qualitative comparisons. The top two rows of images are based on FluxEdit, while the bottom two rows are based on Omnigen. Single results represent use the one instruction to edit the input image.]({{ '/images/04-2025/Disentangling_Instruction_Influence_in_Diffusion_Transformers_for_Parallel_Multi-Instruction-Guided_Image_Editing/figure_4.png' | relative_url }})
 
 *Figure 4. Qualitative comparisons. The top two rows of images are based on FluxEdit, while the bottom two rows are based on Omnigen. Single results represent use the one instruction to edit the input image.*
-
-

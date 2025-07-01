@@ -1,6 +1,7 @@
 ---
 title: ILLUME+:_Illuminating_Unified_MLLM_with_Dual_Visual_Tokenization_and_Diffusion_Refinement
 layout: default
+date: 2024-04-06
 ---
 ![Figure 1: ILLUME+ can understand and generate images at any resolution. Compared to our previous work, ILLUME [63], it demonstrates improved texture preservation in image editing tasks.]({{ '/images/04-2025/ILLUME+:_Illuminating_Unified_MLLM_with_Dual_Visual_Tokenization_and_Diffusion_Refinement/figure_1.png' | relative_url }})
 
@@ -51,5 +52,3 @@ The authors claim ILLUME+ provides an effective and scalable foundation for buil
 ![Figure 4: Illustration of our progressive training pipeline. We first pre-train the dual-tokenizer system by reconstruction of the semantic and pixel information. We then fine-tune the diffusion model as a high-quality image decoder. The MLLM training consists of three main stages that gradually increase task resolution and complexity.]({{ '/images/04-2025/ILLUME+:_Illuminating_Unified_MLLM_with_Dual_Visual_Tokenization_and_Diffusion_Refinement/figure_4.png' | relative_url }})
 
 *Figure 4: Illustration of our progressive training pipeline. We first pre-train the dual-tokenizer system by reconstruction of the semantic and pixel information. We then fine-tune the diffusion model as a high-quality image decoder. The MLLM training consists of three main stages that gradually increase task resolution and complexity.*
-
-

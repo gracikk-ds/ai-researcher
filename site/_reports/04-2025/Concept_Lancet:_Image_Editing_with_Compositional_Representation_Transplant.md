@@ -1,6 +1,7 @@
 ---
 title: Concept_Lancet:_Image_Editing_with_Compositional_Representation_Transplant
 layout: default
+date: 2024-04-01
 ---
 ![Figure 1. Given a source image and the editing task, our proposed CoLan generates a concept dictionary and performs sparse decomposition in the latent space to precisely transplant the target concept.]({{ '/images/04-2025/Concept_Lancet:_Image_Editing_with_Compositional_Representation_Transplant/figure_1.png' | relative_url }})
 

@@ -1,6 +1,7 @@
 ---
 title: CREA:_A_Collaborative_Multi-Agent_Framework_for_Creative_Content_Generation_with_Diffusion_Models
 layout: default
+date: 2024-04-02
 ---
 ![Figure 1. We introduce CREA, an agentic framework that emulates the human creative process for creative image editing and generation. Our approach is driven by collaborative interactions between specialized agents, such as a Creative Director and an Art Critic , who communicate to refine and enhance creative output. Moreover, our approach can be extended to video domain for creative video generation. Our framework can also be integrated with personalization techniques to further enrich and expand creative workflows.]({{ '/images/04-2025/CREA:_A_Collaborative_Multi-Agent_Framework_for_Creative_Content_Generation_with_Diffusion_Models/figure_1.png' | relative_url }})
 
@@ -87,5 +88,3 @@ The paper presents several ablation studies to validate the design choices of th
 ![Figure 8. Video Generation . Comparison between baseline generations from CogVideoX and outputs generated using our creative agentic pipeline. Our method enables the creation of visually diverse and creative video scenes.]({{ '/images/04-2025/CREA:_A_Collaborative_Multi-Agent_Framework_for_Creative_Content_Generation_with_Diffusion_Models/figure_8.png' | relative_url }})
 
 *Figure 8. Video Generation . Comparison between baseline generations from CogVideoX and outputs generated using our creative agentic pipeline. Our method enables the creation of visually diverse and creative video scenes.*
-
-
