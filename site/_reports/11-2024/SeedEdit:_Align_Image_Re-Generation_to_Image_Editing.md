@@ -3,6 +3,17 @@ title: SeedEdit:_Align_Image_Re-Generation_to_Image_Editing
 layout: default
 date: 2024-11-11
 ---
+## SeedEdit: Align Image Re-Generation to Image Editing
+**Authors:**
+- Yichun Shi, h-index: 7, papers: 13, citations: 409
+- Weilin Huang, h-index: 4, papers: 7, citations: 67
+
+**ArXiv URL:** http://arxiv.org/abs/2411.06686v1
+
+**Citation Count:** None
+
+**Published Date:** 2024-11-11
+
 ![Figure 1: Example images edited by our method with one unified model and instructions only.]({{ '/images/11-2024/SeedEdit:_Align_Image_Re-Generation_to_Image_Editing/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address a key challenge in diffusion-based image editing: the trade-off between flexibility and quality. Existing methods are typically either training-free, which are versatile but often unstable and produce inconsistent results, or data-driven, which are more robust but limited by the scarcity of diverse, high-quality paired editing datasets. The practical problem is the difficulty of creating a model that can perform a wide range of edits reliably while preserving the original image's identity.

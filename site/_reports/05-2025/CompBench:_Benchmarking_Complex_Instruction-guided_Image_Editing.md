@@ -3,6 +3,17 @@ title: CompBench:_Benchmarking_Complex_Instruction-guided_Image_Editing
 layout: default
 date: 2025-05-18
 ---
+## CompBench: Benchmarking Complex Instruction-guided Image Editing
+**Authors:**
+- Bohan Jia, h-index: 1, papers: 2, citations: 131
+- Shaohui Lin, h-index: 1, papers: 2, citations: 2
+
+**ArXiv URL:** http://arxiv.org/abs/2505.12200v2
+
+**Citation Count:** 1
+
+**Published Date:** 2025-05-18
+
 ![Figure 1: Examples of CompBench. The figure showcases diverse instruction-guided image editing tasks across nine categories: object addition, object removal, object replacement, multi-object editing, multi-turn editing, implicit reasoning, action editing, location editing and viewpoint editing).]({{ '/images/05-2025/CompBench:_Benchmarking_Complex_Instruction-guided_Image_Editing/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address critical limitations in existing benchmarks for instruction-guided image editing. Current benchmarks often lack scene complexity, relying on synthetic or oversimplified real images. They are further constrained by simplistic instructions that fail to capture real-world user requests involving multi-object manipulation, spatial reasoning, or action editing. These deficiencies, combined with frequent visual artifacts in benchmark data, prevent a rigorous and accurate evaluation of a model's true capabilities in handling complex, nuanced editing tasks.

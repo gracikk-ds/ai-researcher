@@ -3,6 +3,17 @@ title: Text_Guided_Image_Editing_with_Automatic_Concept_Locating_and_Forgetting
 layout: default
 date: 2024-05-30
 ---
+## Text Guided Image Editing with Automatic Concept Locating and Forgetting
+**Authors:**
+- Jia Li
+- Di Wang
+
+**ArXiv URL:** http://arxiv.org/abs/2405.19708v1
+
+**Citation Count:** 9
+
+**Published Date:** 2024-05-30
+
 ![Figure 1: Original image presents a red car. When the input text instruction is an image of a yellow bus , Stable Diffusion focuses on modifying the color but preserves the old shape. By analyzing the scene description of the image, concepts that users intend to edit are located and forgotten in the denoising steps for an improved output.]({{ '/images/05-2024/Text_Guided_Image_Editing_with_Automatic_Concept_Locating_and_Forgetting/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Text-guided image editing models often fail to accurately modify images according to text prompts, resulting in generations that retain unwanted attributes (e.g., shape, color) from the source image. This is due to the semantic gap between text and image modalities. Existing solutions often require manual user guidance like masks, which is not scalable.

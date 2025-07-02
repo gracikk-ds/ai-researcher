@@ -3,6 +3,17 @@ title: InstGenIE:_Generative_Image_Editing_Made_Efficient_with_Mask-aware_Cachin
 layout: default
 date: 2025-05-27
 ---
+## InstGenIE: Generative Image Editing Made Efficient with Mask-aware Caching and Scheduling
+**Authors:**
+- Xiaoxiao Jiang, h-index: 1, papers: 3, citations: 4
+- Wei Wang
+
+**ArXiv URL:** http://arxiv.org/abs/2505.20600v1
+
+**Citation Count:** 0
+
+**Published Date:** 2025-05-27
+
 ![Figure 1. A virtual try-on example of image editing using a SDXL model on H800. InstGenIE achieves a model inference speedup of 1 . 7 × and ensures image quality. The Rightmost image : Naively disregarding unmasked regions in image editing will distort the output image.]({{ '/images/05-2025/InstGenIE:_Generative_Image_Editing_Made_Efficient_with_Mask-aware_Caching_and_Scheduling/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The paper addresses the inefficiency of serving generative image editing requests using diffusion models in production AI cloud services. Existing systems typically treat image editing as a full image regeneration task, which is computationally expensive and leads to high latency and low throughput. This approach fails to exploit the inherent sparsity introduced by masks, which are commonly used to specify the exact regions of an image to be modified while leaving the rest untouched. The authors aim to bridge this gap by designing a system that leverages this mask-guided sparsity to make image editing inference more efficient.

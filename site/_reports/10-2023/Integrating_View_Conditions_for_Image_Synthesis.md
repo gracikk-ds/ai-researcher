@@ -3,6 +3,17 @@ title: Integrating_View_Conditions_for_Image_Synthesis
 layout: default
 date: 2023-10-24
 ---
+## Integrating View Conditions for Image Synthesis
+**Authors:**
+- Jinbin Bai, h-index: 6, papers: 9, citations: 136
+- Kaicheng Zhou, h-index: 2, papers: 2, citations: 20
+
+**ArXiv URL:** http://arxiv.org/abs/2310.16002v3
+
+**Citation Count:** 14
+
+**Published Date:** 2023-10-24
+
 ![Figure 1: Applications of the proposed method. Our method can replace each object in the left column with the one in the upper row, ensuring not only consistency in the synthesized object but also, by introducing viewpoint conditions to the model, enabling precise control over the object’s pose and thus enhancing visual harmony.]({{ '/images/10-2023/Integrating_View_Conditions_for_Image_Synthesis/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Existing image editing methods struggle to provide users with precise control over the pose (i.e., spatial orientation and position) of objects being inserted or modified within an image. Current approaches often fail to simultaneously satisfy three critical criteria: **consistency** (the synthesized object faithfully matches the reference object's appearance), **controllability** (the user can precisely dictate the object's pose), and **harmony** (the object integrates seamlessly with the scene's lighting, shadows, and perspective). This paper addresses the gap by creating a framework that explicitly incorporates viewpoint information to achieve all three goals.

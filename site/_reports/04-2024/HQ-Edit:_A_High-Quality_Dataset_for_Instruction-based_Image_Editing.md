@@ -3,6 +3,17 @@ title: HQ-Edit:_A_High-Quality_Dataset_for_Instruction-based_Image_Editing
 layout: default
 date: 2024-04-15
 ---
+## HQ-Edit: A High-Quality Dataset for Instruction-based Image Editing
+**Authors:**
+- Mude Hui, h-index: 4, papers: 6, citations: 134
+- Cihang Xie, h-index: 10, papers: 26, citations: 439
+
+**ArXiv URL:** http://arxiv.org/abs/2404.09990v1
+
+**Citation Count:** 73
+
+**Published Date:** 2024-04-15
+
 ![Fig. 1: (a) (d): example images and edit instructions from HQ-Edit. (e): we compare the dataset quality between our HQ-Edit and existing ones. Note that “Alignment” and “Coherence” are our newly developed metrics (introduced in Sec. 3.4 ) for measuring image/text qualities.]({{ '/images/04-2024/HQ-Edit:_A_High-Quality_Dataset_for_Instruction-based_Image_Editing/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the limitations of existing datasets for instruction-based image editing. They argue that current datasets, such as the one powering InstructPix2Pix, suffer from low-resolution images, poor alignment between the textual edit instruction and the actual visual change, and a lack of diversity in editing operations. These shortcomings hinder the development of high-fidelity and versatile image editing models that can accurately follow user commands.

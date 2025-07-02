@@ -3,6 +3,17 @@ title: DialogGen:_Multi-modal_Interactive_Dialogue_System_for_Multi-turn_Text-to
 layout: default
 date: 2024-03-13
 ---
+## DialogGen: Multi-modal Interactive Dialogue System for Multi-turn Text-to-Image Generation
+**Authors:**
+- Minbin Huang, h-index: 6, papers: 11, citations: 188
+- Wei Liu
+
+**ArXiv URL:** http://arxiv.org/abs/2403.08857v3
+
+**Citation Count:** 10
+
+**Published Date:** 2024-03-13
+
 ![Figure 1: Illustration of Multi-modal Interactive Dialogue System (MIDS) built by our proposed DialogGen that can perform multi-turn multi-modal tasks responding to user’s natural language instructions to meet the users’ needs for image generation, image editing, and chatting.]({{ '/images/03-2024/DialogGen:_Multi-modal_Interactive_Dialogue_System_for_Multi-turn_Text-to-Image_Generation/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the challenge that while Text-to-Image (T2I) models are powerful, they are difficult for average users to interact with effectively. This is due to two main issues: 1) the need for specialized "prompt engineering" skills to get desired results, and 2) the inability of most models to handle multi-turn, iterative conversations where a user might want to refine or edit a previously generated image. This gap hinders a dynamic and intuitive creative process, which the authors aim to solve by creating a more user-friendly, conversational image generation system.

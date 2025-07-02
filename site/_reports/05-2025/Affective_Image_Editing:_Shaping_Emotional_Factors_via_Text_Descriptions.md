@@ -3,6 +3,17 @@ title: Affective_Image_Editing:_Shaping_Emotional_Factors_via_Text_Descriptions
 layout: default
 date: 2025-05-24
 ---
+## Affective Image Editing: Shaping Emotional Factors via Text Descriptions
+**Authors:**
+- Peixuan Zhang, h-index: 2, papers: 5, citations: 27
+- Boxin Shi, h-index: 7, papers: 22, citations: 138
+
+**ArXiv URL:** http://arxiv.org/abs/2505.18699v1
+
+**Citation Count:** 0
+
+**Published Date:** 2025-05-24
+
 ![Fig. 1 Illustration of the proposed AIEdiT method: Given text descriptions that express users’ emotional requests, AIEdiT creates affective images that evoke specific emotions through fine-grained text descriptions. In comparison, general text-driven editing methods ( e.g. , MagicBrush ( Zhang et al , 2024 ) and InstructPix2Pix ( Brooks et al , 2023 )) fail to translate users’ emotional requests. Meanwhile, relevant affective image editing methods either focus on limited emotional factors ( e.g. , color tune in AIFormer ( Weng et al , 2023 )) or use coarse-grained control instructions ( e.g. , emotion categories in EmoEdit ( Yang et al , 2025 )).]({{ '/images/05-2025/Affective_Image_Editing:_Shaping_Emotional_Factors_via_Text_Descriptions/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address a key limitation in existing text-driven image editing methods: their inability to understand and execute users' emotional requests. While general editing models focus on literal instructions, current affective editing methods are too restrictive. They either manipulate limited emotional factors (e.g., only color tone) or rely on coarse-grained emotion categories (e.g., "happy," "sad"), which prevents users from expressing nuanced and subjective feelings. The paper aims to bridge this gap by developing a method that can comprehensively shape multiple emotional factors across an image based on fine-grained, descriptive text.

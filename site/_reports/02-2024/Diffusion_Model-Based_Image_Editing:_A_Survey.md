@@ -3,6 +3,17 @@ title: Diffusion_Model-Based_Image_Editing:_A_Survey
 layout: default
 date: 2024-02-27
 ---
+## Diffusion Model-Based Image Editing: A Survey
+**Authors:**
+- Yi Huang
+- Shifeng Chen
+
+**ArXiv URL:** http://arxiv.org/abs/2402.17525v4
+
+**Citation Count:** 103
+
+**Published Date:** 2024-02-27
+
 ![Fig. 1: Statistical overview of research publications in diffusion model-based image editing. Top: learning strategies. Middle: input conditions. Bottom: editing tasks.]({{ '/images/02-2024/Diffusion_Model-Based_Image_Editing:_A_Survey/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the gap in academic literature concerning diffusion model-based image editing. While diffusion models have become a dominant tool for image generation and editing, existing survey papers tend to focus on broader topics like image generation or restoration, or provide only a cursory overview of image editing. This paper aims to provide the first exhaustive and dedicated survey specifically on 2D image editing using diffusion models, offering a structured and in-depth analysis of the rapidly growing body of work in this subfield.

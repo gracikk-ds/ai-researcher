@@ -3,6 +3,17 @@ title: KV_Inversion:_KV_Embeddings_Learning_for_Text-Conditioned_Real_Image_Acti
 layout: default
 date: 2023-09-28
 ---
+## KV Inversion: KV Embeddings Learning for Text-Conditioned Real Image Action Editing
+**Authors:**
+- Jiancheng Huang, h-index: 13, papers: 31, citations: 852
+- Shifeng Chen
+
+**ArXiv URL:** http://arxiv.org/abs/2309.16608v1
+
+**Citation Count:** 24
+
+**Published Date:** 2023-09-28
+
 ![Fig. 1: Comparing with different concurrent image editing methods on the real natural world images, it is obvious that the object in the editing result of our KV Inversion can meet the edit prompt corresponding to the action editing, while retaining the original real image object.]({{ '/images/09-2023/KV_Inversion:_KV_Embeddings_Learning_for_Text-Conditioned_Real_Image_Action_Editing/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the problem of "action editing" in text-conditioned real image editing. Concurrent methods often fail at this specific task; they either cannot produce an edited image that accurately reflects the action described in the text prompt (e.g., changing "a dog standing" to "a dog running") or they fail to preserve the visual identity and texture of the original object. The paper aims to create a method that can successfully edit the action of a subject in a real image while maintaining its original appearance, without requiring fine-tuning of the entire diffusion model or training on large-scale datasets.

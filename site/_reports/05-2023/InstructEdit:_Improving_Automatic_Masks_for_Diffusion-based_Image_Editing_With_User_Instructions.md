@@ -3,6 +3,17 @@ title: InstructEdit:_Improving_Automatic_Masks_for_Diffusion-based_Image_Editing
 layout: default
 date: 2023-05-29
 ---
+## InstructEdit: Improving Automatic Masks for Diffusion-based Image Editing With User Instructions
+**Authors:**
+- Qian Wang
+- Peter Wonka, h-index: 68, papers: 277, citations: 20262
+
+**ArXiv URL:** http://arxiv.org/abs/2305.18047v1
+
+**Citation Count:** None
+
+**Published Date:** 2023-05-29
+
 ![Figure 1: Left: a comparison between DiffEdit and InstructEdit. Right: examples of editing using InstructEdit. Note that InstructEdit only requires user instructions as input, while DiffEdit needs an input caption and an edited caption instead.]({{ '/images/05-2023/InstructEdit:_Improving_Automatic_Masks_for_Diffusion-based_Image_Editing_With_User_Instructions/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Existing text-guided image editing models, particularly those based on diffusion, struggle to accurately locate the specific regions to be edited and perform precise, fine-grained changes based on user instructions. This is especially challenging in images with multiple objects, where models may edit the wrong object or fail to preserve the background. Methods that automatically generate masks, like DiffEdit, often produce low-quality masks when captions are not sufficiently descriptive, leading to poor editing results. The paper aims to solve this problem by creating a framework that can robustly interpret user instructions and generate high-quality masks to guide fine-grained edits, even in complex scenes.

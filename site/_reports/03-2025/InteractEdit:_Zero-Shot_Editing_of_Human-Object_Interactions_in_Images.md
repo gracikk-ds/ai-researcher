@@ -3,6 +3,17 @@ title: InteractEdit:_Zero-Shot_Editing_of_Human-Object_Interactions_in_Images
 layout: default
 date: 2025-03-12
 ---
+## InteractEdit: Zero-Shot Editing of Human-Object Interactions in Images
+**Authors:**
+- Jiun Tian Hoe, h-index: 2, papers: 8, citations: 128
+- Yap-Peng Tan, h-index: 5, papers: 18, citations: 49
+
+**ArXiv URL:** http://arxiv.org/abs/2503.09130v1
+
+**Citation Count:** 0
+
+**Published Date:** 2025-03-12
+
 ![Figure 1. Sample results of editing Human-Object Interaction in the source image (left). Existing methods overly preserve the structure, making interaction edits ineffective. Our method focuses on modifying interactions while maintaining the subject and object identity.]({{ '/images/03-2025/InteractEdit:_Zero-Shot_Editing_of_Human-Object_Interactions_in_Images/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the challenging task of Human-Object Interaction (HOI) editing in images. Existing image editing methods excel at tasks like changing object attributes or styles but struggle to modify the complex relationship between a human and an object. This is because HOI editing often requires substantial, non-rigid structural changes to the scene (e.g., altering a person's pose from "holding a skateboard" to "riding a skateboard") while preserving the visual identities of the subject and object. Current methods tend to overfit to the source image's structure, making them ineffective for such edits. Furthermore, the field lacks a standardized benchmark for evaluating HOI editing performance, hindering progress.

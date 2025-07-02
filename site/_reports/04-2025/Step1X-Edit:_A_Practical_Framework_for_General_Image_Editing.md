@@ -3,6 +3,17 @@ title: Step1X-Edit:_A_Practical_Framework_for_General_Image_Editing
 layout: default
 date: 2025-04-24
 ---
+## Step1X-Edit: A Practical Framework for General Image Editing
+**Authors:**
+- Shiyu Liu
+- Daxin Jiang, h-index: 6, papers: 14, citations: 200
+
+**ArXiv URL:** http://arxiv.org/abs/2504.17761v4
+
+**Citation Count:** 24
+
+**Published Date:** 2025-04-24
+
 ![Figure 1: Overview of Step1X-Edit . Step1X-Edit is an open-source general editing model that achieves proprietary-level performance with comprehensive editing capabilities.]({{ '/images/04-2025/Step1X-Edit:_A_Practical_Framework_for_General_Image_Editing/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the significant performance gap between open-source image editing models and leading proprietary, closed-source systems like GPT-4o and Gemini. Existing open-source methods often lack generalization, struggle with edit accuracy, and produce lower-quality images. Furthermore, the authors argue that available training datasets are insufficient in quality and diversity to train models that can compete with their closed-source counterparts. The primary goal is to narrow this performance gap by introducing a practical, high-performing, open-source framework and the high-quality data required to train it.

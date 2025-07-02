@@ -3,6 +3,17 @@ title: HumanEdit:_A_High-Quality_Human-Rewarded_Dataset_for_Instruction-based_Im
 layout: default
 date: 2024-12-05
 ---
+## HumanEdit: A High-Quality Human-Rewarded Dataset for Instruction-based Image Editing
+**Authors:**
+- Jinbin Bai, h-index: 4, papers: 7, citations: 28
+- Shuicheng Yan, h-index: 7, papers: 11, citations: 174
+
+**ArXiv URL:** http://arxiv.org/abs/2412.04280v2
+
+**Citation Count:** 10
+
+**Published Date:** 2024-12-05
+
 ![Figure 1: Data examples of instruction-guided image editing in HumanEdit . Our dataset encompasses six distinct editing categories. In the images, gray shapes represent masks, which are provided for every photograph. Moreover, approximately half of the dataset includes instructions that are sufficiently detailed to enable editing without masks. It is important to note that, for conciseness, masks are depicted directly on the original images within this paper; however, in the dataset, the original images and masks are stored separately.]({{ '/images/12-2024/HumanEdit:_A_High-Quality_Human-Rewarded_Dataset_for_Instruction-based_Image_Editing/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the gap between existing instruction-based image editing datasets and real-world human preferences. Current large-scale datasets are often generated automatically using large language and vision models with minimal human oversight. This results in noisy data, low-quality edits, and a general misalignment with the nuanced and diverse ways humans would naturally request image manipulations. These shortcomings limit the practical applicability and reliability of models trained on such data.

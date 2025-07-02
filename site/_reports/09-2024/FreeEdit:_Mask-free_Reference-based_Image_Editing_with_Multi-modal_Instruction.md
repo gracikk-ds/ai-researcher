@@ -3,6 +3,17 @@ title: FreeEdit:_Mask-free_Reference-based_Image_Editing_with_Multi-modal_Instru
 layout: default
 date: 2024-09-26
 ---
+## FreeEdit: Mask-free Reference-based Image Editing with Multi-modal Instruction
+**Authors:**
+- Runze He, h-index: 2, papers: 3, citations: 17
+- Si Liu
+
+**ArXiv URL:** http://arxiv.org/abs/2409.18071v1
+
+**Citation Count:** 9
+
+**Published Date:** 2024-09-26
+
 ![Fig. 1. Comparison between mask-based paradigm and mask-free paradigm, the former requires the user to provide the source mask to specify the editing area, while the latter conditions the diffusion model with language instructions, without the need for the masks. Reference-based inpainting conditions the model on reference image embedding, no longer supporting natural language. We use multi-modal instruction to introduce reference image features while still retaining the perception of natural language.]({{ '/images/09-2024/FreeEdit:_Mask-free_Reference-based_Image_Editing_with_Multi-modal_Instruction/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Current instruction-driven image editing methods often struggle to accurately capture a user's visual intent using text alone. While reference-based editing offers a more precise way to specify visual concepts (e.g., a specific object's appearance), existing approaches have significant drawbacks. They either force the user to provide a manual mask to define the editing area, which is cumbersome, or they fail to faithfully reproduce the fine-grained details of the reference image. Furthermore, there is a lack of high-quality datasets specifically designed for this task. The authors aim to bridge this gap by developing a mask-free, reference-based editing framework that is both user-friendly and capable of high-fidelity concept reproduction.

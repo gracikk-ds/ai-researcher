@@ -3,6 +3,17 @@ title: Guiding_Instruction-based_Image_Editing_via_Multimodal_Large_Language_Mod
 layout: default
 date: 2023-09-29
 ---
+## Guiding Instruction-based Image Editing via Multimodal Large Language Models
+**Authors:**
+- Tsu-Jui Fu, h-index: 20, papers: 43, citations: 2111
+- Zhe Gan, h-index: 70, papers: 157, citations: 20397
+
+**ArXiv URL:** http://arxiv.org/abs/2309.17102v2
+
+**Citation Count:** 98
+
+**Published Date:** 2023-09-29
+
 ![Figure 1: We introduce MLLM-Guided Image Editing (MGIE) to improve instruction-based image editing for various editing aspects. The top is the input instruction, and the right is the jointly derived expressive instruction by MGIE.]({{ '/images/09-2023/Guiding_Instruction-based_Image_Editing_via_Multimodal_Large_Language_Models/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Current instruction-based image editing models struggle to follow human commands that are often brief and ambiguous. For example, an instruction like "make it more healthy" lacks the specific details needed for a model to perform a precise edit. This gap exists because existing methods, which typically use static text encoders like CLIP, are not designed to understand the visual context of an image and infer the user's underlying intent. The authors address this by proposing a method that can derive more detailed and explicit guidance from simple instructions by reasoning about the image content.

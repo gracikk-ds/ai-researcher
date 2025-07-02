@@ -3,6 +3,17 @@ title: FunEditor:_Achieving_Complex_Image_Edits_via_Function_Aggregation_with_Di
 layout: default
 date: 2024-08-16
 ---
+## FunEditor: Achieving Complex Image Edits via Function Aggregation with Diffusion Models
+**Authors:**
+- Mohammadreza Samadi, h-index: 1, papers: 2, citations: 1
+- Di Niu
+
+**ArXiv URL:** http://arxiv.org/abs/2408.08495v2
+
+**Citation Count:** 0
+
+**Published Date:** 2024-08-16
+
 ![Figure 1: (a) Results of applying the two basic functions —Edge Enhancement (center) and Object Removal (right)—using their respective masks on the input image Best viewed when enlarged. (b) Demonstration of function aggregation using the proposed method. By simultaneously applying Object Removal and Edge Enhancement on different masks, complex edits such as object shrinking (middle) and object movement (right) can be achieved. A represents the operation of function aggregation.]({{ '/images/08-2024/FunEditor:_Achieving_Complex_Image_Edits_via_Function_Aggregation_with_Diffusion_Models/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address two key limitations in existing diffusion-based image editing models. First, these models struggle to apply multiple, complex edits simultaneously, forcing them into an inefficient sequential process that can accumulate errors. Second, relying on purely textual instructions to define the edit region often leads to unintended alterations in other parts of the image. The paper aims to create a method that can perform complex edits (like object movement) efficiently in a single step while maintaining high fidelity and localization.

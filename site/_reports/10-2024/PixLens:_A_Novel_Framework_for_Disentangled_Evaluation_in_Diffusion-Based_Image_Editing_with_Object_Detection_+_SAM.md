@@ -3,6 +3,17 @@ title: PixLens:_A_Novel_Framework_for_Disentangled_Evaluation_in_Diffusion-Based
 layout: default
 date: 2024-10-08
 ---
+## PixLens: A Novel Framework for Disentangled Evaluation in Diffusion-Based Image Editing with Object Detection + SAM
+**Authors:**
+- Stefan Stefanachepapers: 1, 
+- Enis Simsar, h-index: 9, papers: 25, citations: 309
+
+**ArXiv URL:** http://arxiv.org/abs/2410.05710v1
+
+**Citation Count:** 0
+
+**Published Date:** 2024-10-08
+
 ![Fig. 1: PixLens Edit Evaluation Pipeline: SIZE operation evaluation example.]({{ '/images/10-2024/PixLens:_A_Novel_Framework_for_Disentangled_Evaluation_in_Diffusion-Based_Image_Editing_with_Object_Detection_+_SAM/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the critical problem of evaluating diffusion-based image editing models. Existing evaluation methods are insufficient due to a lack of standardized benchmarks, an over-reliance on potentially unreliable metrics like CLIP scores, or a dependency on costly and subjective human evaluations. Current automated benchmarks often fail to accurately assess complex spatial edits, handle multiple object instances, or measure the preservation of un-edited content, leading to an incomplete understanding of model performance.

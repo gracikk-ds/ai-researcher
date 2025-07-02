@@ -3,6 +3,17 @@ title: Variational_Bayesian_Framework_for_Advanced_Image_Generation_with_Domain-
 layout: default
 date: 2023-05-23
 ---
+## Variational Bayesian Framework for Advanced Image Generation with Domain-Related Variables
+**Authors:**
+- Yuxiao Li
+- Yuan Shen
+
+**ArXiv URL:** http://arxiv.org/abs/2305.13872v1
+
+**Citation Count:** 0
+
+**Published Date:** 2023-05-23
+
 ![Fig. 1 . The network architecture of the proposed VBITN. The framework consists of VAE-based networks which individually extract latent variables from different domain images. Then the learned latent variables are combined to generate new images.]({{ '/images/05-2023/Variational_Bayesian_Framework_for_Advanced_Image_Generation_with_Domain-Related_Variables/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the challenge that existing deep generative models (DGMs) struggle with advanced conditional image generation tasks, such as unsupervised image-to-image translation and semantic editing, without a unified and scalable framework. Current methods often require problem-specific constraints and redundant fine-tuning, and they lack a clear statistical foundation for disentangling the different semantic factors that constitute an image. The paper aims to create a single, principled probabilistic framework that can handle multiple translation and editing tasks in a consistent manner.

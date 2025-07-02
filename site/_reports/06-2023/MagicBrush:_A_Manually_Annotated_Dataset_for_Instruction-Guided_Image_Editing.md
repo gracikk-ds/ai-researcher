@@ -3,6 +3,17 @@ title: MagicBrush:_A_Manually_Annotated_Dataset_for_Instruction-Guided_Image_Edi
 layout: default
 date: 2023-06-16
 ---
+## MagicBrush: A Manually Annotated Dataset for Instruction-Guided Image Editing
+**Authors:**
+- Kai Zhang
+- Yu Su
+
+**ArXiv URL:** http://arxiv.org/abs/2306.10012v3
+
+**Citation Count:** 277
+
+**Published Date:** 2023-06-16
+
 ![Figure 1: M AGIC B RUSH provides 10K manually annotated real image editing triplets (source image, instruction, target image), supporting both single-turn and multi-turn instruction-guided editing.]({{ '/images/06-2023/MagicBrush:_A_Manually_Annotated_Dataset_for_Instruction-Guided_Image_Editing/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Existing text-guided image editing models are often trained on automatically synthesized datasets, which contain significant noise and do not fully capture the diversity of real-world editing needs. Other zero-shot methods require extensive manual tuning to produce desirable results. This creates a gap between current model capabilities and practical, high-quality image editing. The authors address this by creating a large-scale, manually annotated dataset to facilitate the development of more robust and accurate instruction-guided editing models.

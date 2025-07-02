@@ -3,6 +3,17 @@ title: DreamEdit:_Subject-driven_Image_Editing
 layout: default
 date: 2023-06-22
 ---
+## DreamEdit: Subject-driven Image Editing
+**Authors:**
+- Tianle Li, h-index: 5, papers: 9, citations: 361
+- Wenhu Chen, h-index: 33, papers: 57, citations: 7031
+
+**ArXiv URL:** http://arxiv.org/abs/2306.12624v2
+
+**Citation Count:** None
+
+**Published Date:** 2023-06-22
+
 ![Figure 1: The leftmost column is the customized subject, the middle column is the Subject Replacement task, the rightmost column is the Subject Addition task. The output is the generated results by DreamEditor]({{ '/images/06-2023/DreamEdit:_Subject-driven_Image_Editing/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address a gap between two existing areas of image manipulation: subject-driven generation and text-guided image editing. Current subject-driven generation methods (e.g., DreamBooth) can create images of a specific, personalized subject but lack precise control over the subject's position and the image background. Conversely, text-guided editing methods offer fine-grained control over image layout and background but cannot faithfully synthesize a specific, user-provided subject. This paper aims to bridge this gap by introducing tasks that require both subject fidelity and precise compositional control.

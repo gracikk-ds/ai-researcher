@@ -3,6 +3,17 @@ title: Marmot:_Multi-Agent_Reasoning_for_Multi-Object_Self-Correcting_in_Improvi
 layout: default
 date: 2025-04-10
 ---
+## Marmot: Multi-Agent Reasoning for Multi-Object Self-Correcting in Improving Image-Text Alignment
+**Authors:**
+- Jiayang Sun
+- Ran He
+
+**ArXiv URL:** http://arxiv.org/abs/2504.20054v2
+
+**Citation Count:** 0
+
+**Published Date:** 2025-04-10
+
 ![Figure 1: Existing diffusion-based models often struggle with image-text inconsistencies in object counting, attributes, and spatial relationships during the generation process. Our Marmot can seamlessly integrate with text-to-image models to facilitate object-level self-correction, ensuring precise alignment with user descriptions in object counting, attributes, and spatial relationships.]({{ '/images/04-2025/Marmot:_Multi-Agent_Reasoning_for_Multi-Object_Self-Correcting_in_Improving_Image-Text_Alignment/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address a critical limitation in diffusion-based text-to-image models: their struggle to accurately generate complex scenes with multiple objects. These models often fail in three key areas: correct object counting, binding attributes (e.g., color, shape) to the right objects, and maintaining correct spatial relationships between objects. While recent self-correction frameworks using Multimodal Large Language Models (MLLMs) as a single agent have been proposed, they are highly dependent on the MLLM's capabilities and often fail to handle all objects and their relationships simultaneously, leading to incomplete or incorrect edits.

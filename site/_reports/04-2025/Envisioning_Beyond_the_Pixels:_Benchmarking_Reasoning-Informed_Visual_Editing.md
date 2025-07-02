@@ -3,6 +3,17 @@ title: Envisioning_Beyond_the_Pixels:_Benchmarking_Reasoning-Informed_Visual_Edi
 layout: default
 date: 2025-04-03
 ---
+## Envisioning Beyond the Pixels: Benchmarking Reasoning-Informed Visual Editing
+**Authors:**
+- Xiangyu Zhao
+- Haodong Duan, h-index: 1, papers: 5, citations: 6
+
+**ArXiv URL:** http://arxiv.org/abs/2504.02826v4
+
+**Citation Count:** 6
+
+**Published Date:** 2025-04-03
+
 ![Figure 1: Examples of leading models on the Reasoning-Informed viSual Editing(RISE) benchmark. RISEBench contains complex and various tasks that pose challenges to current models.]({{ '/images/04-2025/Envisioning_Beyond_the_Pixels:_Benchmarking_Reasoning-Informed_Visual_Editing/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the gap in evaluating a sophisticated capability emerging in Large Multi-modality Models (LMMs): **Reasoning-Informed Visual Editing (RISE)**. While LMMs have advanced in visual understanding and generation, they still struggle with editing tasks that require complex reasoning, such as following intricate instructions, preserving the appearance of unchanged parts of an image, and handling flexible inputs. The lack of a specialized benchmark makes it difficult to quantitatively measure these reasoning abilities, hindering progress in the field.

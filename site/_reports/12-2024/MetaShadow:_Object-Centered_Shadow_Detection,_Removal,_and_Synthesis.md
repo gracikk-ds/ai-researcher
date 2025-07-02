@@ -3,6 +3,17 @@ title: MetaShadow:_Object-Centered_Shadow_Detection,_Removal,_and_Synthesis
 layout: default
 date: 2024-12-03
 ---
+## MetaShadow: Object-Centered Shadow Detection, Removal, and Synthesis
+**Authors:**
+- Tianyu Wang
+- Soo Ye Kim, h-index: 5, papers: 11, citations: 102
+
+**ArXiv URL:** http://arxiv.org/abs/2412.02635v1
+
+**Citation Count:** 2
+
+**Published Date:** 2024-12-03
+
 ![Figure 1. MetaShadow is a versatile three-in-one framework designed for shadow-related tasks, enabling shadow manipulation in various object-centered image editing operations such as: [I] Object Relocation: Our model can detect and remove the shadow of an existing object, then synthesize the shadow in the new location consistent with the original shadow. [II] Remove an object and its shadow: (1) Based on the mask of the unwanted object, our model can directly remove its shadow (2). After removing the object (3), we can eliminate any remaining shadows for a cleaner background (4) if we do not specify which shadow to remove. [III] Insert an object and synthesize its shadow: When inserting the person in (b) to another image (a) with similar lighting, our model can generate a realistic shadow, enhancing the final compositing quality.]({{ '/images/12-2024/MetaShadow:_Object-Centered_Shadow_Detection,_Removal,_and_Synthesis/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Existing image editing applications often neglect or improperly handle shadows during object manipulation tasks like removal, relocation, or insertion. This oversight significantly reduces the realism and visual coherence of the final edited image. Furthermore, current research methods typically address shadow detection, removal, and synthesis as separate, isolated problems. This prevents them from sharing learned knowledge, leading to inconsistent and suboptimal results when used together in a pipeline. The authors identify a need for a unified, object-centered framework that can jointly and cohesively manage all three shadow-related tasks to enable high-quality, realistic image editing.

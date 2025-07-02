@@ -3,6 +3,17 @@ title: Pattern_Analogies:_Learning_to_Perform_Programmatic_Image_Edits_by_Analog
 layout: default
 date: 2024-12-17
 ---
+## Pattern Analogies: Learning to Perform Programmatic Image Edits by Analogy
+**Authors:**
+- Aditya Ganeshan, h-index: 3, papers: 7, citations: 42
+- Daniel Ritchie, h-index: 2, papers: 5, citations: 13
+
+**ArXiv URL:** http://arxiv.org/abs/2412.12463v2
+
+**Citation Count:** 0
+
+**Published Date:** 2024-12-17
+
 ![Figure 1. Our system performs programmatic edits on pattern images without inferring their underlying programs. (Left) Desired edits, expressed with a pair of patterns ( A, A ′ ) , are executed on a target pattern B by a generative model to produce B ′ . (Right) Parametric changes A → A ′ enabled by our domain-specific pattern language induce corresponding changes to the more complex pattern B .]({{ '/images/12-2024/Pattern_Analogies:_Learning_to_Perform_Programmatic_Image_Edits_by_Analogy/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the challenge of editing visual patterns. Desired edits are often "programmatic," meaning they alter the underlying structural rules of the pattern (e.g., changing tile size or layout). Current methods, like Visual Program Inference (VPI), attempt to solve this by inferring the entire program that generates the pattern. However, this approach struggles with complex real-world patterns and often produces disorganized programs that are difficult for users to edit. The paper aims to enable programmatic edits without the need for explicit program inference, providing a more intuitive and direct editing workflow.

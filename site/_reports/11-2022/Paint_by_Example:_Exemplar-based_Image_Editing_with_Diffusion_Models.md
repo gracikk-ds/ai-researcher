@@ -3,6 +3,17 @@ title: Paint_by_Example:_Exemplar-based_Image_Editing_with_Diffusion_Models
 layout: default
 date: 2022-11-23
 ---
+## Paint by Example: Exemplar-based Image Editing with Diffusion Models
+**Authors:**
+- Binxin Yang, h-index: 6, papers: 7, citations: 630
+- Fang Wen
+
+**ArXiv URL:** http://arxiv.org/abs/2211.13227v1
+
+**Citation Count:** None
+
+**Published Date:** 2022-11-23
+
 ![Figure 1. Paint by example. Users are able to edit a scene by painting with a conditional image. Our approach can automatically alter the reference image and merge it into the source image, and achieve a high-quality result.]({{ '/images/11-2022/Paint_by_Example:_Exemplar-based_Image_Editing_with_Diffusion_Models/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the limitations of language-guided image editing, which can be ambiguous and lacks the precision needed for fine-grained control. They propose an exemplar-based image editing framework, where a reference image guides the manipulation, allowing for more intuitive and precise control over the final appearance. The core challenge is to semantically transform the object from the exemplar (e.g., altering its pose, size, and lighting) and blend it harmoniously into a source image, rather than simply performing a "copy-paste" operation.

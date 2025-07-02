@@ -3,6 +3,17 @@ title: Guidance_Free_Image_Editing_via_Explicit_Conditioning
 layout: default
 date: 2025-03-22
 ---
+## Guidance Free Image Editing via Explicit Conditioning
+**Authors:**
+- Mehdi Noroozi, h-index: 1, papers: 3, citations: 1
+- Sourav Bhattacharya, h-index: 3, papers: 14, citations: 25
+
+**ArXiv URL:** http://arxiv.org/abs/2503.17593v1
+
+**Citation Count:** None
+
+**Published Date:** 2025-03-22
+
 ![Figure 1. Image editing performance for the context image in (a) with the instruction prompt: ”Make her a bride”. CFG (Eq. 10 ) are shown with × 1 pass ( s I = 1 . 0 , s P = 1 . 0 ) in (d), × 2 passes ( s I = 1 . 0 , s P = 7 . 5 ) in (e), and × 3 passes ( s I = 1 . 6 , s P = 7 . 5 ) in (f). Our proposed explicit conditioning result with a single pass is shown in (c).]({{ '/images/03-2025/Guidance_Free_Image_Editing_via_Explicit_Conditioning/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the significant computational cost associated with current state-of-the-art conditional diffusion models. These models heavily rely on Classifier-Free Guidance (CFG), a technique that improves image quality and adherence to conditions (like text prompts) but requires multiple denoising passes per time step—up to three for image editing tasks. This multi-pass requirement makes the image generation process slow and computationally expensive. The paper aims to create a new conditioning mechanism that eliminates the need for CFG, thereby reducing inference time and computational overhead without sacrificing output quality.

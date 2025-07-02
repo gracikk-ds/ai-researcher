@@ -3,6 +3,17 @@ title: CREA:_A_Collaborative_Multi-Agent_Framework_for_Creative_Content_Generati
 layout: default
 date: 2025-04-07
 ---
+## CREA: A Collaborative Multi-Agent Framework for Creative Content Generation with Diffusion Models
+**Authors:**
+- Kavana Venkatesh, h-index: 2, papers: 4, citations: 28
+- Pinar Yanardag, h-index: 7, papers: 33, citations: 368
+
+**ArXiv URL:** http://arxiv.org/abs/2504.05306v1
+
+**Citation Count:** None
+
+**Published Date:** 2025-04-07
+
 ![Figure 1. We introduce CREA, an agentic framework that emulates the human creative process for creative image editing and generation. Our approach is driven by collaborative interactions between specialized agents, such as a Creative Director and an Art Critic , who communicate to refine and enhance creative output. Moreover, our approach can be extended to video domain for creative video generation. Our framework can also be integrated with personalization techniques to further enrich and expand creative workflows.]({{ '/images/04-2025/CREA:_A_Collaborative_Multi-Agent_Framework_for_Creative_Content_Generation_with_Diffusion_Models/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Existing generative AI models, while capable of producing high-quality images, often lack true originality and artistic depth. They typically rely on extensive user effort through tedious prompt engineering and manual refinement to achieve creative results. The authors address this gap by introducing the task of "creative image editing," which aims to autonomously transform images in novel, expressive, and aesthetically rich ways with minimal user intervention. The core problem is to shift the creative burden from the user to the AI system itself, enabling more autonomous artistic exploration.

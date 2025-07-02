@@ -3,6 +3,17 @@ title: Omni$^2$:_Unifying_Omnidirectional_Image_Generation_and_Editing_in_an_Omn
 layout: default
 date: 2025-04-15
 ---
+## Omni$^2$: Unifying Omnidirectional Image Generation and Editing in an Omni Model
+**Authors:**
+- Liu Yang
+- Patrick Le Callet
+
+**ArXiv URL:** http://arxiv.org/abs/2504.11379v1
+
+**Citation Count:** 2
+
+**Published Date:** 2025-04-15
+
 ![but it is both time-consuming and inefficient, and may generate inconsistent views. Moreover, due to the unique depth and spatial characteristics of omnidirectional images, conventional 2D editing models struggle to understand the spatial relationships between viewports or even within individual ODI views, making the splitand-edit approach impractical. Therefore, dedicated ODI editing dataset and method are necessary to advance research in this domain. Built upon the rapid progress in 2D image generation and editing, integrating these tasks into a unified framework has become increasingly popular [ 31 , 37 , 39 ]. In this paper, we aim to unify ODI generation and editing into an efficient model. To this end, we first introduce Any2Omni , the first comprehensive dataset for omnidirectional image generation and editing tasks. As shown in Table 1, our dataset integrates multiple input modalities for ODI generation tasks. For the newly defined omnidirectional image editing tasks, we start by proposing a simple yet effective pipeline capable of generating high-quality, object-level indoor editing samples. Additionally, we introduce two scene-level ODI editing tasks utilizing existing ODI datasets [ 44 ]. Overall, our Any2Omni dataset comprises over 60,000 training samples, covering 9 categories of omnidirectional image generation and editing tasks with various input conditions. Based on Any2Omni, we further introduce the first omni model for omnidirectional image generation and editing, termed Omni 2 . Omni 2 adopts a simple yet effetive Transformer-based framework to support 360 ◦ × 180 ◦ high-quality omnidirectional image synthesis under a variety of multimodal input conditions. In contrast to existing diffusion-based ODI generation methods, which incorporate additional attention blocks for multi-view consistency [ 29 , 42 ], we introduce a novel approach by executing viewport-based bidirectional attention within a unified Transformer. Our model demonstrates superior performance across a wide range of ODI generation and editing tasks with various input conditions, as shown in Fig. 1. The main highlights of this work include:]({{ '/images/04-2025/Omni$^2$:_Unifying_Omnidirectional_Image_Generation_and_Editing_in_an_Omni_Model/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The paper addresses the significant challenge of creating and modifying 360° omnidirectional images (ODIs), which are crucial for virtual and augmented reality applications. Capturing real-world ODIs is expensive, and existing 2D image synthesis models perform poorly due to the unique equirectangular projection (ERP) format and wide field-of-view of ODIs. Previous ODI-specific generation methods are limited to single tasks (like text-to-image) and often produce inconsistent or incomplete results. Furthermore, the field of omnidirectional image editing is almost entirely unexplored, primarily due to the lack of dedicated datasets and tailored models.

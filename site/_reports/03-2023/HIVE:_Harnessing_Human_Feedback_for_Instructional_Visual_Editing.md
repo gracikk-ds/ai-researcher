@@ -3,6 +3,17 @@ title: HIVE:_Harnessing_Human_Feedback_for_Instructional_Visual_Editing
 layout: default
 date: 2023-03-16
 ---
+## HIVE: Harnessing Human Feedback for Instructional Visual Editing
+**Authors:**
+- Shu Zhang
+- Ran Xu
+
+**ArXiv URL:** http://arxiv.org/abs/2303.09618v2
+
+**Citation Count:** 116
+
+**Published Date:** 2023-03-16
+
 ![Figure 1. We show four groups of representative results. In each triplet, from left to right are: the original image, InstructPix2Pix [ 7 ] using our data (IP2P-Ours), and HIVE. We observe that HIVE leads to more acceptable results than the model without human feedback. For instance, in the left two examples, IP2P-Ours understands the editing instruction “remove” and “change to blue” individually, but fails to understand the corresponding objects. Human feedback resolves this ambiguity, as shown in other examples as well.]({{ '/images/03-2023/HIVE:_Harnessing_Human_Feedback_for_Instructional_Visual_Editing/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the problem that state-of-the-art instructional image editing models, while powerful, often produce results that do not fully align with user instructions or preferences. These models can misinterpret the objects to be edited, misunderstand the desired change, or make excessive, unwanted alterations to the rest of the image. The paper aims to bridge this gap by incorporating human feedback into the model's training process, a technique successfully used to align large language models (LLMs) but less explored for diffusion-based image editors due to technical challenges.

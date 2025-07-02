@@ -3,6 +3,17 @@ title: ByteMorph:_Benchmarking_Instruction-Guided_Image_Editing_with_Non-Rigid_M
 layout: default
 date: 2025-06-03
 ---
+## ByteMorph: Benchmarking Instruction-Guided Image Editing with Non-Rigid Motions
+**Authors:**
+- Di Chang
+- Peng Wang
+
+**ArXiv URL:** http://arxiv.org/abs/2506.03107v2
+
+**Citation Count:** 0
+
+**Published Date:** 2025-06-03
+
 ![Figure 1 Overview of ByteMorph . a) We first construct ByteMorph-6M and ByteMorph-Bench, a large-scale dataset and a corresponding evaluation benchmark with data that covers a diverse range of non-rigid motions. b) We then fine-tune ByteMorpher, a diffusion transformer model initialized with pretrained weights from Flux.1-dev [ 3 ], using the data collected in ByteMorph-6M. The distribution of ByteMorph-6M is shown in c).]({{ '/images/06-2025/ByteMorph:_Benchmarking_Instruction-Guided_Image_Editing_with_Non-Rigid_Motions/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address a significant gap in instruction-guided image editing. Existing methods and datasets predominantly focus on static edits (e.g., style changes, attribute modification) or rigid transformations. They largely fail to handle complex, non-rigid motions such as camera movements, human articulation, object deformations, and dynamic interactions. This limitation prevents current models from performing expressive, motion-oriented edits, which are crucial for more realistic and dynamic visual content manipulation. The paper aims to bridge this gap by creating a dedicated framework for benchmarking and developing models capable of these non-rigid transformations.

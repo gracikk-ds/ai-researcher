@@ -3,6 +3,17 @@ title: MirrorVerse:_Pushing_Diffusion_Models_to_Realistically_Reflect_the_World
 layout: default
 date: 2025-04-21
 ---
+## MirrorVerse: Pushing Diffusion Models to Realistically Reflect the World
+**Authors:**
+- Ankit Dhiman, h-index: 4, papers: 10, citations: 50
+- R Venkatesh Babu
+
+**ArXiv URL:** http://arxiv.org/abs/2504.15397v1
+
+**Citation Count:** None
+
+**Published Date:** 2025-04-21
+
 ![Figure 1. Our model MirrorFusion 2.0, trained on our enhanced dataset SynMirrorV2 surpasses previous state-of-the-art diffusion-based inpainting models at the task of generating mirror reflections. All images were created by appending the prompt: “A perfect plane mirror reflection of ” to the object description. All text prompts can be found in the supplementary.]({{ '/images/04-2025/MirrorVerse:_Pushing_Diffusion_Models_to_Realistically_Reflect_the_World/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Diffusion models, despite their success in image editing, often fail to adhere to physical laws, particularly in generating realistic mirror reflections. Existing methods struggle to generalize to diverse object poses, positions, and complex multi-object scenes. This is largely due to the limited diversity and realism of the synthetic datasets they are trained on, creating a gap between generated images and physical reality.

@@ -3,6 +3,17 @@ title: LayerDiff:_Exploring_Text-guided_Multi-layered_Composable_Image_Synthesis
 layout: default
 date: 2024-03-18
 ---
+## LayerDiff: Exploring Text-guided Multi-layered Composable Image Synthesis via Layer-Collaborative Diffusion Model
+**Authors:**
+- Runhui Huang
+- Hang Xu
+
+**ArXiv URL:** http://arxiv.org/abs/2403.11929v1
+
+**Citation Count:** None
+
+**Published Date:** 2024-03-18
+
 ![Fig. 1: An examples of the multi-layered composable image. The multi-layered composable image includes a background layer, a set of foreground layers and the corresponding layer masks. The layer images, layer masks and the layer prompts with the same color are belonging to the same layer. The text-guided multi-layered composable image synthesis is aimed to generate the layer images and layer masks simultaneously under the guidance of global prompt to control the holistic content, and the layer prompts to control the per layer’s content. It’s able to composite a whole image by assembling these layers according to the masks.]({{ '/images/03-2024/LayerDiff:_Exploring_Text-guided_Multi-layered_Composable_Image_Synthesis_via_Layer-Collaborative_Diffusion_Model/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Standard text-to-image diffusion models generate high-quality but monolithic (single-layer) images. This approach limits their utility in real-world applications like professional graphic design and digital art, where images are typically created and manipulated as a composition of multiple, independent layers to afford greater flexibility and control. The authors address this gap by proposing a method for text-guided, multi-layered, composable image synthesis, allowing for the generation and manipulation of individual objects and the background as distinct layers.

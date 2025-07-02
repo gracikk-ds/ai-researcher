@@ -3,6 +3,17 @@ title: MIGE:_A_Unified_Framework_for_Multimodal_Instruction-Based_Image_Generati
 layout: default
 date: 2025-02-28
 ---
+## MIGE: A Unified Framework for Multimodal Instruction-Based Image Generation and Editing
+**Authors:**
+- Xueyun Tian, h-index: 1, papers: 1, citations: 6
+- Huawei Shen, h-index: 2, papers: 2, citations: 10
+
+**ArXiv URL:** http://arxiv.org/abs/2502.21291v2
+
+**Citation Count:** 6
+
+**Published Date:** 2025-02-28
+
 ![Figure 1: Demonstrating the comprehensive capabilities of MIGE. As a unified framework, MIGE excels in subject-driven generation and instruction-based editing while performing well in the new compositional task of instruction-based subject-driven editing.]({{ '/images/02-2025/MIGE:_A_Unified_Framework_for_Multimodal_Instruction-Based_Image_Generation_and_Editing/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the limitations of existing diffusion-based models, which typically handle subject-driven image generation and instruction-based image editing as separate, isolated tasks. This separation leads to poor generalization, struggles with limited high-quality data for each specific task, and prevents models from tackling more complex, compositional instructions. For instance, subject-driven generation methods often require per-subject fine-tuning, while instruction-based editors can struggle to maintain global consistency. The core problem is the lack of a unified framework that can leverage the complementary strengths of both tasks to improve overall performance and enable novel capabilities like instruction-based subject-driven editing.

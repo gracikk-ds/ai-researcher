@@ -3,6 +3,17 @@ title: UniHuman:_A_Unified_Model_for_Editing_Human_Images_in_the_Wild
 layout: default
 date: 2023-12-22
 ---
+## UniHuman: A Unified Model for Editing Human Images in the Wild
+**Authors:**
+- Nannan Li
+- Zhe Lin
+
+**ArXiv URL:** http://arxiv.org/abs/2312.14985v2
+
+**Citation Count:** None
+
+**Published Date:** 2023-12-22
+
 ![Figure 1. The results of UniHuman on diverse real-world images. UniHuman learns informative representations by leveraging multiple data sources and connections between related tasks, achieving high-quality results across various human image editing objectives.]({{ '/images/12-2023/UniHuman:_A_Unified_Model_for_Editing_Human_Images_in_the_Wild/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
     - Prior work in human image editing typically addresses tasks like reposing (changing pose), virtual try-on (changing clothes), and text-based manipulation in isolation. This approach overlooks the potential for mutual reinforcement from learning these related tasks jointly. Furthermore, existing models often struggle to generalize to diverse, "in-the-wild" images with varied backgrounds, poses, and clothing styles, as they are trained on limited, in-studio datasets.

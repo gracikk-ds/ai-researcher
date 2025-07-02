@@ -3,6 +3,17 @@ title: SuperEdit:_Rectifying_and_Facilitating_Supervision_for_Instruction-Based_
 layout: default
 date: 2025-05-05
 ---
+## SuperEdit: Rectifying and Facilitating Supervision for Instruction-Based Image Editing
+**Authors:**
+- Ming Li
+- Sijie Zhu, h-index: 4, papers: 8, citations: 54
+
+**ArXiv URL:** http://arxiv.org/abs/2505.02370v1
+
+**Citation Count:** 2
+
+**Published Date:** 2025-05-05
+
 ![Figure 1. (a) Our editing method works well with real and high-resolution images, handling various free-form edits (left) and local edits (right); (b) Compared to the current state-of-the-art SmartEdit, our method achieves a 9.19% performance improvement with 30 × less training data and 13 × fewer model parameters; (c) Our method achieves better overall scores on the human evaluation results, indicating more precise editing capabilities.]({{ '/images/05-2025/SuperEdit:_Rectifying_and_Facilitating_Supervision_for_Instruction-Based_Image_Editing/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Existing methods for instruction-based image editing rely on automatically generated datasets. This process often creates a mismatch between the textual editing instruction and the actual changes in the edited image, resulting in "noisy" supervision signals. Previous works have tried to mitigate this by using more complex models or adding pre-training tasks, but they overlook the fundamental problem of poor-quality supervision data. This paper addresses this gap by focusing on improving the supervision signals themselves to enhance model performance more directly and efficiently.

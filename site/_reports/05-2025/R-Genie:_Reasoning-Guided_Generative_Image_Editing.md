@@ -3,6 +3,17 @@ title: R-Genie:_Reasoning-Guided_Generative_Image_Editing
 layout: default
 date: 2025-05-23
 ---
+## R-Genie: Reasoning-Guided Generative Image Editing
+**Authors:**
+- Dong Zhang
+- Jinhui Tang
+
+**ArXiv URL:** http://arxiv.org/abs/2505.17768v1
+
+**Citation Count:** 0
+
+**Published Date:** 2025-05-23
+
 ![Figure 1: By integrating multimodal large language models, we endow generative image editing models with intricate reasoning capabilities. Our method interprets implicit user-provided contextual knowledge to control the generative pixel-level editing process, ensuring results that align faithfully with the intended modifications. The underline indicates the content that requires reasoning-based processing. More illustrations can be found in the supplementary material.]({{ '/images/05-2025/R-Genie:_Reasoning-Guided_Generative_Image_Editing/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Current generative image editing methods are constrained by explicit, low-complexity textual instructions (e.g., "change the dog to a cat"). They lack the ability to comprehend implicit user intentions or perform contextual reasoning that requires real-world knowledge. This gap prevents them from handling complex queries like "Identify which food in the image is rich in protein and replace it with a banana," limiting their utility in real-world scenarios that demand deeper understanding.

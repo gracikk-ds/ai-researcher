@@ -3,6 +3,17 @@ title: REED-VAE:_RE-Encode_Decode_Training_for_Iterative_Image_Editing_with_Diff
 layout: default
 date: 2025-04-26
 ---
+## REED-VAE: RE-Encode Decode Training for Iterative Image Editing with Diffusion Models
+**Authors:**
+- Gal Almogpapers: 1, 
+- Ohad Friedpapers: 1, 
+
+**ArXiv URL:** http://arxiv.org/abs/2504.18989v1
+
+**Citation Count:** None
+
+**Published Date:** 2025-04-26
+
 ![Figure 1: REED-VAE (top) preserves image quality over multiple editing iterations, allowing users to perform multiple edit operations using a combination of frameworks and techniques. The Vanilla VAE (bottom) accumulates many artifacts and noise along the way, becoming very apparent once multiple iterative edit operations are performed. The total edit sequence consists of 14 steps, of which only the last 4 are shown here for brevity and to highlight the differences in the final picture. Four types of edit operations are performed: text-guided editing [ BHE23 ], external editing (not diffusion-based), mask-guided editing [ AFL23 ], and example-guided editing [ YGZ ∗ 23 ].]({{ '/images/04-2025/REED-VAE:_RE-Encode_Decode_Training_for_Iterative_Image_Editing_with_Diffusion_Models/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address a practical limitation in modern generative AI: the inability to perform multiple, sequential edits on an image using a mix of different tools. While latent diffusion models excel at single edits, applying them iteratively causes significant image degradation. This is because switching between diffusion-based methods (which operate in a latent space) and traditional pixel-based editing tools requires repeated conversions through a Variational Autoencoder (VAE). Each conversion cycle is lossy, accumulating noise and artifacts that quickly destroy image quality, restricting creative workflows.

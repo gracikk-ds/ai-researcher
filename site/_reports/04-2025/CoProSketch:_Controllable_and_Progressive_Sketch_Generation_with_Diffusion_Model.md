@@ -3,6 +3,17 @@ title: CoProSketch:_Controllable_and_Progressive_Sketch_Generation_with_Diffusio
 layout: default
 date: 2025-04-11
 ---
+## CoProSketch: Controllable and Progressive Sketch Generation with Diffusion Model
+**Authors:**
+- Ruohao Zhan, h-index: 1, papers: 3, citations: 5
+- Guofeng Zhang
+
+**ArXiv URL:** http://arxiv.org/abs/2504.08259v1
+
+**Citation Count:** 0
+
+**Published Date:** 2025-04-11
+
 ![Figure 1. Demonstrations of the proposed pipeline. Left : The proposed pipeline takes a text prompt and an expected layout, represented by a bounding box, as input and generates sketches progressively, from rough to detailed. If the results are unsatisfactory, the user can make timely edits during the rough stage at a low cost. Right : one application is layer-based composition, where the layers (i.e., instance masks) and the sketches are both the output from the proposed pipeline.]({{ '/images/04-2025/CoProSketch:_Controllable_and_Progressive_Sketch_Generation_with_Diffusion_Model/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the gap between advanced generative models and the practical needs of artists, particularly in sketch creation. While sketches are fundamental to artistic workflows due to their intuitive editability, automatic sketch generation remains under-explored. Existing generative models for RGB images lack the precise control over layout and structure that artists require, and editing the final RGB output is often cumbersome. The paper aims to create a framework for sketch generation that is both highly controllable and progressive, allowing users to iteratively refine a sketch from a rough concept to a detailed drawing, integrating user feedback seamlessly into the process.

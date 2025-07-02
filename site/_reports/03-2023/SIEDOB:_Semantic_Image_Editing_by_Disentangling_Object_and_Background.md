@@ -3,6 +3,17 @@ title: SIEDOB:_Semantic_Image_Editing_by_Disentangling_Object_and_Background
 layout: default
 date: 2023-03-23
 ---
+## SIEDOB: Semantic Image Editing by Disentangling Object and Background
+**Authors:**
+- Wuyang Luo, h-index: 5, papers: 8, citations: 82
+- Weishan Zhang, h-index: 8, papers: 18, citations: 164
+
+**ArXiv URL:** http://arxiv.org/abs/2303.13062v1
+
+**Citation Count:** None
+
+**Published Date:** 2023-03-23
+
 ![Figure 1. Existing methods struggle to deal with the compound of backgrounds and several overlapping objects in a complex scene. They generate distorted objects and texturally inconsistent backgrounds . The proposed method can cope well with this input.]({{ '/images/03-2023/SIEDOB:_Semantic_Image_Editing_by_Disentangling_Object_and_Background/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address a key limitation in existing semantic image editing methods. Current approaches typically use a single, monolithic model to generate both foreground objects and backgrounds. This is problematic because objects and backgrounds have fundamentally different characteristics; objects are class-specific and have defined shapes, while backgrounds are often large, amorphous, and require strict texture consistency with surrounding unedited areas. Consequently, monolithic models struggle with complex scenes, often producing distorted objects and backgrounds with inconsistent textures. The paper aims to solve this by proposing a new paradigm that handles objects and backgrounds separately.

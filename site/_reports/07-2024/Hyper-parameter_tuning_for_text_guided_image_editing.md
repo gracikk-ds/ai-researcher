@@ -3,6 +3,16 @@ title: Hyper-parameter_tuning_for_text_guided_image_editing
 layout: default
 date: 2024-07-31
 ---
+## Hyper-parameter tuning for text guided image editing
+**Authors:**
+- Shiwen Zhang
+
+**ArXiv URL:** http://arxiv.org/abs/2407.21703v1
+
+**Citation Count:** None
+
+**Published Date:** 2024-07-31
+
 ![Figure 1: The workflow of Forgedit, the most usual flow of editing process is highlighted in the figure, i.e. simple vector subtraction and default forgetting strategies according to our findings of the disentangle rules of UNet.]({{ '/images/07-2024/Hyper-parameter_tuning_for_text_guided_image_editing/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The paper addresses a practical problem with the SOTA text-guided image editing method, Forgedit. While Forgedit performs well on many tasks, it can suffer from overfitting during the editing stage, where it perfectly reconstructs the input image but fails to apply the desired textual edit. The authors aim to provide a simple and efficient workflow for tuning Forgedit's hyperparameters at test time to overcome this overfitting issue and achieve ideal editing results for a wider range of complex edits.

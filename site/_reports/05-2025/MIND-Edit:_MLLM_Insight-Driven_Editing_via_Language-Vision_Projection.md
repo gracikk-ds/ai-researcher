@@ -3,6 +3,17 @@ title: MIND-Edit:_MLLM_Insight-Driven_Editing_via_Language-Vision_Projection
 layout: default
 date: 2025-05-25
 ---
+## MIND-Edit: MLLM Insight-Driven Editing via Language-Vision Projection
+**Authors:**
+- Shuyu Wang
+- Jian Zhang
+
+**ArXiv URL:** http://arxiv.org/abs/2505.19149v1
+
+**Citation Count:** None
+
+**Published Date:** 2025-05-25
+
 ![Figure 1: Overview of the proposed MIND-Edit framework. MIND-Edit takes text instructions, original images, and optional editing masks as inputs. It integrates an instruction optimization strategy and an MLLM insight-driven image editing strategy, jointly optimizing instructions and generating visual representations to guide the diffusion model in creating semantically accurate edited images.]({{ '/images/05-2025/MIND-Edit:_MLLM_Insight-Driven_Editing_via_Language-Vision_Projection/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Existing image editing methods struggle to achieve high precision and semantic accuracy, particularly when users provide complex or ambiguous instructions. Current approaches that incorporate Multimodal Large Language Models (MLLMs) typically use them only to interpret text, failing to leverage their intrinsic visual understanding capabilities. This creates a semantic gap between the user's textual intent and the final visual output, as the system often misinterprets imprecise instructions. The paper aims to solve this problem by developing a framework that can more accurately infer the user's true editing intent by deeply integrating an MLLM's visual reasoning into the editing process.

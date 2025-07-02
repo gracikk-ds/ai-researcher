@@ -3,6 +3,17 @@ title: MoEController:_Instruction-based_Arbitrary_Image_Manipulation_with_Mixtur
 layout: default
 date: 2023-09-08
 ---
+## MoEController: Instruction-based Arbitrary Image Manipulation with Mixture-of-Expert Controllers
+**Authors:**
+- Sijia Li
+- Haonan Lu
+
+**ArXiv URL:** http://arxiv.org/abs/2309.04372v2
+
+**Citation Count:** 10
+
+**Published Date:** 2023-09-08
+
 ![Fig. 1 : Arbitrary instruction-guided image global and local manipulation visualizations.]({{ '/images/09-2023/MoEController:_Instruction-based_Arbitrary_Image_Manipulation_with_Mixture-of-Expert_Controllers/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the challenge of creating a single, unified model for arbitrary instruction-based image manipulation. Existing diffusion-model-based methods are often specialized for either global manipulations (like style transfer) or local editing (like changing an object's attribute). For instance, Instruction-pix2pix (IP2P) excels at local edits but performs poorly on global tasks. The paper aims to bridge this gap by developing a model with zero-shot capabilities for both types of edits, guided by natural language instructions.

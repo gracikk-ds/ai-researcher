@@ -3,6 +3,17 @@ title: What_Changed?_Detecting_and_Evaluating_Instruction-Guided_Image_Edits_wit
 layout: default
 date: 2025-05-26
 ---
+## What Changed? Detecting and Evaluating Instruction-Guided Image Edits with Multimodal Large Language Models
+**Authors:**
+- Lorenzo Baraldi
+- Rita Cucchiara, h-index: 5, papers: 40, citations: 85
+
+**ArXiv URL:** http://arxiv.org/abs/2505.20405v1
+
+**Citation Count:** 0
+
+**Published Date:** 2025-05-26
+
 ![Figure 1. Qualitative examples from DICE. Our approach detects differences between an original image and an edited one, identifying the involved objects and the type of edit. Further, DICE evaluates each difference to determine its coherence with the editing prompt.]({{ '/images/05-2025/What_Changed?_Detecting_and_Evaluating_Instruction-Guided_Image_Edits_with_Multimodal_Large_Language_Models/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the challenge of evaluating instruction-guided image editing models. Existing evaluation metrics often fail to align with human judgment and lack explainability, making it difficult to assess the quality of generated edits accurately. These metrics typically rely on global image features or opaque, pre-trained models, providing little insight into why an edit is considered good or bad. This paper aims to bridge this gap by creating an interpretable and reliable evaluation framework that analyzes edits at a local, object level.

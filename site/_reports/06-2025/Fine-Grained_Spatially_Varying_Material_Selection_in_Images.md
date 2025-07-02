@@ -3,6 +3,17 @@ title: Fine-Grained_Spatially_Varying_Material_Selection_in_Images
 layout: default
 date: 2025-06-10
 ---
+## Fine-Grained Spatially Varying Material Selection in Images
+**Authors:**
+- Julia Guerrero-Viu, h-index: 4, papers: 10, citations: 77
+- Valentin Deschaintre, h-index: 3, papers: 7, citations: 77
+
+**ArXiv URL:** http://arxiv.org/abs/2506.09023v2
+
+**Citation Count:** None
+
+**Published Date:** 2025-06-10
+
 ![Fig. 1. Our proposed method allows fine-grained material selection in images on two different levels of granularity, significantly outperforming previous work (Materialistic [Sharma et al . 2023]) in selection accuracy and consistency. We show here results on challenging examples due to specular reflections (top left) and fine patterns outside the training data (top right, bottom left). Selection masks are shown as green image overlays. The bottom right row shows material editing results using our predicted two-level selection masks, with the masks shown as insets.]({{ '/images/06-2025/Fine-Grained_Spatially_Varying_Material_Selection_in_Images/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address key limitations in existing material selection methods for images. Previous state-of-the-art approaches, which leverage Vision Transformers (ViTs), often suffer from low precision, especially around object boundaries and fine structures. This is due to the coarse resolution of ViT feature maps. Furthermore, existing methods and datasets define materials at a single level (e.g., a patterned wallpaper as one material), which prevents users from selecting individual components of a texture (e.g., only the flowers on the wallpaper). The paper aims to solve these problems by developing a more precise and flexible material selection tool.

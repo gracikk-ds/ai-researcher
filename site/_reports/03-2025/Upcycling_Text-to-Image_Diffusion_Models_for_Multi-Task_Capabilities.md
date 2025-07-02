@@ -3,6 +3,17 @@ title: Upcycling_Text-to-Image_Diffusion_Models_for_Multi-Task_Capabilities
 layout: default
 date: 2025-03-14
 ---
+## Upcycling Text-to-Image Diffusion Models for Multi-Task Capabilities
+**Authors:**
+- Ruchika Chavhan, h-index: 5, papers: 18, citations: 82
+- Sourav Bhattacharya, h-index: 3, papers: 14, citations: 25
+
+**ArXiv URL:** http://arxiv.org/abs/2503.11905v1
+
+**Citation Count:** None
+
+**Published Date:** 2025-03-14
+
 ![Figure 1. A chatbot showcasing a potential use case of Multi-Task Upcycling. Our approach efficiently upcycles pre-trained text-to-image models, enabling them to perform multiple image generation tasks using a single backbone.]({{ '/images/03-2025/Upcycling_Text-to-Image_Diffusion_Models_for_Multi-Task_Capabilities/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the challenge of adapting large, pre-trained text-to-image (T2I) diffusion models to support multiple downstream tasks (e.g., image editing, super-resolution, inpainting). Current methods for creating such multi-task models either require resource-intensive retraining of the entire model or significantly increase the parameter count and computational load by adding new components. This makes them inefficient and unsuitable for deployment on resource-constrained platforms like edge devices. The paper aims to bridge this gap by introducing an efficient method to "upcycle" a single-task T2I model into a versatile, multi-task model without inflating its size or computational cost.

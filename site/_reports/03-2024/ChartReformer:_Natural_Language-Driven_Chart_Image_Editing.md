@@ -3,6 +3,17 @@ title: ChartReformer:_Natural_Language-Driven_Chart_Image_Editing
 layout: default
 date: 2024-03-01
 ---
+## ChartReformer: Natural Language-Driven Chart Image Editing
+**Authors:**
+- Pengyu Yan
+- David Doermann, h-index: 6, papers: 9, citations: 65
+
+**ArXiv URL:** http://arxiv.org/abs/2403.00209v2
+
+**Citation Count:** None
+
+**Published Date:** 2024-03-01
+
 ![Fig. 1: Examples of chart editing results from our methods. In total, our methods define and cover four types of chart editing: style, layout, format and data-centric edit.]({{ '/images/03-2024/ChartReformer:_Natural_Language-Driven_Chart_Image_Editing/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 - **What gap or practical problem are the authors addressing?**

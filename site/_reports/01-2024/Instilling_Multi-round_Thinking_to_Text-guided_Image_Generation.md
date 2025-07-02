@@ -3,6 +3,17 @@ title: Instilling_Multi-round_Thinking_to_Text-guided_Image_Generation
 layout: default
 date: 2024-01-16
 ---
+## Instilling Multi-round Thinking to Text-guided Image Generation
+**Authors:**
+- Lidong Zeng, h-index: 1, papers: 1, citations: 5
+- Tat-seng Chua
+
+**ArXiv URL:** http://arxiv.org/abs/2401.08472v2
+
+**Citation Count:** 5
+
+**Published Date:** 2024-01-16
+
 ![Fig. 1: (a) A typical use case of multi-round interactive editing. The learned model can understand text instruction and the semantic meaning of images and craft images based on previous user feedback. This real-world scenario often involves multi-round generation rather than single-round generation. (b) Some common failure cases on the prevailing methods [ 46 ], i.e ., long sentence ignorance case, multi-facet forgetting case. We could observe the significant visual difference between generated images and ground-truth targets. (c) Here we show a typical two-round inconsistency case. The final generated results are sensitive to the order of text guidance.]({{ '/images/01-2024/Instilling_Multi-round_Thinking_to_Text-guided_Image_Generation/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Existing text-guided image editing models are primarily designed for single-round generation. When used in multi-round, interactive scenarios (e.g., a virtual shopping assistant), they face a persistent challenge: minor errors in capturing fine-grained details (like sleeves or patterns) accumulate with each modification. This leads to a significant drop in quality and a failure to follow complex instructions. The authors observe that the final edited image is often sensitive to the order in which textual modifications are applied, whereas ideally, the order should not affect the outcome. The paper aims to address this gap by instilling "multi-round thinking" into models to improve consistency and fidelity in sequential editing tasks.

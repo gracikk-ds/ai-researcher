@@ -3,6 +3,17 @@ title: AnyText:_Multilingual_Visual_Text_Generation_And_Editing
 layout: default
 date: 2023-11-06
 ---
+## AnyText: Multilingual Visual Text Generation And Editing
+**Authors:**
+- Yuxiang Tuo, h-index: 3, papers: 3, citations: 98
+- Xuansong Xie, h-index: 5, papers: 10, citations: 150
+
+**ArXiv URL:** http://arxiv.org/abs/2311.03054v5
+
+**Citation Count:** 83
+
+**Published Date:** 2023-11-06
+
 ![Figure 1: Selected samples of AnyText. For text generation, AnyText can render the specified text from the prompt onto the designated position, and generate visually appealing images. As for text editing, AnyText can modify the text content at the specified position within the input image while maintaining consistency with the surrounding text style. Translations are provided in parentheses for non-English words in prompt, blue boxes indicate positions for text editing. See more in A.6.]({{ '/images/11-2023/AnyText:_Multilingual_Visual_Text_Generation_And_Editing/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address a significant limitation in modern text-to-image diffusion models: their inability to generate accurate, legible, and coherent visual text. Current models often produce text that is blurred, misspelled, or nonsensical, which limits their practical applications in areas like advertising, design, and digital art. This subpar performance is attributed to two main factors: the lack of large-scale, multilingual image-text datasets with detailed text annotations, and the use of text encoders that are "character-blind" and cannot effectively process the visual structure of text.

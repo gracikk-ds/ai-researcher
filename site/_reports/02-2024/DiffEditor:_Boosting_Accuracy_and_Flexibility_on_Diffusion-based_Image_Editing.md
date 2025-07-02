@@ -3,6 +3,17 @@ title: DiffEditor:_Boosting_Accuracy_and_Flexibility_on_Diffusion-based_Image_Ed
 layout: default
 date: 2024-02-04
 ---
+## DiffEditor: Boosting Accuracy and Flexibility on Diffusion-based Image Editing
+**Authors:**
+- Chong Mou, h-index: 16, papers: 27, citations: 2036
+- Jian Zhang
+
+**ArXiv URL:** http://arxiv.org/abs/2402.02583v1
+
+**Citation Count:** 55
+
+**Published Date:** 2024-02-04
+
 ![Figure 1. We propose DiffEditor , which can perform various fine-grained image editing operations on general images. Given an image, users can select an object to move or resize, or they can select sevaral pixel points for more accurate content dragging. Moreover, users can also choose a reference image for cross-image editing, i.e. , object pasting and appearance replacing.]({{ '/images/02-2024/DiffEditor:_Boosting_Accuracy_and_Flexibility_on_Diffusion-based_Image_Editing/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Existing diffusion-based image editing methods often struggle with two key issues. First, in complex editing scenarios, they can lack accuracy and produce unexpected artifacts. Second, they often lack the flexibility to harmonize edits by imagining new content that is not present in the source image (e.g., generating teeth when opening a closed mouth). This paper, DiffEditor, aims to address these weaknesses to improve both the accuracy and creative flexibility of fine-grained image editing.

@@ -3,6 +3,17 @@ title: SEED-Data-Edit_Technical_Report:_A_Hybrid_Dataset_for_Instructional_Image
 layout: default
 date: 2024-05-07
 ---
+## SEED-Data-Edit Technical Report: A Hybrid Dataset for Instructional Image Editing
+**Authors:**
+- Yuying Ge, h-index: 22, papers: 46, citations: 2791
+- Ying Shan
+
+**ArXiv URL:** http://arxiv.org/abs/2405.04007v1
+
+**Citation Count:** 35
+
+**Published Date:** 2024-05-07
+
 ![Figure 1: Data examples of instruction-guided image editing in SEED-Data-Edit, which includes (1) High-quality editing data produced by an automatic pipeline (first row), (2) Real-world scenario data scraped from the internet that more accurately reflects user image editing intentions (second row), (3) High-precision multi-turn editing data annotated by Photoshop experts (third row).]({{ '/images/05-2024/SEED-Data-Edit_Technical_Report:_A_Hybrid_Dataset_for_Instructional_Image_Editing/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The primary challenge in instruction-guided image editing is the lack of high-quality, large-scale, and diverse datasets. This scarcity hinders the development of models that can accurately interpret open-form language instructions, handle complex or iterative edits, and produce realistic results while preserving the semantic integrity of the original image. The authors aim to address this gap by creating a comprehensive dataset that covers a wide spectrum of editing scenarios.

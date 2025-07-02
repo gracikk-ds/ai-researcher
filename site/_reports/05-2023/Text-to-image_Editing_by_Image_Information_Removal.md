@@ -3,6 +3,17 @@ title: Text-to-image_Editing_by_Image_Information_Removal
 layout: default
 date: 2023-05-27
 ---
+## Text-to-image Editing by Image Information Removal
+**Authors:**
+- Zhongping Zhang, h-index: 10, papers: 28, citations: 544
+- Bryan A. Plummer, h-index: 22, papers: 76, citations: 4066
+
+**ArXiv URL:** http://arxiv.org/abs/2305.17489v2
+
+**Citation Count:** 13
+
+**Published Date:** 2023-05-27
+
 ![Figure 1. We aim to edit the specific content of the input image according to text descriptions while preserving text-irrelevant image content. Prior work based on large-scale diffusion models has followed two major approaches for image editing: (A), finetuning the pretrained models or text embeddings ( e.g ., Imagic [ 9 ] or Dreambooth [ 29 ]), or (B), introducing structural guidance as additional constraint to control the spatial information of the generated image ( e.g ., ControlNet [ 40 ] or MaskSketch [ 2 ]). In our work, shown in (C), our approach conditions on both the original image and the structural guidance, to better preserve the text-irrelevant content of the image. E.g ., our model successfully preserves the original attributes of the airplane (outlined by the green bounding box) in the generated image. In contast, previous methods such as Imagic (A) and ControlNet (B) not only alter the sky and background but also modify the attributes of the airplane (outlined by the red bounding boxes), which is unwanted in this example.]({{ '/images/05-2023/Text-to-image_Editing_by_Image_Information_Removal/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Existing text-to-image editing methods based on diffusion models face significant challenges. Fine-tuning-based approaches (e.g., Imagic) often overfit to the input image, require lengthy inference times, and struggle to preserve content not specified in the text prompt. Conversely, methods that rely on structural guidance like edge maps (e.g., ControlNet) fail to retain crucial non-structural attributes such as color and texture. The authors address the practical problem of creating an editing model that can make specific, text-guided changes while robustly preserving the text-irrelevant content of the original image, without the drawbacks of long inference times or overfitting.

@@ -3,6 +3,17 @@ title: DM-Align:_Leveraging_the_Power_of_Natural_Language_Instructions_to_Make_C
 layout: default
 date: 2024-04-27
 ---
+## DM-Align: Leveraging the Power of Natural Language Instructions to Make Changes to Images
+**Authors:**
+- Maria Mihaela Trusca
+- Marie-Francine Moens
+
+**ArXiv URL:** http://arxiv.org/abs/2404.18020v1
+
+**Citation Count:** 1
+
+**Published Date:** 2024-04-27
+
 ![Figure 1: The proposed image editor utilizes a source caption to describe the initial image and a target text instruction to define the desired edited image. To accomplish this task, we employ the two captions to generate a diffusion mask, refining it further by incorporating regions of words that we want to keep or alter in the image.]({{ '/images/04-2024/DM-Align:_Leveraging_the_Power_of_Natural_Language_Instructions_to_Make_Changes_to_Images/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Existing text-based image editing models often function as "black boxes," leading to unexpected outputs. They particularly struggle with two key issues: preserving the background content of the image and accurately following long, complex natural language instructions. This paper addresses the need for a more transparent and controllable image editing model that can explicitly reason about which parts of an image to change and which to keep unaltered.

@@ -3,6 +3,17 @@ title: FastEdit:_Fast_Text-Guided_Single-Image_Editing_via_Semantic-Aware_Diffus
 layout: default
 date: 2024-08-06
 ---
+## FastEdit: Fast Text-Guided Single-Image Editing via Semantic-Aware Diffusion Fine-Tuning
+**Authors:**
+- Zhi Chen
+- Zi Huang
+
+**ArXiv URL:** http://arxiv.org/abs/2408.03355v1
+
+**Citation Count:** None
+
+**Published Date:** 2024-08-06
+
 ![Figure 1. FastEdit – Text-Guided Single-Image Editing in 17 seconds. We show the pairs of 512 × 512 input images, and the given target texts with corresponding edited results. Compared with the baseline methods, FastEdit fine-tunes only 0.37% parameters for 50 iterations. Arbitrary target texts are supported for the fine-tuned model, due to its embedding optimization-free nature.]({{ '/images/08-2024/FastEdit:_Fast_Text-Guided_Single-Image_Editing_via_Semantic-Aware_Diffusion_Fine-Tuning/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Conventional state-of-the-art methods for text-guided single-image editing, such as Imagic, are computationally expensive and slow, often requiring around 7 minutes to edit a single image. This lengthy process, involving extensive optimization of both text embeddings and the generative model itself, poses a significant bottleneck for practical, real-time applications. The authors aim to bridge this gap by developing a method that dramatically accelerates the editing process without sacrificing the quality of the output.

@@ -3,6 +3,17 @@ title: Regressor-Guided_Image_Editing_Regulates_Emotional_Response_to_Reduce_Onl
 layout: default
 date: 2025-01-21
 ---
+## Regressor-Guided Image Editing Regulates Emotional Response to Reduce Online Engagement
+**Authors:**
+- Christoph Gebhardt, h-index: 4, papers: 8, citations: 52
+- Christian Holz, h-index: 4, papers: 9, citations: 35
+
+**ArXiv URL:** http://arxiv.org/abs/2501.12289v1
+
+**Citation Count:** 0
+
+**Published Date:** 2025-01-21
+
 ![Fig. 1. We propose three regressor-guided image editing approaches aimed at reducing the emotional intensity evoked by images. These methods take the original image (b) as input and modify it using distinct strategies. The first two approaches adjust low-level properties, such as brightness, saturation, color, and sharpness, by optimizing either the style latent space of a generative adversarial network (a) or the parameters of global image transformations (c). The third approach uses score guidance and classifier-free guidance with a diffusion model to modify the image content (d). These semantic changes include adding extra layers of clothing, simplifying backgrounds, or aging the appearance of subjects. Experimental results show that the adapted images produced by the diffusion-model-based approach effectively influence viewers’ emotional responses compared to their original counterparts and, unlike greyscale images, maintain a high perceived image quality.]({{ '/images/01-2025/Regressor-Guided_Image_Editing_Regulates_Emotional_Response_to_Reduce_Online_Engagement/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the problem of excessive online engagement, which is often driven by emotionally intense content and can lead to negative outcomes like social media addiction and poor mental health. Existing digital self-control tools are frequently too restrictive, causing users to circumvent them. The paper proposes a less intrusive solution: automatically editing images to regulate their emotional impact (i.e., neutralize valence and lower arousal), thereby potentially reducing users' online engagement without degrading the user experience as severely as simple filters like greyscale.

@@ -3,6 +3,17 @@ title: Learning_Complex_Non-Rigid_Image_Edits_from_Multimodal_Conditioning
 layout: default
 date: 2024-12-13
 ---
+## Learning Complex Non-Rigid Image Edits from Multimodal Conditioning
+**Authors:**
+- Nikolai Warnerpapers: 2, 
+- Irfan Essa, h-index: 2, papers: 5, citations: 11
+
+**ArXiv URL:** http://arxiv.org/abs/2412.10219v1
+
+**Citation Count:** 0
+
+**Published Date:** 2024-12-13
+
 ![Figure 1. Given a single image, multiple controllable identitypreserving edits can be specified with different text captions. Given a masked insertion scene and reference image containing a person to insert, our fine-tuned model inserts them into the scene controllable as controlled by a given text caption. Text and image-based inference on unseen images using an image + text model. Where captions are unavailable, we train the text and image model on a blank caption.]({{ '/images/12-2024/Learning_Complex_Non-Rigid_Image_Edits_from_Multimodal_Conditioning/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the challenge of performing complex, non-rigid image edits on human subjects, specifically inserting a person from a reference image into a new scene with a different pose. Current generative models often struggle with this task on "in-the-wild" data, failing to simultaneously preserve the person's identity, follow user control (via text or pose), and generate plausible interactions with objects in the scene. The paper aims to bridge this gap by developing a model that is highly controllable and robust in diverse, real-world scenarios.

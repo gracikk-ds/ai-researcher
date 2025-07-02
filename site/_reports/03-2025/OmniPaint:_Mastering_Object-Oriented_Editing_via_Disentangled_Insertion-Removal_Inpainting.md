@@ -3,6 +3,17 @@ title: OmniPaint:_Mastering_Object-Oriented_Editing_via_Disentangled_Insertion-R
 layout: default
 date: 2025-03-11
 ---
+## OmniPaint: Mastering Object-Oriented Editing via Disentangled Insertion-Removal Inpainting
+**Authors:**
+- Yongsheng Yu
+- Jiebo Luo
+
+**ArXiv URL:** http://arxiv.org/abs/2503.08677v2
+
+**Citation Count:** None
+
+**Published Date:** 2025-03-11
+
 ![Realistic Object Removal Generative Object Insertion Figure 1. Illustration of OmniPaint for object-oriented editing, including realistic object removal (left) and generative object insertion (right). Masked regions are shown as semi-transparent overlays. In removal cases, the × marks the target object and its physical effects, such as reflections, with the right column showing the results. In insertion cases, the reference object (inset) is placed into the scene, indicated by a green arrow. Note that for model input, masked regions are fully removed rather than semi-transparent.]({{ '/images/03-2025/OmniPaint:_Mastering_Object-Oriented_Editing_via_Disentangled_Insertion-Removal_Inpainting/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address key challenges in diffusion-based object-oriented image editing. Current methods for object removal and insertion often struggle with the intricate interplay of physical effects like shadows and reflections. Furthermore, they typically rely on large-scale paired training datasets, which are difficult to acquire, or treat removal and insertion as separate, isolated tasks. This separation is inefficient and fails to leverage the inherent relationship between the two processes, leading to suboptimal results like object hallucination or poor integration of new objects.

@@ -3,6 +3,17 @@ title: PRISM:_A_Unified_Framework_for_Photorealistic_Reconstruction_and_Intrinsi
 layout: default
 date: 2025-04-19
 ---
+## PRISM: A Unified Framework for Photorealistic Reconstruction and Intrinsic Scene Modeling
+**Authors:**
+- Alara Dirik, h-index: 5, papers: 9, citations: 158
+- Anna Frühstück, h-index: 6, papers: 8, citations: 154
+
+**ArXiv URL:** http://arxiv.org/abs/2504.14219v2
+
+**Citation Count:** None
+
+**Published Date:** 2025-04-19
+
 ![Fig. 1. We propose PRISM, a unified framework for conditional generation of RGB image and its intrinsic channels (referred to as X layers) simultaneously. It supports a variety of tasks, including text-to-RGBX generation, RGB-to-X decomposition, and X-to-RGBX conditional generation. PRISM achieves plausible results on both local material editing on masked region and global image relighting through conditioning on selected intrinsic layers and text prompts.]({{ '/images/04-2025/PRISM:_A_Unified_Framework_for_Photorealistic_Reconstruction_and_Intrinsic_Scene_Modeling/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Existing generative models often treat intrinsic image decomposition (predicting properties like albedo, normals, depth) and conditional image generation as separate tasks, requiring different models. This can lead to inconsistencies between the generated image and its underlying physical properties. Furthermore, methods that adapt pre-trained models for perception tasks often sacrifice the original text-to-image generation capability. The authors address this gap by proposing a single, unified framework that can simultaneously perform photorealistic image generation, intrinsic decomposition, and conditional editing, ensuring consistency across all outputs while preserving the foundational model's generative power.

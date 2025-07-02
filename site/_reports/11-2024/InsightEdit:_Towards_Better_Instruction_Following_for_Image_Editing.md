@@ -3,6 +3,17 @@ title: InsightEdit:_Towards_Better_Instruction_Following_for_Image_Editing
 layout: default
 date: 2024-11-26
 ---
+## InsightEdit: Towards Better Instruction Following for Image Editing
+**Authors:**
+- Yingjing Xu, h-index: 1, papers: 4, citations: 4
+- Qiang Liu
+
+**ArXiv URL:** http://arxiv.org/abs/2411.17323v1
+
+**Citation Count:** 1
+
+**Published Date:** 2024-11-26
+
 ![Figure 1. We propose InsightEdit , an end-to-end instruction-based image editing model, trained on high-quality data and designed to fully harness the capabilities of Multimodal Large Language Models (MLLM), achieving high-quality edits with strong instruction-following and background consistency.]({{ '/images/11-2024/InsightEdit:_Towards_Better_Instruction_Following_for_Image_Editing/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address two primary limitations in existing instruction-based image editing models. First, current datasets suffer from low resolution, poor background consistency after edits, and overly simplistic, template-based instructions, which hinders model training for complex tasks. Second, existing models primarily rely on textual conditions and underutilize the rich visual information from the source image, leading to inferior performance in following complex instructions and maintaining background integrity.

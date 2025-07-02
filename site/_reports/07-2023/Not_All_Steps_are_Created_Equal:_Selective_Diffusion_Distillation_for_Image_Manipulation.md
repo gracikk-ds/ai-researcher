@@ -3,6 +3,17 @@ title: Not_All_Steps_are_Created_Equal:_Selective_Diffusion_Distillation_for_Ima
 layout: default
 date: 2023-07-17
 ---
+## Not All Steps are Created Equal: Selective Diffusion Distillation for Image Manipulation
+**Authors:**
+- Luozhou Wang, h-index: 6, papers: 15, citations: 76
+- Ying-cong Chen
+
+**ArXiv URL:** http://arxiv.org/abs/2307.08448v1
+
+**Citation Count:** 10
+
+**Published Date:** 2023-07-17
+
 ![Figure 1. Editability and fidelity trade-off of diffusion-based image manipulation. The leftmost is the input image. For each manipulation, we add increasing noise levels from left to right and then denoise the image. Different semantics require different levels of noise to manipulate.]({{ '/images/07-2023/Not_All_Steps_are_Created_Equal:_Selective_Diffusion_Distillation_for_Image_Manipulation/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
     - The authors address the "editability-fidelity trade-off" inherent in standard diffusion-based image manipulation. Existing methods that add noise to an image and then denoise it with a text prompt face a dilemma: adding too much noise harms the image's fidelity (preserving original content), while adding too little noise limits the model's ability to make significant edits. This trade-off restricts the practical application of diffusion models for high-quality, controllable image manipulation.

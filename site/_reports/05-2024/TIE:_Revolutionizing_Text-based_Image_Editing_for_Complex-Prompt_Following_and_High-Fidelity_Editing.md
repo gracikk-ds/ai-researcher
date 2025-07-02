@@ -3,6 +3,17 @@ title: TIE:_Revolutionizing_Text-based_Image_Editing_for_Complex-Prompt_Followin
 layout: default
 date: 2024-05-27
 ---
+## TIE: Revolutionizing Text-based Image Editing for Complex-Prompt Following and High-Fidelity Editing
+**Authors:**
+- Xinyu Zhang
+- Lin Ma
+
+**ArXiv URL:** http://arxiv.org/abs/2405.16803v1
+
+**Citation Count:** 2
+
+**Published Date:** 2024-05-27
+
 ![Figure 1: Illustration of our proposed framework as a Chain-of-Thought (CoT) process.]({{ '/images/05-2024/TIE:_Revolutionizing_Text-based_Image_Editing_for_Complex-Prompt_Following_and_High-Fidelity_Editing/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Existing text-guided image editing models, including both traditional diffusion models and those integrated with Multimodal Large Language Models (MLLMs), struggle with two key challenges. They often fail to accurately interpret complex, multi-part editing instructions and have difficulty preserving the unedited regions of an image, resulting in low-fidelity outputs with unwanted changes. The authors aim to bridge this gap by creating a framework that can robustly follow complex prompts while maintaining high fidelity to the original image.

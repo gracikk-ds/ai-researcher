@@ -3,6 +3,17 @@ title: Complex_Scene_Image_Editing_by_Scene_Graph_Comprehension
 layout: default
 date: 2022-03-24
 ---
+## Complex Scene Image Editing by Scene Graph Comprehension
+**Authors:**
+- Zhongping Zhang
+- Huayan Wang, h-index: 7, papers: 15, citations: 416
+
+**ArXiv URL:** http://arxiv.org/abs/2203.12849v2
+
+**Citation Count:** 6
+
+**Published Date:** 2022-03-24
+
 ![Figure 1: Prior work on text-to-image editing generally follow two approaches: (A), editing the entire image ( e.g ., Imagic [ 11 ] or Dreambooth [ 31 ]), or (B), localizing the Region of Interest (RoI) through user-provided bounding boxes or object detection ( e.g ., GroundedSAM [ 12 , 19 ]+Stable Diffusion [ 30 ]). In our work, shown in (C), we localize the RoI (outlined by the red bounding box) and predict the desired region (outlined by the purple bounding box) for the target object using a scene graph of an input image. This enables us to perform many editing operations in complex scenes, such as relationship change and object replacement, which were not supported by prior work.]({{ '/images/03-2022/Complex_Scene_Image_Editing_by_Scene_Graph_Comprehension/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Existing text-guided image editing methods struggle with complex scenes. When an image contains multiple objects of the same type (e.g., several chairs), these methods often fail to identify and manipulate the correct target object based on a text description alone. They either edit the image globally or rely on object detectors that cannot resolve ambiguity based on spatial or semantic relationships, leading to incorrect edits.

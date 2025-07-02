@@ -3,6 +3,17 @@ title: Image_Editing_As_Programs_with_Diffusion_Models
 layout: default
 date: 2025-06-04
 ---
+## Image Editing As Programs with Diffusion Models
+**Authors:**
+- Yujia Hupapers: 2, 
+- Xinchao Wang
+
+**ArXiv URL:** http://arxiv.org/abs/2506.04158v1
+
+**Citation Count:** 0
+
+**Published Date:** 2025-06-04
+
 ![Figure 1: Visual results of our IEAP. Rows 1 and 3 showcase complex multi-step edits (Row 1 is further decomposed into individual instructions), while Row 2 shows single-instruction edits. Single instructions are underlined if needing to be reduced to atomic operations.]({{ '/images/06-2025/Image_Editing_As_Programs_with_Diffusion_Models/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Existing instruction-driven image editing models, particularly those based on Diffusion Transformers (DiTs), struggle significantly with complex instructions that require changes to the image layout. While they perform well on "structurally-consistent" edits like style or color changes, they often fail on "structurally-inconsistent" edits such as adding, removing, moving, or resizing objects. This paper addresses this gap by proposing a method to robustly handle edits that demand spatial reasoning and scene recomposition.

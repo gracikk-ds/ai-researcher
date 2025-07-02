@@ -3,6 +3,17 @@ title: Learning_Action_and_Reasoning-Centric_Image_Editing_from_Videos_and_Simul
 layout: default
 date: 2024-07-03
 ---
+## Learning Action and Reasoning-Centric Image Editing from Videos and Simulations
+**Authors:**
+- Benno Krojer, h-index: 7, papers: 9, citations: 189
+- Siva Reddy
+
+**ArXiv URL:** http://arxiv.org/abs/2407.03471v3
+
+**Citation Count:** None
+
+**Published Date:** 2024-07-03
+
 ![model architectures which handle different editing subtasks [Couairon et al., 2023, Zhang et al., 2023a]. However, neither of these approaches includes edits requiring more holistic visual understanding of how humans and objects interact or how events unfold , such as ‘make the cook cut the apple in half’ or ‘make the dog jump in the air’ (see Fig. 1). These more action-centric edits are severely understudied in the space of instruction-tuned image editing models [Brooks et al., 2023, Huang et al., 2024]; when they are considered, it is done in isolation, ignoring other image edit subtasks and rigorous semantic evaluation [Souˇcek et al., 2023, Black et al., 2024]. In Sec. 2 we describe a typology of these edit types and how existing datasets currently fail to address them all.]({{ '/images/07-2024/Learning_Action_and_Reasoning-Centric_Image_Editing_from_Videos_and_Simulations/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address a significant gap in instruction-guided image editing: current models excel at simple object or attribute changes but fail at complex "action and reasoning-centric" edits. These edits, such as "make the person walk away" or "move the cup to the right of the table," require understanding physical dynamics, temporality, and spatial relationships. The paper argues that this failure stems from a lack of high-quality training data. Existing datasets are either synthetically generated and noisy or focus on static, localized changes, leaving models unable to learn more holistic and dynamic transformations.

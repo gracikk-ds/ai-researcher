@@ -3,6 +3,17 @@ title: Fine-Tuning_Diffusion_Generative_Models_via_Rich_Preference_Optimization
 layout: default
 date: 2025-03-13
 ---
+## Fine-Tuning Diffusion Generative Models via Rich Preference Optimization
+**Authors:**
+- Hanyang Zhao, h-index: 6, papers: 10, citations: 97
+- Wenpin Tang, h-index: 5, papers: 9, citations: 82
+
+**ArXiv URL:** http://arxiv.org/abs/2503.11720v3
+
+**Citation Count:** 0
+
+**Published Date:** 2025-03-13
+
 ![Figure 1: (Top) Our RPO pipeline for curating informative preference pairs from images generated from the base diffusion models: (1) Rich Feedback/Critic generation by a Vision Language Model (for which we choose LLaVA-Critic-7B), (2) Actionable editing instruction generation based on the critiques by another VLM (for which we chose Qwen2.5-VL-8BInstruct), (3) Instruction-following image editing from the generated editing instructions (for which we choose ControlNet), and (4) Diffusion DPO training using reward model filtered synthetic preference pairs. (Bottom) Sample images generated from RPO fine-tuned Stable Diffusion XL, by further aligning the model on our generated synthetic preferences.]({{ '/images/03-2025/Fine-Tuning_Diffusion_Generative_Models_via_Rich_Preference_Optimization/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the limitations of current methods for fine-tuning text-to-image diffusion models, such as Diffusion-DPO. These methods typically rely on preference data labeled by reward models, which provide opaque, numerical scores. This type of feedback offers limited insight into *why* one image is preferred over another, making the alignment process inefficient and susceptible to issues like reward hacking. The paper identifies a gap in leveraging "rich feedback"—detailed, informative critiques that provide clear direction for improvement—for vision tasks, a practice more established in natural language processing.

@@ -3,6 +3,17 @@ title: How_Control_Information_Influences_Multilingual_Text_Image_Generation_and
 layout: default
 date: 2024-07-16
 ---
+## How Control Information Influences Multilingual Text Image Generation and Editing?
+**Authors:**
+- Boqiang Zhang, h-index: 5, papers: 8, citations: 60
+- Hongtao Xie, h-index: 4, papers: 8, citations: 27
+
+**ArXiv URL:** http://arxiv.org/abs/2407.11502v2
+
+**Citation Count:** 5
+
+**Published Date:** 2024-07-16
+
 ![Figure 1: The overall pipeline of recent text generation works. It utilizes a ControlNet for guiding the text generation process, employing a glyph image with a standard font as the control information. Control information at different stages is generated in the same manner and directly added to the skip features in the U-Net decoder.]({{ '/images/07-2024/How_Control_Information_Influences_Multilingual_Text_Image_Generation_and_Editing?/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the challenges in generating high-quality multilingual text in images using diffusion models. While ControlNet-based frameworks are promising, they struggle with the unique characteristics of text control information (i.e., glyph images). Unlike general conditions like Canny edges, glyphs are sparse, with high-density information in local areas, and require precise, fine-grained detail. The paper investigates how this specific type of control information influences the generation process at different stages to optimize its use and improve performance.

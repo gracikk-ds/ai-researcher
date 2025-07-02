@@ -3,6 +3,17 @@ title: Context-Consistent_Semantic_Image_Editing_with_Style-Preserved_Modulation
 layout: default
 date: 2022-07-13
 ---
+## Context-Consistent Semantic Image Editing with Style-Preserved Modulation
+**Authors:**
+- Wuyang Luo, h-index: 5, papers: 8, citations: 82
+- Weishan Zhang, h-index: 8, papers: 18, citations: 164
+
+**ArXiv URL:** http://arxiv.org/abs/2207.06252v1
+
+**Citation Count:** None
+
+**Published Date:** 2022-07-13
+
 ![Fig. 1: Applications of the proposed method. Our image editing system is flexible in responding to a wide variety of editing requirements.]({{ '/images/07-2022/Context-Consistent_Semantic_Image_Editing_with_Style-Preserved_Modulation/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the problem of style inconsistency in semantic image editing. Existing methods, particularly those based on the SPADE block (like SESAME), often produce edited regions that do not stylistically match the surrounding, unedited parts of the image. This results in visible seams and unrealistic outputs. The core issue identified is that these methods generate content based only on an external semantic layout, ignoring the unique, image-specific style (e.g., color, texture) present in the known pixels of the image.

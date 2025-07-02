@@ -3,6 +3,17 @@ title: KRIS-Bench:_Benchmarking_Next-Level_Intelligent_Image_Editing_Models
 layout: default
 date: 2025-05-22
 ---
+## KRIS-Bench: Benchmarking Next-Level Intelligent Image Editing Models
+**Authors:**
+- Yongliang Wu, h-index: 4, papers: 10, citations: 50
+- Xu Yang
+
+**ArXiv URL:** http://arxiv.org/abs/2505.16707v1
+
+**Citation Count:** None
+
+**Published Date:** 2025-05-22
+
 ![Figure 1: (a) We present KRIS-Bench, a benchmark for instruction-based image editing grounded in a knowledge-based reasoning taxonomy. It covers 3 knowledge dimensions, 7 reasoning dimensions, and 22 editing tasks. Specific examples are shown in Figure 2 . (b) Given an editing pair of (image, instruction) under a specific reasoning dimension ( i.e. , Chemistry in Natural Science), we evaluate the output of image editing models with automated VLM tools over the proposed four complementary metrics, which are aligned with human scoring.]({{ '/images/05-2025/KRIS-Bench:_Benchmarking_Next-Level_Intelligent_Image_Editing_Models/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Recent instruction-based image editing models can produce visually impressive results but often lack the deep reasoning required for knowledge-intensive tasks. For example, a model might place sodium in water without depicting the resulting violent chemical reaction. Existing benchmarks do not systematically evaluate these higher-order reasoning capabilities, creating a gap in understanding and advancing the intelligence of these systems. The authors address this by developing a framework to assess models' ability to perform edits grounded in factual, conceptual, and procedural knowledge.

@@ -3,6 +3,17 @@ title: IE-Bench:_Advancing_the_Measurement_of_Text-Driven_Image_Editing_for_Huma
 layout: default
 date: 2025-01-17
 ---
+## IE-Bench: Advancing the Measurement of Text-Driven Image Editing for Human Perception Alignment
+**Authors:**
+- Shangkun Sun, h-index: 4, papers: 10, citations: 87
+- Wei Gao
+
+**ArXiv URL:** http://arxiv.org/abs/2501.09927v1
+
+**Citation Count:** 3
+
+**Published Date:** 2025-01-17
+
 ![Figure 3. Statistics of IE-DB prompts. (a) Word cloud of IE-Bench DB prompts. (b) Proportion of different types]({{ '/images/01-2025/IE-Bench:_Advancing_the_Measurement_of_Text-Driven_Image_Editing_for_Human_Perception_Alignment/figure_3.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the challenge of accurately evaluating text-driven image editing models. Existing evaluation metrics often fail to align with human perception because they either assess quality from a single perspective (e.g., only text-image consistency or only source-image similarity) or they are designed for text-to-image generation and ignore the crucial input of the source image. The relationship between the source and edited image is dynamic and context-dependent, requiring a more nuanced evaluation approach. This work aims to fill the gap by providing a dedicated benchmark suite, including a dataset and a metric, that holistically evaluates edited images by considering the source image, text prompt, and alignment with human judgment.

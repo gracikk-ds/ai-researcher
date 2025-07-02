@@ -3,6 +3,17 @@ title: ClickDiffusion:_Harnessing_LLMs_for_Interactive_Precise_Image_Editing
 layout: default
 date: 2024-04-05
 ---
+## ClickDiffusion: Harnessing LLMs for Interactive Precise Image Editing
+**Authors:**
+- Alec Helbling, h-index: 3, papers: 16, citations: 268
+- Polo Chau, h-index: 1, papers: 5, citations: 2
+
+**ArXiv URL:** http://arxiv.org/abs/2404.04376v1
+
+**Citation Count:** 1
+
+**Published Date:** 2024-04-05
+
 ![Figure 1. C LICK D IFFUSION is an interactive system that enables users to perform fine-grained image manipulation tasks by seamlessly combining natural language and visual prompts. (A) In our example, a user can use our user interface to select a particular dog with a bounding box and a destination using a star. These locations can be referenced symbolically in a natural language instruction. (B) By serializing the original image’s layout and the multi-modal instruction we can leverage an LLM to produce an edited image layout. (C) The edited layout is then fed into a layout-based image generation system to generate an edited image. (D) Our method enables moving objects and allows for much more concise prompts than text-only editing systems like I NSTRUCT P IX 2P IX [ 3 ].]({{ '/images/04-2024/ClickDiffusion:_Harnessing_LLMs_for_Interactive_Precise_Image_Editing/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Existing image editing methods that rely solely on natural language instructions struggle with precision. It is difficult for users to unambiguously specify *which* object to edit when multiple similar objects are present, or to define a precise target location using only words. Conversely, traditional direct manipulation interfaces (e.g., drawing tools) offer spatial precision but lack the descriptive flexibility of language for complex semantic changes (e.g., "make it a husky"). The paper addresses this gap by proposing a system that synergistically combines the spatial precision of visual prompts with the descriptive power of natural language instructions.

@@ -3,6 +3,17 @@ title: InstructGIE:_Towards_Generalizable_Image_Editing
 layout: default
 date: 2024-03-08
 ---
+## InstructGIE: Towards Generalizable Image Editing
+**Authors:**
+- Zichong Meng, h-index: 4, papers: 4, citations: 40
+- Yanzhi Wang, h-index: 8, papers: 23, citations: 137
+
+**ArXiv URL:** http://arxiv.org/abs/2403.05018v2
+
+**Citation Count:** 9
+
+**Published Date:** 2024-03-08
+
 ![Fig. 1: Demo results of the proposed InstructGIE framework on various image manipulation tasks to both humans and scenes. By our proposed method, our model can generalize to generate the desired output with great detail qualities.]({{ '/images/03-2024/InstructGIE:_Towards_Generalizable_Image_Editing/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the limited generalization capabilities of recent diffusion-based image editing models. These models often fail to perform edits described by instructions (textual or visual) that were not explicitly seen during training, leading to poor quality or inaccurate results. While in-context learning has shown promise in language models, its application to vision tasks like image editing is underdeveloped. Existing methods are not specifically tailored for editing, resulting in outputs with corrupted details and an inability to handle diverse, unseen instructions.

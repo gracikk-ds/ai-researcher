@@ -3,6 +3,17 @@ title: StyleBooth:_Image_Style_Editing_with_Multimodal_Instruction
 layout: default
 date: 2024-04-18
 ---
+## StyleBooth: Image Style Editing with Multimodal Instruction
+**Authors:**
+- Zhen Han
+- Jingfeng Zhang
+
+**ArXiv URL:** http://arxiv.org/abs/2404.12154v2
+
+**Citation Count:** 10
+
+**Published Date:** 2024-04-18
+
 ![Figure 1: Edited images by StyleBooth . Based on multimodal instructions, StyleBooth supports 3 types of image style editing. Following the same instruction template: "Let this image be in the style of <style>/<image>", we conduct (a) text-based style editing and (b) exemplar-based style editing (c) compositional style editing. "<style>" or "<image>" is the identifier of textual style name and visual exemplar images. The style name is placed under the result image and exemplar is shown at the left-bottom corner. In (c), the style name and identifier "<image>" are marked in different color fading levels. The degree of fading represents the proportion of the corresponding style in the result images. Tuned by our elegantly designed style editing data, StyleBooth is capable of generating high-quality output images in diverse styles.]({{ '/images/04-2024/StyleBooth:_Image_Style_Editing_with_Multimodal_Instruction/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address two primary challenges in diffusion-based image editing. First, existing methods typically accept instructions in only a single modality, either text or an exemplar image, but not both simultaneously. This limits creative flexibility. Second, there is a significant scarcity of high-quality training data for image style editing, specifically lacking large-scale, content-consistent triplets of source images, target stylized images, and corresponding multimodal instructions.

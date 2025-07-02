@@ -3,6 +3,17 @@ title: RelationAdapter:_Learning_and_Transferring_Visual_Relation_with_Diffusion
 layout: default
 date: 2025-06-03
 ---
+## RelationAdapter: Learning and Transferring Visual Relation with Diffusion Transformers
+**Authors:**
+- Yan Gong
+- Yin Zhang
+
+**ArXiv URL:** http://arxiv.org/abs/2506.02528v1
+
+**Citation Count:** None
+
+**Published Date:** 2025-06-03
+
 ![Figure 1: Our framework, RelationAdapter, can effectively perform a variety of image editing tasks by relying on exemplar image pairs and the original image. These tasks include (a) low-level editing, (b) style transfer, (c) image editing, and (d) customized generation.]({{ '/images/06-2025/RelationAdapter:_Learning_and_Transferring_Visual_Relation_with_Diffusion_Transformers/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the limitations of existing visual prompt-based image editing methods. Current approaches, particularly those using a single reference image, often struggle to capture complex, non-rigid transformations. Methods that do use exemplar pairs (a source and its edited target) tend to concatenate them directly with the query image, which is inefficient, consumes high memory, and can degrade the model's performance. The paper aims to create a more generalizable and efficient framework that can learn and transfer complex visual transformations from minimal examples.

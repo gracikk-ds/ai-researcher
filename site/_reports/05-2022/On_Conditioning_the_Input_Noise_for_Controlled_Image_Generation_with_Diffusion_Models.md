@@ -3,6 +3,17 @@ title: On_Conditioning_the_Input_Noise_for_Controlled_Image_Generation_with_Diff
 layout: default
 date: 2022-05-08
 ---
+## On Conditioning the Input Noise for Controlled Image Generation with Diffusion Models
+**Authors:**
+- Vedant Singh, h-index: 4, papers: 9, citations: 56
+- Vineeth N. Balasubramanian
+
+**ArXiv URL:** http://arxiv.org/abs/2205.03859v1
+
+**Citation Count:** None
+
+**Published Date:** 2022-05-08
+
 ![Figure 1. Comparison of (a) Random Gaussian Noise used in Diffusion Models and (b) Object Saliency Noise corresponding to the given reference image. We note (b) to highlight the object region, which supports our approach.]({{ '/images/05-2022/On_Conditioning_the_Input_Noise_for_Controlled_Image_Generation_with_Diffusion_Models/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Standard diffusion models generate high-quality images but offer little control over the output's composition, such as object location and orientation. Existing methods typically add control by modifying the model's iterative denoising process at inference time. This paper addresses this gap by exploring an alternative approach: controlling the final image by conditioning the *initial input noise* itself, thereby guiding the generation process without altering the pre-trained diffusion model or its inference steps.

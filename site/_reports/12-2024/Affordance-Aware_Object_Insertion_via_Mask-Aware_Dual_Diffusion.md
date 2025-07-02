@@ -3,6 +3,17 @@ title: Affordance-Aware_Object_Insertion_via_Mask-Aware_Dual_Diffusion
 layout: default
 date: 2024-12-19
 ---
+## Affordance-Aware Object Insertion via Mask-Aware Dual Diffusion
+**Authors:**
+- Jixuan He, h-index: 2, papers: 3, citations: 19
+- Hanspeter Pfister, h-index: 8, papers: 36, citations: 339
+
+**ArXiv URL:** http://arxiv.org/abs/2412.14462v2
+
+**Citation Count:** 4
+
+**Published Date:** 2024-12-19
+
 ![Figure 1. Given a foreground-background object-scene pair, our model can perform affordance-aware object insertion conditioning on different position prompts, including points, bounding boxes, masks, and even null prompts.]({{ '/images/12-2024/Affordance-Aware_Object_Insertion_via_Mask-Aware_Dual_Diffusion/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the problem of unrealistic object placement in image composition tasks. Existing generative models often fail to respect "affordance"—the common-sense, physical, and semantic rules that govern how an object should interact with a scene (e.g., a boat should be on water, not land; a bottle needs a surface for support). The paper aims to generalize this concept from human-centric tasks to any object in any scene, tackling the dual challenges of modeling these complex relationships and the lack of large-scale, diverse training data for this purpose.

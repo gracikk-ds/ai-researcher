@@ -3,6 +3,17 @@ title: EditAR:_Unified_Conditional_Generation_with_Autoregressive_Models
 layout: default
 date: 2025-01-08
 ---
+## EditAR: Unified Conditional Generation with Autoregressive Models
+**Authors:**
+- Jiteng Mu, h-index: 9, papers: 13, citations: 359
+- Xiaolong Wang
+
+**ArXiv URL:** http://arxiv.org/abs/2501.04699v1
+
+**Citation Count:** 6
+
+**Published Date:** 2025-01-08
+
 ![Figure 1. We propose EditAR, a unified conditional autoregressive model for diverse conditional generation tasks. We demonstrate that without task-specific designs, a single autoregressive model achieves strong performance across diverse tasks, including texture manipulation, object replacement, object removal, local editing, canny-to-image, depth-to-image, and segmentation-to-image.]({{ '/images/01-2025/EditAR:_Unified_Conditional_Generation_with_Autoregressive_Models/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Recent progress in controllable image generation is dominated by diffusion models. However, these models often require task-specific architectural designs and training procedures, making it difficult to create a single, unified model that can handle a wide variety of tasks like image editing, object removal, and condition-based generation (e.g., from depth or segmentation maps). The authors identify this lack of a unified framework as a key challenge. They propose that autoregressive models, which naturally use a unified token-based representation for all inputs, are a promising but underexplored path toward creating a single foundational model for diverse conditional generation tasks.

@@ -3,6 +3,17 @@ title: Multi-focal_Conditioned_Latent_Diffusion_for_Person_Image_Synthesis
 layout: default
 date: 2025-03-19
 ---
+## Multi-focal Conditioned Latent Diffusion for Person Image Synthesis
+**Authors:**
+- Jiaqi Liu
+- Nicu Sebe
+
+**ArXiv URL:** http://arxiv.org/abs/2503.15686v2
+
+**Citation Count:** None
+
+**Published Date:** 2025-03-19
+
 ![Figure 1. (a) The VAE [ 38 ] reconstruction deteriorates the detailed information of person images, especially the facial regions and complex textures. These issues worsen for the generated latent with small deviations. A small deviation ϵ = 0 . 2 is added to demonstrate the often case of generated latent. (b) Our methods preserve this detailed information better than other LDM-based methods by introducing multi-focal conditions.]({{ '/images/03-2025/Multi-focal_Conditioned_Latent_Diffusion_for_Person_Image_Synthesis/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address a key limitation in Pose-Guided Person Image Synthesis (PGPIS) methods that use Latent Diffusion Models (LDMs). While LDMs are powerful, their initial image-to-latent compression step is lossy and often degrades high-frequency details. This results in generated images with blurry clothing textures and distorted or inconsistent facial features, which is a critical problem for creating realistic and identity-preserving person images. Existing LDM-based methods condition on the entire source image, which struggles to focus on these small but perceptually vital regions.

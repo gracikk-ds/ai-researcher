@@ -3,6 +3,17 @@ title: ByteEdit:_Boost,_Comply_and_Accelerate_Generative_Image_Editing
 layout: default
 date: 2024-04-07
 ---
+## ByteEdit: Boost, Comply and Accelerate Generative Image Editing
+**Authors:**
+- Yuxi Ren, h-index: 6, papers: 17, citations: 215
+- Lean Fu, h-index: 4, papers: 6, citations: 27
+
+**ArXiv URL:** http://arxiv.org/abs/2404.04860v1
+
+**Citation Count:** 5
+
+**Published Date:** 2024-04-07
+
 ![Fig. 1: We introduce ByteEdit , a novel framework that utilizes feedback learning to enhance generative image editing tasks, resulting in outstanding generation performance, improved consistency, enhanced instruction adherence, and accelerated generation speed. To the best of our knowledge, ByteEdit emerges as the most superior and the fastest solution currently in the field of generative editing.]({{ '/images/04-2024/ByteEdit:_Boost,_Comply_and_Accelerate_Generative_Image_Editing/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address four persistent challenges in diffusion-based generative image editing (inpainting and outpainting). Existing methods often produce results with:

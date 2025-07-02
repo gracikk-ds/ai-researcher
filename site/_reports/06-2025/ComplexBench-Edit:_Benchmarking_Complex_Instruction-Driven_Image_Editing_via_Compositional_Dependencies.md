@@ -3,6 +3,17 @@ title: ComplexBench-Edit:_Benchmarking_Complex_Instruction-Driven_Image_Editing_
 layout: default
 date: 2025-06-15
 ---
+## ComplexBench-Edit: Benchmarking Complex Instruction-Driven Image Editing via Compositional Dependencies
+**Authors:**
+- Chenglin Wang
+- Kai Zhang
+
+**ArXiv URL:** http://arxiv.org/abs/2506.12830v1
+
+**Citation Count:** None
+
+**Published Date:** 2025-06-15
+
 ![Figure 1: Comparison between parallel and chain multi-instruction image editing. Parallel editing applies independent instructions simultaneously, while chain editing involves dependent instructions that must be executed in sequence.]({{ '/images/06-2025/ComplexBench-Edit:_Benchmarking_Complex_Instruction-Driven_Image_Editing_via_Compositional_Dependencies/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Current text-driven image editing models excel at following single, simple instructions. However, they struggle with real-world scenarios that require executing complex, multi-step directives. The authors identify a critical gap in both model capability and evaluation: existing models often fail to handle "chain" instructions, where one editing operation is dependent on the outcome of a previous one. Furthermore, existing benchmarks do not adequately test for these compositional and sequential reasoning abilities, and their consistency metrics are often flawed, penalizing correct edits.

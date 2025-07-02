@@ -3,6 +3,17 @@ title: Edit_Transfer:_Learning_Image_Editing_via_Vision_In-Context_Relations
 layout: default
 date: 2025-03-17
 ---
+## Edit Transfer: Learning Image Editing via Vision In-Context Relations
+**Authors:**
+- Lan Chen
+- Mike Zheng Shou, h-index: 7, papers: 16, citations: 418
+
+**ArXiv URL:** http://arxiv.org/abs/2503.13327v1
+
+**Citation Count:** 4
+
+**Published Date:** 2025-03-17
+
 ![Figure 1. Edit Transfer aims to learn a transformation from a given source–target editing example, and apply the edit to a query image. Our framework can effectively transfer both (b) single and (c) compositional non-rigid edits via proposed visual relation in-context learning.]({{ '/images/03-2025/Edit_Transfer:_Learning_Image_Editing_via_Vision_In-Context_Relations/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
     - The authors address the limitations of existing image editing methods. Text-based Image Editing (TIE) struggles to describe and execute precise, complex spatial transformations like specific human poses. Reference-based Image Editing (RIE) methods typically focus on transferring low-level properties like style and texture, and fail to handle non-rigid geometric changes. The paper aims to bridge this gap by learning transformations directly from a visual example pair, enabling complex non-rigid edits that are difficult to achieve with text or simple reference images.

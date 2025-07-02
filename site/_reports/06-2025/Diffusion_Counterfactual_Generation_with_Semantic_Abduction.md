@@ -3,6 +3,17 @@ title: Diffusion_Counterfactual_Generation_with_Semantic_Abduction
 layout: default
 date: 2025-06-09
 ---
+## Diffusion Counterfactual Generation with Semantic Abduction
+**Authors:**
+- Rajat Rasal, h-index: 2, papers: 3, citations: 16
+- Ben Glocker, h-index: 2, papers: 9, citations: 10
+
+**ArXiv URL:** http://arxiv.org/abs/2506.07883v1
+
+**Citation Count:** 0
+
+**Published Date:** 2025-06-09
+
 ![Figure 2. Morpho-MNIST ( 28 × 28 ) counterfactuals generated using an amortised, anti-causally guided semantic mechanism ( p ∅ = 0 . 1 , ω = 1 . 5 ) based on the DSCM shown in (a). (b) illustrates counterfactual soundness (Obs: Observation, Comp: Composition, Cf: Counterfactual, Rev: Reversibility). (c) depicts image counterfactuals: interventions are shown above the top row and the bottom row visualises total causal effects (red: increase, blue: decrease), refer to (Appendix A.2 ) for details.]({{ '/images/06-2025/Diffusion_Counterfactual_Generation_with_Semantic_Abduction/figure_2.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the challenge of generating high-fidelity counterfactual images that are faithful to an underlying causal model. Existing methods based on autoencoders often struggle with image quality and scalability. While diffusion models produce state-of-the-art visuals, they typically lack a controllable semantic representation space, which is crucial for performing causal interventions and preserving the subject's core identity during edits. This gap limits their use in applications requiring principled causal reasoning, such as personalized medicine or fair AI.

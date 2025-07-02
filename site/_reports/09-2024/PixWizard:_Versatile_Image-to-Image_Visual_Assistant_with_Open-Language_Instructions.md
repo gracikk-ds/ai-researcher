@@ -3,6 +3,17 @@ title: PixWizard:_Versatile_Image-to-Image_Visual_Assistant_with_Open-Language_I
 layout: default
 date: 2024-09-23
 ---
+## PixWizard: Versatile Image-to-Image Visual Assistant with Open-Language Instructions
+**Authors:**
+- Weifeng Lin, h-index: 4, papers: 7, citations: 241
+- Hongsheng Li
+
+**ArXiv URL:** http://arxiv.org/abs/2409.15278v4
+
+**Citation Count:** 14
+
+**Published Date:** 2024-09-23
+
 ![Figure 1: Task Overview of the Omni Pixel-to-Pixel Instruction-tuning Dataset for PixWizard.]({{ '/images/09-2024/PixWizard:_Versatile_Image-to-Image_Visual_Assistant_with_Open-Language_Instructions/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the gap in creating a truly versatile visual assistant. Current approaches are either diffusion-based models limited to a narrow set of tasks (e.g., image editing) or in-context learning models that cannot effectively follow open-language instructions. This paper aims to develop a single, unified framework, **PixWizard**, that can perform a comprehensive range of image generation, manipulation, and translation tasks guided by free-form natural language, overcoming the limitations of prior work.

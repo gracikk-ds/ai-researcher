@@ -3,6 +3,17 @@ title: Unified_Diffusion-Based_Rigid_and_Non-Rigid_Editing_with_Text_and_Image_G
 layout: default
 date: 2024-01-04
 ---
+## Unified Diffusion-Based Rigid and Non-Rigid Editing with Text and Image Guidance
+**Authors:**
+- Jiacheng Wang
+- Wei Xu
+
+**ArXiv URL:** http://arxiv.org/abs/2401.02126v1
+
+**Citation Count:** 5
+
+**Published Date:** 2024-01-04
+
 ![Fig. 1. Illustration of limitations of prior works on rigid and non-rigid editing tasks.]({{ '/images/01-2024/Unified_Diffusion-Based_Rigid_and_Non-Rigid_Editing_with_Text_and_Image_Guidance/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Existing diffusion-based image editing methods typically excel at either rigid (e.g., changing an object's color) or non-rigid (e.g., changing an object's pose) editing, but struggle to perform both effectively within a single framework. These methods often produce results that are misaligned with text prompts, especially during substantial modifications, and have limited capabilities for integrating reference images as guidance. The authors address this gap by developing a unified framework that can handle both rigid and non-rigid edits guided by either text or reference images, aiming for better alignment and control.

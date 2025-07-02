@@ -3,6 +3,17 @@ title: Iterative_Multi-granular_Image_Editing_using_Diffusion_Models
 layout: default
 date: 2023-09-01
 ---
+## Iterative Multi-granular Image Editing using Diffusion Models
+**Authors:**
+- K J Joseph
+- Balaji Vasan Srinivasan, h-index: 16, papers: 83, citations: 1073
+
+**ArXiv URL:** http://arxiv.org/abs/2309.00613v2
+
+**Citation Count:** 17
+
+**Published Date:** 2023-09-01
+
 ![Figure 1. We introduce EMILIE : Iterative Multi granular Image Editor, a diffusion model that can faithfully follow a series of image editing instructions from a user. In this example, we see how the image of the fox has been semantically modified according to the provided edit instructions. Optionally, a user can instruct EMILIE with exact location of the desired edit, as illustrated in the last column.]({{ '/images/09-2023/Iterative_Multi-granular_Image_Editing_using_Diffusion_Models/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address two primary gaps in existing diffusion-based image editing models that limit their practical use in creative workflows. First, current models are "one-shot," meaning they cannot handle a sequence of edits iteratively; a naive iterative application accumulates visual artifacts and degrades image quality. Second, these models lack a straightforward mechanism for users to control the spatial granularity of edits, such as making a change to a specific local region versus the entire image. The paper aims to create a more practical tool that supports both iterative editing and multi-granular spatial control.

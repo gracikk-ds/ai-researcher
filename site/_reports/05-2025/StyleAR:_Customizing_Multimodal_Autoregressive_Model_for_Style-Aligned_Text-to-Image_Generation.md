@@ -3,6 +3,17 @@ title: StyleAR:_Customizing_Multimodal_Autoregressive_Model_for_Style-Aligned_Te
 layout: default
 date: 2025-05-26
 ---
+## StyleAR: Customizing Multimodal Autoregressive Model for Style-Aligned Text-to-Image Generation
+**Authors:**
+- Yi Wu
+- Bin Li
+
+**ArXiv URL:** http://arxiv.org/abs/2505.19874v1
+
+**Citation Count:** 0
+
+**Published Date:** 2025-05-26
+
 ![Figure 1: Stylized samples of our StyleAR. Our StyleAR is capable of generating images that are highly consistent in style with the reference images across a diverse range of styles, and highly aligned in semantics with the input prompts of various categories.]({{ '/images/05-2025/StyleAR:_Customizing_Multimodal_Autoregressive_Model_for_Style-Aligned_Text-to-Image_Generation/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Autoregressive (AR) models excel at text-to-image generation but lag behind diffusion models in the complex task of style-aligned generation. This gap exists because style alignment typically requires "triplet data" (a reference style image, a text prompt, and a corresponding stylized output image) for instruction tuning. Acquiring such high-quality triplet data at a large scale is a significant challenge. The authors aim to overcome this data bottleneck and enable AR models to perform high-fidelity, style-aligned image generation, a domain currently dominated by diffusion-based methods.

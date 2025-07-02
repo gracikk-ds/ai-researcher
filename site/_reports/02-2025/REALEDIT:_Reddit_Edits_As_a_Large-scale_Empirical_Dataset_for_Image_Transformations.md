@@ -3,6 +3,17 @@ title: REALEDIT:_Reddit_Edits_As_a_Large-scale_Empirical_Dataset_for_Image_Trans
 layout: default
 date: 2025-02-05
 ---
+## REALEDIT: Reddit Edits As a Large-scale Empirical Dataset for Image Transformations
+**Authors:**
+- Peter Sushko, h-index: 1, papers: 1, citations: 1
+- Ranjay Krishna, h-index: 7, papers: 13, citations: 196
+
+**ArXiv URL:** http://arxiv.org/abs/2502.03629v2
+
+**Citation Count:** 1
+
+**Published Date:** 2025-02-05
+
 ![Figure 1. We visualize edits made by our model. We introduce R EAL E DIT , a large-scale image editing dataset sourced from Reddit with real-world user edit requests and human-edits. By finetuning on R EAL E DIT , our resultant model outperforms existing models by up to 165 Elo points with human judgment and delivers real world utility to real user requests online.]({{ '/images/02-2025/REALEDIT:_Reddit_Edits_As_a_Large-scale_Empirical_Dataset_for_Image_Transformations/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Existing image editing models, despite performing well on academic benchmarks, struggle to meet the demands of real-world users. The authors identify a critical gap: the datasets used to train these models rely on synthetic or artificially generated edits, which lack the diversity and ecological validity of authentic user requests. This misalignment results in models that fail at common, practical tasks like photo restoration or subtle object removal, which are frequently requested in online communities like Reddit.

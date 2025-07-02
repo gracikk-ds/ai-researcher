@@ -3,6 +3,17 @@ title: UIP2P:_Unsupervised_Instruction-based_Image_Editing_via_Cycle_Edit_Consis
 layout: default
 date: 2024-12-19
 ---
+## UIP2P: Unsupervised Instruction-based Image Editing via Cycle Edit Consistency
+**Authors:**
+- Enis Simsar, h-index: 9, papers: 25, citations: 309
+- Federico Tombari, h-index: 6, papers: 20, citations: 184
+
+**ArXiv URL:** http://arxiv.org/abs/2412.15216v1
+
+**Citation Count:** 1
+
+**Published Date:** 2024-12-19
+
 ![Figure 1. Unsupervised InstructPix2Pix. Our approach achieves more precise and coherent edits while preserving the structure of the scene. UIP2P outperforms state-of-the-art models in both real images (a. and b.) and synthetic images (c. and d.).]({{ '/images/12-2024/UIP2P:_Unsupervised_Instruction-based_Image_Editing_via_Cycle_Edit_Consistency/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the primary limitation of existing instruction-based image editing models: their reliance on supervised learning. These models require large-scale datasets of (input image, edit instruction, ground-truth edited image) triplets. Such datasets are either generated using other models, which introduces systematic biases and limits edit diversity, or are manually annotated by humans, which is prohibitively expensive and not scalable. This dependency on curated triplet datasets hinders the development of more generalizable and versatile editing models that can be trained on vast, unlabeled real-world image collections.

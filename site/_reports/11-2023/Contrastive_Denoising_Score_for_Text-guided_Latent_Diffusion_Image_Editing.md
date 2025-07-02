@@ -3,6 +3,17 @@ title: Contrastive_Denoising_Score_for_Text-guided_Latent_Diffusion_Image_Editin
 layout: default
 date: 2023-11-30
 ---
+## Contrastive Denoising Score for Text-guided Latent Diffusion Image Editing
+**Authors:**
+- Hyelin Nam, h-index: 2, papers: 5, citations: 68
+- Jong Chul Ye
+
+**ArXiv URL:** http://arxiv.org/abs/2311.18608v2
+
+**Citation Count:** 29
+
+**Published Date:** 2023-11-30
+
 ![Figure 1. Text-guided Image Editing results via C ontrastive D enoising S core. CDS successfully translates source images with a wellbalanced interplay between maintaining the structural elements of the source image and transforming the content in alignment with the target text prompt.]({{ '/images/11-2023/Contrastive_Denoising_Score_for_Text-guided_Latent_Diffusion_Image_Editing/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Existing text-guided image editing methods based on diffusion models, particularly Delta Denoising Score (DDS), often fail to preserve the structural integrity (e.g., pose, layout, background) of the source image. While they excel at modifying content to match a target text prompt, this lack of structural consistency limits their practical use. The authors address this gap by introducing a method to enforce structural correspondence between the source and edited image within the DDS framework.

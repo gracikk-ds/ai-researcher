@@ -3,6 +3,17 @@ title: GPT-ImgEval:_A_Comprehensive_Benchmark_for_Diagnosing_GPT4o_in_Image_Gene
 layout: default
 date: 2025-04-03
 ---
+## GPT-ImgEval: A Comprehensive Benchmark for Diagnosing GPT4o in Image Generation
+**Authors:**
+- Zhiyuan Yan
+- Li Yuan
+
+**ArXiv URL:** http://arxiv.org/abs/2504.02782v3
+
+**Citation Count:** 24
+
+**Published Date:** 2025-04-03
+
 ![Figure 1: Commonly used pipelines for unified image generation and understanding, and potential decoder architectures of GPT4o’s image generation choice. The complete speculation of architectures can be seen in Figure 7 .]({{ '/images/04-2025/GPT-ImgEval:_A_Comprehensive_Benchmark_for_Diagnosing_GPT4o_in_Image_Generation/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The recent release of OpenAI's GPT-4o demonstrated surprisingly powerful capabilities in image generation and editing, creating significant excitement. However, there was no systematic benchmark to quantitatively and qualitatively assess its performance. The authors address this gap by introducing **GPT-ImgEval**, the first comprehensive benchmark designed to diagnose GPT-4o's image generation abilities, uncover its underlying architecture, identify its weaknesses, and evaluate its safety implications.

@@ -3,6 +3,17 @@ title: A_Diffusion-Based_Framework_for_Occluded_Object_Movement
 layout: default
 date: 2025-04-02
 ---
+## A Diffusion-Based Framework for Occluded Object Movement
+**Authors:**
+- Zheng-Peng Duan, h-index: 3, papers: 10, citations: 159
+- Chongyi Li, h-index: 2, papers: 7, citations: 22
+
+**ArXiv URL:** http://arxiv.org/abs/2504.01873v1
+
+**Citation Count:** 0
+
+**Published Date:** 2025-04-02
+
 ![(f) Ours (e) DiffEditor (d) DragDiffusion Figure 1: Comparison with other methods for occluded object movement. Given a real-world image, our method can seamlessly move the occluded object to a user-specified position while completing the occluded portion.]({{ '/images/04-2025/A_Diffusion-Based_Framework_for_Occluded_Object_Movement/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The paper addresses the challenging task of seamlessly moving an occluded object within an image. Existing image editing methods struggle with this task because it requires two distinct steps: completing the unseen (occluded) portion of the object and then relocating the now-complete object to a new position harmoniously. Current methods either fail to complete the object (e.g., drag-style editors) or generate unrealistic content when attempting to fill in the missing parts (e.g., standard inpainting models). The authors aim to bridge this gap by leveraging the powerful generative capabilities and real-world knowledge embedded in pre-trained diffusion models.

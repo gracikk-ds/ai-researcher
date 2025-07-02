@@ -3,6 +3,17 @@ title: Region-Aware_Diffusion_for_Zero-shot_Text-driven_Image_Editing
 layout: default
 date: 2023-02-23
 ---
+## Region-Aware Diffusion for Zero-shot Text-driven Image Editing
+**Authors:**
+- Nisha Huang, h-index: 9, papers: 14, citations: 563
+- Changsheng Xu
+
+**ArXiv URL:** http://arxiv.org/abs/2302.11797v1
+
+**Citation Count:** None
+
+**Published Date:** 2023-02-23
+
 ![Fig. 1. The results of the proposed region-aware diffusion model (RDM). The texts adhere to the phrase rule “A → B”, indicating that RDM transforms entity A into entity B.]({{ '/images/02-2023/Region-Aware_Diffusion_for_Zero-shot_Text-driven_Image_Editing/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Current text-driven image editing methods face several limitations. They often require users to manually create masks to specify the editing region, are restricted to simple style or attribute changes rather than generating new entities, or fail to preserve the content in non-edited areas of the image. The authors address this gap by developing a method for zero-shot, entity-level image editing that can automatically identify the region of interest from a text prompt and replace the entity within it, all while maintaining the integrity of the background.

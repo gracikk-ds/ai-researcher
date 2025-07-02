@@ -3,6 +3,17 @@ title: Point_and_Instruct:_Enabling_Precise_Image_Editing_by_Unifying_Direct_Man
 layout: default
 date: 2024-02-05
 ---
+## Point and Instruct: Enabling Precise Image Editing by Unifying Direct Manipulation and Text Instructions
+**Authors:**
+- Alec Helbling, h-index: 3, papers: 16, citations: 268
+- Polo Chau, h-index: 1, papers: 5, citations: 2
+
+**ArXiv URL:** http://arxiv.org/abs/2402.07925v1
+
+**Citation Count:** 0
+
+**Published Date:** 2024-02-05
+
 ![Figure 1: Point & Instruct empowers users to specify image editing instructions that combine the expressively of natural language and the spatial precision of direct manipulation. We show an example of our method, which allows a user to move a particular dog to a precise location and change its appearance. (Left) A user can select which object in particular they wish to manipulate with a bounding box, and specify a location to move the object to with a star. These geometric shapes can be referenced in a natural language instruction symbolically and combined with language only instructions that specify changes to the appearance of objects. (Right) For comparison we show how the popular text-based editing system InstructPix2Pix [ 3 ] fails at this task. Not only does this system require a much more verbose query to convey the same image edit, but it also fails to move objects and fails to localize changes to the correct objects.]({{ '/images/02-2024/Point_and_Instruct:_Enabling_Precise_Image_Editing_by_Unifying_Direct_Manipulation_and_Text_Instructions/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Existing text-based image editing systems struggle with precise, fine-grained manipulations. It is difficult for users to specify exactly *which* object to edit in a crowded scene (e.g., one specific dog among several) or *where* to move it using text alone. This often requires complex, verbose prompts that frequently fail to produce the desired result. Conversely, direct manipulation (e.g., clicking and dragging) offers excellent spatial precision but lacks the descriptive power of natural language to specify complex appearance changes (e.g., "make the dog a white husky"). The authors address this gap by creating a system that combines the spatial precision of direct manipulation with the descriptive expressiveness of natural language.

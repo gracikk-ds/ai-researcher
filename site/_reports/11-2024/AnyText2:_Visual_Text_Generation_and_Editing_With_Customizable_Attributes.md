@@ -3,6 +3,17 @@ title: AnyText2:_Visual_Text_Generation_and_Editing_With_Customizable_Attributes
 layout: default
 date: 2024-11-22
 ---
+## AnyText2: Visual Text Generation and Editing With Customizable Attributes
+**Authors:**
+- Yuxiang Tuo, h-index: 3, papers: 3, citations: 98
+- Liefeng Bo, h-index: 3, papers: 4, citations: 39
+
+**ArXiv URL:** http://arxiv.org/abs/2411.15245v1
+
+**Citation Count:** None
+
+**Published Date:** 2024-11-22
+
 ![Figure 1. AnyText2 can accurately generate multilingual text within images and achieve a realistic integration. Furthermore, it allows for customized attributes for each line, such as controlling the font style through font files, mimicking an image using a brush tool, and specifying the text color. Additionally, AnyText2 enables customizable attribute editing of text within images.]({{ '/images/11-2024/AnyText2:_Visual_Text_Generation_and_Editing_With_Customizable_Attributes/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Existing text-to-image (T2I) models struggle with precise control over text attributes like font and color, which limits their use in applications such as logo design and advertising. This paper introduces AnyText2 to address this gap, enabling customizable and accurate multilingual text generation and editing within images.

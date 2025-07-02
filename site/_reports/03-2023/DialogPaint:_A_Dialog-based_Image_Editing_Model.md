@@ -3,6 +3,17 @@ title: DialogPaint:_A_Dialog-based_Image_Editing_Model
 layout: default
 date: 2023-03-17
 ---
+## DialogPaint: A Dialog-based Image Editing Model
+**Authors:**
+- Jingxuan Wei, h-index: 7, papers: 31, citations: 137
+- Yequan Wang, h-index: 9, papers: 23, citations: 265
+
+**ArXiv URL:** http://arxiv.org/abs/2303.10073v2
+
+**Citation Count:** 5
+
+**Published Date:** 2023-03-17
+
 ![Fig. 1 An example of interactive editing]({{ '/images/03-2023/DialogPaint:_A_Dialog-based_Image_Editing_Model/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Current text-to-image models are not well-suited for image editing because they struggle to interpret conversational or ambiguous user instructions (e.g., "change it to something else"). The authors identify a practical need for a more intuitive editing process, as users often prefer to refine an existing image through an interactive, multi-turn dialogue rather than creating a new one from a single, precise prompt. The paper aims to bridge this gap by creating a model that can engage in natural dialogue to clarify user intent and perform iterative image modifications.

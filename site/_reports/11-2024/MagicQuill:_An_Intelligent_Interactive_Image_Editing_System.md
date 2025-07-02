@@ -3,6 +3,17 @@ title: MagicQuill:_An_Intelligent_Interactive_Image_Editing_System
 layout: default
 date: 2024-11-14
 ---
+## MagicQuill: An Intelligent Interactive Image Editing System
+**Authors:**
+- Zichen Liu, h-index: 2, papers: 3, citations: 15
+- Yujun Shen, h-index: 7, papers: 14, citations: 259
+
+**ArXiv URL:** http://arxiv.org/abs/2411.09703v2
+
+**Citation Count:** None
+
+**Published Date:** 2024-11-14
+
 ![Figure 1. MagicQuill is an intelligent and interactive image editing system built upon diffusion models. Users seamlessly edit images using three intuitive brushstrokes: add, subtract, and color (A). A MLLM dynamically predicts user intentions from their brush strokes and suggests contextual prompts (B1-B4). The examples demonstrate diverse editing operations: to generate a jacket from clothing contour (B1), add a flower crown from head sketches (B2), remove background (B3), and apply color changes to the hair and flowers (B4).]({{ '/images/11-2024/MagicQuill:_An_Intelligent_Interactive_Image_Editing_System/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Current image editing tools, even those based on powerful diffusion models, struggle with performing precise and nuanced modifications. They often lack intuitive interfaces, forcing users to write complex text prompts and offering poor fine-grained control over the shape, position, and color of edits. The authors address this gap by developing a system that allows users to express complex editing ideas through simple, direct interactions like brushstrokes, making high-quality, controlled editing accessible and efficient without requiring prompt engineering expertise.

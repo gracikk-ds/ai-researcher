@@ -3,6 +3,17 @@ title: TextMaster:_Universal_Controllable_Text_Edit
 layout: default
 date: 2024-10-13
 ---
+## TextMaster: Universal Controllable Text Edit
+**Authors:**
+- Aoqiang Wang, h-index: 1, papers: 1, citations: 2
+- Zhao Zhang
+
+**ArXiv URL:** http://arxiv.org/abs/2410.09879v1
+
+**Citation Count:** 2
+
+**Published Date:** 2024-10-13
+
 ![Figure 1: The image illustrates the diverse capabilities of our TextMaster, encompassing precise typesetting and layout, consistent style retention, and the concurrent editing of multiple lines of text.]({{ '/images/10-2024/TextMaster:_Universal_Controllable_Text_Edit/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Current text editing models face several practical limitations. They are highly dependent on the precise alignment of text with a given mask, leading to poor results when the new text has a different length than the original. Furthermore, existing methods lack robust control over text layout and spacing and have not addressed the critical challenge of controllably transferring the font style from the original text to the edited text. This gap limits their applicability in real-world scenarios that demand high fidelity and consistency.

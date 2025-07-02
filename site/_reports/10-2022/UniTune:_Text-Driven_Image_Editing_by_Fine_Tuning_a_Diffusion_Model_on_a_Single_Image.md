@@ -3,6 +3,17 @@ title: UniTune:_Text-Driven_Image_Editing_by_Fine_Tuning_a_Diffusion_Model_on_a_
 layout: default
 date: 2022-10-17
 ---
+## UniTune: Text-Driven Image Editing by Fine Tuning a Diffusion Model on a Single Image
+**Authors:**
+- Dani Valevski, h-index: 6, papers: 6, citations: 516
+- Yaniv Leviathan, h-index: 8, papers: 10, citations: 1268
+
+**ArXiv URL:** http://arxiv.org/abs/2210.09477v4
+
+**Citation Count:** None
+
+**Published Date:** 2022-10-17
+
 ![Fig. 1. UniTune edits preserving visual and semantic fidelity to the user supplied image.]({{ '/images/10-2022/UniTune:_Text-Driven_Image_Editing_by_Fine_Tuning_a_Diffusion_Model_on_a_Single_Image/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the limitations of existing text-driven image editing methods. These methods often require user-provided masks, struggle to perform edits that involve significant visual changes (e.g., altering an object's pose or style), and fail to preserve important semantic and visual details from the original image. The paper aims to create a more powerful and flexible editing tool that works on arbitrary images and can perform a wide range of expressive edits with high fidelity, without needing additional inputs like masks.

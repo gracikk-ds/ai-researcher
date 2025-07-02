@@ -3,6 +3,17 @@ title: Image-Editing_Specialists:_An_RLAIF_Approach_for_Diffusion_Models
 layout: default
 date: 2025-04-17
 ---
+## Image-Editing Specialists: An RLAIF Approach for Diffusion Models
+**Authors:**
+- Elior Benarous, h-index: 1, papers: 2, citations: 3
+- Heng Yang
+
+**ArXiv URL:** http://arxiv.org/abs/2504.12833v1
+
+**Citation Count:** None
+
+**Published Date:** 2025-04-17
+
 ![Figure 1. Representative results showcasing our method’s ability to perform precise and realistic edits. The input image is displayed alongside four diverse edits, highlighting our approach’s capacity to align with user intentions while preserving structural coherence.]({{ '/images/04-2025/Image-Editing_Specialists:_An_RLAIF_Approach_for_Diffusion_Models/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Existing instruction-based image editing models often struggle with two key challenges: 1) **Structural Preservation**, where edits inadvertently alter unrelated parts of the image, and 2) **Semantic Alignment**, where the model fails to precisely follow the user's textual and visual intent. Current methods either require complex architectural changes, are computationally expensive, or depend on large, potentially biased, curated datasets. This paper addresses the gap by proposing a method to train specialized, precise, and structurally coherent editing models without relying on extensive human annotation or large-scale datasets.

@@ -3,6 +3,17 @@ title: DreamMix:_Decoupling_Object_Attributes_for_Enhanced_Editability_in_Custom
 layout: default
 date: 2024-11-26
 ---
+## DreamMix: Decoupling Object Attributes for Enhanced Editability in Customized Image Inpainting
+**Authors:**
+- Yicheng Yang, h-index: 1, papers: 2, citations: 4
+- Huchuan Lu, h-index: 8, papers: 19, citations: 739
+
+**ArXiv URL:** http://arxiv.org/abs/2411.17223v1
+
+**Citation Count:** None
+
+**Published Date:** 2024-11-26
+
 ![Figure 1. DreamMix on various subject-driven image customization tasks. (a) Identity Preservation : DreamMix precisely inserts a target object into any scene, achieving high-fidelity and harmonized composting results. (b) Attribute Editing : DreamMix allows users to modify object attributes such as color, texture, and shape or add accessories based on textual instructions. (c) Small Object Inpainting : DreamMix effectively performs small object insertion and editing while preserving fine-grained details and visual harmony.]({{ '/images/11-2024/DreamMix:_Decoupling_Object_Attributes_for_Enhanced_Editability_in_Customized_Image_Inpainting/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Subject-driven image inpainting methods have advanced significantly, allowing users to insert specific objects into scenes. However, existing approaches primarily focus on preserving the object's identity and struggle to edit its attributes (e.g., color, texture, shape) using text prompts. This "identity overfitting" limits the creative flexibility of these tools. The authors aim to solve this by creating a model that can both faithfully insert an object and allow for fine-grained, text-driven attribute modifications.

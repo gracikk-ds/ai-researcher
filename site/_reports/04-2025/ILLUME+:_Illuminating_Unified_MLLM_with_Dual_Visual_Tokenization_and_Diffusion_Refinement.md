@@ -3,6 +3,17 @@ title: ILLUME+:_Illuminating_Unified_MLLM_with_Dual_Visual_Tokenization_and_Diff
 layout: default
 date: 2025-04-02
 ---
+## ILLUME+: Illuminating Unified MLLM with Dual Visual Tokenization and Diffusion Refinement
+**Authors:**
+- Runhui Huang
+- Hang Xu
+
+**ArXiv URL:** http://arxiv.org/abs/2504.01934v2
+
+**Citation Count:** 7
+
+**Published Date:** 2025-04-02
+
 ![Figure 1: ILLUME+ can understand and generate images at any resolution. Compared to our previous work, ILLUME [63], it demonstrates improved texture preservation in image editing tasks.]({{ '/images/04-2025/ILLUME+:_Illuminating_Unified_MLLM_with_Dual_Visual_Tokenization_and_Diffusion_Refinement/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Existing unified Multimodal Large Language Models (MLLMs) struggle to simultaneously excel at the three core capabilities of visual understanding, image generation, and image editing. Models either prioritize semantic understanding at the cost of texture preservation (hindering editing), or they focus on high-fidelity generation but lag in deep comprehension. Furthermore, some approaches decouple the input and output representations, which limits their ability to handle complex, interleaved image-text tasks. The authors aim to address this gap by creating a single, unified MLLM that can seamlessly perform all three tasks without compromising performance on any single one.

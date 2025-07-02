@@ -3,6 +3,17 @@ title: Divide_and_Compose_with_Score_Based_Generative_Models
 layout: default
 date: 2023-02-05
 ---
+## Divide and Compose with Score Based Generative Models
+**Authors:**
+- Sandesh Ghimire
+- Jennifer Dy
+
+**ArXiv URL:** http://arxiv.org/abs/2302.02272v1
+
+**Citation Count:** 0
+
+**Published Date:** 2023-02-05
+
 ![Figure 1. Using all score components results in faithful reconstruction, but with interesting variations]({{ '/images/02-2023/Divide_and_Compose_with_Score_Based_Generative_Models/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the limited control and interpretability of existing score-based (diffusion) generative models. While text-to-image models can generate diverse images, users lack fine-grained control to edit specific attributes of the output beyond changing the entire text prompt. The relationship between the conditioning (e.g., text embedding) and the final image is opaque. This paper aims to bridge this gap by proposing a method to learn distinct, interpretable image components in an unsupervised manner, which can then be individually manipulated and composed to edit images in a more controlled and informed way.

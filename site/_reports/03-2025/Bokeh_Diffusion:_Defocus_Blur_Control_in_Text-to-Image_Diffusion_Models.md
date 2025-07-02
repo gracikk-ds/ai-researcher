@@ -3,6 +3,17 @@ title: Bokeh_Diffusion:_Defocus_Blur_Control_in_Text-to-Image_Diffusion_Models
 layout: default
 date: 2025-03-11
 ---
+## Bokeh Diffusion: Defocus Blur Control in Text-to-Image Diffusion Models
+**Authors:**
+- Armando Fortes, h-index: 1, papers: 2, citations: 1
+- Xingang Pan, h-index: 7, papers: 17, citations: 179
+
+**ArXiv URL:** http://arxiv.org/abs/2503.08434v4
+
+**Citation Count:** None
+
+**Published Date:** 2025-03-11
+
 ![Fig. 1. Bokeh Diffusion enables precise, scene-consistent bokeh control in text-to-image diffusion models. Top Left: Images are conditioned on an explicit blur parameter to generate outputs ranging from sharp to strongly defocused. Top Right: Our method maintains consistent scene content across different blur level conditions. Bottom: Continuous adjustment of blur strength produces smooth transitions across the bokeh range.]({{ '/images/03-2025/Bokeh_Diffusion:_Defocus_Blur_Control_in_Text-to-Image_Diffusion_Models/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Current text-to-image models lack precise control over photographic effects like depth-of-field (bokeh). Using text prompts to simulate camera settings is unreliable and often alters the scene's content. This paper introduces a method for direct and scene-consistent bokeh control, addressing the key challenge of scarce real-world training data (images of the same scene with different apertures).

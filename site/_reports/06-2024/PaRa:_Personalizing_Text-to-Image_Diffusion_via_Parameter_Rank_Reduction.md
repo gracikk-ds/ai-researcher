@@ -3,6 +3,17 @@ title: PaRa:_Personalizing_Text-to-Image_Diffusion_via_Parameter_Rank_Reduction
 layout: default
 date: 2024-06-09
 ---
+## PaRa: Personalizing Text-to-Image Diffusion via Parameter Rank Reduction
+**Authors:**
+- Shangyu Chen, h-index: 1, papers: 4, citations: 3
+- Dinh Phung
+
+**ArXiv URL:** http://arxiv.org/abs/2406.05641v1
+
+**Citation Count:** 1
+
+**Published Date:** 2024-06-09
+
 ![Figure 1: Comparison between LoRA [ 7 ] and our propsoed PaRa on T2I personalization for learning a new concept of bear, i . e ., “ [V] ”. For a fair comparison, we set the rank as 4 and adopt the same latent noise for both methods. LoRA scale is set to 1.0.]({{ '/images/06-2024/PaRa:_Personalizing_Text-to-Image_Diffusion_via_Parameter_Rank_Reduction/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the challenge of personalizing large-scale Text-to-Image (T2I) diffusion models. The core problem is the trade-off between learning a new visual concept from a few examples (target alignment) and preserving the model's general knowledge and ability to respond to diverse text prompts (text editability). Existing methods often struggle with this balance, either failing to capture the new concept accurately or overfitting to the limited training data, thereby losing creative flexibility.

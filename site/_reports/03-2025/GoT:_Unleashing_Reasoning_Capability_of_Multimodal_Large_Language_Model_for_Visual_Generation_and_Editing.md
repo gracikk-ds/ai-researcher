@@ -3,6 +3,17 @@ title: GoT:_Unleashing_Reasoning_Capability_of_Multimodal_Large_Language_Model_f
 layout: default
 date: 2025-03-13
 ---
+## GoT: Unleashing Reasoning Capability of Multimodal Large Language Model for Visual Generation and Editing
+**Authors:**
+- Rongyao Fang, h-index: 13, papers: 18, citations: 2429
+- Hongsheng Li
+
+**ArXiv URL:** http://arxiv.org/abs/2503.10639v1
+
+**Citation Count:** 23
+
+**Published Date:** 2025-03-13
+
 ![Figure 1. Generation Chain-of-Thought (GoT) with Semantic-Spatial Reasoning. Our approach transforms input prompts into explicit reasoning chains with coordinates (middle), which guides vivid image generation and precise editing (right). This reasoning-based generation paradigm unifies spatial understanding across visual tasks: semantically-grounded visual generation (top), controllable interactive generation (middle), and localized image editing (bottom).]({{ '/images/03-2025/GoT:_Unleashing_Reasoning_Capability_of_Multimodal_Large_Language_Model_for_Visual_Generation_and_Editing/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Current image generation and editing models process textual prompts directly, often failing to comprehend complex scenes that require precise spatial arrangements or specific object relationships. This lack of explicit reasoning leads to errors in composition. While Multimodal Large Language Models (MLLMs) possess advanced reasoning skills, these capabilities have not been effectively integrated into visual synthesis pipelines. The authors address this gap by proposing a method to embed a reasoning process directly into the generation and editing workflow.

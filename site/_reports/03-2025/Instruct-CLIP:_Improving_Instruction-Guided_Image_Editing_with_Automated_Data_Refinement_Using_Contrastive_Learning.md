@@ -3,6 +3,17 @@ title: Instruct-CLIP:_Improving_Instruction-Guided_Image_Editing_with_Automated_
 layout: default
 date: 2025-03-24
 ---
+## Instruct-CLIP: Improving Instruction-Guided Image Editing with Automated Data Refinement Using Contrastive Learning
+**Authors:**
+- Sherry X. Chen
+- Pradeep Sen, h-index: 1, papers: 4, citations: 4
+
+**ArXiv URL:** http://arxiv.org/abs/2503.18406v2
+
+**Citation Count:** 0
+
+**Published Date:** 2025-03-24
+
 ![Figure 1. Results showcasing the strength of Instruct-CLIP (I-CLIP) compared to state-of-the-art InstructPix2Pix (IP2P) [ 1 ].]({{ '/images/03-2025/Instruct-CLIP:_Improving_Instruction-Guided_Image_Editing_with_Automated_Data_Refinement_Using_Contrastive_Learning/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the problem of low-quality results in instruction-guided image editing models. They identify the primary cause as flawed training datasets, which are often generated automatically. In these datasets, there is frequently a misalignment between the textual edit instruction and the actual visual change depicted in the original-edited image pairs. This "noisy" supervision negatively impacts the performance of models trained on them, leading to inaccurate edits or unintended changes to irrelevant image regions.

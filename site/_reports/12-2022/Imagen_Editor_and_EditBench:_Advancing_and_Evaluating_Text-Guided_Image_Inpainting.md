@@ -3,6 +3,17 @@ title: Imagen_Editor_and_EditBench:_Advancing_and_Evaluating_Text-Guided_Image_I
 layout: default
 date: 2022-12-13
 ---
+## Imagen Editor and EditBench: Advancing and Evaluating Text-Guided Image Inpainting
+**Authors:**
+- Su Wang
+- William Chan
+
+**ArXiv URL:** http://arxiv.org/abs/2212.06909v2
+
+**Citation Count:** 188
+
+**Published Date:** 2022-12-13
+
 ![Figure 1. A sequence of edits by Imagen Editor . Given an image , a user deﬁned mask , and a text prompt , Imagen Editor makes localized edits to the designated areas. The model meaningfully incorporates the user’s intent and performs photorealistic edits.]({{ '/images/12-2022/Imagen_Editor_and_EditBench:_Advancing_and_Evaluating_Text-Guided_Image_Inpainting/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address two key challenges in text-guided image inpainting. First, existing models often struggle with text-image alignment, failing to generate edits that are faithful to the user's text prompt. This is partly because standard training with random masks allows the model to plausibly fill in regions using only the surrounding image context, thereby learning to ignore the text. Second, there is a lack of a systematic and comprehensive benchmark to evaluate the capabilities and limitations of inpainting models across diverse editing scenarios.

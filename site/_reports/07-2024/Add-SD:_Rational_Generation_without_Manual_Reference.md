@@ -3,6 +3,17 @@ title: Add-SD:_Rational_Generation_without_Manual_Reference
 layout: default
 date: 2024-07-30
 ---
+## Add-SD: Rational Generation without Manual Reference
+**Authors:**
+- Lingfeng Yang, h-index: 8, papers: 21, citations: 536
+- Jian Yang
+
+**ArXiv URL:** http://arxiv.org/abs/2407.21016v1
+
+**Citation Count:** 0
+
+**Published Date:** 2024-07-30
+
 ![Fig. 1 The proposed Add-SD pipeline begins with the creation of a RemovalDataset containing image pairs via random instance removal. These datasets are then employed to fine-tune image-to-image generation using the Stable Diffusion Model. Next, generation occurs on the entire dataset by sampling rare classes to alleviate the long-tail issue. Finally, synthetic images are integrated into the original dataset to enhance downstream tasks.]({{ '/images/07-2024/Add-SD:_Rational_Generation_without_Manual_Reference/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the challenge of automatically adding objects to images in a realistic and rational manner (i.e., with plausible sizes, positions, and context) using only simple text instructions. Existing generative methods often require costly manual references like bounding boxes, or they struggle to maintain background consistency and generate rationally placed objects when adding something new to a scene. This paper aims to create a flexible object addition pipeline that overcomes these limitations, relying solely on text prompts without any manual layout design.

@@ -3,6 +3,17 @@ title: Dynamic_Prompt_Learning:_Addressing_Cross-Attention_Leakage_for_Text-Base
 layout: default
 date: 2023-09-27
 ---
+## Dynamic Prompt Learning: Addressing Cross-Attention Leakage for Text-Based Image Editing
+**Authors:**
+- Kai Wang
+- Joost van de Weijer, h-index: 63, papers: 221, citations: 18685
+
+**ArXiv URL:** http://arxiv.org/abs/2309.15664v1
+
+**Citation Count:** 57
+
+**Published Date:** 2023-09-27
+
 ![Figure 1: Compared with other image editing methods, our DPL achieves more consistent layout when modifying one or more objects in the image and keeping other content frozen. And also the desired editing is correctly delivered to the corresponding area. DiffEdit [ 9 ] method thoroughly fails to detect the editing region in multi-object cases. And Null-Text inversion (NTI [ 28 ]) is unable to perfectly distinguish the objects in the given image since the cross-attention maps are suffering background leakage ( yellow circle) and distractor object leakage ( red circle). DPL can more successfully localize the objects in the textual prompts, thus benefits for future editing. Here the 16 × 16 cross-attention maps are interpolated to the image size for better view. (image credits: gettyimages)]({{ '/images/09-2023/Dynamic_Prompt_Learning:_Addressing_Cross-Attention_Leakage_for_Text-Based_Image_Editing/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address a critical problem in text-guided image editing with diffusion models: **cross-attention leakage**. When a user modifies a text prompt to edit a specific object in an image, existing methods often cause unintended changes to other regions, such as the background or other "distractor" objects that are semantically or visually related. The paper posits that this failure stems from inaccurate cross-attention maps, which do not correctly associate noun words in the prompt with their corresponding object pixels in the image, especially in complex, multi-object scenes.

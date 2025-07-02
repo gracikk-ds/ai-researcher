@@ -3,6 +3,17 @@ title: Ming-Lite-Uni:_Advancements_in_Unified_Architecture_for_Natural_Multimoda
 layout: default
 date: 2025-05-05
 ---
+## Ming-Lite-Uni: Advancements in Unified Architecture for Natural Multimodal Interaction
+**Authors:**
+- Inclusion AI
+- Ziyuan Huang, h-index: 2, papers: 5, citations: 135
+
+**ArXiv URL:** http://arxiv.org/abs/2505.02471v3
+
+**Citation Count:** None
+
+**Published Date:** 2025-05-05
+
 ![Figure 1 The output results and multimodal interactive demos of Ming-Lite-Uni . Our model supports basic multimodal chatting, text-to-image generation, image editing, and image style transfer based on textual instructions.]({{ '/images/05-2025/Ming-Lite-Uni:_Advancements_in_Unified_Architecture_for_Natural_Multimodal_Interaction/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the challenge of creating a unified multimodal model that can seamlessly perform both visual understanding and generation tasks. They note that existing models often struggle with a mismatch between the feature spaces used for semantic comprehension and high-fidelity pixel generation, leading to a trade-off. The paper aims to bridge this gap by developing `Ming-Lite-Uni`, an open-source framework that enables complex visual tasks like text-to-image generation and instruction-based editing through natural language, inspired by recent industry milestones like OpenAI's GPT-4o.

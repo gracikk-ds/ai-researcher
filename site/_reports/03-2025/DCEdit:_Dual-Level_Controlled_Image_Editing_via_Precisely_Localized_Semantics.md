@@ -3,6 +3,17 @@ title: DCEdit:_Dual-Level_Controlled_Image_Editing_via_Precisely_Localized_Seman
 layout: default
 date: 2025-03-21
 ---
+## DCEdit: Dual-Level Controlled Image Editing via Precisely Localized Semantics
+**Authors:**
+- Yihan Hu
+- Yunchao Wei, h-index: 13, papers: 48, citations: 711
+
+**ArXiv URL:** http://arxiv.org/abs/2503.16795v1
+
+**Citation Count:** 0
+
+**Published Date:** 2025-03-21
+
 ![“… with sunglasses …” “… Astronaut ” “… card saying Stop! ” “… a card ” “… Iron Man ” Figure 1. Given a real-world image as input, DCEdit manipulates the original content into a different semantics without additional training or tuning and could be applied to existing DiTs-based methods in a plug-and-play manner. All above results are derived from our welldesigned editing benchmark RW-800.]({{ '/images/03-2025/DCEdit:_Dual-Level_Controlled_Image_Editing_via_Precisely_Localized_Semantics/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address a key challenge in text-guided image editing with modern Diffusion Transformer (DiT) models: the imprecise localization of target semantics. Previous methods often struggle to accurately identify the specific region to be edited, leading to incomplete modifications or unintended alterations to the background. This problem is particularly pronounced in complex, real-world images with detailed descriptions. The paper aims to improve editing precision by refining the model's internal attention maps to serve as accurate regional guides.

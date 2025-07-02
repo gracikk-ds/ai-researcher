@@ -3,6 +3,17 @@ title: GlyphMastero:_A_Glyph_Encoder_for_High-Fidelity_Scene_Text_Editing
 layout: default
 date: 2025-05-08
 ---
+## GlyphMastero: A Glyph Encoder for High-Fidelity Scene Text Editing
+**Authors:**
+- Tong Wang
+- Xiaolin Hu
+
+**ArXiv URL:** http://arxiv.org/abs/2505.04915v1
+
+**Citation Count:** None
+
+**Published Date:** 2025-05-08
+
 ![Figure 1. Example results of our scene text editing method on random images collected from the internet. The original images (left column) show source text regions marked with red boxes, with target texts displayed at the bottom left. The edited results (right column) demonstrate our method’s ability to preserve both structural accuracy and style consistency through stroke-level guidance across different visual styles and writing systems.]({{ '/images/05-2025/GlyphMastero:_A_Glyph_Encoder_for_High-Fidelity_Scene_Text_Editing/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the problem of low-fidelity results in diffusion-based scene text editing. Existing methods often generate distorted or unrecognizable characters, particularly when dealing with languages that have complex glyphs, such as Chinese. The paper identifies the core issue as the failure of current models to capture the hierarchical structure of text—from individual strokes to characters and full text lines. This results in poor guidance for the generative model, leading to inaccurate text rendering.

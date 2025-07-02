@@ -3,6 +3,17 @@ title: ObjectDrop:_Bootstrapping_Counterfactuals_for_Photorealistic_Object_Remov
 layout: default
 date: 2024-03-27
 ---
+## ObjectDrop: Bootstrapping Counterfactuals for Photorealistic Object Removal and Insertion
+**Authors:**
+- Daniel Winter, h-index: 2, papers: 3, citations: 41
+- Yedid Hoshen, h-index: 8, papers: 29, citations: 256
+
+**ArXiv URL:** http://arxiv.org/abs/2403.18818v1
+
+**Citation Count:** None
+
+**Published Date:** 2024-03-27
+
 ![Figure 1: Object removal and insertion. Our method models the effect of an object on the scene including occlusions, reflections, and shadows, enabling photorealistic object removal and insertion. It significantly outperforms state-of-theart baselines.]({{ '/images/03-2024/ObjectDrop:_Bootstrapping_Counterfactuals_for_Photorealistic_Object_Removal_and_Insertion/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Existing diffusion models for image editing, while powerful, often fail to produce physically plausible results for tasks like object removal. They struggle to model the effects an object has on its environment, such as casting shadows or creating reflections. This leads to unrealistic edits where an object is removed, but its shadow remains. The authors argue this is a fundamental limitation of self-supervised methods, which lack access to "counterfactual" data (i.e., what a scene looks like with and without an object). This paper aims to solve this by training models on such counterfactual data to achieve photorealistic object removal and insertion that respects physical laws.

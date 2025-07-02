@@ -3,6 +3,17 @@ title: DreamOmni:_Unified_Image_Generation_and_Editing
 layout: default
 date: 2024-12-22
 ---
+## DreamOmni: Unified Image Generation and Editing
+**Authors:**
+- Bin Xia
+- Jiaya Jia, h-index: 5, papers: 6, citations: 340
+
+**ArXiv URL:** http://arxiv.org/abs/2412.17098v1
+
+**Citation Count:** 5
+
+**Published Date:** 2024-12-22
+
 ![Figure 1. The gallery of DreamOmni. DreamOmni, as a native unified image generation and editing model, can handle various tasks.]({{ '/images/12-2024/DreamOmni:_Unified_Image_Generation_and_Editing/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Current text-to-image (T2I) foundation models, while powerful, are not designed for easy integration with downstream tasks like image editing. Adapting them often requires specialized, task-specific plugins (e.g., ControlNet, IP-adapter) or complex framework modifications. This fragmented approach complicates deployment and prevents models from benefiting from synergistic multi-task training. Furthermore, creating large-scale, high-quality, and accurately paired data for editing tasks (like instruction-based or drag-based editing) is a major bottleneck, being both difficult and inefficient.

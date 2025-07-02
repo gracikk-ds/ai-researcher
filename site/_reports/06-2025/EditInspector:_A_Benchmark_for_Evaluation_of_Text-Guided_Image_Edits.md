@@ -3,6 +3,17 @@ title: EditInspector:_A_Benchmark_for_Evaluation_of_Text-Guided_Image_Edits
 layout: default
 date: 2025-06-11
 ---
+## EditInspector: A Benchmark for Evaluation of Text-Guided Image Edits
+**Authors:**
+- Ron Yosef, h-index: 4, papers: 7, citations: 73
+- Dani Lischinski, h-index: 3, papers: 6, citations: 426
+
+**ArXiv URL:** http://arxiv.org/abs/2506.09988v1
+
+**Citation Count:** None
+
+**Published Date:** 2025-06-11
+
 ![Figure 1: The assessments for the edit “Let the floor be made of wood” vary across different models, with 2–3 models answering each question correctly. Gemini 1.5 failed to detect any differences between the images, while GPT-4o successfully identified only the main difference. See Appendix A.7 for full-size prompts.]({{ '/images/06-2025/EditInspector:_A_Benchmark_for_Evaluation_of_Text-Guided_Image_Edits/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The paper addresses the lack of a comprehensive framework for evaluating the quality of text-guided image edits. While generative AI has made image editing widely accessible, current evaluation methods are often limited to checking instruction adherence. They tend to overlook critical quality issues such as the introduction of unintended artifacts, poor visual quality, failure to integrate seamlessly with the scene, and deviations from user expectations or common sense. This gap highlights a need for a more holistic and human-aligned verification process.

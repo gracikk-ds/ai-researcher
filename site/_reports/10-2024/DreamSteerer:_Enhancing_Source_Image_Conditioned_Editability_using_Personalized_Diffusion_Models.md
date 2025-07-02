@@ -3,6 +3,17 @@ title: DreamSteerer:_Enhancing_Source_Image_Conditioned_Editability_using_Person
 layout: default
 date: 2024-10-15
 ---
+## DreamSteerer: Enhancing Source Image Conditioned Editability using Personalized Diffusion Models
+**Authors:**
+- Zhengyang Yu, h-index: 2, papers: 3, citations: 16
+- Jing Zhang
+
+**ArXiv URL:** http://arxiv.org/abs/2410.11208v2
+
+**Citation Count:** 3
+
+**Published Date:** 2024-10-15
+
 ![Figure 1: DreamSteerer enables efficient editability enhancement for a source image with any existing T2I personalization models, leading to significantly improved editing fidelity in various challenging scenarios. When the structural difference between source and reference images are significant, it can naturally adapt to the source while maintaining the appearance learned from the personal concept.]({{ '/images/10-2024/DreamSteerer:_Enhancing_Source_Image_Conditioned_Editability_using_Personalized_Diffusion_Models/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Recent text-to-image (T2I) personalization methods like DreamBooth can learn a user-specified concept (e.g., a pet dog) from a few images and generate it in new contexts. However, they perform poorly on a related but distinct task: editing a *source image* to include the personalized concept. A naive combination of personalization and editing frameworks often leads to distorted results, poor structural alignment with the source image, and failure to adapt the personalized concept naturally. The authors aim to bridge this gap by developing a method that enhances the editability of existing personalized diffusion models, enabling high-fidelity, source-conditioned personalized editing.

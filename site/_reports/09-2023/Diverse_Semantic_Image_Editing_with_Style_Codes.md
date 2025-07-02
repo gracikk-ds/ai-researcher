@@ -3,6 +3,17 @@ title: Diverse_Semantic_Image_Editing_with_Style_Codes
 layout: default
 date: 2023-09-25
 ---
+## Diverse Semantic Image Editing with Style Codes
+**Authors:**
+- Hakan Sivukpapers: 1, 
+- Aysegul Dundar
+
+**ArXiv URL:** http://arxiv.org/abs/2309.13975v1
+
+**Citation Count:** None
+
+**Published Date:** 2023-09-25
+
 ![Fig. 1: Our method can remove objects from a scene (highlighted with red boxes), generate panoramas and inpaint a semantic class with different styles, and add objects to a scene again in different styles.]({{ '/images/09-2023/Diverse_Semantic_Image_Editing_with_Style_Codes/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Existing semantic image editing methods struggle to generate diverse outputs, especially when adding new objects whose style cannot be inferred from the context of an erased image. Furthermore, they often fail to seamlessly blend generated content with existing pixels because they lack a robust mechanism to handle partially erased objects, leading to visual inconsistencies and artifacts.

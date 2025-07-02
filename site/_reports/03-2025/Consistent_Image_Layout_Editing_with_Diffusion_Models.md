@@ -3,6 +3,17 @@ title: Consistent_Image_Layout_Editing_with_Diffusion_Models
 layout: default
 date: 2025-03-09
 ---
+## Consistent Image Layout Editing with Diffusion Models
+**Authors:**
+- Tao Xia
+- Ting Liu Lei Zhang, h-index: 1, papers: 1, citations: 1
+
+**ArXiv URL:** http://arxiv.org/abs/2503.06419v1
+
+**Citation Count:** 1
+
+**Published Date:** 2025-03-09
+
 ![Figure 1. Examples of layout editing for a single real image. Given a single real image, our method can be used to transform its layout and preserve consistent visual appearance compared to self-guidance-diffusion(SGD [ 8 ]).]({{ '/images/03-2025/Consistent_Image_Layout_Editing_with_Diffusion_Models/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the challenge of editing the layout of objects within a real image using diffusion models. Existing methods often fail at this task, either by not being able to accurately rearrange the objects to the desired layout or by failing to preserve the original visual appearance (e.g., texture, color, shape) of the objects after moving them. The paper aims to bridge this gap by creating a method that can both precisely control the layout and maintain high visual consistency for the edited objects.

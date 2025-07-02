@@ -3,6 +3,17 @@ title: ImgEdit:_A_Unified_Image_Editing_Dataset_and_Benchmark
 layout: default
 date: 2025-05-26
 ---
+## ImgEdit: A Unified Image Editing Dataset and Benchmark
+**Authors:**
+- Yang Ye
+- Li Yuan
+
+**ArXiv URL:** http://arxiv.org/abs/2505.20275v1
+
+**Citation Count:** 1
+
+**Published Date:** 2025-05-26
+
 ![Figure 1: Singleand MultiTurn Edit Types. (Left) Single-turn tasks include add, remove, replace, alter, background change, motion change, style, object extraction, visual edit, and hybrid edit. (Right) Multi-turn tasks include content memory, content understanding, and version backtracking.]({{ '/images/05-2025/ImgEdit:_A_Unified_Image_Editing_Dataset_and_Benchmark/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the widening performance gap between proprietary, closed-source image editing models (like GPT-4o) and their open-source counterparts. They identify the primary cause of this gap as the lack of high-quality, large-scale, publicly available training datasets and comprehensive evaluation benchmarks. Existing datasets often suffer from low image resolution, simplistic prompts, and poor editing quality. Similarly, current benchmarks lack diverse evaluation dimensions, fail to stratify tasks by difficulty, and do not adequately assess complex capabilities like multi-turn interactions.

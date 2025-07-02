@@ -3,6 +3,17 @@ title: Have_we_unified_image_generation_and_understanding_yet?_An_empirical_stud
 layout: default
 date: 2025-04-09
 ---
+## Have we unified image generation and understanding yet? An empirical study of GPT-4o's image generation ability
+**Authors:**
+- Ning Li
+- Justin Cui, h-index: 1, papers: 3, citations: 3
+
+**ArXiv URL:** http://arxiv.org/abs/2504.08003v1
+
+**Citation Count:** 3
+
+**Published Date:** 2025-04-09
+
 ![Figure 1: Demonstration of a global instruction prompt example.]({{ '/images/04-2025/Have_we_unified_image_generation_and_understanding_yet?_An_empirical_study_of_GPT-4o's_image_generation_ability/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the gap between the perceived and actual capabilities of advanced multimodal models like GPT-4o. While existing benchmarks confirm GPT-4o's proficiency in generating high-quality images and following literal instructions, its ability to perform "semantic synthesis"—deeply integrating world knowledge, contextual reasoning, and abstract instructions into the generation process—remains largely unproven. The paper investigates whether GPT-4o has truly unified image generation with understanding, or if its success relies on surface-level pattern matching, leading to failures in tasks requiring complex reasoning, such as interpreting reversed spatial directions or applying conditional logic.

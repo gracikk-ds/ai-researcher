@@ -3,6 +3,17 @@ title: UltraEdit:_Instruction-based_Fine-Grained_Image_Editing_at_Scale
 layout: default
 date: 2024-07-07
 ---
+## UltraEdit: Instruction-based Fine-Grained Image Editing at Scale
+**Authors:**
+- Haozhe Zhao, h-index: 8, papers: 24, citations: 518
+- Baobao Chang, h-index: 9, papers: 24, citations: 533
+
+**ArXiv URL:** http://arxiv.org/abs/2407.05282v2
+
+**Citation Count:** 63
+
+**Published Date:** 2024-07-07
+
 ![Figure 1: Examples of U LTRA E DIT . Free-form ( left ) and region-based ( right ) image editing.]({{ '/images/07-2024/UltraEdit:_Instruction-based_Fine-Grained_Image_Editing_at_Scale/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Existing datasets for instruction-based image editing suffer from three main drawbacks that limit model performance: 1) a lack of diversity in editing instructions, which are either hard to scale (human-rated) or creatively limited (LLM-generated); 2) significant image bias, as they often rely on text-to-image (T2I) models that produce a narrow range of styles and content; and 3) a lack of support for region-based editing, where edits are confined to a specific area (mask), hindering fine-grained control. This paper addresses these gaps by creating a large-scale, diverse, and high-quality dataset.

@@ -3,6 +3,17 @@ title: Towards_Real-time_Text-driven_Image_Manipulation_with_Unconditional_Diffu
 layout: default
 date: 2023-04-10
 ---
+## Towards Real-time Text-driven Image Manipulation with Unconditional Diffusion Models
+**Authors:**
+- Nikita Starodubcev, h-index: 3, papers: 5, citations: 15
+- Artem Babenko, h-index: 24, papers: 48, citations: 5748
+
+**ArXiv URL:** http://arxiv.org/abs/2304.04344v1
+
+**Citation Count:** None
+
+**Published Date:** 2023-04-10
+
 ![Figure 1: Few examples of single image editing. A user provides an image and a text description of the desired transform. Our diffusion-based approach adapts the pretrained model to the given image and text and returns the manipulated image. The entire procedure takes ∼ 4 seconds.]({{ '/images/04-2023/Towards_Real-time_Text-driven_Image_Manipulation_with_Unconditional_Diffusion_Models/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Existing text-driven image manipulation methods using diffusion models, while powerful, suffer from high computational costs and slow processing times, even on high-end GPUs. This inefficiency severely limits their practical application, especially for real-time use on consumer devices. The authors address this gap by focusing on methods that use unconditional diffusion models (like DiffusionCLIP), which are particularly hampered by expensive, iterative encoding and training procedures. The goal is to develop a significantly faster and more memory-efficient algorithm that maintains the high visual quality and expressiveness of its slower predecessors.

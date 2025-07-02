@@ -3,6 +3,17 @@ title: SVDiff:_Compact_Parameter_Space_for_Diffusion_Fine-Tuning
 layout: default
 date: 2023-03-20
 ---
+## SVDiff: Compact Parameter Space for Diffusion Fine-Tuning
+**Authors:**
+- Ligong Han, h-index: 14, papers: 29, citations: 956
+- Feng Yang
+
+**ArXiv URL:** http://arxiv.org/abs/2303.11305v4
+
+**Citation Count:** 286
+
+**Published Date:** 2023-03-20
+
 ![Figure 1. Applications of SVDiff. Style-Mixing : mix styles from personalized objects and create novel renderings; Multi-Subject : generate multiple subjects in the same scene; Single-Image Editing : text-based editing from a single image.]({{ '/images/03-2023/SVDiff:_Compact_Parameter_Space_for_Diffusion_Fine-Tuning/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the key limitations of fine-tuning large-scale text-to-image diffusion models for personalization. Existing methods like DreamBooth require updating the entire model, resulting in massive storage costs (billions of parameters), a high risk of overfitting to the few provided images, and "language drift," where the model loses its general knowledge and ability to follow diverse text prompts. Furthermore, these methods struggle to generate coherent scenes containing multiple personalized subjects, especially when the subjects are from similar categories (e.g., a specific cat and a specific dog).

@@ -3,6 +3,17 @@ title: Visual_Instruction_Inversion:_Image_Editing_via_Visual_Prompting
 layout: default
 date: 2023-07-26
 ---
+## Visual Instruction Inversion: Image Editing via Visual Prompting
+**Authors:**
+- Thao Nguyen
+- Yong Jae Lee
+
+**ArXiv URL:** http://arxiv.org/abs/2307.14331v1
+
+**Citation Count:** None
+
+**Published Date:** 2023-07-26
+
 ![Figure 1: Image editing via visual prompting. Given a pair of before-and-after images of an edit, our approach (bottom) can learn and apply that edit along with the user’s text prompt to enable a more accurate and intuitive image editing process compared to text-only conditioned approaches (top).]({{ '/images/07-2023/Visual_Instruction_Inversion:_Image_Editing_via_Visual_Prompting/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Text-based image editing can be powerful, but language is often ambiguous or insufficient for describing specific, nuanced visual transformations, such as a particular artistic style. It is often more intuitive and precise for a user to provide a "before" and "after" image pair to demonstrate the desired edit. This paper addresses the problem of how to leverage such visual prompts to guide modern text-to-image diffusion models, which typically rely on textual instructions.

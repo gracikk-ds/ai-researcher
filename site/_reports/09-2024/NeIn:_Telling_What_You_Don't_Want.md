@@ -3,6 +3,17 @@ title: NeIn:_Telling_What_You_Don't_Want
 layout: default
 date: 2024-09-09
 ---
+## NeIn: Telling What You Don't Want
+**Authors:**
+- Nhat-Tan Bui, h-index: 5, papers: 14, citations: 122
+- Susan Gauch, h-index: 2, papers: 2, citations: 19
+
+**ArXiv URL:** http://arxiv.org/abs/2409.06481v2
+
+**Citation Count:** 2
+
+**Published Date:** 2024-09-09
+
 ![Figure 1. The failures of recent text-guided image editing methods in understanding the negative queries.]({{ '/images/09-2024/NeIn:_Telling_What_You_Don't_Want/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address a significant gap in text-guided image editing: the inability of Vision-Language Models (VLMs) to understand negation. While humans frequently use negative instructions (e.g., "a street scene *without* a car"), standard vision-language datasets are heavily biased towards positive descriptions, containing very few negative examples. This causes even state-of-the-art models to fail on negative queries, often paradoxically adding the object they were instructed to exclude. The paper aims to solve this problem by creating a dedicated resource for training and evaluating negation understanding.

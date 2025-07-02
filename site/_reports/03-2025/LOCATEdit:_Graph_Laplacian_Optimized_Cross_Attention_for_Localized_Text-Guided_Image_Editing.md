@@ -3,6 +3,17 @@ title: LOCATEdit:_Graph_Laplacian_Optimized_Cross_Attention_for_Localized_Text-G
 layout: default
 date: 2025-03-27
 ---
+## LOCATEdit: Graph Laplacian Optimized Cross Attention for Localized Text-Guided Image Editing
+**Authors:**
+- Achint Soni, h-index: 1, papers: 3, citations: 5
+- Sirisha Rambhatla, h-index: 1, papers: 5, citations: 3
+
+**ArXiv URL:** http://arxiv.org/abs/2503.21541v2
+
+**Citation Count:** 0
+
+**Published Date:** 2025-03-27
+
 ![Figure 1. Our LOCATEdit demonstrates strong performance on various complex image editing tasks.]({{ '/images/03-2025/LOCATEdit:_Graph_Laplacian_Optimized_Cross_Attention_for_Localized_Text-Guided_Image_Editing/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address a key limitation in existing text-guided image editing methods. These methods often rely on cross-attention maps from diffusion models to identify regions for modification. However, this approach frequently lacks spatial consistency, causing edits to "spill" into unintended areas, which leads to editing artifacts, loss of object identity, and distortion of the background. The practical problem is the need for a method that can perform precise, localized edits according to text prompts while preserving the overall structural integrity of the image.

@@ -3,6 +3,17 @@ title: SphereDrag:_Spherical_Geometry-Aware_Panoramic_Image_Editing
 layout: default
 date: 2025-06-13
 ---
+## SphereDrag: Spherical Geometry-Aware Panoramic Image Editing
+**Authors:**
+- Zhiao Feng
+- Xi Li
+
+**ArXiv URL:** http://arxiv.org/abs/2506.11863v1
+
+**Citation Count:** None
+
+**Published Date:** 2025-06-13
+
 ![Figure 1: Illustration of challenges in panoramic image editing. (Upper right) The panoramic image may divide movement trajectory into two parts, located near the left and right boundaries, respectively. (Middle right) Straight lines in the panoramic image do not correspond to great-circle paths on the sphere, leading to trajectory deviations. (Lower right) The same region in the panoramic image corresponds to unequal solid angles at different latitudes, causing non-uniform tracking across the sphere.]({{ '/images/06-2025/SphereDrag:_Spherical_Geometry-Aware_Panoramic_Image_Editing/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the challenges of interactive, point-based editing for panoramic images. Unlike standard planar images, panoramic images possess a unique spherical geometry that causes three key problems when using existing editing methods:

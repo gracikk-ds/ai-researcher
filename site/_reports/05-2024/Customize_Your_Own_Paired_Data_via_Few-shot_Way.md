@@ -3,6 +3,17 @@ title: Customize_Your_Own_Paired_Data_via_Few-shot_Way
 layout: default
 date: 2024-05-21
 ---
+## Customize Your Own Paired Data via Few-shot Way
+**Authors:**
+- Jinshu Chenpapers: 2, 
+- Qian He
+
+**ArXiv URL:** http://arxiv.org/abs/2405.12490v1
+
+**Citation Count:** 0
+
+**Published Date:** 2024-05-21
+
 ![Figure 1. Providing only few source-target image pairs, users are allowed to efficiently customize their own image editing models through our framework. Without affecting irrelevant attributes, our proposed method can capture the desired effects precisely. Our model can handle various editing cases, whether the editing targets are commonly known concepts or completely newly defined by users.]({{ '/images/05-2024/Customize_Your_Own_Paired_Data_via_Few-shot_Way/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Existing image editing methods face a trade-off. Supervised methods produce high-quality results but require large, expensive-to-collect paired datasets, limiting their use for custom tasks. Unsupervised and text-guided methods leverage large pre-trained models but are restricted to the concepts within their training domains, often failing to create novel user-defined effects or perform precise edits without unwanted changes. The authors address this gap by developing a framework that allows users to create high-quality, customized image editing models using only a few (5-50) paired examples.

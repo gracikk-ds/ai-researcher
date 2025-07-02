@@ -3,6 +3,17 @@ title: ReasonPix2Pix:_Instruction_Reasoning_Dataset_for_Advanced_Image_Editing
 layout: default
 date: 2024-05-18
 ---
+## ReasonPix2Pix: Instruction Reasoning Dataset for Advanced Image Editing
+**Authors:**
+- Ying Jin
+- Dahua Lin, h-index: 17, papers: 52, citations: 3123
+
+**ArXiv URL:** http://arxiv.org/abs/2405.11190v2
+
+**Citation Count:** 3
+
+**Published Date:** 2024-05-18
+
 ![Figure 1. Generated results from the model trained on our dataset. Given an implicit instruction, our model can understand the instruction and then produce an appropriate edited image.]({{ '/images/05-2024/ReasonPix2Pix:_Instruction_Reasoning_Dataset_for_Advanced_Image_Editing/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Current instruction-based image editing models perform well on explicit commands (e.g., "turn fruits to a cake") but struggle with instructions that require reasoning or are implicitly defined (e.g., "the artist decided to focus on structures of power and fortitude"). These models often lack the active reasoning capabilities to comprehend the user's true intent beyond simple keyword matching, leading to incorrect or nonsensical edits. This paper addresses the gap by aiming to impart deeper reasoning abilities to editing models.

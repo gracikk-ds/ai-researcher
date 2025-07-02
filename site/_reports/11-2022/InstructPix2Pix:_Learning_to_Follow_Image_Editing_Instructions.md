@@ -3,6 +3,17 @@ title: InstructPix2Pix:_Learning_to_Follow_Image_Editing_Instructions
 layout: default
 date: 2022-11-17
 ---
+## InstructPix2Pix: Learning to Follow Image Editing Instructions
+**Authors:**
+- Tim Brooks, h-index: 9, papers: 11, citations: 2735
+- Alexei A. Efros, h-index: 107, papers: 232, citations: 107382
+
+**ArXiv URL:** http://arxiv.org/abs/2211.09800v2
+
+**Citation Count:** 1835
+
+**Published Date:** 2022-11-17
+
 ![Figure 1. Given an image and an instruction for how to edit that image, our model performs the appropriate edit. Our model does not require full descriptions for the input or output image, and edits images in the forward pass without per-example inversion or ﬁne-tuning.]({{ '/images/11-2022/InstructPix2Pix:_Learning_to_Follow_Image_Editing_Instructions/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Current text-based image editing methods typically require users to provide a full description of the desired output image, rather than a simple instruction on what to change. This is often unintuitive and cumbersome. Furthermore, training a model to follow direct editing instructions is challenging due to the lack of large-scale, paired training data (i.e., triplets of an input image, an edit instruction, and the corresponding output image). The authors aim to solve this data scarcity problem and create a model that can edit images from simple, human-written commands in a fast and intuitive manner.

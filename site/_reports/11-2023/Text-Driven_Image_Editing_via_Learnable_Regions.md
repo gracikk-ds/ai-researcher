@@ -3,6 +3,17 @@ title: Text-Driven_Image_Editing_via_Learnable_Regions
 layout: default
 date: 2023-11-28
 ---
+## Text-Driven Image Editing via Learnable Regions
+**Authors:**
+- Yuanze Lin, h-index: 3, papers: 5, citations: 40
+- Ming-Hsuan Yang
+
+**ArXiv URL:** http://arxiv.org/abs/2311.16432v2
+
+**Citation Count:** None
+
+**Published Date:** 2023-11-28
+
 ![Figure 1. Overview. Given an input image and a language description for editing, our method can generate realistic and relevant images without the need for user-specified regions for editing. It performs local image editing while preserving the image context.]({{ '/images/11-2023/Text-Driven_Image_Editing_via_Learnable_Regions/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Existing text-driven image editing methods fall into two categories: mask-based and mask-free. Mask-based approaches offer precise control but are laborious, requiring users to manually create masks. Mask-free methods automate this but often struggle with the precision of local edits, as their performance is highly dependent on the accuracy of internally generated pixel-level masks. The authors identify a gap in exploring bounding boxes as a more flexible and user-friendly intermediate representation for performing mask-free local image editing.

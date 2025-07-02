@@ -3,6 +3,17 @@ title: BlobCtrl:_A_Unified_and_Flexible_Framework_for_Element-level_Image_Genera
 layout: default
 date: 2025-03-17
 ---
+## BlobCtrl: A Unified and Flexible Framework for Element-level Image Generation and Editing
+**Authors:**
+- Yaowei Li, h-index: 2, papers: 5, citations: 241
+- Yuexian Zou, h-index: 2, papers: 4, citations: 32
+
+**ArXiv URL:** http://arxiv.org/abs/2503.13434v1
+
+**Citation Count:** 2
+
+**Published Date:** 2025-03-17
+
 ![Figure 1: Our proposed BlobCtrl framework enables comprehensive element-level control over both visual appearance and spatial layout, facilitating diverse manipulation operations including compositional generation, spatial transformation, element removal, content replacement and arbitrary combinations thereof (top). Through an iterative refinement process, BlobCtrl allows precise and fine-grained editing capabilities to achieve desired visual outcomes (bottom).]({{ '/images/03-2025/BlobCtrl:_A_Unified_and_Flexible_Framework_for_Element-level_Image_Generation_and_Editing/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Current diffusion-based image generation models lack the precision and flexibility of traditional editing tools for manipulating individual elements within an image. They struggle to simultaneously control an element's spatial properties (location, size, orientation), preserve its visual identity, and maintain overall scene harmony. Furthermore, the development of such models is hindered by the scarcity of large-scale, paired training data for element-level manipulation tasks. The authors aim to bridge this gap by creating a unified framework that enables precise, flexible, and intuitive element-level generation and editing.

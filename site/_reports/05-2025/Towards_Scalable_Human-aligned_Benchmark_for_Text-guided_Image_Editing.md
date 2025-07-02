@@ -3,6 +3,17 @@ title: Towards_Scalable_Human-aligned_Benchmark_for_Text-guided_Image_Editing
 layout: default
 date: 2025-05-01
 ---
+## Towards Scalable Human-aligned Benchmark for Text-guided Image Editing
+**Authors:**
+- Suho Ryupapers: 1, 
+- Joonseok Leepapers: 1, 
+
+**ArXiv URL:** http://arxiv.org/abs/2505.00502v1
+
+**Citation Count:** None
+
+**Published Date:** 2025-05-01
+
 ![Figure 1. An example highlighting the importance of consistency in image editing. (a) Original image (b) Edited images for a prompt “Make her smile”. The left result is more consistent with the input than the right one, better preserving her identity.]({{ '/images/05-2025/Towards_Scalable_Human-aligned_Benchmark_for_Text-guided_Image_Editing/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the critical lack of a standardized, objective, and scalable evaluation methodology for text-guided image editing models. The subjective nature of the task, where multiple "correct" edited outputs can exist for a single instruction, makes simple pixel-level or ground-truth comparisons ineffective. Consequently, researchers have relied on small-scale, non-reproducible manual user studies, which hinders robust and consistent progress in the field. The paper aims to fill this gap by creating an automated benchmark that can comprehensively assess model performance in a way that aligns with human perception.

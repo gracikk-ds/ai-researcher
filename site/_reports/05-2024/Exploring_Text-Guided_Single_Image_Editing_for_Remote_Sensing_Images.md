@@ -3,6 +3,17 @@ title: Exploring_Text-Guided_Single_Image_Editing_for_Remote_Sensing_Images
 layout: default
 date: 2024-05-09
 ---
+## Exploring Text-Guided Single Image Editing for Remote Sensing Images
+**Authors:**
+- Fangzhou Han, h-index: 2, papers: 9, citations: 15
+- Bo Du
+
+**ArXiv URL:** http://arxiv.org/abs/2405.05769v3
+
+**Citation Count:** None
+
+**Published Date:** 2024-05-09
+
 ![Fig. 1. Semantic mismatches between text and images. In the image, semantic information encompasses not just the bridge but also the river, bush, bare land, and other surrounding elements. However, the corresponding textual semantic information often refers to the most prominent part of the image, which in this case is the bridge.]({{ '/images/05-2024/Exploring_Text-Guided_Single_Image_Editing_for_Remote_Sensing_Images/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the gap in text-guided image editing specifically for remote sensing images (RSIs). Existing editing methods, designed for natural images, perform poorly on RSIs due to two primary challenges:

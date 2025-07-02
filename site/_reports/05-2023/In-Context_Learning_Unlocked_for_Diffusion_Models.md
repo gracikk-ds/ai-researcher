@@ -3,6 +3,17 @@ title: In-Context_Learning_Unlocked_for_Diffusion_Models
 layout: default
 date: 2023-05-01
 ---
+## In-Context Learning Unlocked for Diffusion Models
+**Authors:**
+- Zhendong Wang
+- Mingyuan Zhou, h-index: 44, papers: 169, citations: 6946
+
+**ArXiv URL:** http://arxiv.org/abs/2305.01115v2
+
+**Citation Count:** 78
+
+**Published Date:** 2023-05-01
+
 ![Figure 1: Illustration of the in-context learning ability enabled by our proposed Prompt Diffusion for conditioned image generation tasks: With a prompt consisting of a task-specific example pair of images and text guidance , given a new query image that aligns in type with the source image in the example pair, Prompt Diffusion can comprehend the desired task and generate the corresponding output image on both seen (trained) and unseen (new) task types.]({{ '/images/05-2023/In-Context_Learning_Unlocked_for_Diffusion_Models/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the limited application of in-context learning, a paradigm successful in Large Language Models (LLMs), to the field of computer vision. Unlike LLMs that can perform new tasks based on a few examples in a prompt, most large vision models are trained for specific tasks (e.g., segmentation, generation) and lack this flexibility. The paper aims to unlock in-context learning for diffusion-based generative models, enabling them to understand and perform a wide range of vision tasks specified by a prompt containing example image pairs.

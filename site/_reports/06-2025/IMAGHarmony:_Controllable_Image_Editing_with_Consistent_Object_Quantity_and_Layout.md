@@ -3,6 +3,17 @@ title: IMAGHarmony:_Controllable_Image_Editing_with_Consistent_Object_Quantity_a
 layout: default
 date: 2025-06-02
 ---
+## IMAGHarmony: Controllable Image Editing with Consistent Object Quantity and Layout
+**Authors:**
+- Fei Shen
+- Jinhui Tang, h-index: 3, papers: 5, citations: 65
+
+**ArXiv URL:** http://arxiv.org/abs/2506.01949v1
+
+**Citation Count:** None
+
+**Published Date:** 2025-06-02
+
 ![(b) Multi-Object Editing Figure 1: Editing results on (a) few-object and (b) multi-object scenes. Existing methods struggle to preserve the count, layout, and semantics in multi-object cases, while ours ensures consistent and faithful edits.]({{ '/images/06-2025/IMAGHarmony:_Controllable_Image_Editing_with_Consistent_Object_Quantity_and_Layout/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address a significant limitation in modern diffusion-based image editing: the lack of precise control in multi-object scenarios. While current models excel at editing images with one or two objects, they often fail when tasked with modifying scenes containing multiple objects. Specifically, they struggle to preserve the correct object quantity and spatial layout as specified in the editing instructions. This failure stems from the weak counting ability of diffusion models and their difficulty in distinguishing multiple entities within an image. To tackle this, the paper introduces a new task, **Quantity-and-Layout consistent image editing (QL-Edit)**, which aims to enable fine-grained control over object counts and arrangements in complex scenes.

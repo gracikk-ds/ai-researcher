@@ -3,6 +3,17 @@ title: Counterfactual_Image_Editing
 layout: default
 date: 2024-02-07
 ---
+## Counterfactual Image Editing
+**Authors:**
+- Yushu Pan, h-index: 2, papers: 4, citations: 13
+- Elias Bareinboim
+
+**ArXiv URL:** http://arxiv.org/abs/2403.09683v1
+
+**Citation Count:** 8
+
+**Published Date:** 2024-02-07
+
 ![Figure 1: (Left) A causal graph depicting the causal relationships among features. (Right) Image editing results are displayed, with the first row showing edits incorporating causal relations, and the second row without them. Each column represents a unique counterfactual query, altering the age, gender, and gray hair of the individuals. These instances provide preliminary evidence that the causal approach introduced in this paper ensures the preservation of the relevant causal invariances for the query across both factual and counterfactual images.]({{ '/images/02-2024/Counterfactual_Image_Editing/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Current generative models for image editing often produce unrealistic or biased results because they rely on spurious correlations in the data rather than true causal relationships. For example, when asked to make a person in an image look older, a model might incorrectly change their gender simply because the training data contains more images of older men than older women. This paper addresses the problem of performing counterfactual image edits that are faithful to the underlying causal mechanisms of the real world, ensuring that changes to one attribute propagate logically to others while leaving causally independent attributes unchanged.

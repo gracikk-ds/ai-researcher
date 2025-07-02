@@ -3,6 +3,17 @@ title: EditVal:_Benchmarking_Diffusion_Based_Text-Guided_Image_Editing_Methods
 layout: default
 date: 2023-10-03
 ---
+## EditVal: Benchmarking Diffusion Based Text-Guided Image Editing Methods
+**Authors:**
+- Samyadeep Basu, h-index: 7, papers: 23, citations: 172
+- Soheil Feizi
+
+**ArXiv URL:** http://arxiv.org/abs/2310.02426v1
+
+**Citation Count:** 22
+
+**Published Date:** 2023-10-03
+
 ![Figure 1: Qualitative Examples from Image Editing on E DIT V AL . We find that for non-spatial edits (e.g., Changing background, color of an object, adding objects ), Instruct-Pix2Pix performs well, while other methods struggle. For spatial edits (e.g., Position-replacement), none of the editing methods lead to effective edits. apart particular aspects of an edit, for example, if changing the position of a particular object leaves the rest of the image unchanged (Gokhale et al., 2023). These gaps could be addressed by using human evaluators, but this is usually not scalable and thus limits the scope of edits and datasets that can be considered. Moreover, human studies often lack a standardized protocol, making it difficult to fairly compare methods.]({{ '/images/10-2023/EditVal:_Benchmarking_Diffusion_Based_Text-Guided_Image_Editing_Methods/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The paper addresses the lack of a standardized and scalable evaluation protocol for the rapidly growing field of text-guided image editing. Existing methods are often compared using unreliable automated metrics like CLIP scores, which struggle with fine-grained details, or through small-scale, non-standardized human studies. This makes it difficult to fairly assess and compare the performance of different models, particularly across a diverse range of complex and subtle edits (e.g., spatial manipulation). The authors aim to fill this gap by creating a comprehensive benchmark to enable rigorous, quantitative, and reproducible evaluation.

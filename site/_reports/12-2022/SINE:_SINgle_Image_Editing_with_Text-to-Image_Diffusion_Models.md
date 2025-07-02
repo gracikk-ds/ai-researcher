@@ -3,6 +3,17 @@ title: SINE:_SINgle_Image_Editing_with_Text-to-Image_Diffusion_Models
 layout: default
 date: 2022-12-08
 ---
+## SINE: SINgle Image Editing with Text-to-Image Diffusion Models
+**Authors:**
+- Zhixing Zhang
+- Jian Ren
+
+**ArXiv URL:** http://arxiv.org/abs/2212.04489v2
+
+**Citation Count:** 160
+
+**Published Date:** 2022-12-08
+
 ![Figure 1. With only one real image, i.e. , Source Image, our method is able to manipulate and generate the content in various ways, such as changing style, adding context, modifying the object, and enlarging the resolution, through guidance from the text prompt.]({{ '/images/12-2022/SINE:_SINgle_Image_Editing_with_Text-to-Image_Diffusion_Models/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the challenge of editing a single real-world image using large-scale text-to-image diffusion models. Existing methods, such as DreamBooth, require multiple images of a subject to avoid overfitting. When fine-tuned on just one image (e.g., a unique painting like *Girl with a Pearl Earring*), these models suffer from severe overfitting and "language drift." This causes two main problems: 1) the model loses its general knowledge and fails to generate creative edits based on new text prompts, and 2) it learns a fixed spatial layout, leading to artifacts like object repetition when generating images at resolutions different from the training image.

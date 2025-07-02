@@ -3,6 +3,17 @@ title: FOCUS:_Unified_Vision-Language_Modeling_for_Interactive_Editing_Driven_by
 layout: default
 date: 2025-06-20
 ---
+## FOCUS: Unified Vision-Language Modeling for Interactive Editing Driven by Referential Segmentation
+**Authors:**
+- Fan Yang
+- Jinqiao Wang
+
+**ArXiv URL:** http://arxiv.org/abs/2506.16806v1
+
+**Citation Count:** 0
+
+**Published Date:** 2025-06-20
+
 ![Figure 1: FOCUS enables fine-grained segmentation and editing for both images and videos through multimodal user instructions. It supports various region specification formats including clicks , scribbles , boxes , and masks , and for videos, annotations on any single frame suffice to guide fullclip editing. FOCUS can perform detailed region segmentation (e.g., identifying individual people), and supports diverse editing operations such as removal, replacement , and scene transformation across spatial and temporal domains.]({{ '/images/06-2025/FOCUS:_Unified_Vision-Language_Modeling_for_Interactive_Editing_Driven_by_Referential_Segmentation/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Current Large Vision-Language Models (LVLMs) typically handle visual perception (e.g., segmentation) and generative tasks (e.g., image editing) as separate processes, often relying on multiple, disjointed models. This separation creates a gap between understanding *what* to edit in an image and *how* to edit it, limiting their ability to perform precise, object-level manipulations based on natural language instructions. The authors address this practical problem by developing a single, unified framework that deeply integrates segmentation-aware perception with controllable generation.

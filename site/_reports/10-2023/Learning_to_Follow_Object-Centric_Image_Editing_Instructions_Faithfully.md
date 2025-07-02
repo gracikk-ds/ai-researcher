@@ -3,6 +3,17 @@ title: Learning_to_Follow_Object-Centric_Image_Editing_Instructions_Faithfully
 layout: default
 date: 2023-10-29
 ---
+## Learning to Follow Object-Centric Image Editing Instructions Faithfully
+**Authors:**
+- Tuhin Chakrabarty, h-index: 21, papers: 46, citations: 1515
+- Smaranda Muresan
+
+**ArXiv URL:** http://arxiv.org/abs/2310.19145v1
+
+**Citation Count:** 7
+
+**Published Date:** 2023-10-29
+
 ![Figure 1: (a) Input Image (b) Edited image from InstructPix2Pix ( Brooks et al. , 2023 ) with the instruction Add a lighthouse.]({{ '/images/10-2023/Learning_to_Follow_Object-Centric_Image_Editing_Instructions_Faithfully/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address key challenges in natural language-guided image editing with diffusion models. Existing methods often struggle with:

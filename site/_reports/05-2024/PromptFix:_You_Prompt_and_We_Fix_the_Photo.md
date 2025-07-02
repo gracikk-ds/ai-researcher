@@ -3,6 +3,17 @@ title: PromptFix:_You_Prompt_and_We_Fix_the_Photo
 layout: default
 date: 2024-05-27
 ---
+## PromptFix: You Prompt and We Fix the Photo
+**Authors:**
+- Yongsheng Yu
+- Jiebo Luo
+
+**ArXiv URL:** http://arxiv.org/abs/2405.16785v2
+
+**Citation Count:** 28
+
+**Published Date:** 2024-05-27
+
 ![Figure 1: We propose PromptFix, a unified diffusion model capable of performing multiple imageprocessing tasks. It can understand user-customized editing instructions and perform the corresponding tasks with high quality. One of the key advantages of PromptFix is high-frequency information preservation, ensuring that image details are maintained throughout VAE decoding. PromptFix can handle various images with different aspect ratios.]({{ '/images/05-2024/PromptFix:_You_Prompt_and_We_Fix_the_Photo/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Existing instruction-guided diffusion models excel at high-level image editing but struggle with low-level image processing tasks like restoration. This is due to two primary problems: (1) a lack of large-scale, diverse datasets that pair degraded images with corresponding natural language instructions, and (2) the inherent architecture of diffusion models (specifically VAE compression) and their stochastic sampling process, which often leads to the loss of fine-grained, high-frequency details (e.g., text, textures) that are critical to preserve in restoration tasks.

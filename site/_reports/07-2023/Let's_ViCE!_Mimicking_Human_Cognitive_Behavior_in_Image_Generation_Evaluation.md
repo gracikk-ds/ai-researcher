@@ -3,6 +3,17 @@ title: Let's_ViCE!_Mimicking_Human_Cognitive_Behavior_in_Image_Generation_Evalua
 layout: default
 date: 2023-07-18
 ---
+## Let's ViCE! Mimicking Human Cognitive Behavior in Image Generation Evaluation
+**Authors:**
+- Federico Betti, h-index: 1, papers: 3, citations: 7
+- Nicu Sebe
+
+**ArXiv URL:** http://arxiv.org/abs/2307.09416v2
+
+**Citation Count:** 7
+
+**Published Date:** 2023-07-18
+
 ![Figure 1. Different types of Image Generation tasks. Top : in a multimodal Image Targeted Editing setup, given an input image paired with a textual instruction, the generative system is called to modify the former according to the latter. Bottom : in a cross-modal image generation setup, the generative system is called to produce an image based on the textual description provide as the sole input.]({{ '/images/07-2023/Let's_ViCE!_Mimicking_Human_Cognitive_Behavior_in_Image_Generation_Evaluation/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The primary challenge addressed by the authors is the absence of a reliable and methodical automated framework for evaluating the output of image generation models. While models can produce high-quality images from text prompts, current evaluation metrics either focus on image fidelity (like FID) without considering prompt alignment, or on simple text-image similarity (like CLIPScore) which can be biased. The gold standard remains subjective and expensive human evaluation. This paper aims to bridge this gap by developing an automated method that mimics the cognitive process humans use to assess the consistency between a textual request and a generated image.

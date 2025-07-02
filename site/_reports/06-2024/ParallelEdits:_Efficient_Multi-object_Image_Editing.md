@@ -3,6 +3,17 @@ title: ParallelEdits:_Efficient_Multi-object_Image_Editing
 layout: default
 date: 2024-06-03
 ---
+## ParallelEdits: Efficient Multi-object Image Editing
+**Authors:**
+- Mingzhen Huang, h-index: 4, papers: 7, citations: 30
+- Siwei Lyu, h-index: 1, papers: 3, citations: 4
+
+**ArXiv URL:** http://arxiv.org/abs/2406.00985v4
+
+**Citation Count:** 0
+
+**Published Date:** 2024-06-03
+
 ![Figure 1: Multi-aspect text-driven image editing. Multiple edits in images pose a significant challenge in existing models (such as DirectInverison [ 1 ] and InfEdit [ 2 ]), as their performance downgrades with an increasing number of aspects. In contrast, our ParallelEdits can achieve precise multi-aspect image editing in 5 seconds. The symbol ⊗ denotes a swap action, the symbol ⊕ denotes an object addition action, and the symbol ⊖ denotes an object deletion . Arrows ( → ) on the image highlight the aspects edited by our method.]({{ '/images/06-2024/ParallelEdits:_Efficient_Multi-object_Image_Editing/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Existing text-driven image editing models perform well on single-attribute edits but struggle when tasked with making simultaneous changes to multiple objects or attributes in an image. Applying these methods sequentially is computationally expensive and often leads to degraded image quality, where later edits can undo earlier ones or accumulate artifacts. The authors address this gap by introducing a method for efficient and effective multi-aspect image editing.

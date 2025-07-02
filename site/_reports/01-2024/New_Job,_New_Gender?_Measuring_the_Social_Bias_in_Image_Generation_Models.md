@@ -3,6 +3,17 @@ title: New_Job,_New_Gender?_Measuring_the_Social_Bias_in_Image_Generation_Models
 layout: default
 date: 2024-01-01
 ---
+## New Job, New Gender? Measuring the Social Bias in Image Generation Models
+**Authors:**
+- Wenxuan Wang, h-index: 22, papers: 43, citations: 2071
+- Michael R. Lyu, h-index: 21, papers: 52, citations: 1391
+
+**ArXiv URL:** http://arxiv.org/abs/2401.00763v3
+
+**Citation Count:** 23
+
+**Published Date:** 2024-01-01
+
 ![Figure 1: Examples of Biased Generation Detected by BiasPainter.]({{ '/images/01-2024/New_Job,_New_Gender?_Measuring_the_Social_Bias_in_Image_Generation_Models/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the critical problem of social bias in modern image generation models. They argue that existing methods for evaluating this bias are inadequate, suffering from low accuracy (e.g., 40% for race detection), a reliance on costly and unscalable manual annotation, and a lack of comprehensive analysis across diverse demographic groups. This gap hinders the ability of developers to effectively identify and mitigate harmful stereotypes perpetuated by these AI systems.

@@ -3,6 +3,17 @@ title: LoRA_of_Change:_Learning_to_Generate_LoRA_for_the_Editing_Instruction_fro
 layout: default
 date: 2024-11-28
 ---
+## LoRA of Change: Learning to Generate LoRA for the Editing Instruction from A Single Before-After Image Pair
+**Authors:**
+- Xue Song
+- Yu-Gang Jiang
+
+**ArXiv URL:** http://arxiv.org/abs/2411.19156v3
+
+**Citation Count:** 1
+
+**Published Date:** 2024-11-28
+
 ![Figure 1. Image editing with before-after image pair instructions.]({{ '/images/11-2024/LoRA_of_Change:_Learning_to_Generate_LoRA_for_the_Editing_Instruction_from_A_Single_Before-After_Image_Pair/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Existing methods for image editing using language instructions can be ambiguous and fail to capture specific user intentions. While using visual instructions (a before-after image pair) is more precise, current approaches have significant limitations. They typically require large-scale "quad data" (a before-after instruction pair plus a query-target image pair), which is scarce and difficult to collect. This data scarcity limits the models to a narrow range of editing tasks. Furthermore, these methods often fail to explicitly disentangle the editing *instruction* from the image content, which harms the model's interpretability and reusability. The paper aims to solve these problems by creating a generalizable visual instruction editing model that can be trained on more accessible "paired data" (just the before-after pair).

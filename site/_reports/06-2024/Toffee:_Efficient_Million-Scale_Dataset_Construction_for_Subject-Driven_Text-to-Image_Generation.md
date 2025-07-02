@@ -3,6 +3,17 @@ title: Toffee:_Efficient_Million-Scale_Dataset_Construction_for_Subject-Driven_T
 layout: default
 date: 2024-06-13
 ---
+## Toffee: Efficient Million-Scale Dataset Construction for Subject-Driven Text-to-Image Generation
+**Authors:**
+- Yufan Zhou
+- Tong Sun
+
+**ArXiv URL:** http://arxiv.org/abs/2406.09305v2
+
+**Citation Count:** None
+
+**Published Date:** 2024-06-13
+
 ![Figure 1: Subject-driven editing and generation examples from our model, which is trained on our proposed dataset and does not require any fine-tuning at test-time. Editing masks are also presented.]({{ '/images/06-2024/Toffee:_Efficient_Million-Scale_Dataset_Construction_for_Subject-Driven_Text-to-Image_Generation/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the prohibitive cost of creating large-scale datasets for subject-driven text-to-image generation. Existing high-performing methods, like SuTI and CAFE, rely on synthetic datasets where generating each training pair requires fine-tuning a model on a specific subject. This "per-subject fine-tuning" approach makes dataset construction computationally expensive (tens of thousands of GPU hours), creating a significant barrier for most researchers. The paper aims to bridge this gap by introducing an efficient framework for dataset construction that does not require any subject-level fine-tuning.

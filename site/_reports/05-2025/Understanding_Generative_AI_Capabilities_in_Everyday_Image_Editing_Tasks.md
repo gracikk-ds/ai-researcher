@@ -3,6 +3,17 @@ title: Understanding_Generative_AI_Capabilities_in_Everyday_Image_Editing_Tasks
 layout: default
 date: 2025-05-22
 ---
+## Understanding Generative AI Capabilities in Everyday Image Editing Tasks
+**Authors:**
+- Mohammad Reza Taesiri, h-index: 9, papers: 24, citations: 231
+- Anh Totti Nguyen
+
+**ArXiv URL:** http://arxiv.org/abs/2505.16181v2
+
+**Citation Count:** None
+
+**Published Date:** 2025-05-22
+
 ![Figure 1: We propose PSR, the largest dataset of realworld image-editing requests and human-made edits. PSR enables the community (and our work) to identify types of requests that can be automated using existing AIs and those that need improvement. PSR is the first dataset to tag all requests with WordNet subjects, realworld editing actions, and creativity levels.]({{ '/images/05-2025/Understanding_Generative_AI_Capabilities_in_Everyday_Image_Editing_Tasks/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the gap between the promise of generative AI for image editing and its practical utility for everyday users. They argue that existing benchmarks often rely on synthetic or contrived editing requests, which do not accurately represent the diversity, ambiguity, and specific needs found in real-world scenarios. This work aims to understand what users actually request, evaluate how well current state-of-the-art (SOTA) AI editors can fulfill these requests compared to skilled humans, identify key areas for AI improvement, and assess whether Vision Language Models (VLMs) can serve as reliable judges for edit quality.

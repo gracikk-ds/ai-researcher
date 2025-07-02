@@ -3,6 +3,17 @@ title: Balancing_Preservation_and_Modification:_A_Region_and_Semantic_Aware_Metr
 layout: default
 date: 2025-06-15
 ---
+## Balancing Preservation and Modification: A Region and Semantic Aware Metric for Instruction-Based Image Editing
+**Authors:**
+- Zhuoying Li
+- Yang Liu
+
+**ArXiv URL:** http://arxiv.org/abs/2506.13827v1
+
+**Citation Count:** None
+
+**Published Date:** 2025-06-15
+
 ![Figure 1: (a) The scores rated by existing metrics LPIPS, CLIPScore and DINOScore all witness a contradict trends with human evaluation, while our proposed BPM aligns with human evaluation. (b) Previous metrics favor excessively preserved or modified result, while our BPM favor the well-edited image.]({{ '/images/06-2025/Balancing_Preservation_and_Modification:_A_Region_and_Semantic_Aware_Metric_for_Instruction-Based_Image_Editing/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the lack of a comprehensive and reliable automatic metric for instruction-based image editing. Existing metrics suffer from two primary issues: 1) they are often adapted from other tasks (like image generation) and fail to simultaneously evaluate both the successful modification of the target region and the crucial preservation of irrelevant content; 2) they evaluate the image as a whole, ignoring the distinct requirements for different regions. This leads to biased and untrustworthy scores that frequently contradict human judgment, hindering the objective assessment and development of editing models.

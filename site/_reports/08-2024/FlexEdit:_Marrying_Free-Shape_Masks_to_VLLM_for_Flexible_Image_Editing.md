@@ -3,6 +3,17 @@ title: FlexEdit:_Marrying_Free-Shape_Masks_to_VLLM_for_Flexible_Image_Editing
 layout: default
 date: 2024-08-22
 ---
+## FlexEdit: Marrying Free-Shape Masks to VLLM for Flexible Image Editing
+**Authors:**
+- Jue Wang
+- Xiaojiang Peng, h-index: 5, papers: 15, citations: 76
+
+**ArXiv URL:** http://arxiv.org/abs/2408.12429v1
+
+**Citation Count:** 4
+
+**Published Date:** 2024-08-22
+
 ![Figure 1: Free-shape mask can simplify the user input when dealing with location related instruction, and more flexible for user input. The compared methods are SmartEdit and Largen respectively.]({{ '/images/08-2024/FlexEdit:_Marrying_Free-Shape_Masks_to_VLLM_for_Flexible_Image_Editing/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the challenge of providing precise and intuitive instructions for image editing. Language-only instructions can be ambiguous, especially for specifying locations, leading to incorrect edits. While masks can specify locations accurately, traditional methods require users to draw precise, complete masks, which is difficult and not user-friendly. This paper tackles the problem of how to make image editing more flexible by enabling models to understand imprecise, "free-shape" masks (like scribbles or simple shapes) drawn by users, combined with natural language commands.

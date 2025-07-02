@@ -3,6 +3,17 @@ title: Do_Concept_Replacement_Techniques_Really_Erase_Unacceptable_Concepts?
 layout: default
 date: 2025-06-10
 ---
+## Do Concept Replacement Techniques Really Erase Unacceptable Concepts?
+**Authors:**
+- Anudeep Das, h-index: 2, papers: 3, citations: 14
+- N. Asokan
+
+**ArXiv URL:** http://arxiv.org/abs/2506.08991v1
+
+**Citation Count:** None
+
+**Published Date:** 2025-06-10
+
 ![Figure 1: Diffusion process. Standard Gaussian noise is added as part of forward diffusion process, followed by denoising using a UNet in the reverse diffusion process, using a CLIP text embedding of the input prompt as conditioning.]({{ '/images/06-2025/Do_Concept_Replacement_Techniques_Really_Erase_Unacceptable_Concepts?/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the failure of existing Concept Replacement Techniques (CRTs) in the context of image-to-image (I2I) generative models. While current CRTs claim to "erase" unacceptable concepts (e.g., celebrity likenesses, copyrighted content) by modifying model weights and appear effective in text-to-image (T2I) tasks, the paper demonstrates they fail to prevent the reconstruction of these concepts when provided as input in an I2I setting. Furthermore, the authors identify a critical gap in prior work: the neglect of **fidelity**, which is the preservation of acceptable, non-target concepts and details in an image during the correction process.

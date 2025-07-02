@@ -3,6 +3,17 @@ title: MULAN:_A_Multi_Layer_Annotated_Dataset_for_Controllable_Text-to-Image_Gen
 layout: default
 date: 2024-04-03
 ---
+## MULAN: A Multi Layer Annotated Dataset for Controllable Text-to-Image Generation
+**Authors:**
+- Petru-Daniel Tudosiu, h-index: 5, papers: 10, citations: 132
+- Sarah Parisot, h-index: 2, papers: 5, citations: 15
+
+**ArXiv URL:** http://arxiv.org/abs/2404.02790v1
+
+**Citation Count:** 12
+
+**Published Date:** 2024-04-03
+
 ![Figure 1. Example annotations from our MuLAn dataset. We decompose an image into a multi-layer RGBA stack, where each layer comprises an instance image with transparent alpha layer (green overlays) and background image. For each scene, the second row shows iterative addition of RGBA instance layers.]({{ '/images/04-2024/MULAN:_A_Multi_Layer_Annotated_Dataset_for_Controllable_Text-to-Image_Generation/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 State-of-the-art text-to-image models struggle with precise spatial control, prompt fidelity, and compositional editing. A key reason for this limitation is that these models are trained on "flat" rasterized RGB images, which do not inherently represent the compositional, instance-level nature of scenes. The authors identify a critical gap: the lack of a large-scale, photorealistic dataset with multi-layer annotations that could enable the development of generative models capable of layer-wise image creation and editing.

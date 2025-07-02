@@ -3,6 +3,17 @@ title: PartEdit:_Fine-Grained_Image_Editing_using_Pre-Trained_Diffusion_Models
 layout: default
 date: 2025-02-06
 ---
+## PartEdit: Fine-Grained Image Editing using Pre-Trained Diffusion Models
+**Authors:**
+- Aleksandar Cvejic, h-index: 1, papers: 2, citations: 1
+- Peter Wonka, h-index: 7, papers: 42, citations: 309
+
+**ArXiv URL:** http://arxiv.org/abs/2502.04050v2
+
+**Citation Count:** 1
+
+**Published Date:** 2025-02-06
+
 ![Fig. 1. Our approach, PartEdit , enables a wide range of fine-grained edits, allowing users to create highly customizable changes. The edits are seamless, precisely localized, and of high visual quality with no leakage into unedited regions.]({{ '/images/02-2025/PartEdit:_Fine-Grained_Image_Editing_using_Pre-Trained_Diffusion_Models/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Existing pre-trained diffusion models lack a fine-grained understanding of object parts. This gap leads to significant challenges in text-based image editing, where attempts to modify specific parts often result in poorly localized edits, "leakage" into unintended regions, or unwanted entangled changes (e.g., making hair blonde also makes the subject's face younger). The authors address the practical problem of enabling precise, seamless, and high-quality editing of specific object parts, which current methods fail to achieve.

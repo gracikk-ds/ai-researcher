@@ -3,6 +3,17 @@ title: Ground-A-Score:_Scaling_Up_the_Score_Distillation_for_Multi-Attribute_Edi
 layout: default
 date: 2024-03-20
 ---
+## Ground-A-Score: Scaling Up the Score Distillation for Multi-Attribute Editing
+**Authors:**
+- Hangeol Chang, h-index: 1, papers: 2, citations: 3
+- Jong Chul Ye, h-index: 8, papers: 16, citations: 264
+
+**ArXiv URL:** http://arxiv.org/abs/2403.13551v1
+
+**Citation Count:** 3
+
+**Published Date:** 2024-03-20
+
 ![Fig. 1: Multi-attribute image editing results by Ground-A-Score.]({{ '/images/03-2024/Ground-A-Score:_Scaling_Up_the_Score_Distillation_for_Multi-Attribute_Editing/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address a key limitation in text-to-image diffusion models used for image editing: their tendency to fail when given long, complex text prompts that require multiple simultaneous attribute changes. Existing score distillation-based methods often overlook some parts of the prompt or introduce unintended artifacts, as the underlying text-to-image model struggles to process all the information in a complex request. This creates a bottleneck for performing intricate, multi-faceted image edits.

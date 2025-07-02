@@ -3,6 +3,17 @@ title: Denoising_Diffusion_Bridge_Models
 layout: default
 date: 2023-09-29
 ---
+## Denoising Diffusion Bridge Models
+**Authors:**
+- Linqi Zhou, h-index: 5, papers: 7, citations: 457
+- Stefano Ermon, h-index: 82, papers: 354, citations: 58193
+
+**ArXiv URL:** http://arxiv.org/abs/2309.16948v3
+
+**Citation Count:** 81
+
+**Published Date:** 2023-09-29
+
 ![Figure 1: A schematic for Denoising Diffusion Bridge Models. DDBM uses a diffusion process guided by a drift adjustment (in blue) towards an endpoint x T = y . They lears to reverse such a bridge process by matching the denoising bridge score (in orange), which allows one to reverse from x T to x 0 for any x T = y ∼ q data ( y ) . The forward SDE process shown on the top is unidirectional while the probability flow ODE shown at the bottom is deterministic and bidirectional. White nodes are stochastic while grey nodes are deterministic.]({{ '/images/09-2023/Denoising_Diffusion_Bridge_Models/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Standard diffusion models are designed to map data to random noise, which makes them ill-suited for tasks like image-to-image translation where the input is another structured data distribution, not noise. Current methods to adapt diffusion models for such tasks are often cumbersome (e.g., conditioning, projected sampling) and not theoretically principled. The authors aim to address this gap by creating a unified and scalable framework that naturally models the transport between two arbitrary distributions, while still leveraging the powerful design principles that have made standard diffusion models successful.

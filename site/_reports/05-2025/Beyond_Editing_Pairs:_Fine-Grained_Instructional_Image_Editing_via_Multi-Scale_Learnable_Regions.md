@@ -3,6 +3,17 @@ title: Beyond_Editing_Pairs:_Fine-Grained_Instructional_Image_Editing_via_Multi-
 layout: default
 date: 2025-05-25
 ---
+## Beyond Editing Pairs: Fine-Grained Instructional Image Editing via Multi-Scale Learnable Regions
+**Authors:**
+- Chenrui Mapapers: 2, 
+- Yanning Shen, h-index: 1, papers: 2, citations: 1
+
+**ArXiv URL:** http://arxiv.org/abs/2505.19352v1
+
+**Citation Count:** 0
+
+**Published Date:** 2025-05-25
+
 ![Figure 1: Framework of the proposed method . Including description text generation, editing feature semantic alignment, learnable edit region prediction, edited image generation and CLIP supervised loss calculation.]({{ '/images/05-2025/Beyond_Editing_Pairs:_Fine-Grained_Instructional_Image_Editing_via_Multi-Scale_Learnable_Regions/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address a key challenge in text-driven image editing. Current high-precision, instruction-driven methods (e.g., "change the dog into a cat") depend on large-scale "editing pair" datasets, which consist of an original image, an instruction, and a corresponding ground-truth edited image. Creating these datasets is a time-consuming and expensive process that often yields unrealistic results or unwanted artifacts. Conversely, alternative dataset-free approaches often suffer from poor instruction comprehension and lack the ability to perform precise, localized edits. The paper aims to bridge this gap by developing a method that can perform fine-grained, instruction-driven editing without relying on these scarce editing-pair datasets.

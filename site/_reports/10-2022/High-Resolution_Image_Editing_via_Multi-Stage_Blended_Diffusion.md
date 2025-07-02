@@ -3,6 +3,17 @@ title: High-Resolution_Image_Editing_via_Multi-Stage_Blended_Diffusion
 layout: default
 date: 2022-10-24
 ---
+## High-Resolution Image Editing via Multi-Stage Blended Diffusion
+**Authors:**
+- Johannes Ackermann
+- Minjun Li, h-index: 8, papers: 11, citations: 504
+
+**ArXiv URL:** http://arxiv.org/abs/2210.12965v1
+
+**Citation Count:** None
+
+**Published Date:** 2022-10-24
+
 ![Figure 1: Our approach performs high-resolution text-guided image editing in multiple stages. In the ﬁrst stage a), we apply Blended Diffusion [2], given a masked region and a text prompt. In each following stage b), we ﬁrst upscale the image using an off the shelf super-resolution model and then use Blended Diffusion, starting at an intermediate diffusion step, to improve the image quality and ensure consistency with the input prompt. c) When the output resolution of a stage is too large to ﬁt into the GPU memory, we split the image into multiple segments, apply upscaling and Blended Diffusion to them separately and alpha-composite the results.]({{ '/images/10-2022/High-Resolution_Image_Editing_via_Multi-Stage_Blended_Diffusion/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Diffusion models have demonstrated impressive capabilities in text-guided image editing. However, their high computational cost restricts their application to low-resolution images (e.g., 512x512 pixels). Directly applying these pre-trained models to high-resolution inputs leads to incoherent results, such as repeated patterns and artifacts. The authors address this practical problem by proposing a method to perform coherent, high-fidelity image editing on megapixel-scale images using an existing low-resolution diffusion model.

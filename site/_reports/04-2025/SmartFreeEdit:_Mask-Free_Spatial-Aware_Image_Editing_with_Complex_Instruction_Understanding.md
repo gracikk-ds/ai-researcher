@@ -3,6 +3,17 @@ title: SmartFreeEdit:_Mask-Free_Spatial-Aware_Image_Editing_with_Complex_Instruc
 layout: default
 date: 2025-04-17
 ---
+## SmartFreeEdit: Mask-Free Spatial-Aware Image Editing with Complex Instruction Understanding
+**Authors:**
+- Qianqian Sun
+- Xuelong Lipapers: 2, 
+
+**ArXiv URL:** http://arxiv.org/abs/2504.12704v1
+
+**Citation Count:** 0
+
+**Published Date:** 2025-04-17
+
 ![Figure 1: We propose SmartFreeEdit to address the challenge of reasoning instructions and segmentations in image editing, thereby enhancing the practicality of AI editing. Our method effectively handles some semantic editing operations, including adding, removing, changing objects, background changing and global editing.]({{ '/images/04-2025/SmartFreeEdit:_Mask-Free_Spatial-Aware_Image_Editing_with_Complex_Instruction_Understanding/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address a significant gap in instruction-based image editing: the inability of existing models to handle complex commands that require spatial reasoning, contextual understanding, and world knowledge. Conventional methods often struggle to accurately segment the intended region from a nuanced instruction (e.g., "the cat in the mirror") or fail to maintain global semantic and structural consistency in the edited image, especially in complex scenes. This work aims to develop a practical, mask-free editing framework that can robustly interpret complex language and produce high-quality, coherent edits.

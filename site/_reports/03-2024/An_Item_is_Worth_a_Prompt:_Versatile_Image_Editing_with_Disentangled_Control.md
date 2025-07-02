@@ -3,6 +3,17 @@ title: An_Item_is_Worth_a_Prompt:_Versatile_Image_Editing_with_Disentangled_Cont
 layout: default
 date: 2024-03-07
 ---
+## An Item is Worth a Prompt: Versatile Image Editing with Disentangled Control
+**Authors:**
+- Aosong Feng, h-index: 6, papers: 12, citations: 80
+- Leandros Tassiulas
+
+**ArXiv URL:** http://arxiv.org/abs/2403.04880v4
+
+**Citation Count:** 6
+
+**Published Date:** 2024-03-07
+
 ![Figure 1: The editing pipeline of using D-Edit. The user first uploads an image which is segmented into several items. After finetuning DPMs, the user can do various types of control, including (a) replacing the model with another using a text prompt; (b) refining imperfect details caused by segmentation; (c) moving bags to the ground; (d) replacing the handbag with another one from a reference image; (e) reshaping handbag; (f) resizing the model and handbag; (g) removing background.]({{ '/images/03-2024/An_Item_is_Worth_a_Prompt:_Versatile_Image_Editing_with_Disentangled_Control/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address two primary challenges in prompt-based image editing with diffusion models. First, directly modifying a global text prompt often results in unintended, widespread changes to the entire image, failing to preserve the unedited regions. Second, existing methods that use masks to protect unedited areas often produce disharmonious results because the diffusion model's attention mechanism can disregard these spatial constraints, leading to unnatural transitions and artifacts. The paper aims to create a versatile editing framework that provides precise, localized control over individual objects within an image while maintaining overall coherence.

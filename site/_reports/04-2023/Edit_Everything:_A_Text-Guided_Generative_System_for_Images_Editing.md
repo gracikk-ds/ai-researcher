@@ -3,6 +3,17 @@ title: Edit_Everything:_A_Text-Guided_Generative_System_for_Images_Editing
 layout: default
 date: 2023-04-27
 ---
+## Edit Everything: A Text-Guided Generative System for Images Editing
+**Authors:**
+- Defeng Xie, h-index: 2, papers: 3, citations: 34
+- Xiaodong Lin
+
+**ArXiv URL:** http://arxiv.org/abs/2304.14006v1
+
+**Citation Count:** 32
+
+**Published Date:** 2023-04-27
+
 ![Figure 1: The network architecture of Edit Everything. The original image is separated into several segments with the help of Segment Anything model (SAM). Next, These segments are ranked based on the source prompt, and the target segment is chosen based on the highest score calculated by our trained CLIP model. The source prompt is a text that describes the target object and editing styles. Finally, guided by the target prompt, Stable Diffusion (SD) generates the replacement object for the mask segment. This process is seamless and efﬁcient, resulting in high-quality image editing.]({{ '/images/04-2023/Edit_Everything:_A_Text-Guided_Generative_System_for_Images_Editing/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the practical problem that creating and editing high-quality visual content typically requires specialized skills and significant time. While generative models, particularly text-guided diffusion models, have shown great promise, there is a need for a system that offers precise, intuitive control over image editing using natural language. The paper specifically aims to create an effective system for Chinese language scenarios, a domain where existing open-source models may have limitations.

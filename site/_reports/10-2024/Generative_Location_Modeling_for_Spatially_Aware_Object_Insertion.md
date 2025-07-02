@@ -3,6 +3,17 @@ title: Generative_Location_Modeling_for_Spatially_Aware_Object_Insertion
 layout: default
 date: 2024-10-17
 ---
+## Generative Location Modeling for Spatially Aware Object Insertion
+**Authors:**
+- Jooyeol Yun, h-index: 5, papers: 14, citations: 81
+- Auke Wiggers
+
+**ArXiv URL:** http://arxiv.org/abs/2410.13564v1
+
+**Citation Count:** None
+
+**Published Date:** 2024-10-17
+
 ![Figure 1: Our proposed pipeline for object insertion (b), in contrast to instruction-tuned methods (a). We use a pretrained inpainting model and provide it with plausible locations for object insertion.]({{ '/images/10-2024/Generative_Location_Modeling_for_Spatially_Aware_Object_Insertion/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Current generative models for object insertion often lack spatial awareness, leading them to place objects in unrealistic locations or scales. Instruction-tuned models, which learn to determine placement (where) and appearance (what) simultaneously, struggle with this joint task. This often results in distorted backgrounds, replacement of existing objects, or other unintended scene changes. The authors identify a gap in explicitly modeling plausible object locations, which is critical for achieving visually coherent and realistic image edits.

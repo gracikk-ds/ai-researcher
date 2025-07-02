@@ -3,6 +3,17 @@ title: GIE-Bench:_Towards_Grounded_Evaluation_for_Text-Guided_Image_Editing
 layout: default
 date: 2025-05-16
 ---
+## GIE-Bench: Towards Grounded Evaluation for Text-Guided Image Editing
+**Authors:**
+- Yusu Qian, h-index: 5, papers: 8, citations: 160
+- Zhe Gan, h-index: 11, papers: 19, citations: 789
+
+**ArXiv URL:** http://arxiv.org/abs/2505.11493v1
+
+**Citation Count:** 1
+
+**Published Date:** 2025-05-16
+
 ![Figure 1: Overview of the proposed GIE-Bench pipeline for grounded and fine-grained evaluation of text-guided image editing models. GIE-Bench consists of two components: ( i ) functional correctness evaluation; and ( ii ) content preservation evaluation.]({{ '/images/05-2025/GIE-Bench:_Towards_Grounded_Evaluation_for_Text-Guided_Image_Editing/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Existing evaluation methods for text-guided image editing, such as those relying on global image-text similarity metrics like CLIP, lack precision. They cannot effectively distinguish whether a model has correctly performed a specific edit instruction versus how well it has preserved the parts of the image that were not meant to be changed. This gap makes it difficult to perform a fine-grained, grounded, and scalable comparison of different editing models.

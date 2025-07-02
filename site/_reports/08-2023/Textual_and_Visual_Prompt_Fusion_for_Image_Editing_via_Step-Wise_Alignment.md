@@ -3,6 +3,17 @@ title: Textual_and_Visual_Prompt_Fusion_for_Image_Editing_via_Step-Wise_Alignmen
 layout: default
 date: 2023-08-30
 ---
+## Textual and Visual Prompt Fusion for Image Editing via Step-Wise Alignment
+**Authors:**
+- Zhanbo Feng, h-index: 3, papers: 8, citations: 11
+- Robert C. Qiu, h-index: 1, papers: 7, citations: 6
+
+**ArXiv URL:** http://arxiv.org/abs/2308.15854v3
+
+**Citation Count:** 0
+
+**Published Date:** 2023-08-30
+
 ![Fig. 1: The framework of SWA. The reference image is encoded into features ∆ h . Then, ∆ h are integrated into the latent features h of the editing image. The textual prompt contributes semantic information for the manipulation process.]({{ '/images/08-2023/Textual_and_Visual_Prompt_Fusion_for_Image_Editing_via_Step-Wise_Alignment/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address a key trade-off in diffusion-based image editing. Existing methods are often either text-guided or image-guided. Text-guided approaches provide strong semantic control but can degrade visual quality or fail when the target edit is complex. Conversely, image-guided methods excel at transferring visual styles and patterns but lack intuitive control over which specific attributes are being edited, leading to semantic ambiguity. The paper aims to bridge this gap by creating a framework that combines the precise semantic control of text prompts with the high-fidelity visual guidance of a reference image.

@@ -3,6 +3,17 @@ title: On_Manipulating_Scene_Text_in_the_Wild_with_Diffusion_Models
 layout: default
 date: 2023-11-01
 ---
+## On Manipulating Scene Text in the Wild with Diffusion Models
+**Authors:**
+- Joshua Santoso, h-index: 1, papers: 1, citations: 6
+- Williem
+
+**ArXiv URL:** http://arxiv.org/abs/2311.00734v2
+
+**Citation Count:** 6
+
+**Published Date:** 2023-11-01
+
 ![Figure 1. Top: Comparison between state-of-the-art methods and our method from given input image and target text on scene text manipulation. Bottom: Comparison between baseline text-toimage Latent Diffusion Model (LDM) [ 30 ] represented with blue box and our method represented with red box on scene text domain from given random noise and text condition as an input.]({{ '/images/11-2023/On_Manipulating_Scene_Text_in_the_Wild_with_Diffusion_Models/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the challenge of scene text manipulation, where the goal is to replace text within an image while preserving the original visual style (e.g., font, color, size, and background). They observe that state-of-the-art diffusion models, while powerful for general image editing, perform poorly on this task. These models often deteriorate image details or misinterpret text prompts, generating objects related to the words rather than rendering the text itself. This gap limits practical applications like real-time sign translation or data augmentation for OCR models.

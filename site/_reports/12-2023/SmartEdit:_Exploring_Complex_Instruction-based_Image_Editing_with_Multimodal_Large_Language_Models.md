@@ -3,6 +3,17 @@ title: SmartEdit:_Exploring_Complex_Instruction-based_Image_Editing_with_Multimo
 layout: default
 date: 2023-12-11
 ---
+## SmartEdit: Exploring Complex Instruction-based Image Editing with Multimodal Large Language Models
+**Authors:**
+- Yuzhou Huang
+- Ying Shan
+
+**ArXiv URL:** http://arxiv.org/abs/2312.06739v1
+
+**Citation Count:** 77
+
+**Published Date:** 2023-12-11
+
 ![Figure 1. We propose SmartEdit, an instruction-based image editing model that leverages Multimodal Large Language Models (MLLMs) to enhance the understanding and reasoning capabilities of instruction-based editing methods. With the specialized design, our SmartEdit is capable of handling complex understanding (the instructions that contain various object attributes like location, relative size, color, and in or outside the mirror) and reasoning scenarios.]({{ '/images/12-2023/SmartEdit:_Exploring_Complex_Instruction-based_Image_Editing_with_Multimodal_Large_Language_Models/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Current instruction-based image editing models, such as InstructPix2Pix, often fail when given complex instructions. This failure stems from their reliance on simple CLIP text encoders, which lack the sophisticated understanding and reasoning capabilities required for complex tasks. The authors identify two main failure scenarios: 1) **Complex Understanding**, where an instruction refers to an object by specific attributes like location (e.g., "leftmost apple"), relative size, or context (e.g., "the dog in the mirror"), and 2) **Complex Reasoning**, where world knowledge is needed to identify the target object (e.g., "remove the object that can tell the time"). The paper aims to address this gap by creating a model that can robustly handle such instructions.

@@ -3,6 +3,17 @@ title: Streamlining_Image_Editing_with_Layered_Diffusion_Brushes
 layout: default
 date: 2024-05-01
 ---
+## Streamlining Image Editing with Layered Diffusion Brushes
+**Authors:**
+- Peyman Gholami, h-index: 2, papers: 5, citations: 20
+- Robert Xiao, h-index: 1, papers: 1, citations: 1
+
+**ArXiv URL:** http://arxiv.org/abs/2405.00313v1
+
+**Citation Count:** 1
+
+**Published Date:** 2024-05-01
+
 ![Figure 1: Creating different edits with Layered Diffusion Brushes. Our tool is capable of creating and stacking a wide range of independent edits, including object addition, removal, or replacement, colour and style changes/combining, and object attribute modification. Each edit is performed independently, and users are able to switch between the edits seamlessly.]({{ '/images/05-2024/Streamlining_Image_Editing_with_Layered_Diffusion_Brushes/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the challenge of achieving precise, localized control in image editing with diffusion models. While powerful, existing methods are often difficult to fine-tune, can produce stochastic results requiring multiple attempts, and may alter the entire image instead of just the targeted region. This creates a gap for a tool that provides artists and designers with real-time, fine-grained control over specific image areas, combining the power of text-prompts with the precision of traditional masking and layering workflows.

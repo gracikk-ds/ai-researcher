@@ -3,6 +3,17 @@ title: PairEdit:_Learning_Semantic_Variations_for_Exemplar-based_Image_Editing
 layout: default
 date: 2025-06-09
 ---
+## PairEdit: Learning Semantic Variations for Exemplar-based Image Editing
+**Authors:**
+- Haoguang Lupapers: 1, 
+- Xudong Mao
+
+**ArXiv URL:** http://arxiv.org/abs/2506.07992v1
+
+**Citation Count:** 0
+
+**Published Date:** 2025-06-09
+
 ![Figure 1: Editing results of PairEdit trained on three image pairs (1st-2nd rows) or a single image pair (3rd row). Our method effectively captures semantic variations between source and target images.]({{ '/images/06-2025/PairEdit:_Learning_Semantic_Variations_for_Exemplar-based_Image_Editing/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the limitations of existing image editing methods. Text-guided editing struggles to precisely specify complex or nuanced semantic changes that are difficult to describe with words. While exemplar-based editing (using source-target image pairs) is a practical alternative, current methods often still rely on textual descriptions of the change, or they fail to learn complex transformations while maintaining high fidelity to the original image's content and identity. The paper aims to solve this by creating a method that can learn intricate semantic edits directly from a very small number of example pairs—or even a single pair—without any text guidance.

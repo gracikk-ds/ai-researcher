@@ -3,6 +3,17 @@ title: ImagenHub:_Standardizing_the_evaluation_of_conditional_image_generation_m
 layout: default
 date: 2023-10-02
 ---
+## ImagenHub: Standardizing the evaluation of conditional image generation models
+**Authors:**
+- Max Ku
+- Wenhu Chen, h-index: 13, papers: 18, citations: 2004
+
+**ArXiv URL:** http://arxiv.org/abs/2310.01596v4
+
+**Citation Count:** 48
+
+**Published Date:** 2023-10-02
+
 ![Figure 1: The overview of ImagenHub framework, which consists of the newly curated ImagenHub dataset, ImagenHub library, and ImagenHub evaluation platform and standard.]({{ '/images/10-2023/ImagenHub:_Standardizing_the_evaluation_of_conditional_image_generation_models/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the significant inconsistencies in the evaluation of conditional image generation models. Different research papers use their own private datasets, varied inference procedures (e.g., prompt engineering, hyperparameter tuning), and non-standardized evaluation metrics. This lack of a unified benchmark makes it nearly impossible to perform fair comparisons between models, track the true progress of the field, and reproduce published results.

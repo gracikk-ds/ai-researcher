@@ -3,6 +3,17 @@ title: EmoAgent:_A_Multi-Agent_Framework_for_Diverse_Affective_Image_Manipulatio
 layout: default
 date: 2025-03-14
 ---
+## EmoAgent: A Multi-Agent Framework for Diverse Affective Image Manipulation
+**Authors:**
+- Qi Mao
+- Libiao Jin, h-index: 1, papers: 4, citations: 15
+
+**ArXiv URL:** http://arxiv.org/abs/2503.11290v3
+
+**Citation Count:** None
+
+**Published Date:** 2025-03-14
+
 ![Fig. 1. EmoEdit [1] vs. EmoAgent on the D-AIM task. (a) Existing approaches typically follow a fixed one-to-one mapping from emotion to visual output, leading to limited diversity. (b) In contrast, EmoAgent performs multi-path planning and editing to produce multiple semantically distinct yet emotionally consistent results for the same input and target emotion. editing operations, injecting the specified visual elements into the source image with step-wise precision. However, the reliability of AIM is not fully assured by these two agents alone. A third component, the Critic Agent, acting as the “eyes”, evaluates intermediate results and collaborates with the Editing Agent in an iterative loop to refine outputs during the optimization stage, ensuring that the target emotion is conveyed both accurately and coherently. Through this collaborative design, EmoAgent not only enhances emotional alignment but also supports emotion-aware visual diversity—capturing multiple valid interpretations of the same affective goal, as demonstrated in Fig. 1(b). Our contributions are summarized as follows:]({{ '/images/03-2025/EmoAgent:_A_Multi-Agent_Framework_for_Diverse_Affective_Image_Manipulation/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Existing Affective Image Manipulation (AIM) methods typically rely on rigid, one-to-one mappings between emotions and visual cues. This approach fails to capture the subjective and diverse nature of human emotional expression, where a single emotion (e.g., "awe") can be evoked by many different visual scenes (e.g., mountains, sunsets, stage lights). This limitation results in generated images that lack visual diversity for a given emotional target. To address this, the authors introduce a new task, Diverse AIM (D-AIM), which aims to generate multiple visually distinct yet emotionally consistent image edits from a single source image and target emotion.

@@ -3,6 +3,17 @@ title: Accelerating_Text-to-Image_Editing_via_Cache-Enabled_Sparse_Diffusion_Inf
 layout: default
 date: 2023-05-27
 ---
+## Accelerating Text-to-Image Editing via Cache-Enabled Sparse Diffusion Inference
+**Authors:**
+- Zihao Yu
+- Bin Cui
+
+**ArXiv URL:** http://arxiv.org/abs/2305.17423v3
+
+**Citation Count:** 8
+
+**Published Date:** 2023-05-27
+
 ![Figure 1: In real-world scenarios, users may desire the ability to provide masks and selectively modify only the regions within the mask that they consider unsatisfactory. As shown in the provided example, The user specifies different masks and edits prompt from ”Mountaineering Wallpapers” to ”Mountaineering Wallpapers under fireworks” .]({{ '/images/05-2023/Accelerating_Text-to-Image_Editing_via_Cache-Enabled_Sparse_Diffusion_Inference/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the inefficiency of interactive text-to-image editing using diffusion models. In a typical user workflow, an initial image is generated, and the user then makes minor modifications to the text prompt to refine specific parts of the image. Current methods typically regenerate the entire image from scratch for each edit, which is computationally expensive and slow, as the unchanged regions are needlessly recomputed. The paper aims to solve this practical problem by accelerating the editing process while preserving the quality of the unchanged image regions.

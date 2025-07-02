@@ -3,6 +3,17 @@ title: OmniGen2:_Exploration_to_Advanced_Multimodal_Generation
 layout: default
 date: 2025-06-23
 ---
+## OmniGen2: Exploration to Advanced Multimodal Generation
+**Authors:**
+- Chenyuan Wu
+- Zheng Liu
+
+**ArXiv URL:** http://arxiv.org/abs/2506.18871v2
+
+**Citation Count:** None
+
+**Published Date:** 2025-06-23
+
 ![Figure 1]({{ '/images/06-2025/OmniGen2:_Exploration_to_Advanced_Multimodal_Generation/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the limitations of existing unified generative models, which often struggle with task diversity and lack consistency in advanced applications like precise image editing and subject-driven (in-context) generation. They identify that simple parameter sharing between text and image generation pathways is insufficient. Furthermore, progress is hampered by a scarcity of high-quality, publicly available datasets and comprehensive benchmarks for these complex, instruction-guided tasks.

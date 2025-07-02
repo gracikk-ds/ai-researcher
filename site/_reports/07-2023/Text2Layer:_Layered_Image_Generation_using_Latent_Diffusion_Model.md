@@ -3,6 +3,17 @@ title: Text2Layer:_Layered_Image_Generation_using_Latent_Diffusion_Model
 layout: default
 date: 2023-07-19
 ---
+## Text2Layer: Layered Image Generation using Latent Diffusion Model
+**Authors:**
+- Xinyang Zhang
+- Jeff Chien
+
+**ArXiv URL:** http://arxiv.org/abs/2307.09781v1
+
+**Citation Count:** 12
+
+**Published Date:** 2023-07-19
+
 ![Fig. 1. Examples of two-layer images. Prompts are displayed on the top of images. Each example includes foreground (fg), background (bg), and mask component to compose a two-layer image. From left to right of each example: fg, bg, mask, and composed image.]({{ '/images/07-2023/Text2Layer:_Layered_Image_Generation_using_Latent_Diffusion_Model/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Existing text-to-image editing models often lack fine-grained control, modifying more pixels than desired and struggling with edits that are difficult to describe in text. A common workaround is to generate an image and then use a separate segmentation tool, but this often results in low-quality masks and artifacts. The authors address this practical problem by proposing a new paradigm: generating images as distinct, editable layers (foreground, background, and mask) directly from a text prompt. This approach aims to provide users with high-quality, layered assets for more flexible and precise compositing workflows.

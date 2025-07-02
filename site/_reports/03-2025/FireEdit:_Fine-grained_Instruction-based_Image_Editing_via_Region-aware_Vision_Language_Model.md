@@ -3,6 +3,17 @@ title: FireEdit:_Fine-grained_Instruction-based_Image_Editing_via_Region-aware_V
 layout: default
 date: 2025-03-25
 ---
+## FireEdit: Fine-grained Instruction-based Image Editing via Region-aware Vision Language Model
+**Authors:**
+- Jun Zhou
+- Xiaodan Liang
+
+**ArXiv URL:** http://arxiv.org/abs/2503.19839v2
+
+**Citation Count:** 2
+
+**Published Date:** 2025-03-25
+
 ![Figure 1. Our framework leverages a vision language model (VLM) to guide instruction-based image editing. Our primary innovation is the introduction of region tokens, which enable the VLM to accurately identify edited objects or areas in complex scenarios while preserving high-frequency details in unintended regions during image decoding.]({{ '/images/03-2025/FireEdit:_Fine-grained_Instruction-based_Image_Editing_via_Region-aware_Vision_Language_Model/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Current instruction-based image editing methods struggle with complex user instructions, often failing to accurately localize the intended edit region or maintain semantic consistency with the original image. This results in inaccurate modifications, unintended alterations to background details, and a loss of overall image fidelity, especially in intricate scenes with multiple objects. The authors aim to address this gap by developing a framework that can better comprehend fine-grained instructions and execute precise, localized edits while preserving the quality of non-edited areas.

@@ -3,6 +3,17 @@ title: Cora:_Correspondence-aware_image_editing_using_few_step_diffusion
 layout: default
 date: 2025-05-29
 ---
+## Cora: Correspondence-aware image editing using few step diffusion
+**Authors:**
+- Amirhossein Almohammadipapers: 1, 
+- Ali Mahdavi-Amiri, h-index: 18, papers: 71, citations: 1157
+
+**ArXiv URL:** http://arxiv.org/abs/2505.23907v1
+
+**Citation Count:** 0
+
+**Published Date:** 2025-05-29
+
 ![Fig. 1. Cora supports diverse edits, including object insertion, subject and background changes, and non-rigid deformations (e.g., jumping). Our novel correspondence-aware method provides strong control and flexibility for both appearance and structure editing.]({{ '/images/05-2025/Cora:_Correspondence-aware_image_editing_using_few_step_diffusion/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Existing few-step diffusion-based image editing methods struggle with tasks that require significant structural changes, such as altering an object's pose, shape, or identity. These methods often produce visual artifacts, fail to preserve key attributes of the source image, or misalign textures. This is primarily because standard techniques like noise correction do not account for the spatial misalignment between the source and the structurally edited target image, leading to poor quality results.

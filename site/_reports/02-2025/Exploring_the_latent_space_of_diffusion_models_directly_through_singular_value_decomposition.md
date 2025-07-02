@@ -3,6 +3,17 @@ title: Exploring_the_latent_space_of_diffusion_models_directly_through_singular_
 layout: default
 date: 2025-02-04
 ---
+## Exploring the latent space of diffusion models directly through singular value decomposition
+**Authors:**
+- Li Wang
+- Jun Xiao
+
+**ArXiv URL:** http://arxiv.org/abs/2502.02225v1
+
+**Citation Count:** 1
+
+**Published Date:** 2025-02-04
+
 ![Figure 1. Our framework overview for image editing. (1) During the denoising process, we select one time step T x for introducing new attributes. (2) Two latent codes x T x and z T x +∆ τ , guided by a pair of text prompts, is fed into our proposed AVI algorithm. (3) The AVI outputs a latent code y pred to replace x T x to continue the denoising process with the guidance of the original text prompt. Note that the SVD is performed channel-wise.]({{ '/images/02-2025/Exploring_the_latent_space_of_diffusion_models_directly_through_singular_value_decomposition/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The latent space of diffusion models, despite its potential for versatile image editing, remains largely under-explored. Current editing methods often rely on manipulating auxiliary spaces (like the U-Net's feature maps) or require computationally expensive fine-tuning and extra data collection. This paper addresses the gap by directly investigating the diffusion model's latent space (denoted as X) to enable more efficient, flexible, and interpretable image editing, akin to the well-understood latent space manipulation in GANs.

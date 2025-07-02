@@ -3,6 +3,17 @@ title: Interactive_Image_Manipulation_with_Complex_Text_Instructions
 layout: default
 date: 2022-11-25
 ---
+## Interactive Image Manipulation with Complex Text Instructions
+**Authors:**
+- Ryugo Morita, h-index: 2, papers: 10, citations: 10
+- Jinjia Zhou, h-index: 15, papers: 114, citations: 787
+
+**ArXiv URL:** http://arxiv.org/abs/2211.15352v1
+
+**Citation Count:** 3
+
+**Published Date:** 2022-11-25
+
 ![Figure 1. Given an image and text instruction that reveals desired modifications to the image, our method first tries to understand the image and localize where should be modified, then makes appropriate manipulations. In addition, our network design also allows users to adjust the affected area and add/redo image manipulations for undesired results. As an advantage, this work provides effective image manipulations with high controllability, such as changing an object’s attributes (e.g., colors and texture), enlarging, dwindling, removing objects, and replacing the background.]({{ '/images/11-2022/Interactive_Image_Manipulation_with_Complex_Text_Instructions/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address key limitations in existing text-guided image manipulation methods. These methods often (1) randomly alter text-irrelevant content, degrading image quality; (2) lack the ability to perform complex operations beyond simple attribute changes (e.g., color); and (3) fail to handle tasks like object resizing, removal, or background replacement. The core problem identified is the difficulty of accurately localizing the specific image content that the text instruction refers to.

@@ -3,6 +3,17 @@ title: Lazy_Diffusion_Transformer_for_Interactive_Image_Editing
 layout: default
 date: 2024-04-18
 ---
+## Lazy Diffusion Transformer for Interactive Image Editing
+**Authors:**
+- Yotam Nitzan, h-index: 10, papers: 17, citations: 2261
+- Michaël Gharbi
+
+**ArXiv URL:** http://arxiv.org/abs/2404.12382v1
+
+**Citation Count:** None
+
+**Published Date:** 2024-04-18
+
 ![Figure 1. Incremental image generation at 1024 × 1024 using LazyDiffusion with 20 diffusion steps. The model generates content according to a text prompt in an area specified by a mask. Each update generates only the masked pixels, with a runtime that depends chiefly on the size of the mask, rather than that of the image.]({{ '/images/04-2024/Lazy_Diffusion_Transformer_for_Interactive_Image_Editing/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Current diffusion-based inpainting methods, while powerful, are ill-suited for interactive applications due to high latency. They are computationally wasteful because they regenerate the entire image for every edit, even when only a small region is being modified. Alternative approaches that process a tight crop around the masked area are faster but sacrifice global image context, often leading to semantically inconsistent or low-quality results. The authors aim to bridge this gap by creating a method that is both fast enough for interactive use and capable of producing globally coherent, high-quality edits.

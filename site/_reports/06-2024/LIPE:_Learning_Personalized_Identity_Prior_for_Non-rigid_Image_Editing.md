@@ -3,6 +3,17 @@ title: LIPE:_Learning_Personalized_Identity_Prior_for_Non-rigid_Image_Editing
 layout: default
 date: 2024-06-25
 ---
+## LIPE: Learning Personalized Identity Prior for Non-rigid Image Editing
+**Authors:**
+- Aoyang Liu, h-index: 1, papers: 1, citations: 1
+- Yansong Tang, h-index: 1, papers: 3, citations: 5
+
+**ArXiv URL:** http://arxiv.org/abs/2406.17236v1
+
+**Citation Count:** 1
+
+**Published Date:** 2024-06-25
+
 ![Figure 1: Given a few reference images of the same identity, our framework learns a personalized identity prior and applies diverse non-rigid image editing for a test image guided by a textual description, leading to high identity-preserved edited results.]({{ '/images/06-2024/LIPE:_Learning_Personalized_Identity_Prior_for_Non-rigid_Image_Editing/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the challenge of non-rigid image editing, such as altering a subject's pose, expression, or viewpoint, while preserving its unique identity. Existing text-to-image diffusion models often fail to maintain subject consistency because they lack a personalized identity prior. Conversely, methods that do learn a personalized prior are typically designed for subject generation, not fine-grained editing, or are limited to specific domains like faces and require numerous reference images. This paper introduces and tackles the novel task of learning a personalized identity prior from a few reference images to enable high-fidelity, text-guided, non-rigid editing for general subjects.

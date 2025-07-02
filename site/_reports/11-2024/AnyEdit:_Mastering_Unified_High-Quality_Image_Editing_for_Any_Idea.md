@@ -3,6 +3,17 @@ title: AnyEdit:_Mastering_Unified_High-Quality_Image_Editing_for_Any_Idea
 layout: default
 date: 2024-11-24
 ---
+## AnyEdit: Mastering Unified High-Quality Image Editing for Any Idea
+**Authors:**
+- Qifan Yu, h-index: 6, papers: 15, citations: 210
+- Yueting Zhuang, h-index: 9, papers: 50, citations: 380
+
+**ArXiv URL:** http://arxiv.org/abs/2411.15738v3
+
+**Citation Count:** None
+
+**Published Date:** 2024-11-24
+
 ![Figure 1. Examples of AnyEdit at scale. We comprehensively categorize image editing tasks into 5 groups based on different editing capabilities: (a) Local Editing which focuses on region-based editing ( green area ); (b) Global Editing which focuses on the full range of image rendering ( yellow area ); (c) Camera Move Editing which focuses on viewpoints changing instead of scenes ( gray area ); (d) Implicit Editing which requires commonsense knowledge to complete complex editing ( orange area ); (e) Visual Editing which encompasses additional visual inputs, addressing the requirements for multi-modal editing ( blue area ).]({{ '/images/11-2024/AnyEdit:_Mastering_Unified_High-Quality_Image_Editing_for_Any_Idea/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address a key limitation in instruction-based image editing: current models often fail to accurately execute complex or diverse user instructions. This failure stems from their training on low-quality datasets that have a limited scope of editing types and suffer from inherent data biases. Existing datasets lack support for complex tasks requiring multi-modal perception (e.g., spatial reasoning, viewpoint changes) or reference-based inputs (e.g., style transfer from another image), which restricts the creative potential and practical utility of editing models.

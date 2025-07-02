@@ -3,6 +3,17 @@ title: DesignEdit:_Multi-Layered_Latent_Decomposition_and_Fusion_for_Unified_&_A
 layout: default
 date: 2024-03-21
 ---
+## DesignEdit: Multi-Layered Latent Decomposition and Fusion for Unified & Accurate Image Editing
+**Authors:**
+- Yueru Jia, h-index: 2, papers: 4, citations: 26
+- Shanghang Zhang, h-index: 4, papers: 6, citations: 32
+
+**ArXiv URL:** http://arxiv.org/abs/2403.14487v1
+
+**Citation Count:** None
+
+**Published Date:** 2024-03-21
+
 ![Figure 1. Examples of visual design image editing. Our approach facilitates a range of image editing operations with a training-free and unified framework to achieve accurate spatial-aware editing of the design image. Our approach is able to manipulate different objects simultaneously, as well as implement various operations at the same time. All results are produced using one diffusion denoising process.]({{ '/images/03-2024/DesignEdit:_Multi-Layered_Latent_Decomposition_and_Fusion_for_Unified_&_Accurate_Image_Editing/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the challenge of achieving precise, spatial-aware image editing using large-scale text-to-image models. While these models excel at generation, they often struggle with tasks requiring accurate spatial control, such as object counting, placement, and resizing. Existing editing methods are often task-specific, require computationally expensive optimization (backpropagation), and find it difficult to manipulate multiple objects with different instructions simultaneously. This paper introduces a unified, training-free framework to overcome these limitations, drawing inspiration from the layer-based editing paradigm common in design software.

@@ -3,6 +3,17 @@ title: Custom-Edit:_Text-Guided_Image_Editing_with_Customized_Diffusion_Models
 layout: default
 date: 2023-05-25
 ---
+## Custom-Edit: Text-Guided Image Editing with Customized Diffusion Models
+**Authors:**
+- Jooyoung Choi, h-index: 9, papers: 24, citations: 1268
+- Sungroh Yoon
+
+**ArXiv URL:** http://arxiv.org/abs/2305.15779v1
+
+**Citation Count:** 57
+
+**Published Date:** 2023-05-25
+
 ![Figure 1. Our Custom-Edit allows high-fidelity text-guided editing, given a few references. Edited images with BLIP2 [ 13 ] captions show the limitation of textual guidance in capturing the finegrained appearance of the reference.]({{ '/images/05-2023/Custom-Edit:_Text-Guided_Image_Editing_with_Customized_Diffusion_Models/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Standard text-to-image diffusion models support text-guided editing, but they often fail to capture the precise, fine-grained appearance of a user's unique concept, especially if it was not well-represented in the original training data. The authors address this limitation by proposing a method that allows a user to define a custom visual concept using a few reference images and then use that concept to perform high-fidelity image editing.

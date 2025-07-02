@@ -3,6 +3,17 @@ title: Generative_Image_Layer_Decomposition_with_Visual_Effects
 layout: default
 date: 2024-11-26
 ---
+## Generative Image Layer Decomposition with Visual Effects
+**Authors:**
+- Jinrui Yang
+- Yuyin Zhou, h-index: 9, papers: 20, citations: 301
+
+**ArXiv URL:** http://arxiv.org/abs/2411.17864v1
+
+**Citation Count:** None
+
+**Published Date:** 2024-11-26
+
 ![Figure 1. (a) Given an input image and a binary object mask, our model is able to decompose the image into a clean background layer and a transparent foreground layer with preserved visual effects such as shadows and reflections. (b) Subsequently, our decomposition empowers complex and controllable layer-wise editing such as spatial, color and/or style editing.]({{ '/images/11-2024/Generative_Image_Layer_Decomposition_with_Visual_Effects/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address a key limitation in modern generative image editing: the lack of precise control for compositional tasks. While diffusion models excel at various edits, they struggle to decompose images into distinct, independently editable layers. Existing methods often fail to separate a foreground object from its associated visual effects (e.g., shadows, reflections), which prevents realistic and seamless editing, such as moving or resizing an object, as the visual effects are left behind or improperly handled. This paper aims to solve this by creating a system that can decompose an image into a clean background layer and a transparent foreground layer that faithfully preserves these crucial visual effects.

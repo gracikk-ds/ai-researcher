@@ -3,6 +3,17 @@ title: Make_Me_Happier:_Evoking_Emotions_Through_Image_Diffusion_Models
 layout: default
 date: 2024-03-13
 ---
+## Make Me Happier: Evoking Emotions Through Image Diffusion Models
+**Authors:**
+- Qing Lin
+- Mengmi Zhang, h-index: 1, papers: 7, citations: 3
+
+**ArXiv URL:** http://arxiv.org/abs/2403.08255v3
+
+**Citation Count:** None
+
+**Published Date:** 2024-03-13
+
 ![Figure 1: The generated images evoke a sense of happiness in viewers, contrasting with the negative emotions elicited by the source images. Given a source image that triggers negative emotions (framed in green), our method (Ours) synthesizes a new image that elicits the given positive target emotions (in red), while maintaining the essential elements and structures of the scene. For instance, in the first quadrant where trash on the ground evokes negative emotions, our model performs image editing by eliminating the trash while preserving the outdoor context, including trees and grass, in the same spatial arrangement as the original scene. For comparisons, we include other competitive methods (Sec.4). Zoom in for better views.]({{ '/images/03-2024/Make_Me_Happier:_Evoking_Emotions_Through_Image_Diffusion_Models/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the under-explored problem of **emotional image editing**. While image generation models have advanced rapidly, techniques for explicitly modifying an image to evoke a specific target emotion in a viewer are lacking. The goal is to create a method that can synthesize a new image that elicits a desired emotion (e.g., changing a "disgusting" scene to one of "contentment") while preserving the core structure and semantic content of the original image. This has practical applications in areas like psychological therapy, advertising, and artistic design.

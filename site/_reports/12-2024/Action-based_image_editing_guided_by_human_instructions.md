@@ -3,6 +3,17 @@ title: Action-based_image_editing_guided_by_human_instructions
 layout: default
 date: 2024-12-05
 ---
+## Action-based image editing guided by human instructions
+**Authors:**
+- Maria Mihaela Trusca
+- Marie-Francine Moens, h-index: 16, papers: 118, citations: 1477
+
+**ArXiv URL:** http://arxiv.org/abs/2412.04558v2
+
+**Citation Count:** 1
+
+**Published Date:** 2024-12-05
+
 ![Figure 1. Given a text instruction describing an action, we propose EditAction , a method for editing the position and posture of objects in an input image to visually depict the action while preserving the appearance of the objects involved in the action.]({{ '/images/12-2024/Action-based_image_editing_guided_by_human_instructions/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Most text-based image editing models focus on static tasks like adding, removing, or restyling objects. They are generally unable to perform dynamic edits that depict an *action*, such as moving an object or changing its posture according to a command (e.g., "close the cupboard"). This paper addresses this gap by proposing a method to make image editing dynamic, enabling the modification of object positions and postures to visually represent actions described in human instructions, while preserving the visual identity of the objects and the scene's environment.

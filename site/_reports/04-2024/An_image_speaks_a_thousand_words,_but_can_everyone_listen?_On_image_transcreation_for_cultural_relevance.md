@@ -3,6 +3,17 @@ title: An_image_speaks_a_thousand_words,_but_can_everyone_listen?_On_image_trans
 layout: default
 date: 2024-04-01
 ---
+## An image speaks a thousand words, but can everyone listen? On image transcreation for cultural relevance
+**Authors:**
+- Simran Khanuja, h-index: 13, papers: 28, citations: 1168
+- Graham Neubig, h-index: 16, papers: 49, citations: 1147
+
+**ArXiv URL:** http://arxiv.org/abs/2404.01247v3
+
+**Citation Count:** None
+
+**Published Date:** 2024-04-01
+
 ![Figure 1: Image transcreation as done in various applications today: a) Audiovisual (AV) media : where several changes were made to adapt Doraemon to the US context like adding crosses and Fs in grade sheets, or in Inside Out, where broccoli is replaced with bell peppers in Japan as a vegetable that children don’t like; b) Education : where the same concepts are taught differently in different countries, using local currencies or celebration-themed worksheets; c) Advertisements : where the same product is packaged and marketed differently, like in Ferrero Rocher taking the shape of a lunar festival kite in China, and that of a Christmas tree elsewhere.]({{ '/images/04-2024/An_image_speaks_a_thousand_words,_but_can_everyone_listen?_On_image_transcreation_for_cultural_relevance/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The paper addresses a gap in machine translation, which has historically focused on text and speech, by introducing the task of **image transcreation**. This involves culturally adapting visual content to be more relevant and meaningful to a target audience. This capability is crucial for modern multimedia applications in education, marketing, and entertainment, where images must be as culturally resonant as the accompanying text.

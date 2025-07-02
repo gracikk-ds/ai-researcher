@@ -3,6 +3,17 @@ title: Latent_Space_Editing_in_Transformer-Based_Flow_Matching
 layout: default
 date: 2023-12-17
 ---
+## Latent Space Editing in Transformer-Based Flow Matching
+**Authors:**
+- Vincent Tao Hu, h-index: 11, papers: 17, citations: 619
+- Cees G. M. Snoek, h-index: 65, papers: 445, citations: 29299
+
+**ArXiv URL:** http://arxiv.org/abs/2312.10825v1
+
+**Citation Count:** 29
+
+**Published Date:** 2023-12-17
+
 ![Figure 1: Latent Flow Matching for image editing. Starting from the original image, we extract the latent feature x from the frozen encoder. Then, Flow Matching is applied in latent space to transfer the trajectory between the latent feature and standard Gaussian noise by integration on the vector field. An editing operation can be triggered in u -space and Prompt by your own desire. The edited feature will be fed back to the decoder to generate the final edited image.]({{ '/images/12-2023/Latent_Space_Editing_in_Transformer-Based_Flow_Matching/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the problem of image editing in the context of two recent and powerful advances in generative modeling: Flow Matching (FM) and transformer-based backbones (U-ViT). While these technologies offer improved training efficiency and scalability over traditional diffusion models with UNets, the structure of their latent spaces and their potential for controlled image manipulation were previously unexplored. The paper aims to fill this gap by developing methods for semantic image editing that are specifically tailored to the unique architecture of transformer-based Flow Matching models.

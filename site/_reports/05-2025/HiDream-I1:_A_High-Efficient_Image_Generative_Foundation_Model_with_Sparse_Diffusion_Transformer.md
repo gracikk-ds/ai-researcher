@@ -3,6 +3,17 @@ title: HiDream-I1:_A_High-Efficient_Image_Generative_Foundation_Model_with_Spars
 layout: default
 date: 2025-05-28
 ---
+## HiDream-I1: A High-Efficient Image Generative Foundation Model with Sparse Diffusion Transformer
+**Authors:**
+- Qi Cai
+- Tao Mei
+
+**ArXiv URL:** http://arxiv.org/abs/2505.22705v1
+
+**Citation Count:** 0
+
+**Published Date:** 2025-05-28
+
 ![Figure 1 | Generated images by HiDream-I1.]({{ '/images/05-2025/HiDream-I1:_A_High-Efficient_Image_Generative_Foundation_Model_with_Sparse_Diffusion_Transformer/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the critical trade-off in modern image generative foundation models, where advancements in image quality have often come at the cost of increased computational complexity and high inference latency. This makes real-time, cost-effective deployment a significant challenge. The paper aims to bridge this gap by creating a highly efficient yet state-of-the-art generative model.

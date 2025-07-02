@@ -3,6 +3,17 @@ title: Unlocking_Spatial_Comprehension_in_Text-to-Image_Diffusion_Models
 layout: default
 date: 2023-11-28
 ---
+## Unlocking Spatial Comprehension in Text-to-Image Diffusion Models
+**Authors:**
+- Mohammad Mahdi Derakhshani, h-index: 8, papers: 20, citations: 273
+- Victor Rühle
+
+**ArXiv URL:** http://arxiv.org/abs/2311.17937v1
+
+**Citation Count:** 2
+
+**Published Date:** 2023-11-28
+
 ![Figure 1. Examples from CompFuser. Different from existing text-to-image diffusion systems, we enable the understanding of prompts specifying spatial relationships between objects and their attribute assignment.]({{ '/images/11-2023/Unlocking_Spatial_Comprehension_in_Text-to-Image_Diffusion_Models/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Existing text-to-image diffusion models exhibit significant limitations in spatial comprehension and attribute assignment. When given prompts that describe the relative positions of multiple objects (e.g., "a gray cat on the left of an orange dog"), these models often fail by generating only one of the objects, incorrectly merging them, or ignoring the specified spatial arrangement. This gap limits the user's ability to precisely control the composition of generated scenes.

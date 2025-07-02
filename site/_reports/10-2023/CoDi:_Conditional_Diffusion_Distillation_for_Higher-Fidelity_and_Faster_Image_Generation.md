@@ -3,6 +3,17 @@ title: CoDi:_Conditional_Diffusion_Distillation_for_Higher-Fidelity_and_Faster_I
 layout: default
 date: 2023-10-02
 ---
+## CoDi: Conditional Diffusion Distillation for Higher-Fidelity and Faster Image Generation
+**Authors:**
+- Kangfu Mei, h-index: 13, papers: 30, citations: 1297
+- Peyman Milanfar
+
+**ArXiv URL:** http://arxiv.org/abs/2310.01407v2
+
+**Citation Count:** None
+
+**Published Date:** 2023-10-02
+
 ![Figure 1. Our proposed CoDi efficiently distills a conditional diffusion model from an unconditional one, enabling rapid generation of high-quality images under various conditional settings. We demonstrate CoDi’s capabilities through generated results across various tasks.]({{ '/images/10-2023/CoDi:_Conditional_Diffusion_Distillation_for_Higher-Fidelity_and_Faster_Image_Generation/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the high computational cost and slow inference speed of large-scale diffusion models, which hinder their practical application in real-time conditional image generation tasks like super-resolution, image editing, and inpainting. Existing methods to accelerate these models, such as distillation, often struggle to efficiently and effectively incorporate new conditional inputs without compromising the rich prior knowledge learned during the initial large-scale pre-training. The paper aims to bridge this gap by creating a method that can both adapt a pre-trained model to new conditions and drastically reduce the required number of sampling steps in a single, unified process.

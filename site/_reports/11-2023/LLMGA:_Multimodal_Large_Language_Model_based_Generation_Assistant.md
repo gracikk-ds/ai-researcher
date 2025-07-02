@@ -3,6 +3,17 @@ title: LLMGA:_Multimodal_Large_Language_Model_based_Generation_Assistant
 layout: default
 date: 2023-11-27
 ---
+## LLMGA: Multimodal Large Language Model based Generation Assistant
+**Authors:**
+- Bin Xia
+- Jiaya Jia, h-index: 5, papers: 6, citations: 340
+
+**ArXiv URL:** http://arxiv.org/abs/2311.16500v4
+
+**Citation Count:** 12
+
+**Published Date:** 2023-11-27
+
 ![Fig. 1: Some examples of LLMGA for assisting in image generation and editing. (1) T2I generation. LLMGA can refine the user’s generation prompt to produce more vivid and vibrant images. (2) Similar image generation. LLMGA can understand the component and layout of the input images and generate a similar image. (3) Inpainting & Outpainting. LLMGA can provide detailed generation prompts based on user preferences and input images. (4) Instruction based editing. LLMGA can understand user instructions and realize accurate editing. (5) Interactive image generation and editing exemplify the comprehensive capabilities of LLMGA. Users can design satisfactory images by engaging in interactions with LLMGA, leveraging its vast knowledge.]({{ '/images/11-2023/LLMGA:_Multimodal_Large_Language_Model_based_Generation_Assistant/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the limitations of existing Multimodal Large Language Models (MLLMs) used for image generation. Current methods typically rely on generating fixed-size embeddings to control diffusion models like Stable Diffusion (SD). This approach is often noisy, lacks interpretability for the user, and is inflexible for interactive, multi-turn conversations. The paper aims to create a "Multimodal Large Language Model-based Generation Assistant" (LLMGA) that leverages the vast knowledge and reasoning capabilities of LLMs to make image generation and editing more intuitive, flexible, and capable of producing higher-quality results.

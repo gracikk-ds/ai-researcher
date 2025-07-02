@@ -3,6 +3,17 @@ title: Imagic:_Text-Based_Real_Image_Editing_with_Diffusion_Models
 layout: default
 date: 2022-10-17
 ---
+## Imagic: Text-Based Real Image Editing with Diffusion Models
+**Authors:**
+- Bahjat Kawar, h-index: 11, papers: 15, citations: 2572
+- Michal Irani
+
+**ArXiv URL:** http://arxiv.org/abs/2210.09276v3
+
+**Citation Count:** None
+
+**Published Date:** 2022-10-17
+
 ![“A children’s drawing of a waterfall” Figure 1. Imagic – Editing a single real image. Our method can perform various text-based semantic edits on a single real input image, including highly complex non-rigid changes such as posture changes and editing multiple objects. Here, we show pairs of 1024 ˆ 1024 input (real) images, and edited outputs with their respective target texts.]({{ '/images/10-2022/Imagic:_Text-Based_Real_Image_Editing_with_Diffusion_Models/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Current text-based image editing methods are limited in their capabilities. They often restrict users to specific types of edits (e.g., style transfer, object addition), work only on synthetically generated images, or require additional inputs beyond the image and text prompt, such as masks or multiple views of an object. The authors address this gap by developing a method that can perform complex, non-rigid semantic edits (like changing an animal's posture) on a single, real-world, high-resolution image, using only a target text description for the desired change.

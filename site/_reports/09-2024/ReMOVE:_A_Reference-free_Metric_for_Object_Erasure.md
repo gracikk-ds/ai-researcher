@@ -3,6 +3,17 @@ title: ReMOVE:_A_Reference-free_Metric_for_Object_Erasure
 layout: default
 date: 2024-09-01
 ---
+## ReMOVE: A Reference-free Metric for Object Erasure
+**Authors:**
+- Aditya Chandrasekar, h-index: 2, papers: 2, citations: 11
+- Prathosh AP
+
+**ArXiv URL:** http://arxiv.org/abs/2409.00707v1
+
+**Citation Count:** None
+
+**Published Date:** 2024-09-01
+
 ![Figure 1. Motivation for ReMOVE : Comparison of ReMOVE with CLIPScore, illustrating the latter’s lack of distinction (denoted by ✓ and ✗ ) between two inpainting methods: method]({{ '/images/09-2024/ReMOVE:_A_Reference-free_Metric_for_Object_Erasure/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the challenge of evaluating object erasure in diffusion-based image editing models. Existing metrics are often inadequate for this task. Reference-based metrics like LPIPS require a ground-truth image (the scene without the object), which is typically unavailable in real-world applications. On the other hand, reference-free metrics like CLIPScore often fail to distinguish between successful object removal (where the background is plausibly filled in) and unintended object replacement (where the model inserts a new, different object), a common failure mode for diffusion models. This creates a gap for a reliable, reference-free metric specifically designed for the object erasure task.

@@ -3,6 +3,17 @@ title: PhotoDoodle:_Learning_Artistic_Image_Editing_from_Few-Shot_Pairwise_Data
 layout: default
 date: 2025-02-20
 ---
+## PhotoDoodle: Learning Artistic Image Editing from Few-Shot Pairwise Data
+**Authors:**
+- Shijie Huang
+- Jiaming Liu
+
+**ArXiv URL:** http://arxiv.org/abs/2502.14397v2
+
+**Citation Count:** 7
+
+**Published Date:** 2025-02-20
+
 ![Figure 1. PhotoDoodle can mimic the styles and techniques of human artists in creating photo doodles, adding decorative elements to photos while maintaining perfect consistency between the preand post-edit states.]({{ '/images/02-2025/PhotoDoodle:_Learning_Artistic_Image_Editing_from_Few-Shot_Pairwise_Data/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The paper addresses the challenges of "photo doodling," the artistic process of overlaying decorative elements onto photographs. This task is difficult for existing AI models because it requires a unique combination of capabilities: the added elements must be contextually coherent and seamlessly integrated with the background, the original background must be preserved without distortion, and the model must be able to learn a specific artist's unique style from only a few examples (few-shot learning). The authors argue that previous methods, which focus on global style transfer or masked inpainting, are ill-suited for these specific requirements, creating a gap for a precise, context-aware, and customizable artistic editing tool.

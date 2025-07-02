@@ -3,6 +3,17 @@ title: LayerDiffusion:_Layered_Controlled_Image_Editing_with_Diffusion_Models
 layout: default
 date: 2023-05-30
 ---
+## LayerDiffusion: Layered Controlled Image Editing with Diffusion Models
+**Authors:**
+- Pengzhi Li, h-index: 7, papers: 12, citations: 137
+- Zhiheng Li
+
+**ArXiv URL:** http://arxiv.org/abs/2305.18676v1
+
+**Citation Count:** 38
+
+**Published Date:** 2023-05-30
+
 ![Figure 1: Our method achieves layered image editing through text descriptions, enabling simultaneous modifications of backgrounds and specific subjects, such as background replacement, object resizing, and complex non-rigid changes.]({{ '/images/05-2023/LayerDiffusion:_Layered_Controlled_Image_Editing_with_Diffusion_Models/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address a key limitation in existing text-guided image editing methods: the difficulty of performing multiple, distinct editing actions on a single image simultaneously. Current models often struggle to change both the background and a specific subject's attributes (e.g., pose, action) at the same time, while also preserving the subject's unique identity and ensuring the final composition is coherent. This gap hinders the creation of complex, user-specified scenes from a single input image, such as making a specific pet jump in a completely new environment.

@@ -3,6 +3,17 @@ title: ICE-Bench:_A_Unified_and_Comprehensive_Benchmark_for_Image_Creating_and_E
 layout: default
 date: 2025-03-18
 ---
+## ICE-Bench: A Unified and Comprehensive Benchmark for Image Creating and Editing
+**Authors:**
+- Yulin Pan, h-index: 7, papers: 10, citations: 256
+- Yu Liu
+
+**ArXiv URL:** http://arxiv.org/abs/2503.14482v1
+
+**Citation Count:** 2
+
+**Published Date:** 2025-03-18
+
 ![Figure 1. Overview of our ICE-Bench , including evaluation tasks, data, and metrics.]({{ '/images/03-2025/ICE-Bench:_A_Unified_and_Comprehensive_Benchmark_for_Image_Creating_and_Editing/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the significant challenge of evaluating modern image generation models. Existing benchmarks are often too narrow, focusing on specific tasks like text-to-image creation (e.g., MS-COCO) or a limited set of editing functions. These frameworks lack comprehensive evaluation dimensions, often relying on a few metrics that may not align with human perception. Furthermore, they frequently suffer from data bias, using either exclusively real or exclusively synthetic images, which limits the ability to assess model performance on diverse data. This creates a gap for a unified, comprehensive, and unbiased benchmark to rigorously evaluate the wide-ranging capabilities of today's versatile image generation models.

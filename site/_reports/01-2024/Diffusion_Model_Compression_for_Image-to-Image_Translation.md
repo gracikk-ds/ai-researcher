@@ -3,6 +3,17 @@ title: Diffusion_Model_Compression_for_Image-to-Image_Translation
 layout: default
 date: 2024-01-31
 ---
+## Diffusion Model Compression for Image-to-Image Translation
+**Authors:**
+- Geonung Kim
+- Sunghyun Cho
+
+**ArXiv URL:** http://arxiv.org/abs/2401.17547v2
+
+**Citation Count:** 1
+
+**Published Date:** 2024-01-31
+
 ![Fig. 1: Motivations of our approach. (a) Even after removing the network layers beneath a certain depth, IP2P [6], a downstream I2I model, still produces a plausible result. (b) By focusing on earlier time steps, a feasible output can be obtained using only five denoising steps.]({{ '/images/01-2024/Diffusion_Model_Compression_for_Image-to-Image_Translation/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Large-scale text-to-image (T2I) diffusion models have enabled high-quality results in various downstream image-to-image (I2I) translation tasks. However, their practical use is limited by their massive model size and the high computational latency of the iterative denoising process. The authors identify a gap in existing compression techniques, which are typically task-agnostic and fail to exploit the unique characteristics of I2I tasks. Specifically, in I2I translation, the input image already provides rich structural information, suggesting that the full generative capacity of the large model may be redundant. This paper addresses the need for a compression method tailored specifically for diffusion-based I2I models to reduce both model footprint and latency.

@@ -3,6 +3,17 @@ title: SGEdit:_Bridging_LLM_with_Text2Image_Generative_Model_for_Scene_Graph-bas
 layout: default
 date: 2024-10-15
 ---
+## SGEdit: Bridging LLM with Text2Image Generative Model for Scene Graph-based Image Editing
+**Authors:**
+- Zhiyuan Zhang
+- Jing Liao
+
+**ArXiv URL:** http://arxiv.org/abs/2410.11815v1
+
+**Citation Count:** 3
+
+**Published Date:** 2024-10-15
+
 ![Fig. 1. Our approach predicts a scene graph as a user interface, enabling modifications to nodes and edges for various tasks, such as changing relationships or replacing, adding, and removing elements. By integrating LLM and Text2Image generative models, users can explore diverse compositions in their images, ensuring that these alterations accurately reflect the structural changes depicted in the modified scene graph. Input images are sourced from ©Unsplash.]({{ '/images/10-2024/SGEdit:_Bridging_LLM_with_Text2Image_Generative_Model_for_Scene_Graph-based_Image_Editing/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the limitations of existing image editing methods. Traditional text-based editing often lacks the precision to modify specific objects or their relationships without complex user input like masks. Conversely, prior scene graph-based methods suffer from poor image quality, are restricted to a closed set of object categories, and cannot handle diverse, in-the-wild images. The paper aims to bridge this gap by creating a framework that allows for precise, flexible, and high-quality image editing using an intuitive scene graph interface, applicable to a wide variety of open-vocabulary objects and scenes.

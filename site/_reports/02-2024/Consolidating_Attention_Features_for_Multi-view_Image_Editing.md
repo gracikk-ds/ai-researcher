@@ -3,6 +3,17 @@ title: Consolidating_Attention_Features_for_Multi-view_Image_Editing
 layout: default
 date: 2024-02-22
 ---
+## Consolidating Attention Features for Multi-view Image Editing
+**Authors:**
+- Or Patashnik, h-index: 19, papers: 35, citations: 6910
+- Fernando De la Torre
+
+**ArXiv URL:** http://arxiv.org/abs/2402.14792v1
+
+**Citation Count:** 6
+
+**Published Date:** 2024-02-22
+
 ![Figure 1. Given an object-centric multi-view image set (center), we edit all images simultaneously (left and right), using 3D geometric control, such as changing the body skeleton. To promote consistency across different views, we leverage an image diffusion model and introduce QNeRF, a query feature space neural radiance field, to progressively consolidate attention features during the generation process.]({{ '/images/02-2024/Consolidating_Attention_Features_for_Multi-view_Image_Editing/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the problem of 3D inconsistency when applying modern diffusion-based image editing techniques to a set of multi-view images depicting a single scene. While these methods are powerful for single images, applying them naively to multiple views results in edits that are not geometrically coherent (e.g., a person's edited pose differs from one camera angle to the next). Existing multi-view editing methods often struggle with large geometric changes like articulations, as they tend to produce visual artifacts.

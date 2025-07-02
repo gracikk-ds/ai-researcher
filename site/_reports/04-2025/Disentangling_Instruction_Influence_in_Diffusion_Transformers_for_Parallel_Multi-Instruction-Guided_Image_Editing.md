@@ -3,6 +3,17 @@ title: Disentangling_Instruction_Influence_in_Diffusion_Transformers_for_Paralle
 layout: default
 date: 2025-04-07
 ---
+## Disentangling Instruction Influence in Diffusion Transformers for Parallel Multi-Instruction-Guided Image Editing
+**Authors:**
+- Hui Liu
+- Haoliang Li, h-index: 3, papers: 10, citations: 27
+
+**ArXiv URL:** http://arxiv.org/abs/2504.04784v1
+
+**Citation Count:** 0
+
+**Published Date:** 2025-04-07
+
 ![Figure 1. Comparison of our proposed Instruction Influence Disentanglement (IID) framework with step-by-step editing and compositing all instructions into a single one for multi-instruction image editing.]({{ '/images/04-2025/Disentangling_Instruction_Influence_in_Diffusion_Transformers_for_Parallel_Multi-Instruction-Guided_Image_Editing/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Instruction-guided image editing models, particularly those based on Diffusion Transformers (DiTs), struggle with executing multiple instructions concurrently. Existing approaches face significant limitations:

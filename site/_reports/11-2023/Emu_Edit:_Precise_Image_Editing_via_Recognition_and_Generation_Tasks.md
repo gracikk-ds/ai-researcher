@@ -3,6 +3,17 @@ title: Emu_Edit:_Precise_Image_Editing_via_Recognition_and_Generation_Tasks
 layout: default
 date: 2023-11-16
 ---
+## Emu Edit: Precise Image Editing via Recognition and Generation Tasks
+**Authors:**
+- Shelly Sheynin, h-index: 10, papers: 12, citations: 1434
+- Yaniv Taigman, h-index: 28, papers: 41, citations: 13291
+
+**ArXiv URL:** http://arxiv.org/abs/2311.10089v1
+
+**Citation Count:** 153
+
+**Published Date:** 2023-11-16
+
 ![Figure 1. Emu Edit is a multi-tasking model that combines various editing (left, middle) and vision (right) tasks for precise image editing.]({{ '/images/11-2023/Emu_Edit:_Precise_Image_Editing_via_Recognition_and_Generation_Tasks/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the limitations of existing instruction-based image editing models. These models often struggle to accurately interpret and execute user commands, especially for tasks that deviate from their training data. This results in a performance gap where models fail to produce precise edits while preserving the original image's fidelity, limiting their practical utility for a wide range of editing operations.

@@ -3,6 +3,17 @@ title: DiffUTE:_Universal_Text_Editing_Diffusion_Model
 layout: default
 date: 2023-05-18
 ---
+## DiffUTE: Universal Text Editing Diffusion Model
+**Authors:**
+- Haoxing Chen, h-index: 13, papers: 35, citations: 438
+- Weiqiang Wang
+
+**ArXiv URL:** http://arxiv.org/abs/2305.10825v3
+
+**Citation Count:** 35
+
+**Published Date:** 2023-05-18
+
 ![Figure 1: Examples of text editing. DiffUTE achieves the best result among existing models.]({{ '/images/05-2023/DiffUTE:_Universal_Text_Editing_Diffusion_Model/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the problem that state-of-the-art diffusion models struggle to render accurate and stylistically consistent text within images. Existing scene text editing methods face two primary challenges: (1) accurately transferring complex text styles (font, color, orientation, perspective) while preserving the original background texture, and (2) maintaining the visual consistency and harmony of the edited background, especially in complex scenes like street signs or menus. The paper aims to create a universal text editing model that can replace or modify text in any image, including multilingual characters, while maintaining high fidelity and realism.

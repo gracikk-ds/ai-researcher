@@ -3,6 +3,17 @@ title: iEdit:_Localised_Text-guided_Image_Editing_with_Weak_Supervision
 layout: default
 date: 2023-05-10
 ---
+## iEdit: Localised Text-guided Image Editing with Weak Supervision
+**Authors:**
+- Rumeysa Bodur, h-index: 4, papers: 7, citations: 58
+- Loris Bazzani, h-index: 27, papers: 54, citations: 5272
+
+**ArXiv URL:** http://arxiv.org/abs/2305.05947v1
+
+**Citation Count:** None
+
+**Published Date:** 2023-05-10
+
 ![Figure 1: Examples showing that our method can edit images with a textual prompt while preserving image ﬁdelity in the regions not related to the edit.]({{ '/images/05-2023/iEdit:_Localised_Text-guided_Image_Editing_with_Weak_Supervision/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the limited controllability of large-scale text-to-image diffusion models. Existing image editing methods often struggle to perform *localised* edits, frequently altering the entire image instead of just the target region. Furthermore, these methods either require computationally expensive test-time fine-tuning for each new subject or rely on fully annotated datasets of source images, edit prompts, and target images, which are scarce and costly to create. The paper aims to bridge this gap by developing a framework that can perform localised, text-guided editing while preserving the fidelity of the unedited regions, without needing a fully supervised dataset.

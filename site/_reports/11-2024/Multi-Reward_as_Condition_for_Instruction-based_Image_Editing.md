@@ -3,6 +3,17 @@ title: Multi-Reward_as_Condition_for_Instruction-based_Image_Editing
 layout: default
 date: 2024-11-06
 ---
+## Multi-Reward as Condition for Instruction-based Image Editing
+**Authors:**
+- Xin Gu
+- Sijie Zhu, h-index: 4, papers: 8, citations: 54
+
+**ArXiv URL:** http://arxiv.org/abs/2411.04713v2
+
+**Citation Count:** 8
+
+**Published Date:** 2024-11-06
+
 ![Figure 1: Existing image editing datasets and our method. Best viewed with zoom-in.]({{ '/images/11-2024/Multi-Reward_as_Condition_for_Instruction-based_Image_Editing/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the problem of low-quality training data in instruction-based image editing. Predominant datasets, like InsPix2Pix, are generated using text-to-image models not specifically trained for editing tasks. This results in training triplets (instruction, original image, edited image) that suffer from significant noise, including inaccurate instruction following, poor preservation of unchanged details, and the introduction of visual artifacts. This noisy supervision limits the performance of state-of-the-art editing models.

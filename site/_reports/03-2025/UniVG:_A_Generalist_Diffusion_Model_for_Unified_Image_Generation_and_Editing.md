@@ -3,6 +3,17 @@ title: UniVG:_A_Generalist_Diffusion_Model_for_Unified_Image_Generation_and_Edit
 layout: default
 date: 2025-03-16
 ---
+## UniVG: A Generalist Diffusion Model for Unified Image Generation and Editing
+**Authors:**
+- Tsu-Jui Fu, h-index: 2, papers: 4, citations: 12
+- Yinfei Yang, h-index: 15, papers: 27, citations: 1155
+
+**ArXiv URL:** http://arxiv.org/abs/2503.12652v2
+
+**Citation Count:** 2
+
+**Published Date:** 2025-03-16
+
 ![Figure 1. We introduce UniVG, a single generalist model that can support diverse image generation tasks, including text-to-image, inpainting, identity-preserving generation, layout-guided generation, instruction-based editing, depth estimation, and referring segmentation.]({{ '/images/03-2025/UniVG:_A_Generalist_Diffusion_Model_for_Unified_Image_Generation_and_Editing/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Existing diffusion models are highly specialized, requiring separate architectures, training pipelines, and parameters for different tasks like text-to-image generation, image editing, or inpainting. This proliferation of models is inefficient, computationally expensive, and difficult to manage. The authors address this gap by developing a single, generalist diffusion model capable of handling a diverse range of image generation and editing tasks within a unified framework, simplifying development and deployment.

@@ -3,6 +3,17 @@ title: ACE++:_Instruction-Based_Image_Creation_and_Editing_via_Context-Aware_Con
 layout: default
 date: 2025-01-05
 ---
+## ACE++: Instruction-Based Image Creation and Editing via Context-Aware Content Filling
+**Authors:**
+- Chaojie Mao, h-index: 8, papers: 11, citations: 272
+- Jingren Zhou, h-index: 9, papers: 11, citations: 494
+
+**ArXiv URL:** http://arxiv.org/abs/2501.02487v3
+
+**Citation Count:** 21
+
+**Published Date:** 2025-01-05
+
 ![Figure 1: The illustration of ACE++ framework. The input paradigm of LCU++ is tokenized according to the respective methods of the editor and the creator, achieving different functional suites through full or partial fine-tuning.]({{ '/images/01-2025/ACE++:_Instruction-Based_Image_Creation_and_Editing_via_Context-Aware_Content_Filling/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the challenge of creating a universal image editing model that can handle a wide variety of tasks, from creation to complex editing, based on user instructions. While powerful foundational text-to-image models like FLUX.1-dev exist, adapting them for diverse editing tasks is inefficient. The primary issue is the discrepancy between the input format of standard text-to-image generation and the multimodal inputs required for editing (e.g., reference images, masks). This mismatch leads to slow convergence and high adaptation costs when fine-tuning these foundational models. The paper aims to create a framework that efficiently leverages the generative priors of these models for a broad set of instruction-based editing and creation tasks.

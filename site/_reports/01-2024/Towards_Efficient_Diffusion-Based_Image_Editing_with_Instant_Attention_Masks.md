@@ -3,6 +3,17 @@ title: Towards_Efficient_Diffusion-Based_Image_Editing_with_Instant_Attention_Ma
 layout: default
 date: 2024-01-15
 ---
+## Towards Efficient Diffusion-Based Image Editing with Instant Attention Masks
+**Authors:**
+- Siyu Zou, h-index: 1, papers: 1, citations: 10
+- Xiaoshuai Sun, h-index: 9, papers: 60, citations: 355
+
+**ArXiv URL:** http://arxiv.org/abs/2401.07709v2
+
+**Citation Count:** None
+
+**Published Date:** 2024-01-15
+
 ![Figure 1: Illustration of existing diffusion-based image editing methods, where a manually or off-line generated mask is often used to control the editing area.]({{ '/images/01-2024/Towards_Efficient_Diffusion-Based_Image_Editing_with_Instant_Attention_Masks/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Existing diffusion-based image editing methods often rely on semantic masks to define the editing region. However, these masks are typically generated through slow, off-line processing or require manual intervention, which severely limits the practical efficiency of the editing pipeline. The authors address this bottleneck by developing a fully automatic and significantly faster method for generating high-quality masks directly within the diffusion process.

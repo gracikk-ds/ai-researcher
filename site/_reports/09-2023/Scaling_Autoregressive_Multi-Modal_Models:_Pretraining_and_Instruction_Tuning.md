@@ -3,6 +3,17 @@ title: Scaling_Autoregressive_Multi-Modal_Models:_Pretraining_and_Instruction_Tu
 layout: default
 date: 2023-09-05
 ---
+## Scaling Autoregressive Multi-Modal Models: Pretraining and Instruction Tuning
+**Authors:**
+- Lili Yu
+- Armen Aghajanyan, h-index: 21, papers: 35, citations: 3897
+
+**ArXiv URL:** http://arxiv.org/abs/2309.02591v1
+
+**Citation Count:** 142
+
+**Published Date:** 2023-09-05
+
 ![Figure 1: Showcase of CM3Leon zero-shot generations (no-retrieval augmentation). Refer to § A for a complete list of prompts. CM3Leon can generate complex compositional objects, tail entities (Khachkar–Armenian crosses carved from stone), and historically hard entities such as hands and text.]({{ '/images/09-2023/Scaling_Autoregressive_Multi-Modal_Models:_Pretraining_and_Instruction_Tuning/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the perception that autoregressive (AR) models for image generation, while powerful, are significantly more computationally expensive and less performant than diffusion models. The paper aims to "flip this narrative" by demonstrating that AR models can be made highly efficient and achieve state-of-the-art results. They do this by adapting a modern training recipe from text-only large language models (LLMs) to the multi-modal domain, creating a single, general-purpose model for a wide range of text and image tasks.

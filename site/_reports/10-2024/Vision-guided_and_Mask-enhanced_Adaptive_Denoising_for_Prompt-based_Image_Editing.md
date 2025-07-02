@@ -3,6 +3,17 @@ title: Vision-guided_and_Mask-enhanced_Adaptive_Denoising_for_Prompt-based_Image
 layout: default
 date: 2024-10-14
 ---
+## Vision-guided and Mask-enhanced Adaptive Denoising for Prompt-based Image Editing
+**Authors:**
+- Kejie Wang, h-index: 1, papers: 1, citations: 2
+- Weili Guan, h-index: 4, papers: 23, citations: 60
+
+**ArXiv URL:** http://arxiv.org/abs/2410.10496v2
+
+**Citation Count:** 2
+
+**Published Date:** 2024-10-14
+
 ![Figure 1: Illustration of the prompt-based image editing task and the dual-branch editing paradigm.]({{ '/images/10-2024/Vision-guided_and_Mask-enhanced_Adaptive_Denoising_for_Prompt-based_Image_Editing/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Existing prompt-based image editing methods, while powerful, suffer from three key limitations. First, text prompts alone provide insufficient guidance for generating fine visual details in the edited image. Second, these methods do not adequately mine both word-to-patch (from cross-attention) and patch-to-patch (from self-attention) relationships, leading to imprecise localization of the areas to be edited. Third, they apply a uniform editing strength (sampling variance) across all image regions, which can either result in insufficient edits in critical areas or unwanted changes in the background.

@@ -3,6 +3,17 @@ title: EditCLIP:_Representation_Learning_for_Image_Editing
 layout: default
 date: 2025-03-26
 ---
+## EditCLIP: Representation Learning for Image Editing
+**Authors:**
+- Qian Wang
+- Peter Wonka, h-index: 7, papers: 42, citations: 309
+
+**ArXiv URL:** http://arxiv.org/abs/2503.20318v1
+
+**Citation Count:** 0
+
+**Published Date:** 2025-03-26
+
 ![Figure 1. EditCLIP provides a unified representation of image edits by encoding the transformation between an image and its edited counterpart within the CLIP space. We demonstrate the effectiveness of EditCLIP embeddings in exemplar-based image editing and automated evaluation of image editing pipelines, where it achieves better alignment with human assessment.]({{ '/images/03-2025/EditCLIP:_Representation_Learning_for_Image_Editing/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address two primary challenges in diffusion-based image editing. First, existing methods that rely on textual instructions struggle to handle complex, artistic, or compound edits that are difficult to describe in words. Second, the automated evaluation of these edits is flawed; current metrics like CLIP score often fail to penalize unwanted structural changes in the edited image, forcing a reliance on costly and time-consuming human studies. The paper aims to solve both problems by creating a unified representation for image edits.

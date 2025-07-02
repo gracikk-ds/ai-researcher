@@ -3,6 +3,17 @@ title: Omni-Dish:_Photorealistic_and_Faithful_Image_Generation_and_Editing_for_A
 layout: default
 date: 2025-04-14
 ---
+## Omni-Dish: Photorealistic and Faithful Image Generation and Editing for Arbitrary Chinese Dishes
+**Authors:**
+- Huijie Liu
+- Guoliang Kangpapers: 1, 
+
+**ArXiv URL:** http://arxiv.org/abs/2504.09948v3
+
+**Citation Count:** None
+
+**Published Date:** 2025-04-14
+
 ![Figure 1: Samples demonstrate the superiority of Omni-Dish in generating and editing Chinese culinary dishes. Rows 1-2 show the faithful generation results from Omni-Dish. Row 3 shows the dish editing capabilities. The project homepage is available at https://liuhuijie6410.github.io/OmniDish/ .]({{ '/images/04-2025/Omni-Dish:_Photorealistic_and_Faithful_Image_Generation_and_Editing_for_Arbitrary_Chinese_Dishes/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the challenge that general-purpose text-to-image models struggle to generate photorealistic and faithful images for specialized domains, particularly for culturally specific subjects like Chinese dishes. These models often fail to recognize specific dish names, misinterpret ingredients, and cannot render the nuanced textures and compositions accurately. This gap limits their practical application in industries like e-commerce and food digitization, where high-quality, culturally authentic imagery is crucial.

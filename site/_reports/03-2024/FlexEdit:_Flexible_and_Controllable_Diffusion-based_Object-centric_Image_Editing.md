@@ -3,6 +3,17 @@ title: FlexEdit:_Flexible_and_Controllable_Diffusion-based_Object-centric_Image_
 layout: default
 date: 2024-03-27
 ---
+## FlexEdit: Flexible and Controllable Diffusion-based Object-centric Image Editing
+**Authors:**
+- Trong-Tung Nguyen, h-index: 1, papers: 3, citations: 9
+- Cuong Pham
+
+**ArXiv URL:** http://arxiv.org/abs/2403.18605v3
+
+**Citation Count:** 7
+
+**Published Date:** 2024-03-27
+
 ![Fig. 1: Our framework could achieve robust and flexible control over several text-guided object-centric editing scenarios, including a) replacing objects with controllable size and position , b) adding new objects in a natural way without additional mask input , and c) removing objects without compromising the quality of the original image.]({{ '/images/03-2024/FlexEdit:_Flexible_and_Controllable_Diffusion-based_Object-centric_Image_Editing/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Existing diffusion-based image editing methods struggle with object-centric tasks. They offer limited control over the size and position of edited objects, often producing unrealistic results when the source and target objects have different shapes. Furthermore, these methods perform inconsistently in object addition and removal scenarios, failing to preserve background details or accurately execute the edit. FlexEdit aims to address these gaps by providing a flexible and controllable framework that excels at various object-centric editing tasks.

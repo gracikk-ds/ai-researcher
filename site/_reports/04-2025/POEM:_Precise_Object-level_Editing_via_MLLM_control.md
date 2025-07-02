@@ -3,6 +3,17 @@ title: POEM:_Precise_Object-level_Editing_via_MLLM_control
 layout: default
 date: 2025-04-10
 ---
+## POEM: Precise Object-level Editing via MLLM control
+**Authors:**
+- Marco Schoutenpapers: 1, 
+- Dim P. Papadopoulos, h-index: 13, papers: 28, citations: 1095
+
+**ArXiv URL:** http://arxiv.org/abs/2504.08111v1
+
+**Citation Count:** 0
+
+**Published Date:** 2025-04-10
+
 ![Fig. 1. POEM. Existing text-based instruction editing methods (top) struggle with precise object-level shape and layout edits. Image interaction-based approaches (middle) perform better but require significant manual user effort. Instead, we propose (bottom) leveraging MLLMs to interpret instructional prompts and automatically generate precise object masks and numerical transformations to support image editing pipelines.]({{ '/images/04-2025/POEM:_Precise_Object-level_Editing_via_MLLM_control/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the challenge of precise object-level image editing. Existing text-based methods (e.g., InstructPix2Pix) excel at global style changes but struggle with specific, localized modifications like moving or resizing an object by an exact amount, often causing unintended alterations to the entire image. Conversely, interaction-based methods that use masks or drag-and-drop controls offer high precision but demand significant manual user effort. The paper aims to bridge this gap by creating a framework that achieves the high accuracy of interaction-based methods through simple, text-based instructions, thus minimizing manual intervention.

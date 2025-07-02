@@ -3,6 +3,17 @@ title: In-Context_Edit:_Enabling_Instructional_Image_Editing_with_In-Context_Gen
 layout: default
 date: 2025-04-29
 ---
+## In-Context Edit: Enabling Instructional Image Editing with In-Context Generation in Large Scale Diffusion Transformer
+**Authors:**
+- Zechuan Zhang, h-index: 2, papers: 3, citations: 54
+- Yi Yang
+
+**ArXiv URL:** http://arxiv.org/abs/2504.20690v1
+
+**Citation Count:** 11
+
+**Published Date:** 2025-04-29
+
 ![Figure 1. We present In-Context Edit, a novel approach that achieves state-of-the-art instruction-based editing using just 0.5% of the training data and 1% of the parameters required by prior SOTA methods. The first row illustrates a series of multi-turn edits, executed with high precision, while the second and third rows highlight diverse, visually impressive single-turn editing results from our method.]({{ '/images/04-2025/In-Context_Edit:_Enabling_Instructional_Image_Editing_with_In-Context_Generation_in_Large_Scale_Diffusion_Transformer/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The paper addresses the critical "precision-efficiency tradeoff" in instruction-based image editing. Current state-of-the-art methods fall into two categories: (1) finetuning-based methods, which achieve high precision but require massive computational resources and large-scale datasets (up to 10 million samples), and (2) training-free methods, which are efficient but often fail to comprehend complex instructions, leading to lower-quality edits. The authors aim to bridge this gap by creating a method that is both highly precise and computationally efficient.

@@ -3,6 +3,17 @@ title: Eliminating_Contextual_Prior_Bias_for_Semantic_Image_Editing_via_Dual-Cyc
 layout: default
 date: 2023-02-05
 ---
+## Eliminating Contextual Prior Bias for Semantic Image Editing via Dual-Cycle Diffusion
+**Authors:**
+- Zuopeng Yang, h-index: 7, papers: 16, citations: 152
+- Chaoyue Wang, h-index: 19, papers: 42, citations: 1184
+
+**ArXiv URL:** http://arxiv.org/abs/2302.02394v3
+
+**Citation Count:** 19
+
+**Published Date:** 2023-02-05
+
 ![Fig. 1. The overview of the proposed Dual-cycle Diffusion framework for the semantic image editing task. The pipeline and details of the Bias Elimination Cycle (BE-Cycle) and mask-guided unbiased editing are shown on the left. The modifications on cat ears , caused by the contextual prior bias derived from the pre-trained model , are illustrated in the left-top corner of the images. Given a source image, a source text, and a target text, we first leverage BE-Cycle to produce an unbiased mask, which is then used to guide image editing. On the right, the details of the Structural Consistency Cycle (SCCycle) [7] and the procedure of mask computing are shown. ⊙ is the elementwise product.]({{ '/images/02-2023/Eliminating_Contextual_Prior_Bias_for_Semantic_Image_Editing_via_Dual-Cycle_Diffusion/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the problem of "contextual prior bias" in pre-trained text-to-image diffusion models. This bias, learned from massive datasets, causes models to make spurious or unintended modifications to image regions that should remain unchanged during semantic editing. For example, when editing an image of a cat to add a scarf, the model might also incorrectly alter the shape of the cat's ears. The paper aims to eliminate these unwanted side effects and ensure edits are localized only to the intended areas.

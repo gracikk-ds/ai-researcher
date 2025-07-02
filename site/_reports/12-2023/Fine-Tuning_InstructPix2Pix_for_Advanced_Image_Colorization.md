@@ -3,6 +3,17 @@ title: Fine-Tuning_InstructPix2Pix_for_Advanced_Image_Colorization
 layout: default
 date: 2023-12-08
 ---
+## Fine-Tuning InstructPix2Pix for Advanced Image Colorization
+**Authors:**
+- Zifeng An, h-index: 1, papers: 1, citations: 1
+- Qi Cao
+
+**ArXiv URL:** http://arxiv.org/abs/2312.04780v1
+
+**Citation Count:** 1
+
+**Published Date:** 2023-12-08
+
 ![Figure 1. Example of colorization for human faces from the IMDBWIKI dataset ( Rothe et al. , 2018 ). The task is a pixel-level task that should assign a color to each pixel in the input image. The top row shows the input of the task, a black-and-white image, and the bottom row is the ground truth labels for the input images.]({{ '/images/12-2023/Fine-Tuning_InstructPix2Pix_for_Advanced_Image_Colorization/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The paper addresses the limitations of the general-purpose InstructPix2Pix model when applied to the specific task of image colorization. While InstructPix2Pix excels at various text-guided image edits, its performance is suboptimal for the nuanced domain of adding realistic color to monochrome images, particularly human faces. The authors aim to bridge this gap by fine-tuning the model to specialize its capabilities for high-quality, visually realistic colorization.

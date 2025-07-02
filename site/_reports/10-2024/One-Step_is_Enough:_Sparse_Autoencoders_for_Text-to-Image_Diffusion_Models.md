@@ -3,6 +3,17 @@ title: One-Step_is_Enough:_Sparse_Autoencoders_for_Text-to-Image_Diffusion_Model
 layout: default
 date: 2024-10-28
 ---
+## One-Step is Enough: Sparse Autoencoders for Text-to-Image Diffusion Models
+**Authors:**
+- Viacheslav Surkov, h-index: 2, papers: 2, citations: 17
+- David Bau, h-index: 1, papers: 1, citations: 13
+
+**ArXiv URL:** http://arxiv.org/abs/2410.22366v4
+
+**Citation Count:** 13
+
+**Published Date:** 2024-10-28
+
 ![Figure 1: Enabling features learned by sparse autoencoders results in interpretable changes in SDXL Turbo’s, SDXL’s, and Flux-schnell’s image generation processes. The image captions correspond to feature codes comprised of transformer block name and feature index.]({{ '/images/10-2024/One-Step_is_Enough:_Sparse_Autoencoders_for_Text-to-Image_Diffusion_Models/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Modern text-to-image diffusion models, while powerful, operate as "black boxes," with their internal decision-making processes being poorly understood. While the field of mechanistic interpretability has made strides in explaining Large Language Models (LLMs), similar in-depth analyses for diffusion models have been lacking. The authors aim to bridge this gap by applying Sparse Autoencoders (SAEs)—a technique successful in LLMs—to decompose the complex, intermediate representations of diffusion models into a sparse set of human-interpretable features. The ultimate goal is to enable a deeper understanding, analysis, and control over the image generation process.

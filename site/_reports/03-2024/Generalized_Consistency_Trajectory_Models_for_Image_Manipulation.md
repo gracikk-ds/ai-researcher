@@ -3,6 +3,17 @@ title: Generalized_Consistency_Trajectory_Models_for_Image_Manipulation
 layout: default
 date: 2024-03-19
 ---
+## Generalized Consistency Trajectory Models for Image Manipulation
+**Authors:**
+- Beomsu Kim, h-index: 11, papers: 21, citations: 893
+- Jong Chul Ye, h-index: 8, papers: 16, citations: 264
+
+**ArXiv URL:** http://arxiv.org/abs/2403.12510v3
+
+**Citation Count:** 4
+
+**Published Date:** 2024-03-19
+
 ![Figure 1: An illustration of GCTM and its applications – solid arrows can be implemented by a single forward pass of the GCTM network. GCTMs learn to traverse the Flow Matching ODE which is capable of interpolating two arbitrary distributions q ( x 0 ) and q ( x 1 ) . GCTMs allow (a) one-step inference of ODE velocity, (b) one-step traversal between arbitrary time intervals of the ODE, (c) improved gradient-guidance by using exact posterior sample instead of posterior mean, and (d) one-step generation of varying outputs x 0 given a fixed input x 1 .]({{ '/images/03-2024/Generalized_Consistency_Trajectory_Models_for_Image_Manipulation/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Diffusion models are powerful for image generation and manipulation but are computationally expensive due to their iterative sampling process. Consistency Trajectory Models (CTMs) accelerate this by enabling one-step generation; however, they are fundamentally limited to translating Gaussian noise to data. This restricts their direct application in versatile tasks like image-to-image translation or restoration, which require mapping between two complex, non-Gaussian data distributions. The authors address this gap by proposing a generalized framework that extends CTMs to operate between arbitrary distributions.

@@ -3,6 +3,17 @@ title: SeedEdit_3
 layout: default
 date: 2025-06-05
 ---
+## SeedEdit 3.0: Fast and High-Quality Generative Image Editing
+**Authors:**
+- Peng Wang
+- Jianchao Yang
+
+**ArXiv URL:** http://arxiv.org/abs/2506.05083v2
+
+**Citation Count:** 0
+
+**Published Date:** 2025-06-05
+
 ![Figure 1 Example images edited by SeedEdit3.0 with real and generated images as input, which provides high detail in ID preservation and strong edit intention understanding.]({{ '/images/06-2025/SeedEdit_3.0:_Fast_and_High-Quality_Generative_Image_Editing/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address the challenge of creating a fast, high-quality generative model for instruction-based editing of real images. Existing methods often struggle to balance two competing goals: accurately following the user's text instructions and preserving the content and identity (ID/IP) of the original image. Furthermore, training a robust model requires leveraging diverse datasets (synthetic, real-world, expert-edited), but simply mixing them can degrade performance due to domain biases. The paper aims to solve this by developing a system that can effectively curate and learn from multiple data sources to achieve a superior trade-off between edit accuracy, content preservation, and inference speed.

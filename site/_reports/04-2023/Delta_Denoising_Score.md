@@ -3,6 +3,17 @@ title: Delta_Denoising_Score
 layout: default
 date: 2023-04-14
 ---
+## Delta Denoising Score
+**Authors:**
+- Amir Hertz, h-index: 15, papers: 22, citations: 4599
+- Daniel Cohen-Or
+
+**ArXiv URL:** http://arxiv.org/abs/2304.07090v1
+
+**Citation Count:** None
+
+**Published Date:** 2023-04-14
+
 ![Figure 1: Score Distillation Sampling (SDS) vs. Delta Denoising Score (DDS). Top: SDS mechanism optimizes a given image by querying the denoising model on the noisy version of the image and a target text prompt. The resulting image can often be blurry and unfaithful to the target prompt. Bottom: DDS queries an additional reference branch with a matched text-prompt, and generates delta scores that represent the difference between the outputs of the two queries. DDS provides cleaner gradient directions that modify the edited portions of the optimized image, while leaving the other parts unchanged.]({{ '/images/04-2023/Delta_Denoising_Score/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 The authors address a key limitation in text-based image editing using Score Distillation Sampling (SDS), a technique that leverages large-scale diffusion models. When used for editing, the standard SDS method often produces blurry outputs and makes undesired changes to parts of the image that should remain untouched. The practical problem is the lack of a mechanism to guide the editing process to make minimal, high-quality modifications that are faithful to both the source image and the target text prompt, without introducing noise or artifacts.
