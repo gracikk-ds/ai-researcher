@@ -29,7 +29,11 @@ class Notifier:
             message: Text message to send.
         """
         url = self._api_url_template.format(token=self.settings.telegram_token)
-        payload: dict[str, Any] = {"chat_id": self.settings.telegram_chat_id, "text": message}
+        payload = {
+            "chat_id": self.settings.telegram_chat_id,
+            "text": message,
+            "parse_mode": "Markdown",
+        }
         try:
             response = requests.post(url, json=payload, timeout=10)
             response.raise_for_status()
