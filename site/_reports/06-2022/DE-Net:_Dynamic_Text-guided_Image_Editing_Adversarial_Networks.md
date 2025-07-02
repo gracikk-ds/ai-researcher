@@ -3,6 +3,13 @@ title: DE-Net:_Dynamic_Text-guided_Image_Editing_Adversarial_Networks
 layout: default
 date: 2022-06-02
 ---
+## DE-Net: Dynamic Text-guided Image Editing Adversarial Networks
+### Authors:
+- Ming Tao
+- Qi Tian
+### ArXiv URL: http://arxiv.org/abs/2206.01160v2
+### Citation Count: 15
+### Published Date: 2022-06-02
 ![Figure 1. Beneﬁting from dynamic editing design, our DE-Net can deal with various editing tasks (e.g., color changing, content editing). Furthermore, the text-adaptive convolution in DCBlock enables more accurate manipulations.]({{ '/images/06-2022/DE-Net:_Dynamic_Text-guided_Image_Editing_Adversarial_Networks/figure_1.jpg' | relative_url }})
 ## 1. Motivation of the Paper
 Current text-guided image editing models face two primary limitations. First, they apply fixed manipulation modules for all types of edits (e.g., color, texture, content changes), which often results in either over-editing or insufficient editing because different tasks require different manipulation strategies. Second, these models struggle to clearly distinguish between image regions that are relevant to the text description and those that are not, leading to inaccurate edits that incorrectly alter background or other preserved content.
