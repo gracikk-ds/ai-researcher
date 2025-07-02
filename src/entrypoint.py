@@ -14,9 +14,13 @@ from src.fetcher.arxiv_fetcher import ArxivFetcher
 from src.notifier.notifier import Notifier
 from src.settings import Settings
 from src.utils.add_images_to_md import add_images_to_md, extract_paper_summary
+from src.utils.aux import get_skipped_titles
 from src.utils.fetch_images import extract_images
 from src.utils.load_pdfs import download_pdf
-from src.utils.paper_message_template import prepare_message
+from src.utils.paper_message_template import (
+    prepare_message,
+    prepare_message_for_skipped_papers,
+)
 from src.utils.schemas import Paper
 
 
@@ -127,7 +131,7 @@ class Entrypoint:
         keywords: Optional[List[str]] = None,
         exclude_keywords: Optional[List[str]] = None,
         categories: Optional[List[str]] = None,
-    ) -> List[Paper]:
+    ) -> Tuple[List[Paper], List[str], List[str]]:
         """Start the research.
 
         Args:
@@ -138,13 +142,22 @@ class Entrypoint:
             categories (Optional[List[str]]): The categories for arxiv search.
 
         Returns:
-            List[Paper]: List of relevant papers.
+            Tuple[List[Paper], List[str], List[str]]:
+                - List of relevant papers.
+                - List of paths to the files where papers were excluded by keywords.
+                - List of paths to the files where papers were excluded by classifier.
         """
         # Get the keywords, exclude keywords, and categories
         keywords, exclude_keywords, categories = self._get_keywords(keywords, exclude_keywords, categories)
 
         # Fetch the papers
-        papers = self.arxiv_fetcher.fetch_papers(start_date, end_date, keywords, exclude_keywords, categories)
+        papers, exculded_by_keywords_paths, exculded_by_classifier_paths = self.arxiv_fetcher.fetch_papers(
+            start_date,
+            end_date,
+            keywords,
+            exclude_keywords,
+            categories,
+        )
 
         # Download the PDFs
         pdf_paths, images_paths, published_dates = self.download_pdfs(papers)
@@ -152,7 +165,7 @@ class Entrypoint:
         # Generate the reports
         self.generate_reports(pdf_paths, images_paths, published_dates, papers)
 
-        return papers
+        return papers, exculded_by_keywords_paths, exculded_by_classifier_paths
 
 
 def add_and_commit_reports_to_git(reports_dir: str, start_date: str, end_date: str) -> None:
@@ -200,7 +213,7 @@ def add_and_commit_reports_to_git(reports_dir: str, start_date: str, end_date: s
     multiple=True,
     help="Categories for arxiv search. Can be specified multiple times.",
 )
-def main(  # noqa: WPS216
+def main(  # noqa: WPS216,WPS210
     start_date: str,
     end_date: str,
     keywords: Optional[list[str]] = None,
@@ -220,15 +233,18 @@ def main(  # noqa: WPS216
     settings = Settings()  # type: ignore
     entrypoint = Entrypoint(gemini_model_name=settings.gemini_model_name, site_reports_dir=settings.site_reports_dir)
     notifier = Notifier(settings=settings)
-    papers = entrypoint.start_research(
+    papers, exculded_by_keywords_paths, exculded_by_classifier_paths = entrypoint.start_research(
         start_date=start_date,
         end_date=end_date,
         keywords=list(keywords) if keywords else None,
         exclude_keywords=list(exclude_keywords) if exclude_keywords else None,
         categories=list(categories) if categories else None,
     )
-
+    skipped_titles = get_skipped_titles(exculded_by_keywords_paths, exculded_by_classifier_paths)
     click.echo(f"Fetched {len(papers)} papers.")
+    click.echo(f"Skipped {len(skipped_titles)} papers.")
+    skipped_message = prepare_message_for_skipped_papers(skipped_titles)
+    notifier.send(skipped_message)
     site_dir = str(Path(settings.site_reports_dir).parent)
     add_and_commit_reports_to_git(site_dir, start_date, end_date)
     for paper in papers:

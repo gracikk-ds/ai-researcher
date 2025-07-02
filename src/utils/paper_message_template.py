@@ -1,5 +1,7 @@
 """Message template for the paper."""
 
+from typing import List
+
 from src.utils.schemas import Author, Paper
 
 message_template = """\
@@ -18,6 +20,15 @@ message_template = """\
 
 📈 *Citations Collected*: {citation_count} 📜
 
+"""
+
+message_for_skipped_papers = """✨  Koi wa, senpai!  ✨
+
+I've found some interesting papers. Probably, they are not about generative image editing directly.
+But maybe you will find them useful for your research.
+
+Here are the titles of the papers:
+{skipped_titles}
 """
 
 
@@ -58,3 +69,15 @@ def prepare_message(paper: Paper, report_url: str) -> str:
         arxiv_url=paper.arxiv_url,
         citation_count=paper.citation_count,
     )
+
+
+def prepare_message_for_skipped_papers(skipped_titles: List[str]) -> str:  # noqa: WPS118
+    """Prepare the message for the skipped papers.
+
+    Args:
+        skipped_titles (List[str]): The titles of the skipped papers.
+
+    Returns:
+        str: The prepared message.
+    """
+    return message_for_skipped_papers.format(skipped_titles="\n".join(skipped_titles))

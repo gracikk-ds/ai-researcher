@@ -2,7 +2,7 @@
 
 import os
 from datetime import datetime
-from typing import List, Optional
+from typing import List, Optional, Tuple
 
 import arxiv
 from loguru import logger
@@ -27,7 +27,7 @@ class ArxivFetcher:
         page_size: int = 500,
         path_to_prompt: str = "prompts/classifier.txt",
         save_dir: str = "data/arxiv_papers",
-        skipped_file_path: str = "data/skipped_papers_by_keywords.txt",
+        skipped_file_path: str = "data/skipped/skipped_papers_by_keywords.txt",
     ):
         """
         Initialize the ArxivFetcher with search parameters.
@@ -144,7 +144,13 @@ class ArxivFetcher:
             return authors, max_h_index, max_paper_count, max_citation_count
         return authors, None, None, None
 
-    def _filter_papers(self, title: str, summary: str, exclude_keywords: Optional[List[str]]) -> bool:
+    def _filter_papers(
+        self,
+        title: str,
+        summary: str,
+        exclude_keywords: Optional[List[str]],
+        full_date: str,
+    ) -> Tuple[bool, Optional[str]]:
         """
         Filter the papers based on the exclude keywords.
 
@@ -152,9 +158,10 @@ class ArxivFetcher:
             title (str): The title of the paper.
             summary (str): The summary of the paper.
             exclude_keywords (Optional[List[str]]): List of keywords to exclude.
+            full_date (str): The full date of the paper.
 
         Returns:
-            bool: True if the paper should be excluded, False otherwise.
+            tuple[bool, Optional[str]]: True if the paper should be excluded, False otherwise.
         """
         if exclude_keywords is not None:
             for keyword in exclude_keywords:
@@ -162,10 +169,14 @@ class ArxivFetcher:
                 exclude_by_summary = keyword.lower() in summary.lower().split()
                 if exclude_by_title or exclude_by_summary:
                     logger.info(f"Skipping paper {title} because its title or summary contains exclude keywords")
-                    with open(self.skipped_file_path, "a") as file:
+                    skipped_dir = os.path.dirname(self.skipped_file_path)
+                    os.makedirs(skipped_dir, exist_ok=True)
+                    skipped_file_name = os.path.basename(self.skipped_file_path).split(".")[0]
+                    path_to_save = os.path.join(skipped_dir, f"{skipped_file_name}_{full_date}.txt")
+                    with open(path_to_save, "a") as file:
                         file.write(f"{title}\n")  # noqa: WPS220
-                    return True
-        return False
+                    return True, path_to_save
+        return False, None
 
     def _save_papers(
         self,
@@ -192,7 +203,7 @@ class ArxivFetcher:
         exclude_keywords: Optional[List[str]] = None,
         categories: Optional[List[str]] = None,
         save_to_jsonl: bool = True,
-    ) -> List[Paper]:
+    ) -> Tuple[List[Paper], List[str], List[str]]:
         """
         Return a list of enriched arXiv paper Pydantic models.
 
@@ -205,8 +216,11 @@ class ArxivFetcher:
             save_to_jsonl (bool): Whether to save the papers to a JSONL file.
 
         Returns:
-            List[Paper]: List of relevant papers.
-        """
+            Tuple[List[Paper], List[str], List[str]]:
+                - List of relevant papers.
+                - List of paths to the files where papers were excluded by keywords.
+                - List of paths to the files where papers were excluded by classifier.
+            """
         if keywords is None:
             keywords = self.predefined_keywords
         if categories is None:
@@ -226,22 +240,29 @@ class ArxivFetcher:
         )
 
         papers: List[Paper] = []
+        exculded_by_keywords_paths: List[str] = []
+        exculded_by_classifier_paths: List[str] = []
         search_results = client.results(search)
         search_month_and_year = end_date_obj.strftime("%m-%Y")
         for result in search_results:
             summary = " ".join(result.summary.split())
             title = " ".join(result.title.split())
+            full_date = result.published.strftime("%d-%m-%Y")
 
             if search_month_and_year != result.published.strftime("%m-%Y"):
                 logger.info(f"Looking for papers in {search_month_and_year}...")
                 search_month_and_year = result.published.strftime("%m-%Y")
 
             # Filter papers by exclude keywords
-            if self._filter_papers(title, summary, exclude_keywords):
+            is_skipped, exculded_by_keywords_path = self._filter_papers(title, summary, exclude_keywords, full_date)
+            if is_skipped:
+                exculded_by_keywords_paths.append(exculded_by_keywords_path)  # type: ignore
                 continue
 
             # Classify paper
-            if not self.classifier.classify(title, summary):
+            is_skipped, exculded_by_classifier_path = self.classifier.classify(title, summary, full_date)
+            if is_skipped:
+                exculded_by_classifier_paths.append(exculded_by_classifier_path)  # type: ignore
                 continue
 
             authors, max_h_index, max_paper_count, max_citation_count = self._fetch_authors_info(result)
@@ -264,7 +285,7 @@ class ArxivFetcher:
             # Save papers to JSONL file
             self._save_papers(papers, start_date_obj, end_date_obj, save_to_jsonl)
         self.classifier.gemini_researcher.info()
-        return papers
+        return papers, exculded_by_keywords_paths, exculded_by_classifier_paths
 
 
 # if __name__ == "__main__":
