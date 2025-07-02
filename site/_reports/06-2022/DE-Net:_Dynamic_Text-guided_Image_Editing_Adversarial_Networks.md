@@ -7,8 +7,11 @@ date: 2022-06-02
 Authors:
 - Ming Tao
 - Qi Tian
+
 ArXiv URL: http://arxiv.org/abs/2206.01160v2
+
 Citation Count: 15
+
 Published Date: 2022-06-02
 
 ![Figure 1. Beneﬁting from dynamic editing design, our DE-Net can deal with various editing tasks (e.g., color changing, content editing). Furthermore, the text-adaptive convolution in DCBlock enables more accurate manipulations.]({{ '/images/06-2022/DE-Net:_Dynamic_Text-guided_Image_Editing_Adversarial_Networks/figure_1.jpg' | relative_url }})
