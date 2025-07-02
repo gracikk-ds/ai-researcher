@@ -1,22 +1,43 @@
 """Message template for the paper."""
 
-from src.utils.schemas import Paper
+from src.utils.schemas import Author, Paper
 
 message_template = """\
 (づ｡◕‿‿◕｡)づ  ✨  *New Scroll of Knowledge Detected!*  ✨
 
-🏮 **{title}** 🏮
+*{title}*
+
 ✍️  *Authored by*: {authors}
 
-🎤 **Quick Synopsis, senpai!**
+🎤 *Quick Synopsis, senpai!*
 {summary}
 
-🔍 **Link to Full Report**: [(~˘▾˘)~]({report_url})
+🔍 *Link to Summary Report*: [(~˘▾˘)~]({report_url})
 
-📚 **ArXiv Portal**: {arxiv_url}
+📚 *ArXiv Portal*: {arxiv_url}
 
-📈 **Citations Collected**: {citation_count} 📜
+📈 *Citations Collected*: {citation_count} 📜
+
 """
+
+
+def add_authors_merits(authors: list[Author]) -> str:
+    """Get the merits of the authors.
+
+    Args:
+        authors (list[Author]): The authors of the paper.
+
+    Returns:
+        str: The merits of the authors.
+    """
+    authors_merits = []
+    for author in authors:
+        name = f"\n- {author.name}"
+        h_index = f", h-index: {author.h_index}, " if author.h_index else ""
+        paper_count = f"papers: {author.paper_count}, " if author.paper_count else ""
+        citation_count = f"citations: {author.citation_count}" if author.citation_count else ""
+        authors_merits.append(f"{name}{h_index}{paper_count}{citation_count}")
+    return "".join(authors_merits)
 
 
 def prepare_message(paper: Paper, report_url: str) -> str:
@@ -29,16 +50,9 @@ def prepare_message(paper: Paper, report_url: str) -> str:
     Returns:
         str: The prepared message.
     """
-    authors_merits = []
-    for author in paper.authors:
-        name = f"- {author.name}, "
-        h_index = f"h-index: {author.h_index}, " if author.h_index else ""
-        paper_count = f"papers: {author.paper_count}, " if author.paper_count else ""
-        citation_count = f"citations: {author.citation_count}" if author.citation_count else ""
-        authors_merits.append(f"{name}{h_index}{paper_count}{citation_count}")
     return message_template.format(
         title=paper.title,
-        authors="\n ".join(authors_merits),
+        authors=add_authors_merits(paper.authors),
         summary=paper.summary,
         report_url=report_url,
         arxiv_url=paper.arxiv_url,

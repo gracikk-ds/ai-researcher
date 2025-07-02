@@ -5,6 +5,8 @@ from typing import List, Tuple
 
 from loguru import logger
 
+from src.utils.paper_message_template import add_authors_merits
+
 
 def load_images_and_descriptions(images_dir: str) -> List[Tuple[str, str, str]]:
     """Load images and descriptions from the images directory.
@@ -44,7 +46,7 @@ def img_block(img_path: str, desc: str) -> str:
     return f"![{desc}]({rel_path})"
 
 
-def add_images_to_md(md_path: str, images_dir: str, published_date: str) -> None:
+def add_images_to_md(md_path: str, images_dir: str, paper_info: dict) -> None:
     """
     Add images and their descriptions from images_dir to a markdown file at md_path.
 
@@ -53,10 +55,16 @@ def add_images_to_md(md_path: str, images_dir: str, published_date: str) -> None
     Args:
         md_path (str): Path to the markdown file.
         images_dir (str): Path to the directory containing images and .txt descriptions.
-        published_date (str): The published date of the paper.
+        paper_info (dict): The information about the paper.
     """
     paper_name = md_path.split("/")[-1].split(".")[0]
-    new_md = f"---\ntitle: {paper_name}\nlayout: default\ndate: {published_date}\n---\n"
+    new_md = f"---\ntitle: {paper_name}\nlayout: default\ndate: {paper_info['published_date']}\n---\n"
+    new_md += f"## {paper_info['title']}\n"
+    new_md += f"**Authors:**{add_authors_merits(paper_info['authors'])}\n\n"
+    new_md += f"**ArXiv URL:** {paper_info['arxiv_url']}\n\n"
+    new_md += f"**Citation Count:** {paper_info['citation_count']}\n\n"
+    new_md += f"**Published Date:** {paper_info['published_date']}\n\n"
+
     figures = load_images_and_descriptions(images_dir)
     if not figures:
         logger.warning(f"No figures found in {images_dir}")
@@ -100,9 +108,16 @@ def add_images_to_md(md_path: str, images_dir: str, published_date: str) -> None
         md_file.write(new_md)
 
 
-if __name__ == "__main__":
-    mds_paths = [f"site/_reports/{md}" for md in sorted(os.listdir("site/_reports"))]
-    images_paths = [f"site/images/04-2025/{images}" for images in sorted(os.listdir("site/images/04-2025"))]
+def extract_paper_summary(md_path: str) -> str:
+    """Extract the summary of the paper from the markdown file.
 
-    for md_path, images_path in zip(mds_paths, images_paths):
-        add_images_to_md(md_path, images_path)
+    Args:
+        md_path (str): Path to the markdown file.
+
+    Returns:
+        str: The summary of the paper.
+    """
+    with open(md_path, encoding="utf-8") as md_file:
+        md_content = md_file.read()
+    motivation_of_the_paper = md_content.split("## 1. Motivation of the Paper")[1].split("##")[0]
+    return motivation_of_the_paper.strip()
