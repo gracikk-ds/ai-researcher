@@ -12,7 +12,7 @@ from src.ai_researcher.gemini_researcher import GeminiApiClient
 from src.fetcher.arxiv_fetcher import ArxivFetcher
 from src.notifier.notifier import Notifier
 from src.settings import Settings
-from src.utils.add_images_to_md import add_images_to_md
+from src.utils.add_images_to_md import add_images_to_md, extract_paper_summary
 from src.utils.fetch_images import extract_images
 from src.utils.load_pdfs import download_pdf
 from src.utils.paper_message_template import prepare_message
@@ -91,18 +91,33 @@ class Entrypoint:
             published_dates.append(paper.published)
         return pdf_paths, images_paths, published_dates
 
-    def generate_reports(self, pdfs: List[str], images: List[str], published_dates: List[str]) -> None:
+    def generate_reports(
+        self,
+        pdfs: List[str],
+        images: List[str],
+        published_dates: List[str],
+        papers: List[Paper],
+    ) -> None:
         """Generate the reports for the papers.
 
         Args:
             pdfs (List[str]): The paths to the PDFs.
             images (List[str]): The paths to the images.
             published_dates (List[str]): The published dates of the papers.
+            papers (List[Paper]): The papers to generate reports for.
         """
-        for pdf_path, images_path, published_date in zip(pdfs, images, published_dates):
+        for pdf_path, images_path, published_date, paper in zip(pdfs, images, published_dates, papers):
             _, md_path = self.gemini_researcher(self.summary_prompt, pdf_local_path=pdf_path)
             if md_path is not None:
-                add_images_to_md(md_path, images_path, published_date)
+                paper_info = {
+                    "title": paper.title,
+                    "authors": paper.authors,
+                    "arxiv_url": paper.arxiv_url,
+                    "citation_count": paper.citation_count,
+                    "published_date": published_date,
+                }
+                add_images_to_md(md_path, images_path, paper_info)
+                paper.summary = extract_paper_summary(md_path)
 
     def start_research(
         self,
@@ -134,7 +149,7 @@ class Entrypoint:
         pdf_paths, images_paths, published_dates = self.download_pdfs(papers)
 
         # Generate the reports
-        self.generate_reports(pdf_paths, images_paths, published_dates)
+        self.generate_reports(pdf_paths, images_paths, published_dates, papers)
 
         return papers
 
@@ -214,6 +229,7 @@ def main(  # noqa: WPS216
         exclude_keywords=list(exclude_keywords) if exclude_keywords else None,
         categories=list(categories) if categories else None,
     )
+
     click.echo(f"Fetched {len(papers)} papers.")
     site_dir = str(Path(settings.site_reports_dir).parent)
     add_and_commit_reports_to_git(site_dir, start_date, end_date)
