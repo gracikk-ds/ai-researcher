@@ -3,7 +3,6 @@
 import io
 import os
 import re
-from pathlib import Path
 
 import fitz
 from loguru import logger

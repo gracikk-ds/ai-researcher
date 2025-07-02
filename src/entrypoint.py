@@ -1,5 +1,6 @@
 """Entrypoint for the application."""
 
+import subprocess  # noqa: S404
 from datetime import datetime
 from pathlib import Path
 from typing import List, Optional, Tuple
@@ -9,9 +10,12 @@ from loguru import logger
 
 from src.ai_researcher.gemini_researcher import GeminiApiClient
 from src.fetcher.arxiv_fetcher import ArxivFetcher
+from src.notifier.notifier import Notifier
+from src.settings import Settings
 from src.utils.add_images_to_md import add_images_to_md
 from src.utils.fetch_images import extract_images
 from src.utils.load_pdfs import download_pdf
+from src.utils.paper_message_template import prepare_message
 from src.utils.schemas import Paper
 
 
@@ -58,7 +62,7 @@ class Entrypoint:
             categories = self.arxiv_fetcher.predefined_categories
         return keywords, exclude_keywords, categories
 
-    def download_pdfs(self, papers: List[Paper]) -> Tuple[List[str], List[str], List[str]]:
+    def download_pdfs(self, papers: List[Paper]) -> Tuple[List[str], List[str], List[str]]:  # noqa: WPS221
         """Download the PDFs for the papers.
 
         Args:
@@ -135,6 +139,26 @@ class Entrypoint:
         return papers
 
 
+def add_and_commit_reports_to_git(reports_dir: str, start_date: str, end_date: str) -> None:
+    """Add, commit, and push the reports to the git repository.
+
+    Args:
+        reports_dir (str): The directory to save the reports to.
+        start_date (str): The start date of the research.
+        end_date (str): The end date of the research.
+    """
+    try:  # noqa: WPS229
+        subprocess.run(["git", "add", reports_dir], check=True)  # noqa: S607,S603
+        subprocess.run(  # noqa: S607,S603
+            ["git", "commit", "-m", f"Add reports {start_date} to {end_date}"],
+            check=True,
+        )
+        subprocess.run(["git", "push", "origin", "main"], check=True)  # noqa: S607,S603
+        logger.info("Reports added, committed, and pushed successfully.")
+    except subprocess.CalledProcessError as exc:
+        logger.error(f"Git command failed: {exc}")
+
+
 @click.command()
 @click.option("--start-date", required=True, help="Start date (YYYY-MM-DD) for filtering papers.")
 @click.option("--end-date", required=True, help="End date (YYYY-MM-DD) for filtering papers.")
@@ -180,7 +204,9 @@ def main(  # noqa: WPS216
         exclude_keywords (Optional[list[str]]): The keywords to exclude from the search.
         categories (Optional[list[str]]): The categories for arxiv search.
     """
-    entrypoint = Entrypoint(gemini_model_name=gemini_model_name, site_reports_dir=site_reports_dir)
+    settings = Settings()  # type: ignore
+    entrypoint = Entrypoint(gemini_model_name=settings.gemini_model_name, site_reports_dir=settings.site_reports_dir)
+    notifier = Notifier(settings=settings)
     papers = entrypoint.start_research(
         start_date=start_date,
         end_date=end_date,
@@ -189,8 +215,14 @@ def main(  # noqa: WPS216
         categories=list(categories) if categories else None,
     )
     click.echo(f"Fetched {len(papers)} papers.")
+    site_dir = str(Path(settings.site_reports_dir).parent)
+    add_and_commit_reports_to_git(site_dir, start_date, end_date)
     for paper in papers:
-        click.echo(f"- {paper.title} ({paper.published})")
+        published = datetime.strptime(paper.published, "%Y-%m-%d").strftime("%m-%Y")
+        title = paper.title.replace(" ", "_")
+        report_url = settings.github_url_template.format(month_year=published, title=title)
+        message = prepare_message(paper, report_url)
+        notifier.send(message)
 
 
 if __name__ == "__main__":
