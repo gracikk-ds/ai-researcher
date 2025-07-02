@@ -181,7 +181,7 @@ def add_and_commit_reports_to_git(reports_dir: str, start_date: str, end_date: s
         subprocess.run(["git", "push", "origin", "main"], check=True)  # noqa: S607,S603
         logger.info("Reports added, committed, and pushed successfully.")
         logger.info("Sleeping for 90 seconds to make sure deployment is done.")
-        time.sleep(90)
+        time.sleep(90)  # noqa: WPS432
     except subprocess.CalledProcessError as exc:
         logger.error(f"Git command failed: {exc}")
 
