@@ -1,0 +1,1 @@
+Figure 7: Examples of image editing results obtained using our method with guidance and other approaches.

@@ -1,0 +1,1 @@
+Figure 3: Visualization of editing results produced by prompt switching (second column) and by our method with guidance (third column).
