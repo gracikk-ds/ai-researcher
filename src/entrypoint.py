@@ -1,6 +1,7 @@
 """Entrypoint for the application."""
 
 import subprocess  # noqa: S404
+import time
 from datetime import datetime
 from pathlib import Path
 from typing import List, Optional, Tuple
@@ -162,14 +163,25 @@ def add_and_commit_reports_to_git(reports_dir: str, start_date: str, end_date: s
         start_date (str): The start date of the research.
         end_date (str): The end date of the research.
     """
+    result = subprocess.run(  # noqa: S607,S603
+        ["git", "status", "--porcelain", reports_dir],
+        capture_output=True,
+        text=True,
+    )
+    if result.stdout.strip() == "":
+        logger.info("No changes in the reports directory.")
+        return
+
     try:  # noqa: WPS229
         subprocess.run(["git", "add", reports_dir], check=True)  # noqa: S607,S603
         subprocess.run(  # noqa: S607,S603
-            ["git", "commit", "-m", f"Add reports {start_date} to {end_date}"],
+            ["git", "commit", "--no-verify", "-m", f"Add reports {start_date} to {end_date}"],
             check=True,
         )
         subprocess.run(["git", "push", "origin", "main"], check=True)  # noqa: S607,S603
         logger.info("Reports added, committed, and pushed successfully.")
+        logger.info("Sleeping for 90 seconds to make sure deployment is done.")
+        time.sleep(90)
     except subprocess.CalledProcessError as exc:
         logger.error(f"Git command failed: {exc}")
 
@@ -177,16 +189,6 @@ def add_and_commit_reports_to_git(reports_dir: str, start_date: str, end_date: s
 @click.command()
 @click.option("--start-date", required=True, help="Start date (YYYY-MM-DD) for filtering papers.")
 @click.option("--end-date", required=True, help="End date (YYYY-MM-DD) for filtering papers.")
-@click.option(
-    "--gemini-model-name",
-    default="gemini-2.5-pro",
-    help="The name of the Gemini model to use.",
-)
-@click.option(
-    "--site-reports-dir",
-    default="site/_reports",
-    help="The directory to save the reports to.",
-)
 @click.option("--keywords", multiple=True, help="Keywords for arxiv search. Can be specified multiple times.")
 @click.option(
     "--exclude-keywords",
@@ -201,8 +203,6 @@ def add_and_commit_reports_to_git(reports_dir: str, start_date: str, end_date: s
 def main(  # noqa: WPS216
     start_date: str,
     end_date: str,
-    gemini_model_name: str = "gemini-2.5-pro",
-    site_reports_dir: str = "site/_reports",
     keywords: Optional[list[str]] = None,
     exclude_keywords: Optional[list[str]] = None,
     categories: Optional[list[str]] = None,
@@ -213,8 +213,6 @@ def main(  # noqa: WPS216
     Args:
         start_date (str): Start date (YYYY-MM-DD) for filtering papers.
         end_date (str): End date (YYYY-MM-DD) for filtering papers.
-        gemini_model_name (str): The name of the Gemini model to use.
-        site_reports_dir (str): The directory to save the reports to.
         keywords (Optional[list[str]]): The keywords for arxiv search.
         exclude_keywords (Optional[list[str]]): The keywords to exclude from the search.
         categories (Optional[list[str]]): The categories for arxiv search.

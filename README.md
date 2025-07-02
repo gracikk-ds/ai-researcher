@@ -27,8 +27,8 @@ A service to automatically load research papers from arXiv by topic and date, an
 You can run the service to fetch and analyze papers by specifying a topic and date range.
 
 ```bash
-python src/entrypoint.py --start-date 2025-06-01 --end-date 2025-06-30
+python src/entrypoint.py --start-date 2025-06-01 (included) --end-date 2025-06-30 (excluded)
 ```
 
 ## Configuration
-You need to set GOOGLE_APPLICATION_CREDENTIALS in your .env file
+You need to set GOOGLE_APPLICATION_CREDENTIALS, TELEGRAM_TOKEN and TELEGRAM_CHAT_ID in your .env file
