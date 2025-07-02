@@ -131,7 +131,7 @@ class Entrypoint:
         keywords: Optional[List[str]] = None,
         exclude_keywords: Optional[List[str]] = None,
         categories: Optional[List[str]] = None,
-    ) -> Tuple[List[Paper], List[str], List[str]]:
+    ) -> Tuple[List[Paper], List[str]]:
         """Start the research.
 
         Args:
@@ -144,14 +144,13 @@ class Entrypoint:
         Returns:
             Tuple[List[Paper], List[str], List[str]]:
                 - List of relevant papers.
-                - List of paths to the files where papers were excluded by keywords.
                 - List of paths to the files where papers were excluded by classifier.
         """
         # Get the keywords, exclude keywords, and categories
         keywords, exclude_keywords, categories = self._get_keywords(keywords, exclude_keywords, categories)
 
         # Fetch the papers
-        papers, exculded_by_keywords_paths, exculded_by_classifier_paths = self.arxiv_fetcher.fetch_papers(
+        papers, exculded_by_classifier_paths = self.arxiv_fetcher.fetch_papers(
             start_date,
             end_date,
             keywords,
@@ -165,7 +164,7 @@ class Entrypoint:
         # Generate the reports
         self.generate_reports(pdf_paths, images_paths, published_dates, papers)
 
-        return papers, exculded_by_keywords_paths, exculded_by_classifier_paths
+        return papers, exculded_by_classifier_paths
 
 
 def add_and_commit_reports_to_git(reports_dir: str, start_date: str, end_date: str) -> None:
@@ -233,17 +232,18 @@ def main(  # noqa: WPS216,WPS210
     settings = Settings()  # type: ignore
     entrypoint = Entrypoint(gemini_model_name=settings.gemini_model_name, site_reports_dir=settings.site_reports_dir)
     notifier = Notifier(settings=settings)
-    papers, exculded_by_keywords_paths, exculded_by_classifier_paths = entrypoint.start_research(
+    papers, exculded_by_classifier_paths = entrypoint.start_research(
         start_date=start_date,
         end_date=end_date,
         keywords=list(keywords) if keywords else None,
         exclude_keywords=list(exclude_keywords) if exclude_keywords else None,
         categories=list(categories) if categories else None,
     )
-    skipped_titles = get_skipped_titles(exculded_by_keywords_paths, exculded_by_classifier_paths)
+    skipped_titles = get_skipped_titles(exculded_by_classifier_paths)
     click.echo(f"Fetched {len(papers)} papers.")
     click.echo(f"Skipped {len(skipped_titles)} papers.")
     skipped_message = prepare_message_for_skipped_papers(skipped_titles)
+    logger.info(f"Sending skipped message: {skipped_message}")
     notifier.send(skipped_message)
     site_dir = str(Path(settings.site_reports_dir).parent)
     add_and_commit_reports_to_git(site_dir, start_date, end_date)

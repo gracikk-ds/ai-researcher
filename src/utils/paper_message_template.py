@@ -22,7 +22,7 @@ message_template = """\
 
 """
 
-message_for_skipped_papers = """✨  Koi wa, senpai!  ✨
+message_for_skipped_papers = """✨  Konnichiwa, senpai!  ✨
 
 I've found some interesting papers. Probably, they are not about generative image editing directly.
 But maybe you will find them useful for your research.
@@ -30,6 +30,21 @@ But maybe you will find them useful for your research.
 Here are the titles of the papers:
 {skipped_titles}
 """
+
+
+def ensure_no_forbidden_characters(title: str) -> str:
+    """Ensure that the title does not contain forbidden characters for telegram markdown parser.
+
+    Args:
+        title (str): The title to ensure.
+
+    Returns:
+        str: The title without forbidden characters.
+    """
+    forbidden_characters = ["*", "_", "[", "]", "(", ")", "~", "`", ">", "#", "+", "-", "=", "|", "{", "}", ".", "!"]
+    for character in forbidden_characters:
+        title = title.replace(character, "")
+    return title
 
 
 def add_authors_merits(authors: list[Author]) -> str:
@@ -80,4 +95,9 @@ def prepare_message_for_skipped_papers(skipped_titles: List[str]) -> str:  # noq
     Returns:
         str: The prepared message.
     """
-    return message_for_skipped_papers.format(skipped_titles="\n".join(skipped_titles))
+    skipped_titles_str = ""
+    for title in skipped_titles:  # noqa: WPS519
+        title = title.strip()
+        title = ensure_no_forbidden_characters(title)
+        skipped_titles_str += f"- {title}\n"
+    return message_for_skipped_papers.format(skipped_titles=skipped_titles_str)

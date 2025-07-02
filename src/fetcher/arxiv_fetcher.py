@@ -150,7 +150,7 @@ class ArxivFetcher:
         summary: str,
         exclude_keywords: Optional[List[str]],
         full_date: str,
-    ) -> Tuple[bool, Optional[str]]:
+    ) -> bool:
         """
         Filter the papers based on the exclude keywords.
 
@@ -161,7 +161,7 @@ class ArxivFetcher:
             full_date (str): The full date of the paper.
 
         Returns:
-            tuple[bool, Optional[str]]: True if the paper should be excluded, False otherwise.
+            bool: True if the paper should be excluded, False otherwise.
         """
         if exclude_keywords is not None:
             for keyword in exclude_keywords:
@@ -175,8 +175,8 @@ class ArxivFetcher:
                     path_to_save = os.path.join(skipped_dir, f"{skipped_file_name}_{full_date}.txt")
                     with open(path_to_save, "a") as file:
                         file.write(f"{title}\n")  # noqa: WPS220
-                    return True, path_to_save
-        return False, None
+                    return True
+        return False
 
     def _save_papers(
         self,
@@ -203,7 +203,7 @@ class ArxivFetcher:
         exclude_keywords: Optional[List[str]] = None,
         categories: Optional[List[str]] = None,
         save_to_jsonl: bool = True,
-    ) -> Tuple[List[Paper], List[str], List[str]]:
+    ) -> Tuple[List[Paper], List[str]]:
         """
         Return a list of enriched arXiv paper Pydantic models.
 
@@ -216,9 +216,8 @@ class ArxivFetcher:
             save_to_jsonl (bool): Whether to save the papers to a JSONL file.
 
         Returns:
-            Tuple[List[Paper], List[str], List[str]]:
+            Tuple[List[Paper], List[str]]:
                 - List of relevant papers.
-                - List of paths to the files where papers were excluded by keywords.
                 - List of paths to the files where papers were excluded by classifier.
             """
         if keywords is None:
@@ -240,7 +239,6 @@ class ArxivFetcher:
         )
 
         papers: List[Paper] = []
-        exculded_by_keywords_paths: List[str] = []
         exculded_by_classifier_paths: List[str] = []
         search_results = client.results(search)
         search_month_and_year = end_date_obj.strftime("%m-%Y")
@@ -254,9 +252,8 @@ class ArxivFetcher:
                 search_month_and_year = result.published.strftime("%m-%Y")
 
             # Filter papers by exclude keywords
-            is_skipped, exculded_by_keywords_path = self._filter_papers(title, summary, exclude_keywords, full_date)
+            is_skipped = self._filter_papers(title, summary, exclude_keywords, full_date)
             if is_skipped:
-                exculded_by_keywords_paths.append(exculded_by_keywords_path)  # type: ignore
                 continue
 
             # Classify paper
@@ -285,7 +282,7 @@ class ArxivFetcher:
             # Save papers to JSONL file
             self._save_papers(papers, start_date_obj, end_date_obj, save_to_jsonl)
         self.classifier.gemini_researcher.info()
-        return papers, exculded_by_keywords_paths, exculded_by_classifier_paths
+        return papers, exculded_by_classifier_paths
 
 
 # if __name__ == "__main__":
