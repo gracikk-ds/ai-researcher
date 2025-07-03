@@ -1,0 +1,1 @@
+Figure 2: Reasoning scenarios in Reason50K. The percentages in parentheses indicate the proportion of each category. The text below each sample shows an instruction of the corresponding reasoning type.
