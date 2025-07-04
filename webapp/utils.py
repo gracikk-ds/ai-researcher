@@ -59,7 +59,8 @@ def parse_markdown(path: Path) -> Optional[Article]:
     date = header.get("date", "")
     html = md.markdown(body)
     summary = body.split("\n", 1)[0]
-    return Article(str(path), title, date, summary, html, str(path))
+    identifier = str(path.relative_to(REPORTS_DIR))
+    return Article(identifier, title, date, summary, html, str(path))
 
 
 def load_articles() -> List[Article]:
@@ -74,7 +75,7 @@ def load_articles() -> List[Article]:
         art = parse_markdown(md_file)
         if art is None:
             continue
-        extra = meta.get(art.id, {})
+        extra = meta.get(art.id, meta.get(str(md_file), {}))
         art.tags = extra.get("tags", [])
         art.likes = extra.get("likes", 0)
         art.dislikes = extra.get("dislikes", 0)
