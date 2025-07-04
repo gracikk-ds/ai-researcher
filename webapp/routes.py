@@ -3,6 +3,7 @@
 from flask import Blueprint, redirect, render_template, request, url_for
 from flask.typing import ResponseReturnValue
 
+from webapp import utils
 from webapp.models import Article
 from webapp.utils import (
     ALL_ARTICLES,
@@ -168,7 +169,9 @@ def like_article(article_id: str) -> ResponseReturnValue:
     article = next((a for a in ALL_ARTICLES if a.id == article_id), None)
     if article:
         article.likes += 1
+        article.dislikes = 0
         save_article_meta(article)
+        utils.ALL_ARTICLES = utils.load_articles()
     return redirect(request.referrer or url_for("webapp.index"))
 
 
@@ -185,5 +188,7 @@ def dislike_article(article_id: str) -> ResponseReturnValue:
     article = next((a for a in ALL_ARTICLES if a.id == article_id), None)
     if article:
         article.dislikes += 1
+        article.likes = 0
         save_article_meta(article)
+        utils.ALL_ARTICLES = utils.load_articles()
     return redirect(request.referrer or url_for("webapp.index"))
