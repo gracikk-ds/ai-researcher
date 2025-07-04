@@ -7,3 +7,6 @@ pylint==2.17.5
 pytest==7.4.0
 types-all-latest==1.5.0
 wemake-python-styleguide==0.18.0
+flask==2.3.2
+markdown==3.5.2
+pyyaml==6.0.1

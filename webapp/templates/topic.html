@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>{{ title }}</h2>
+<div class="mb-3">
+  <form method="get" class="d-inline">
+    <select name="tag" onchange="this.form.submit()" class="form-select d-inline w-auto">
+      <option value="">All Tags</option>
+      {% for t in tags %}
+      <option value="{{ t }}" {% if request.args.get('tag')==t %}selected{% endif %}>{{ t }}</option>
+      {% endfor %}
+    </select>
+  </form>
+</div>
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+{% for article in articles %}
+  <div class="col">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5 class="card-title">
+          <a href="{{ url_for('view_article', article_id=article.id) }}">{{ article.title }}</a>
+        </h5>
+        <p class="card-text">{{ article.summary }}</p>
+        <p>
+          {% for tag in article.tags %}
+            <span class="badge bg-secondary">{{ tag }}</span>
+          {% endfor %}
+        </p>
+      </div>
+    </div>
+  </div>
+{% endfor %}
+</div>
+<nav aria-label="Page navigation" class="mt-4">
+  <ul class="pagination">
+    {% if page > 1 %}
+    <li class="page-item"><a class="page-link" href="?page={{ page - 1 }}{% if request.args.get('tag') %}&tag={{ request.args.get('tag') }}{% endif %}{% if request.args.get('search') %}&search={{ request.args.get('search') }}{% endif %}">Previous</a></li>
+    {% endif %}
+    {% if has_next %}
+    <li class="page-item"><a class="page-link" href="?page={{ page + 1 }}{% if request.args.get('tag') %}&tag={{ request.args.get('tag') }}{% endif %}{% if request.args.get('search') %}&search={{ request.args.get('search') }}{% endif %}">Next</a></li>
+    {% endif %}
+  </ul>
+</nav>
+{% endblock %}

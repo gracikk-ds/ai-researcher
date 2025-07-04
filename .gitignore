@@ -9,3 +9,5 @@ __pycache__/
 pdfs/
 credentials/
 data/
+!webapp/data/
+!webapp/data/articles_meta.json
