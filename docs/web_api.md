@@ -1,6 +1,8 @@
 # Web Interface API
 
-This document describes the HTTP API exposed by the Flask based site located in `webapp/app.py`.
+This document describes the HTTP API exposed by the Flask based site.  The
+application lives in the `webapp` package with request handlers defined in
+`webapp/routes.py`.
 
 ## Endpoints
 
