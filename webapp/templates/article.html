@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>{{ article.title }}</h2>
+<div class="mb-3">
+  {% for tag in article.tags %}
+    <span class="badge bg-secondary">{{ tag }}</span>
+  {% endfor %}
+</div>
+<div>{{ article.content|safe }}</div>
+<div class="mt-3">
+  <form action="{{ url_for('like_article', article_id=article.id) }}" method="post" class="d-inline">
+    <button class="btn btn-success">\uD83D\uDC4D {{ article.likes }}</button>
+  </form>
+  <form action="{{ url_for('dislike_article', article_id=article.id) }}" method="post" class="d-inline">
+    <button class="btn btn-danger">\uD83D\uDC4E {{ article.dislikes }}</button>
+  </form>
+</div>
+{% endblock %}
