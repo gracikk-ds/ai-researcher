@@ -1,6 +1,7 @@
 """Routes for the web application."""
 
 from flask import Blueprint, redirect, render_template, request, url_for
+from flask.typing import ResponseReturnValue
 
 from webapp.models import Article
 from webapp.utils import (
@@ -115,14 +116,14 @@ def topic_view(topic: str) -> str:
 
 
 @bp.route("/article/<path:article_id>")
-def view_article(article_id: str) -> str:
+def view_article(article_id: str) -> ResponseReturnValue:
     """Render the detail page for a specific article.
 
     Args:
         article_id (str): The unique identifier of the article.
 
     Returns:
-        str: Rendered HTML for the article page, or a 404 message if not found.
+        Response: Rendered HTML for the article page, or a 404 message if not found.
     """
     article = next((article for article in ALL_ARTICLES if article.id == article_id), None)
     if article is None:
@@ -131,11 +132,11 @@ def view_article(article_id: str) -> str:
 
 
 @bp.route("/add", methods=["GET", "POST"])
-def add_article() -> str:
+def add_article() -> ResponseReturnValue:
     """Render the add article form or handle the submission of a new article.
 
     Returns:
-        str: Rendered HTML for the add article page or a redirect response after submission.
+        Response: Rendered HTML for the add article page or a redirect response after submission.
     """
     if request.method == "POST":
         title = request.form.get("title", "New Article")
@@ -155,7 +156,7 @@ def add_article() -> str:
 
 
 @bp.post("/like/<path:article_id>")
-def like_article(article_id: str):
+def like_article(article_id: str) -> ResponseReturnValue:
     """Increment the like count for a specific article and save the change.
 
     Args:
@@ -172,7 +173,7 @@ def like_article(article_id: str):
 
 
 @bp.post("/dislike/<path:article_id>")
-def dislike_article(article_id: str):
+def dislike_article(article_id: str) -> ResponseReturnValue:
     """Increment the dislike count for a specific article and save the change.
 
     Args:

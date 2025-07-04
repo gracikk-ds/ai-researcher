@@ -17,7 +17,7 @@
     <div class="card h-100">
       <div class="card-body">
         <h5 class="card-title">
-          <a href="{{ url_for('view_article', article_id=article.id) }}">{{ article.title }}</a>
+          <a href="{{ url_for('webapp.view_article', article_id=article.id) }}">{{ article.title }}</a>
         </h5>
         <p class="card-text">{{ article.summary }}</p>
         <p>
