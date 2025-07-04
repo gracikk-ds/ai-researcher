@@ -1,8 +1,23 @@
-from __future__ import annotations
+"""Web application for the paper research website."""
 
-from . import create_app
+from flask import Flask
 
-app = create_app()
+from webapp import utils
+from webapp.routes import bp
+
+
+def create_app() -> Flask:
+    """Create the Flask application.
+
+    Returns:
+        Flask: The Flask application.
+    """
+    utils.ALL_ARTICLES = utils.load_articles()
+    app = Flask(__name__)
+    app.register_blueprint(bp)
+    return app
+
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app = create_app()
+    app.run()

@@ -1,4 +1,4 @@
-from __future__ import annotations
+"""Models for the web application."""
 
 from dataclasses import dataclass, field
 from typing import List
@@ -8,7 +8,7 @@ from typing import List
 class Article:
     """Represents a single article or report."""
 
-    id: str
+    id: str  # noqa: WPS111
     title: str
     date: str
     summary: str
@@ -21,6 +21,11 @@ class Article:
 
     @property
     def category(self) -> str:
+        """Get the category of the article.
+
+        Returns:
+            str: The category of the article.
+        """
         if self.dislikes > 0 and self.dislikes >= self.likes:
             return "useless"
         if self.likes > 0:

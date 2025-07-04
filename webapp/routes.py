@@ -1,21 +1,31 @@
-from __future__ import annotations
+"""Routes for the web application."""
 
-from flask import Blueprint, render_template, request, redirect, url_for
+from flask import Blueprint, redirect, render_template, request, url_for
 
-from .models import Article
-from .utils import ALL_ARTICLES, filter_articles, paginate, save_article_meta
+from webapp.models import Article
+from webapp.utils import (
+    ALL_ARTICLES,
+    filter_articles,
+    paginate,
+    save_article_meta,
+)
 
 bp = Blueprint("webapp", __name__)
 
 
 @bp.route("/")
 def index() -> str:
+    """Render the inbox page with articles filtered by tag and search query.
+
+    Returns:
+        str: Rendered HTML for the inbox page.
+    """
     page = int(request.args.get("page", 1))
     tag = request.args.get("tag")
     search = request.args.get("search", "")
     filtered = filter_articles("inbox", tag, search, None)
     articles, has_next = paginate(filtered, page)
-    tags = sorted({t for a in ALL_ARTICLES for t in a.tags})
+    tags = sorted({tag for article in ALL_ARTICLES for tag in article.tags})
     return render_template(
         "index.html",
         articles=articles,
@@ -28,12 +38,17 @@ def index() -> str:
 
 @bp.route("/helpful")
 def helpful() -> str:
+    """Render the 'Helpful' articles page filtered by tag and search query.
+
+    Returns:
+        str: Rendered HTML for the helpful articles page.
+    """
     page = int(request.args.get("page", 1))
     tag = request.args.get("tag")
     search = request.args.get("search", "")
     filtered = filter_articles("helpful", tag, search, None)
     articles, has_next = paginate(filtered, page)
-    tags = sorted({t for a in ALL_ARTICLES for t in a.tags})
+    tags = sorted({tag for article in ALL_ARTICLES for tag in article.tags})
     return render_template(
         "index.html",
         articles=articles,
@@ -46,12 +61,17 @@ def helpful() -> str:
 
 @bp.route("/useless")
 def useless() -> str:
+    """Render the 'Useless' articles page filtered by tag and search query.
+
+    Returns:
+        str: Rendered HTML for the useless articles page.
+    """
     page = int(request.args.get("page", 1))
     tag = request.args.get("tag")
     search = request.args.get("search", "")
     filtered = filter_articles("useless", tag, search, None)
     articles, has_next = paginate(filtered, page)
-    tags = sorted({t for a in ALL_ARTICLES for t in a.tags})
+    tags = sorted({tag for article in ALL_ARTICLES for tag in article.tags})
     return render_template(
         "index.html",
         articles=articles,
@@ -64,17 +84,25 @@ def useless() -> str:
 
 @bp.route("/topic/<topic>")
 def topic_view(topic: str) -> str:
+    """Render the page for a specific topic, filtered by tag and search query.
+
+    Args:
+        topic (str): The topic to filter articles by.
+
+    Returns:
+        str: Rendered HTML for the topic page.
+    """
     page = int(request.args.get("page", 1))
     tag = request.args.get("tag")
     search = request.args.get("search", "")
-    filtered = [a for a in ALL_ARTICLES if a.topic == topic]
+    filtered = [article for article in ALL_ARTICLES if article.topic == topic]
     if tag:
-        filtered = [a for a in filtered if tag in a.tags]
+        filtered = [article for article in filtered if tag in article.tags]
     if search:
         q = search.lower()
-        filtered = [a for a in filtered if q in a.title.lower() or q in a.summary.lower()]
+        filtered = [article for article in filtered if q in article.title.lower() or q in article.summary.lower()]
     articles, has_next = paginate(filtered, page)
-    tags = sorted({t for a in filtered for t in a.tags})
+    tags = sorted({tag for article in filtered for tag in article.tags})
     return render_template(
         "topic.html",
         articles=articles,
@@ -88,7 +116,15 @@ def topic_view(topic: str) -> str:
 
 @bp.route("/article/<path:article_id>")
 def view_article(article_id: str) -> str:
-    article = next((a for a in ALL_ARTICLES if a.id == article_id), None)
+    """Render the detail page for a specific article.
+
+    Args:
+        article_id (str): The unique identifier of the article.
+
+    Returns:
+        str: Rendered HTML for the article page, or a 404 message if not found.
+    """
+    article = next((article for article in ALL_ARTICLES if article.id == article_id), None)
     if article is None:
         return "Not found", 404
     return render_template("article.html", article=article, title=article.title)
@@ -96,6 +132,11 @@ def view_article(article_id: str) -> str:
 
 @bp.route("/add", methods=["GET", "POST"])
 def add_article() -> str:
+    """Render the add article form or handle the submission of a new article.
+
+    Returns:
+        str: Rendered HTML for the add article page or a redirect response after submission.
+    """
     if request.method == "POST":
         title = request.form.get("title", "New Article")
         url = request.form.get("url", "")
@@ -115,6 +156,14 @@ def add_article() -> str:
 
 @bp.post("/like/<path:article_id>")
 def like_article(article_id: str):
+    """Increment the like count for a specific article and save the change.
+
+    Args:
+        article_id (str): The unique identifier of the article to like.
+
+    Returns:
+        Response: Redirect to the referring page or inbox if referrer is not available.
+    """
     article = next((a for a in ALL_ARTICLES if a.id == article_id), None)
     if article:
         article.likes += 1
@@ -124,6 +173,14 @@ def like_article(article_id: str):
 
 @bp.post("/dislike/<path:article_id>")
 def dislike_article(article_id: str):
+    """Increment the dislike count for a specific article and save the change.
+
+    Args:
+        article_id (str): The unique identifier of the article to dislike.
+
+    Returns:
+        Response: Redirect to the referring page or inbox if referrer is not available.
+    """
     article = next((a for a in ALL_ARTICLES if a.id == article_id), None)
     if article:
         article.dislikes += 1
