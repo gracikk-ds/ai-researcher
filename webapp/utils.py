@@ -4,8 +4,8 @@ import json
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
-import markdown as md
-import yaml
+import markdown as md  # type: ignore[import]
+import yaml  # type: ignore[import]
 
 from webapp.models import Article
 
