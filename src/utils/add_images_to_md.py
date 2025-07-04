@@ -93,14 +93,15 @@ def add_images_to_md(md_path: str, images_dir: str, paper_info: dict) -> None:
     new_md += md_content.rstrip()
 
     if not other_figs:
+        # Continue writing even when no additional figures are present
         logger.warning(f"No other figures found in {images_dir}")
-        return
-    new_md = new_md + "\n\n"
-    new_md = new_md + "## 6. Paper Figures\n"
+    else:
+        new_md = new_md + "\n\n"
+        new_md = new_md + "## 6. Paper Figures\n"
 
-    # Append other figures
-    for _, img_path, desc in other_figs:  # noqa: WPS519,WPS440
-        new_md += img_block(img_path, desc) + "\n"
+        # Append other figures
+        for _, img_path, desc in other_figs:  # noqa: WPS519,WPS440
+            new_md += img_block(img_path, desc) + "\n"
 
     # Write back to the markdown file
     # md_path_with_images = md_path.replace(".md", "_with_images.md")
