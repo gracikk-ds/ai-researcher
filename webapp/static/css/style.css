@@ -1,2 +1,27 @@
-body { padding-bottom: 40px; }
-.card-text { max-height: 4.5em; overflow: hidden; }
+body {
+  padding-bottom: 40px;
+  font-family: 'Inter', sans-serif;
+  background-color: #f8f9fa;
+}
+
+.navbar-brand {
+  font-weight: 600;
+}
+
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-text {
+  max-height: 4.5em;
+  overflow: hidden;
+}
