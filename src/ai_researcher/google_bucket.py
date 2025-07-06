@@ -102,6 +102,27 @@ class GoogleBucket(BaseBucket):  # noqa: WPS214
         logger.info(f"Uploaded {local_path} to {destination_blob_name}")
         return f"gs://{self.bucket_name}/{destination_blob_name}"
 
+    def upload_public_file(self, local_path: str) -> str:
+        """Upload a file to the bucket.
+
+        Args:
+            local_path (str): Path to the local file.
+
+        Returns:
+            str: The name of the uploaded file.
+
+        Raises:
+            FileNotFoundError: If the file does not exist.
+        """
+        if not os.path.exists(local_path):
+            raise FileNotFoundError(f"File {local_path} does not exist")
+        base_name = os.path.basename(local_path)
+        destination_blob_name = f"{self.bucket_prefix}/{base_name}"
+        blob = self.bucket.blob(destination_blob_name)
+        blob.upload_from_filename(local_path)
+        logger.info(f"Uploaded {local_path} to {destination_blob_name}")
+        return f"https://storage.googleapis.com/{self.bucket_name}/{destination_blob_name}"
+
     def download_file(self, blob_name: str, local_path: str) -> None:
         """Download a file from the bucket.
 

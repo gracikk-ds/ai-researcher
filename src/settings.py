@@ -34,3 +34,7 @@ class Settings(BaseSettings):
     telegram_token: str = Field(..., description="Telegram bot token.")
     telegram_chat_id: int = Field(..., description="Chat ID to send notifications to.")
     check_interval_minutes: int = Field(1, description="Interval between checks in minutes.")  # noqa: WPS432
+    notion_token: str = Field(..., description="Notion API token.")
+
+
+settings = Settings()  # type: ignore

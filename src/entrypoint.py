@@ -243,8 +243,9 @@ def main(  # noqa: WPS216,WPS210
     click.echo(f"Fetched {len(papers)} papers.")
     click.echo(f"Skipped {len(skipped_titles)} papers.")
     skipped_message = prepare_message_for_skipped_papers(skipped_titles)
-    logger.info(f"Sending skipped message: {skipped_message}")
-    notifier.send(skipped_message)
+    if skipped_message:
+        logger.info(f"Sending skipped message: {skipped_message}")
+        notifier.send(skipped_message)
     site_dir = str(Path(settings.site_reports_dir).parent)
     add_and_commit_reports_to_git(site_dir, start_date, end_date)
     for paper in papers:
