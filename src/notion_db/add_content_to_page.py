@@ -175,7 +175,10 @@ class MarkdownToNotionUploader:
             },
         )
 
-    def markdown_to_blocks(self, markdown: str) -> List[Dict[str, Any]]:  # noqa: WPS231,C901
+    def markdown_to_blocks(  # noqa: WPS231,C901,WPS221,WPS234
+        self,
+        markdown: str,
+    ) -> tuple[List[Dict[str, Any]], str, str, str]:
         """
         Convert basic Markdown text to Notion blocks. Support headings, paragraphs, bullet points.
 
@@ -189,6 +192,9 @@ class MarkdownToNotionUploader:
         blocks: List[Dict[str, Any]] = []
         lines_to_remove = False
         first_heading = True
+        title = ""
+        arxiv_url = ""
+        published_date = "2022-01-01"
 
         for line in lines:
             line = line.rstrip()
@@ -200,6 +206,15 @@ class MarkdownToNotionUploader:
 
             if first_heading and line.startswith("## "):
                 first_heading = False
+                title = line[3:]
+                continue
+
+            if line.startswith("**ArXiv URL:**"):
+                arxiv_url = line.split("**ArXiv URL:**")[1].strip()
+                continue
+
+            if line.startswith("**Published Date:**"):
+                published_date = line.split("**Published Date:**")[1].strip()
                 continue
 
             # Parse images
@@ -233,16 +248,15 @@ class MarkdownToNotionUploader:
                         "paragraph": {"rich_text": self._parse_rich_text(line)},
                     },
                 )
-        return blocks
+        return blocks, arxiv_url, published_date, title
 
-    def upload_markdown_file(self, file_path: str, title: str, properties: Dict[str, Any]) -> str:
+    def upload_markdown_file(self, file_path: str, title: str) -> str:
         """
         Read the markdown file, convert to Notion blocks, and upload as a new page.
 
         Args:
             file_path (str): Path to the markdown file.
             title (str): Title of the new Notion page.
-            properties (Dict[str, Any]): Properties to add to the new Notion page.
 
         Returns:
             str: URL of the created Notion page.
@@ -250,7 +264,13 @@ class MarkdownToNotionUploader:
         with open(file_path, "r", encoding="utf-8") as file:
             markdown = file.read()
 
-        blocks = self.markdown_to_blocks(markdown)
+        blocks, arxiv_url, published_date, title = self.markdown_to_blocks(markdown)
+        properties = {
+            "Category": {"multi_select": [{"name": "Image Editing"}]},
+            "Status": {"select": {"name": "Inbox"}},
+            "Arxiv": {"url": arxiv_url},
+            "Published": {"date": {"start": published_date}},
+        }
         data = {
             "parent": {"database_id": self.database_id},
             "properties": {"Paper name": {"title": [{"text": {"content": title}}]}, **properties},
@@ -268,12 +288,5 @@ if __name__ == "__main__":
 
     FILE_PATH = "site/_reports/01-2024/Diffusion_Model_Compression_for_Image-to-Image_Translation.md"
     TITLE = "Diffusion Model Compression for Image-to-Image Translation"
-    properties = {
-        "Category": {"multi_select": [{"name": "Image Editing"}]},
-        "Status": {"select": {"name": "Inbox"}},
-        "Arxiv": {"url": "https://arxiv.org/abs/2406.00000"},
-        "Published": {"date": {"start": "2024-01-01"}},
-    }
-
     uploader = MarkdownToNotionUploader()
-    uploader.upload_markdown_file(FILE_PATH, TITLE, properties)
+    uploader.upload_markdown_file(FILE_PATH, TITLE)
