@@ -1,1 +1,0 @@
-Figure 4: The comparison of language-guided image editing between existing methods and SEEDX-Edit. Through find-tuning with SEED-Data-Edit, SEED-X-Edit is able to adhere to editing instructions more accurately.

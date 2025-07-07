@@ -1,1 +1,0 @@
-Figure 6: Visual Comparisons with Self-Correcting Framework. Our framework achieves balanced attention to each object in the scene through task decomposition and multi-agent collaborative reasoning, making it the only framework capable of effectively handling the “white deer”.

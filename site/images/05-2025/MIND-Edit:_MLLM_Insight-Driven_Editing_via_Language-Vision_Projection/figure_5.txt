@@ -1,1 +1,0 @@
-Figure 5: Qualitative results of the ablation study. With the proposed instruction optimization, visual representation generation strategies, and joint training approach, MIND-Edit achieves improved instruction-aligned details, textures, and overall visual consistency compared to other variants.

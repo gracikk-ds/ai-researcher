@@ -1,1 +1,0 @@
-Figure 1. The failures of recent text-guided image editing methods in understanding the negative queries.

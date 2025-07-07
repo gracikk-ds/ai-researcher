@@ -1,1 +1,0 @@
-Figure 2: The pipeline of our method. a) We first investigate a novel stylized image data curation to form binary data with high prompt adherence and prevent low style consistency. b) We use a mixed dataset to enhance rich stylistic features learning. c) With the designed data curation and model framework, our method achieve high prompt adherence and style consistency.

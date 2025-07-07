@@ -1,1 +1,0 @@
-Figure 7: InstructPix2Pix edits on iWildCam. Despite offering more color variation, the method often imparts an artificial airbrush-like effect or removes substantial original image details.

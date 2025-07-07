@@ -1,1 +1,0 @@
-Figure 4. Boundary-Anchored Patch Discriminator D BAP takes in four real image patches or fake image patches of random size. All patches are centered on the boundary of the edited region enclosed by the red line.

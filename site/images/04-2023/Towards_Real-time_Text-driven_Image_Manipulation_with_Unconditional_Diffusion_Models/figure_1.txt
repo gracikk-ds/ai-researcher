@@ -1,1 +1,0 @@
-Figure 1: Few examples of single image editing. A user provides an image and a text description of the desired transform. Our diffusion-based approach adapts the pretrained model to the given image and text and returns the manipulated image. The entire procedure takes ∼ 4 seconds.

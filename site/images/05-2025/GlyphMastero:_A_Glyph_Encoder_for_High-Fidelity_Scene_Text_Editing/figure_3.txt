@@ -1,1 +1,0 @@
-Figure 3. Complete model architecture of GlyphMastero . A specialized glyph encoder that introduces stroke-level precise control to the latent diffusion model for scene text editing.

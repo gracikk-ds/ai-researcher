@@ -1,1 +1,0 @@
-Figure 5: Qualitative evaluation. (Top) On four distinct tasks on Emu Edit, listed from top to bottom: background, color, global, style; (Bottom) Multi-turn editing on MagicBrush.

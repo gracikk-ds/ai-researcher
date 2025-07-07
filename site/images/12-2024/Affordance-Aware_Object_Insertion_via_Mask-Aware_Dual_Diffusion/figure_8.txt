@@ -1,1 +1,0 @@
-Figure 8. Rank distribution for different methods. Our method has the most proportion of rank 1 and least proportion of rank 5.

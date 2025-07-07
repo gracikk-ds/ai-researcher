@@ -1,1 +1,0 @@
-Figure 5: Comparison of LPIPS scores with prompt-toprompt (Hertz et al. 2022) when changing the reweighting scale from 1 to 5.

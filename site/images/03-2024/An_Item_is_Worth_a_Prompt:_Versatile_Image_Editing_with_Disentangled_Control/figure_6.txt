@@ -1,1 +1,0 @@
-Figure 6: The learned prompt (denoted as [v]) can be combined with words to achieve refinement/editing of the target item. (a) Augment an item prompt with words while keeping other prompts unchanged for editing. (b) Generate the entire image with certain item prompt(s) augmented with text words for personalization.

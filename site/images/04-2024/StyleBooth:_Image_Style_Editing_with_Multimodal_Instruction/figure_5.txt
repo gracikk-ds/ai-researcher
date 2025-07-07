@@ -1,1 +1,0 @@
-Figure 5: Comparisons with instruction-based style editing baselines in Emu Edit benchmark. We show editing results of StyleBooth and 3 baselines. The results of StyleBooth are the most accurate in both style conveying and content preservation comparing to others, though some of the styles and instruction syntax are not contained in our tuning dataset.

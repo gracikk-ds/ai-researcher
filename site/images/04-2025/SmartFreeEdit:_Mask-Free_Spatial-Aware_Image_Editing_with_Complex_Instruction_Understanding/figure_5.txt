@@ -1,1 +1,0 @@
-Figure 5: Quanlitative comparisons of the performance of SmartFreeEdit and previous image inpainting methods in nature images. The comparison includes Blended-Diffusion (BLD), Stable Diffusion Inpainting (SDI), HD-Painter (HDP), ControlNet Inpainting (CNI), and the optimized BrushNetX in BrushEdit.

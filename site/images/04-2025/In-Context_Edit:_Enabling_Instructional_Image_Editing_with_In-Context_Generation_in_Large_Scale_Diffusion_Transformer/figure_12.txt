@@ -1,1 +1,0 @@
-Figure 12. Applications (§ 4.3 ) . Without additional tuning, our method demonstrates robust generalization across diverse tasks.

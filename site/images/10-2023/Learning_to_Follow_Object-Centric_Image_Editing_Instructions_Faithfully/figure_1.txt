@@ -1,1 +1,0 @@
-Figure 1: (a) Input Image (b) Edited image from InstructPix2Pix ( Brooks et al. , 2023 ) with the instruction Add a lighthouse.

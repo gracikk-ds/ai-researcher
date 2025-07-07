@@ -1,1 +1,0 @@
-(b) Multi-Object Editing Figure 1: Editing results on (a) few-object and (b) multi-object scenes. Existing methods struggle to preserve the count, layout, and semantics in multi-object cases, while ours ensures consistent and faithful edits.

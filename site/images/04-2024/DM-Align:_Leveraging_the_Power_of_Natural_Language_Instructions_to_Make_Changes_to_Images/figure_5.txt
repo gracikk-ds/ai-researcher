@@ -1,1 +1,0 @@
-Figure 5: Semantic image editing: Bison dataset. Source captions: (1) c 1 . A man standing next to a baby elephant in the city. (2) c 1 . A wooden plate topped with sliced meat and vegetables. (3) c 1 . A vase filled with red and white flowers.

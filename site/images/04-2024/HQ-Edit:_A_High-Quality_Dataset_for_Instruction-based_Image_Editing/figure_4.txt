@@ -1,1 +1,0 @@
-Fig. 4: The effect of rewriting and inversion in edit post-processing. After postprocessing, the edit instruction is of greater complexity and aligns better with the input/output image pair.

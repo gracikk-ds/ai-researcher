@@ -1,1 +1,0 @@
-Figure 2: FlexEdit support both (a) single image and (b) multiple image editing, including replace/add an object. The free-shape mask input indicate the localization information, highly user-friendly than asking user to input full mask.

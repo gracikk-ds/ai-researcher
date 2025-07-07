@@ -1,1 +1,0 @@
-Figure 2. Multi-turn image editing. Each subsequent image is derived from the prior one, using its associated caption. The initial image is based on a zeroed reference.

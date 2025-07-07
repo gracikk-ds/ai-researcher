@@ -1,1 +1,0 @@
-Figure 5: Qualitative comparison between our approach and baseline methods for object repositioning within an image, demonstrating the superior performance of our method. To move an object, FunEditor composes object removal and edge enhancement functions.

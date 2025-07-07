@@ -1,1 +1,0 @@
-Figure 6. Object spatial editing. Our model enables precise object moving and resizing with seamless handling of visual effects, resulting in highly effective and realistic edits that preserve content identity. When applied to examples released by specific works, such as DiffusionHandle [ 28 ] and DesignEdit [ 15 ], our model also achieves satisfying results.

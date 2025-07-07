@@ -1,1 +1,0 @@
-Fig. 3 : An overview of our approach. Left : pipeline of dataset construction. Right : MOE controller structure.

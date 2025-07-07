@@ -1,1 +1,0 @@
-Figure 2. The architecture of the proposed DE-Net. The DE-Net comprises a source image encoder, a target image decoder, a semantic decoder, a Composition Predictor (Comp-Pred), and a pretrained text encoder [ 31 ]. The DEBlock and DCBlock are introduced in the target image decoder to enable effective and accurate manipulations, respectively.

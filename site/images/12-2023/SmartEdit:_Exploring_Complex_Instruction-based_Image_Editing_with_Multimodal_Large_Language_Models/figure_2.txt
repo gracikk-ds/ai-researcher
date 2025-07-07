@@ -1,1 +1,0 @@
-Figure 2. For more complex instructions or scenarios, InstructPix2Pix fails to follow the instructions.

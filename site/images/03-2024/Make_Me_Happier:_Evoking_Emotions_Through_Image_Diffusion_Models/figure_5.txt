@@ -1,1 +1,0 @@
-Figure 5: Human Psychophysics Experiment Results. The average proportion of images that human participants prefer our EmoEditor over other methods is 56%. Chance is 50% (red dotted line). Error bars are standard errors.

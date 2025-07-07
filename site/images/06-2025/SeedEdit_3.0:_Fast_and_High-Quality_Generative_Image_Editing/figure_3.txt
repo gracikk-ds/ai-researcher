@@ -1,1 +1,0 @@
-Figure 3 Few data examples from our data curation pipeline. Each example, we will have task label, optimized caption and meta edit tagging information.

@@ -1,1 +1,0 @@
-Figure 1. A sequence of edits by Imagen Editor . Given an image , a user deﬁned mask , and a text prompt , Imagen Editor makes localized edits to the designated areas. The model meaningfully incorporates the user’s intent and performs photorealistic edits.

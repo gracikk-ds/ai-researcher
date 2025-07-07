@@ -1,1 +1,0 @@
-Figure 1. With only one real image, i.e. , Source Image, our method is able to manipulate and generate the content in various ways, such as changing style, adding context, modifying the object, and enlarging the resolution, through guidance from the text prompt.

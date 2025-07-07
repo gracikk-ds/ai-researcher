@@ -1,1 +1,0 @@
-Fig. 3. Qualitative Comparisons with Text-Based Editing Methods: P2P [ 7 ], PnP [ 8 ], MasaCtrl [ 9 ]. Our approach successfully accomplishes both rigid and non-rigid editing, demonstrating improved alignment with the target prompt.

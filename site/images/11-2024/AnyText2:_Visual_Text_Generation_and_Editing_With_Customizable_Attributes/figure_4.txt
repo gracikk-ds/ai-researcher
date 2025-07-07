@@ -1,1 +1,0 @@
-Figure 4. Examples of customizing text attributes. The first row demonstrates font style control using a user-specified font file. The second row showcases selecting a text region from an image to mimic its font style. The third row illustrates the control of text color.

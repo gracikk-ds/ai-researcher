@@ -1,1 +1,0 @@
-Figure 4. Comparison on MirrorBenchV2. The baseline fails to maintain accurate reflections and spatial consistency, showing (a) incorrect chair orientation and (b) distorted reflections of multiple objects. In contrast, our method correctly renders (a) the chair and (b) the sofas with accurate position, orientation, and structure, demonstrating superior performance.

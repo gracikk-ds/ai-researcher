@@ -1,1 +1,0 @@
-Figure 2. The overall pipeline of dataset construction.

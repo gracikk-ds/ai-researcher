@@ -250,13 +250,12 @@ class MarkdownToNotionUploader:
                 )
         return blocks, arxiv_url, published_date, title
 
-    def upload_markdown_file(self, file_path: str, title: str) -> str:
+    def upload_markdown_file(self, file_path: str) -> str:  # noqa: WPS210
         """
         Read the markdown file, convert to Notion blocks, and upload as a new page.
 
         Args:
             file_path (str): Path to the markdown file.
-            title (str): Title of the new Notion page.
 
         Returns:
             str: URL of the created Notion page.
@@ -284,9 +283,6 @@ class MarkdownToNotionUploader:
         return page.get("url", "")
 
 
-if __name__ == "__main__":
-
-    FILE_PATH = "site/_reports/01-2024/Diffusion_Model_Compression_for_Image-to-Image_Translation.md"
-    TITLE = "Diffusion Model Compression for Image-to-Image Translation"
-    uploader = MarkdownToNotionUploader()
-    uploader.upload_markdown_file(FILE_PATH, TITLE)
+# if __name__ == "__main__":
+    # uploader = MarkdownToNotionUploader()
+    # uploader.upload_markdown_file("site/_reports/01-2024/Diffusion_Model_Compression_for_Image-to-Image_Translation.md")

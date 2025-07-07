@@ -1,1 +1,0 @@
-Figure 4: Model performance and standard deviation in each task.

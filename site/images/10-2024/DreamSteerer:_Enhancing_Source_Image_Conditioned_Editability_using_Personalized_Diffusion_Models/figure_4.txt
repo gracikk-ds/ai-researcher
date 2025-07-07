@@ -1,1 +1,0 @@
-Figure 4: The effect of different regularization strategies on the editing and generation results of a DreamBooth baseline. The source prompt is "a photo of a cat sitting next to a mirror".

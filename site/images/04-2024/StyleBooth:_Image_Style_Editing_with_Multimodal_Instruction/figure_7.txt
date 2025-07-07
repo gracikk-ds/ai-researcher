@@ -1,1 +1,0 @@
-Figure 7: StyleBooth compositional style editing and style interpolation. StyleBooth unifies textual and visual exemplar by mapping them into a same hidden space making it possible to adjust the proportion of different styles in different modalities.

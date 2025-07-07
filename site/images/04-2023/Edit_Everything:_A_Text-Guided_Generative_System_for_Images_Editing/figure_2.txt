@@ -1,1 +1,0 @@
-Figure 2: Text-guided image editing examples created by Edit Everything. Our advanced system detects the dark region, and erases them by the source target. And then we apply SD to ﬁll it based on the target prompt. Our system is able to produce various styles and seamlessly match the surrounding context.

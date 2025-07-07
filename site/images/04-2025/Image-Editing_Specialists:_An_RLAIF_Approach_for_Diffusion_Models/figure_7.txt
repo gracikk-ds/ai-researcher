@@ -1,1 +1,0 @@
-Figure 7. Qualitative comparison of the reproduction of the visual prompt induced by different encoders. Best viewed zoomed-in.

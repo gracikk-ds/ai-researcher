@@ -1,1 +1,0 @@
-Figure 4: We present several edited images and compare them with similar image editing algorithms, such as SDEdit [ 20 ], Imagic [ 17 ], and PnP [ 36 ]. Our method generates the best results.

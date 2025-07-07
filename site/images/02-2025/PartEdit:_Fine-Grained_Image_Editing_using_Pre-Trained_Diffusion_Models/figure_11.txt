@@ -1,1 +1,0 @@
-Fig. 11. Different edits per image on real image editing using our method. We showcase the versatility of our method, as there is no change in the underlying model; we can leverage the full capabilities of the model without any retraining or fine-tuning. More details in Appendix F .

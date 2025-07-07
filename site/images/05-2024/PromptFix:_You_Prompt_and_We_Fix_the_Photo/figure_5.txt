@@ -1,1 +1,0 @@
-Figure 5: Preservation of low-level image details using the proposed High-frequency Guidance Sampling (HGS) method, compared to previous VAE-based baselines [ 19 , 21 , 44 ] utilizing stablediffusion architecture.

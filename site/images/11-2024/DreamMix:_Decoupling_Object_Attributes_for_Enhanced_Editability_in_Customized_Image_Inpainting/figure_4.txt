@@ -1,1 +1,0 @@
-Figure 4. Visual comparison between different methods. From left to right are input image and subject, visual results of our DreamMix , IP-Adapter [ 40 ], DreamBooth [ 33 ], TIGIC [ 18 ], AnyDoor [ 6 ], and LAR-Gen [ 26 ].

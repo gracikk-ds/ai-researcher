@@ -1,1 +1,0 @@
-Figure 1. Given an image and an instruction for how to edit that image, our model performs the appropriate edit. Our model does not require full descriptions for the input or output image, and edits images in the forward pass without per-example inversion or ﬁne-tuning.

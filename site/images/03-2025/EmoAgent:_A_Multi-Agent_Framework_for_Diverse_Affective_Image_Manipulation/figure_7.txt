@@ -1,1 +1,0 @@
-Fig. 7. Emotion-aware visual diversity across varied source images. Compared to EmoEdit, which tends to reuse fixed emotional elements across different inputs, EmoAgent adapts its edits to each image’s semantics, introducing distinct affective cues and achieving both better emotional fidelity and greater visual diversity.

@@ -1,1 +1,0 @@
-Figure 1. Text-guided Image Editing results via C ontrastive D enoising S core. CDS successfully translates source images with a wellbalanced interplay between maintaining the structural elements of the source image and transforming the content in alignment with the target text prompt.

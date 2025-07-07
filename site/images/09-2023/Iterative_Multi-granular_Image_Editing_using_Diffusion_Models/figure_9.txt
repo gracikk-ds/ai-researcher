@@ -1,1 +1,0 @@
-Figure 9. Here we experiment with turning off the gradient control strategy explained in Sec. 4.1 for local edits. Without modulating the gradients, the characteristics of the edit instruction gets globally applied on the image, whereas EMILIE is able to easily localise the edits effectively.

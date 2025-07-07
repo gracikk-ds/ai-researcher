@@ -1,1 +1,0 @@
-Figure 7: Comparison between serial editing and parallel editing with PDSS. Serial editing distorts backgrounds, but our PDSS parallel editing preserves and enhances them.

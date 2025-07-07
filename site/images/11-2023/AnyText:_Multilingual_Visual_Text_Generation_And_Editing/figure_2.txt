@@ -1,1 +1,0 @@
-Figure 2: The framework of AnyText, which includes text-control diffusion pipeline, auxiliary latent module, text embedding module, and text perceptual loss.

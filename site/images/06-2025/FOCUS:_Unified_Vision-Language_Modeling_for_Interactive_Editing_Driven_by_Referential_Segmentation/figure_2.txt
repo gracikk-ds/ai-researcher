@@ -1,1 +1,0 @@
-Figure 2: Comparison of controllable image editing paradigms. (a) Modular methods rely on separately trained components. (b) Task-routing LLMs orchestrate existing tools without joint modeling. (c) Unified models combine perception and generation but lack fine-grained control. (d) Our FOCUS jointly models segmentation and generation for precise, region-level editing.

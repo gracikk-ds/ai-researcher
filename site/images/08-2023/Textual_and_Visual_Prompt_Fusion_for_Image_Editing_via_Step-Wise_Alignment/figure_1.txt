@@ -1,1 +1,0 @@
-Fig. 1: The framework of SWA. The reference image is encoded into features ∆ h . Then, ∆ h are integrated into the latent features h of the editing image. The textual prompt contributes semantic information for the manipulation process.

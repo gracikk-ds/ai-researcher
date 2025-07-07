@@ -1,1 +1,0 @@
-Figure 13. Typography-LMM predictions ( 2 -ed and 4 -th columns) vs. ground-truth ( 1 -st and 3 -th columns).

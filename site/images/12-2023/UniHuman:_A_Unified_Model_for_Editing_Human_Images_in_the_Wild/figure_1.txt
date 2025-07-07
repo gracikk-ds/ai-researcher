@@ -1,1 +1,0 @@
-Figure 1. The results of UniHuman on diverse real-world images. UniHuman learns informative representations by leveraging multiple data sources and connections between related tasks, achieving high-quality results across various human image editing objectives.

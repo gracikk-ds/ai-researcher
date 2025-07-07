@@ -1,1 +1,0 @@
-Figure 5. Virtual try-on results (512 x 512). Our UniHuman better recovers the intricate details in the target garment, particularly in out-of-domain samples. More results can be found in Supp.

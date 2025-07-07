@@ -1,1 +1,0 @@
-Figure 6: Visualizations of the generated masks and edited images of InstDiffEdit and the compared methods. Compared with DiffEdit, the masks of InstDiffEdit are closer to the human-labeled ones. Moreover, the comparisons with the latent-based and attention-based approaches also show the merit of the instant mask in our InstDiffEdit. The red boxes refers to failed editions.

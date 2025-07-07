@@ -1,1 +1,0 @@
-Figure 9: Visual examples of the image manipulations learned with the DiffusionCLIP, StyleGAN-NADA and our approaches for the Celeba-HQ-256, LSUN-church-256, AFHQ-dog-256 and ImageNet-512 datasets.

@@ -1,1 +1,0 @@
-Figure 6. The baseline misclassifies both images as real, whereas our model correctly spots the fake (right) that spawned the 2005 Paris Hilton “Stop Being Poor” meme.

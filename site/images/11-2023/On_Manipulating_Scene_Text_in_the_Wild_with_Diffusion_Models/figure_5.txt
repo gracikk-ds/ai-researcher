@@ -1,1 +1,0 @@
-Figure 5. Given a single word green box from in-the-wild images and the desired text, our method successfully to edit the text with the desired text in the image red box .

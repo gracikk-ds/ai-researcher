@@ -1,1 +1,0 @@
-Figure 2. Improved Semantic Localization. (1) UNet based diffusion models such as SD-1.5 and SD-XL fail to capture detailed semantics due to limitations in the model architectures. (2) Models based on MM-DiT such as FLUX have the ability to perceive these semantics but have defects in localization. (3) Our PSL produces precise localization for semantics

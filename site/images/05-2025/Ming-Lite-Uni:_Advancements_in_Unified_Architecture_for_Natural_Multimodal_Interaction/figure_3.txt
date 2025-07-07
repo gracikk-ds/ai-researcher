@@ -1,1 +1,0 @@
-Figure 3 The AR part of Ming-Lite-Uni . Our model reuses the M2-omni MLLM as a frozen token prediction module, retaining only its text and image branches. The pretraining procedure and dataset of the AR model are consistent with our previous work, please refer to Guo et al. ( 2025 ) for details.

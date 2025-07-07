@@ -1,1 +1,0 @@
-Figure 1: Illustration of Multi-modal Interactive Dialogue System (MIDS) built by our proposed DialogGen that can perform multi-turn multi-modal tasks responding to user’s natural language instructions to meet the users’ needs for image generation, image editing, and chatting.

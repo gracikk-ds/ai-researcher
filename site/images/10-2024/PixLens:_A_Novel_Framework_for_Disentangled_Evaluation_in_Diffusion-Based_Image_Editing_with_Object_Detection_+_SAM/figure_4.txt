@@ -1,1 +1,0 @@
-Fig. 4: Bad subject preservation example for LCM edit with the prompt Change the color of the backpack to orange . The subject of this edit is the backpack .

@@ -1,1 +1,0 @@
-✍ ) hair, rosy cheeks, high cheekbones. Figure 7: Prompt reweighting, removing, replacing in MM-CelebA-HQ dataset . Our method can gradually scale the target prompt, remove the target prompt, and be robust to noise during prompt removal.

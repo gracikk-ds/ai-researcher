@@ -1,1 +1,0 @@
-Figure 3. Comparison of CoSTA ∗ with other planning agents. LLM-only planning is efficient but prone to failure and heuristics. Search algorithms like A ∗ guarantee optimal paths but are computationally expensive. CoSTA ∗ balances cost and quality by first pruning the subtask tree using an LLM, which reduces the graph of tools we conduct fine-grained A ∗ search on.

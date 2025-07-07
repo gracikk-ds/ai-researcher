@@ -1,1 +1,0 @@
-(d) SD-AE-UNet (ft) Fig. 5. Composited samples from CaT 2 I-AE-SD and baseline models for 256 × 256 resolution. The prompts are (1) Dogs at the entrance of Arco Iris Boutique and (2) Haunted Mansion Holiday at Disneyland Park . Each 2 × 2 block displays the composited images and masks m of the corresponding models. Find more in the supplement.

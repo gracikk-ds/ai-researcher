@@ -1,6 +1,6 @@
 """Message template for the paper."""
 
-from typing import List
+from typing import List, Optional
 
 from src.utils.schemas import Author, Paper
 
@@ -66,16 +66,18 @@ def add_authors_merits(authors: list[Author]) -> str:
     return "".join(authors_merits)
 
 
-def prepare_message(paper: Paper, report_url: str) -> str:
+def prepare_message(paper: Paper, report_url: Optional[str] = None) -> str:
     """Prepare the message for the paper.
 
     Args:
         paper (Paper): The paper to prepare the message for.
-        report_url (str): The URL of the report.
+        report_url (Optional[str]): The URL of the report.
 
     Returns:
         str: The prepared message.
     """
+    if report_url is None:
+        report_url = "https://www.notion.so/228f6f75bb0b80babf73d46a6254a459?v=228f6f75bb0b80d98ee1000ca409f16f"
     return message_template.format(
         title=paper.title,
         authors=add_authors_merits(paper.authors),

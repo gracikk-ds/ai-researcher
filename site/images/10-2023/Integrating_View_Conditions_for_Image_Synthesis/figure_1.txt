@@ -1,1 +1,0 @@
-Figure 1: Applications of the proposed method. Our method can replace each object in the left column with the one in the upper row, ensuring not only consistency in the synthesized object but also, by introducing viewpoint conditions to the model, enabling precise control over the object’s pose and thus enhancing visual harmony.

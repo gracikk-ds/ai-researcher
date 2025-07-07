@@ -1,1 +1,0 @@
-Fig. 1: Applications of the proposed method. Our image editing system is flexible in responding to a wide variety of editing requirements.

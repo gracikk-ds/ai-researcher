@@ -1,1 +1,0 @@
-Figure 8: Visual comparison of directly applying existing 2D editing methods [ 5 , 18 , 43 ] on designated views of ODIs versus our method. Only the designated view is presented.

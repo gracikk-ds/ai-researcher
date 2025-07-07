@@ -1,1 +1,0 @@
-Edit instruction: “in a race car video game” Figure 12. By varying the latent noise, our model can produce many possible image edits for the same input image and instruction.

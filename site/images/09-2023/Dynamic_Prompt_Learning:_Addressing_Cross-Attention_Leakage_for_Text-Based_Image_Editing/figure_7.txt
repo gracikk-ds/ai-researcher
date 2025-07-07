@@ -1,1 +1,0 @@
-Figure 7: Word-Swap by only modifying the regions corresponding to the target concept. We list the source prompts on the left with dynamic tokens in the curly brackets. Each line is corresponding to modifying one or multiple concepts with various methods.

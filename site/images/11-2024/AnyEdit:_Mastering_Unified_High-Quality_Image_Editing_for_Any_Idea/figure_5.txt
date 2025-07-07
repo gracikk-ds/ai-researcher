@@ -1,1 +1,0 @@
-Figure 5. Qualitative evaluation of 10 distinct and complex tasks on AnyEdit-Test, such as action change (i), appearance alter (iv), rotation change (viii), counting (ix), and outpainting (x), demonstrates that our method yields promising results across these editing tasks.

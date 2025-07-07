@@ -1,1 +1,0 @@
-Figure 2: The visualization of DreamEditor to iteratively refine the generated target subject.

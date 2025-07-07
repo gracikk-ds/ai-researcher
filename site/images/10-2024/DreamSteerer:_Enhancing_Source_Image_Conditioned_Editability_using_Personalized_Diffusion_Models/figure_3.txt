@@ -1,1 +1,0 @@
-Figure 3: Overall framework of DreamSteerer (the gradient flows are illustrated with dashed lines).

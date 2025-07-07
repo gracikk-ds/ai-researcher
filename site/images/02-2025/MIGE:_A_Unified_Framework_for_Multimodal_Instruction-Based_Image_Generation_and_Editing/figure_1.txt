@@ -1,1 +1,0 @@
-Figure 1: Demonstrating the comprehensive capabilities of MIGE. As a unified framework, MIGE excels in subject-driven generation and instruction-based editing while performing well in the new compositional task of instruction-based subject-driven editing.

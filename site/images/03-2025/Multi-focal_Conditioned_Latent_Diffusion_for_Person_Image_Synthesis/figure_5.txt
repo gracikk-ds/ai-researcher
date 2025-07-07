@@ -1,1 +1,0 @@
-Figure 5. Appearance editing results. Our method accepts flexible editing of given identities, poses, and clothes. This is achieved only by modifying some regions of conditions, and no need for any masking or further training.

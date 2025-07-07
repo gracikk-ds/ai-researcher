@@ -1,1 +1,0 @@
-Fig. 3: Qualitative examples of our depth-skip pruning and time-step optimization on IP2P [6], StableSR [71], and ControlNet [80].

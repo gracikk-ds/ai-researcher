@@ -1,1 +1,0 @@
-Figure 1. Results showcasing the strength of Instruct-CLIP (I-CLIP) compared to state-of-the-art InstructPix2Pix (IP2P) [ 1 ].

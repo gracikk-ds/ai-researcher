@@ -1,1 +1,0 @@
-Figure 9. RGBA generation results. Captions: “a train is approaching“, “a red suitcase“, “a pair of running shoes“, “a cartoon car is parked“. For StableDiffusion, “on a black background“ was added.

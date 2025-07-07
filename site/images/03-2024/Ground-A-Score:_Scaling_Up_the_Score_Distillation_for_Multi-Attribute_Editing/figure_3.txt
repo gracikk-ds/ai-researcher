@@ -1,1 +1,0 @@
-Fig. 3: The difference between the predicted noise on the target image, with the given condition and null text, in two image editing scenarios. The source image and the output from DDS are also provided. The red boxes indicate the region corresponding to the object meant to be edited.

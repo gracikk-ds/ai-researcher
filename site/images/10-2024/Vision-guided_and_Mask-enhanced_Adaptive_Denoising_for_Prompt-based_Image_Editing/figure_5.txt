@@ -1,1 +1,0 @@
-Figure 5: Image editing solely based on the estimated target image embeddings without prompt.

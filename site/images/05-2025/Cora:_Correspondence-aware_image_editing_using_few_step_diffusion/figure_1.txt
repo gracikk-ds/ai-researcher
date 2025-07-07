@@ -1,1 +1,0 @@
-Fig. 1. Cora supports diverse edits, including object insertion, subject and background changes, and non-rigid deformations (e.g., jumping). Our novel correspondence-aware method provides strong control and flexibility for both appearance and structure editing.

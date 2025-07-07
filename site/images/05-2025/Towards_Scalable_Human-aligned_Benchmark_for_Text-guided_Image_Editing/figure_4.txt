@@ -1,1 +1,0 @@
-Figure 4. Query Set Distribution. (a) Distribution of edit types in our query set, (b) Distribution of the object classes designated as the target in object-centric queries.

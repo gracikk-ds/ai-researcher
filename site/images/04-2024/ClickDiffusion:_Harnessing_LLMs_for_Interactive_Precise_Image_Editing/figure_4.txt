@@ -1,1 +1,0 @@
-Figure 4. Our procedure for in-context learning involves placing several examples in the context of our LLM. Each example is composed of an input layout, instruction, a chain of thought, and output layout. These are placed sequentially in the context of the LLM after a preamble prompt.

@@ -1,1 +1,0 @@
-Figure 4: The following is a case from a multiagent self-correcting system , demonstrating the collaborative process of attribute self-correction for the “yellow deer”. This case also showcases our two-stage visual reasoning paradigm based on MMCoT [51].

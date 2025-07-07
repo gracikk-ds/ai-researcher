@@ -1,1 +1,0 @@
-Figure 9. Analysis of score interpolation. Varying v with the same random seed gets editing results with various qualities.

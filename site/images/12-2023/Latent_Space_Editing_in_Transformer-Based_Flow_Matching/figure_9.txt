@@ -1,1 +1,0 @@
-Figure 9: More sequential editing result by shuffling the order of the prompts. The same set of semantic manipulations can be composed in different orders.

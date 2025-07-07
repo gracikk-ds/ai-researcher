@@ -1,1 +1,0 @@
-Figure 4. Qualitative results on Object Removal (Left) and Object Addition (Right). We compare our model against leading methods for add and remove showcasing diverse instruction following capability while maintaining high fidelity to the input image.

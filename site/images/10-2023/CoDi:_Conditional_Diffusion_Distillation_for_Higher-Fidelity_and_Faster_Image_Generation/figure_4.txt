@@ -1,1 +1,0 @@
-LR CM-II CoDi (Ours) HR Ground Truth Mask CM-II PF-CoDi (Ours) Figure 4. We show the results sampled in 4 steps by different models. Samples generated according to the low-resolution images (left) and masks (right) respectively. Please see our supplement for many more examples such as visual comparisons with the other methods.

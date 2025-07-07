@@ -1,1 +1,0 @@
-Figure 2: Generalization. Our counterfactual dataset is relatively small and was captured in controlled settings, yet the model generalizes exceptionally well to out-of-distribution scenarios such as removing buildings and large objects.

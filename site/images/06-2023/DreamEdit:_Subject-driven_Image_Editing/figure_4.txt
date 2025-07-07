@@ -1,1 +1,0 @@
-Figure 4: Results on Subject Replacement Task Compared with Baselines

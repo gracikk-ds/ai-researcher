@@ -1,1 +1,0 @@
-Figure 4. Compared to baselines, PhotoDoodle demonstrates superior instruction following, image consistency, and editing effectiveness.

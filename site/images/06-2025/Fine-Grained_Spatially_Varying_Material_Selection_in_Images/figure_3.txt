@@ -1,1 +1,0 @@
-Fig. 3. Fine-grained material selection. Our multi-resolution aggregation allows to recover thin structures, overcoming a limitation acknowledged in previous work [Sharma et al. 2023].

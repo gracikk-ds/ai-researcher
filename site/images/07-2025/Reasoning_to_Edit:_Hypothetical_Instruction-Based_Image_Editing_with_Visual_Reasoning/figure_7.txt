@@ -1,1 +1,0 @@
-Figure 7: Qualitative comparison of ablation variants in ReasonBrain.

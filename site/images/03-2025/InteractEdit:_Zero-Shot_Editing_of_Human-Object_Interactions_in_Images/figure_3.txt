@@ -1,1 +1,0 @@
-Figure 3. Qualitative comparison with baselines. The Source column shows the source image and its original interaction. Two target interactions are generated per instance. Our method achieves the best HOI editability. More comparisons are in Figs. 6 and 7 (supplementary).

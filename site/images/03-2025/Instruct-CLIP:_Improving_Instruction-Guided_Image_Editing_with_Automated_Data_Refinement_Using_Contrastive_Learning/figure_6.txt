@@ -1,1 +1,0 @@
-“Replace the truck with a tractor” Figure 6. Effect of refined instructions and Instruct-CLIP guidance loss. Compared to variants of our model trained without refined instructions (“Ours (w/o data)”) or without the guidance loss (“Ours (w/o loss)”), our model produce superior results.

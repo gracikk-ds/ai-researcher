@@ -1,1 +1,0 @@
-Fig. 5 Copy-Paste [ 31 ] and X-Paste [ 27 ] pass through a complex synthetic data generation pipeline and may present irrational augmentations. Our Add-SD synthetic augmentation is simple and effective.

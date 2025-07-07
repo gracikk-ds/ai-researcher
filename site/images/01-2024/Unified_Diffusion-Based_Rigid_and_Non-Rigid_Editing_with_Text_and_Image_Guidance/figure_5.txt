@@ -1,1 +1,0 @@
-Fig. 5. Ablation Study. Each column represents the effect of removing a specific component.

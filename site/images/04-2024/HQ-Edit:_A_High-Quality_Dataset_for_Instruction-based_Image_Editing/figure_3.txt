@@ -1,1 +1,0 @@
-Fig. 3: The effect of decomposing and warping in image post-processing. Filtering is not demonstrated in this figure. Without warping, there is a part of the desk edge in the output image on the right. This issue is addressed after warping.

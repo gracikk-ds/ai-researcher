@@ -1,1 +1,0 @@
-Figure 3: DreamEditor generates the results iteratively. The output of the last iteration will serve as the input for the next. In each iteration, it leverages the dilated mask of subject segmentation and the specialized prompt to guide the DDIM inversion and gradually in-paint a subject more similar to the target one.

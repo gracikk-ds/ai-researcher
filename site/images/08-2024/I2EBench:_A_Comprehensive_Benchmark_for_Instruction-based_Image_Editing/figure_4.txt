@@ -1,1 +1,0 @@
-Figure 4: Comparison of radar charts for I 2 EBench scores in different dimensions using (a) original instructions and (b) diverse instructions.

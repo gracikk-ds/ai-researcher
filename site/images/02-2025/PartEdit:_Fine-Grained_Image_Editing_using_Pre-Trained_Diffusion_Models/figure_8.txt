@@ -1,1 +1,0 @@
-Fig. 8. The impact of the number of denoising steps 𝑡 𝑒 to perform feature blending.

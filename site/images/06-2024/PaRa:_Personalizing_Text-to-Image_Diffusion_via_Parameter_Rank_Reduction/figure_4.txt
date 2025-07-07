@@ -1,1 +1,0 @@
-Figure 4: Examples of multi-subject generation results. The PaRa results are generated with the reduced rank r 1 = 2 for Concept 1 and r 2 being 8 and 32 for Concept 2. LoRA results are generated with the best rank of 16 for both concepts and the scale value of 1.

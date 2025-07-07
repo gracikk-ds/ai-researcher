@@ -1,1 +1,0 @@
-Figure 6: (Left) Example evaluation scenario. Predicted boxes are counted only if a positive or negative ground-truth box meets an IoU above the threshold. (Right) TPR-FPR curves. Each line is constructed by increasing the number of sampled locations from { 10 , 20 , . . . , 100 } . Higher and to the left is better.

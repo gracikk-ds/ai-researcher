@@ -1,1 +1,0 @@
-Figure 3. Architecture of AnySD . AnySD is a novel architecture to supports three conditions (original image, editing instruction, visual prompt) for various editing tasks.

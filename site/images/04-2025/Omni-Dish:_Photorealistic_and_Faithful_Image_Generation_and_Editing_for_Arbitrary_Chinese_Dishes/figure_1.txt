@@ -1,1 +1,0 @@
-Figure 1: Samples demonstrate the superiority of Omni-Dish in generating and editing Chinese culinary dishes. Rows 1-2 show the faithful generation results from Omni-Dish. Row 3 shows the dish editing capabilities. The project homepage is available at https://liuhuijie6410.github.io/OmniDish/ .

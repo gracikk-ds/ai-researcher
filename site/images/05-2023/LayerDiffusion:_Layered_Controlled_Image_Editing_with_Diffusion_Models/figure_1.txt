@@ -1,1 +1,0 @@
-Figure 1: Our method achieves layered image editing through text descriptions, enabling simultaneous modifications of backgrounds and specific subjects, such as background replacement, object resizing, and complex non-rigid changes.

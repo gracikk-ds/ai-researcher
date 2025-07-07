@@ -1,1 +1,0 @@
-Figure 4. Edit Transfer exhibits impressive versatility to transfer visual exemplar pairs’edit into the requested source image, delivering high-quality (a) single-edit transformations as well as (b) effective compositional edits that seamlessly combine multiple modifications.

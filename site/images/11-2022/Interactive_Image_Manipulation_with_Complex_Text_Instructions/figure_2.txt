@@ -1,1 +1,0 @@
-Figure 2. The overview of our proposed model. It allows users to edit the segmentation map automatically.

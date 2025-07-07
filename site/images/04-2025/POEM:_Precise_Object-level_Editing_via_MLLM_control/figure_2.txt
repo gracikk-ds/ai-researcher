@@ -1,1 +1,0 @@
-Fig. 2. Overview of our approach. An image and a user edit prompt are fed into the reasoning stage, where we analyze the scene and extract object-level masks and precise transformation parameters for appearance and shape edits. During the editing stage, we apply these edits during inference without any additional training or fine-tuning.

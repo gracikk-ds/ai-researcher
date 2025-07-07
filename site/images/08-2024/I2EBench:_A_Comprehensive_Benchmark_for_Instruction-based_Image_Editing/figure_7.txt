@@ -1,1 +1,0 @@
-Figure 7: Comparison of radar charts for I 2 EBench scores in different categories using (a) original instructions and (b) diverse instructions. The scores of all dimensions are normalized and averaged.

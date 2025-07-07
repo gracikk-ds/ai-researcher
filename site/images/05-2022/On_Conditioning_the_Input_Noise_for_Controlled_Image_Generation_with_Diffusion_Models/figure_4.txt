@@ -1,1 +1,0 @@
-Figure 4. Outputs after manipulating input noise: (a) 90 degree rotation, (b) Horizontal ﬂipping. Note the orientation of generated images change accordingly with the rotation, ﬂip.

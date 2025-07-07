@@ -1,1 +1,0 @@
-Figure 1. Existing methods struggle to deal with the compound of backgrounds and several overlapping objects in a complex scene. They generate distorted objects and texturally inconsistent backgrounds . The proposed method can cope well with this input.

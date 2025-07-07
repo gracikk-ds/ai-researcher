@@ -1,1 +1,0 @@
-Figure 1. Editability and fidelity trade-off of diffusion-based image manipulation. The leftmost is the input image. For each manipulation, we add increasing noise levels from left to right and then denoise the image. Different semantics require different levels of noise to manipulate.

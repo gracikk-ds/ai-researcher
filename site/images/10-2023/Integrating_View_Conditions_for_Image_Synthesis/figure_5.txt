@@ -1,1 +1,0 @@
-Figure 5: Qualitative ablation studies on the effects of view conditions , where ”Slight” denotes an error range of 0-20 degrees viewing conditions, ”Moderate” denotes an error range of 20-40 degrees viewing conditions, ”Severe” denotes an error range of 40-90 degrees viewing conditions, and ”Perfect” denotes there are no errors.

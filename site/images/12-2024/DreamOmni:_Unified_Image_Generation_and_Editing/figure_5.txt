@@ -1,1 +1,0 @@
-Figure 5. Visual comparison on inpainting & outpainting between DreamOmni, ControlNet-Inpainting [ 62 ] and SD-inpainting [ 44 ].

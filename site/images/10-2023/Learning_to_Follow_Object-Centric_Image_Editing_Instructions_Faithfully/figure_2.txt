@@ -1,1 +1,0 @@
-Figure 2: Steps to create parallel data: (a) Input Image + Edit Instruction; (b) Image with grounding in the form of a bounding box for the entity where transformation has to be made; (c) Masked localized segment of the grounded image where the transformation has to be made; (d) Final output.

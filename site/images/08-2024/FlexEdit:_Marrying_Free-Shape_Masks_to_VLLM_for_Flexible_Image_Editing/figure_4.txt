@@ -1,1 +1,0 @@
-Figure 4: We train model to understand free-shape mask by having it predict the full mask from a given free-form mask. The picture shows two examples of this process.

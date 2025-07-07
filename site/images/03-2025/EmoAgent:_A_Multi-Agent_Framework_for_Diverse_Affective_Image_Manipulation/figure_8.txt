@@ -1,1 +1,0 @@
-Fig. 8. Ablation study on the EFK retriever. Removing the EFK retriever reduces both emotional accuracy and diversity. With it, the Planning Agent can retrieve and incorporate a wider range of contextually appropriate emotion-related elements into the editing plan.

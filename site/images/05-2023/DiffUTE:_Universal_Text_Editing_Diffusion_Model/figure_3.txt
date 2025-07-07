@@ -1,1 +1,0 @@
-Figure 3: Visualization comparison. Our DiffUTE beats other methods with a significant improvement.

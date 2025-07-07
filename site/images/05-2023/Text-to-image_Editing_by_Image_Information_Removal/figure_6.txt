@@ -1,1 +1,0 @@
-Figure 6. Failure cases include inconsistencies with the original image in non-rigid image editing task (top); challenges in notably modifying the brightness of the image (middle), and inaccurate localization or segmentation (bottom). See Section 5 for discussion.

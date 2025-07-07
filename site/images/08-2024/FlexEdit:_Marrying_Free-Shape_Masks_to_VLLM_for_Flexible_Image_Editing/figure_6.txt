@@ -1,1 +1,0 @@
-Figure 6: Qualitative results comparison on single image edit.

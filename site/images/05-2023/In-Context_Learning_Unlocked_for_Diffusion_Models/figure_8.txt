@@ -1,1 +1,0 @@
-Figure 8: We present some failure cases of Prompt Diffusion when generalizing to new, unseen tasks under ambiguous text guidance.

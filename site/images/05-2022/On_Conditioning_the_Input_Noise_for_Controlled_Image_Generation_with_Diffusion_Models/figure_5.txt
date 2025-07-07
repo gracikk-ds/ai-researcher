@@ -1,1 +1,0 @@
-Figure 5. Effect of sampling outputs over different steps of IG. Col-1 visualizes IG outputs over steps0, 1000, 5000 steps. We clearly see the initial IG output0 step lacks localization, whereas the localisation provided by 1000 step is not as sound as in 5000 step.

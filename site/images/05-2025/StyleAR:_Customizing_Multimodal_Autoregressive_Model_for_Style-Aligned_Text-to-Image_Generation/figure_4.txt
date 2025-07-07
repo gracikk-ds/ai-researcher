@@ -1,1 +1,0 @@
-Figure 4: Qualitative comparison. We conducted a comprehensive qualitative evaluation by comparing our StyleAR with various existing methods which are all diffusion-based, including InstantStyle [38], IP-Adapter [51], StyleAligned [10], StyleCrafter [18], StyleShot [9].

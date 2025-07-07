@@ -1,1 +1,0 @@
-Figure 3: Visualisation of x 0 ( t 0 ; θ ) predictions for different t 0 . The estimates for t 0 ≤ 500 preserve main semantic attributes of the original images.

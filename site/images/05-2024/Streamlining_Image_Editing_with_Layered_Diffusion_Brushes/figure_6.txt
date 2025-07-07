@@ -1,1 +1,0 @@
-Figure 6: Overview of the tasks section, where users can interact to load, select, and save each task. Tasks that are selected are highlighted in blue, while those completed and saved are highlighted in green.

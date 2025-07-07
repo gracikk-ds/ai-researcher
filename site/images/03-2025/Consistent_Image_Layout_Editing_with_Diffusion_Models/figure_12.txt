@@ -1,1 +1,0 @@
-Figure 12. Ablation study on fine-tuning layers. Fine-tune different layers in diffusion models with masked diffusion loss. Because of masked diffusion loss, all fine-tuning schemes reshape the layout successfully.

@@ -1,1 +1,0 @@
-Figure 5. Illustrating the example of generated intention-to-JSON pairs data for the given image. We can see that the user intention is vague and the JSON file is much more informative. Readers are kindly suggested to zoom into the figure for a clearer view. The image originates from our training dataset.

@@ -1,1 +1,0 @@
-Figure 12: Qualitative comparison of textual-guided editing with and without cross-attention disentanglement

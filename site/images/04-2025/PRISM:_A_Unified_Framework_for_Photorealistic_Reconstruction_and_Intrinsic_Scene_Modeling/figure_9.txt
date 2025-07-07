@@ -1,1 +1,0 @@
-Fig. 9. Sample RGB, text+X, X+RGB conditioned results generated with PRISM on the InteriorVerse test set. Condition channels are highlighted in orange .

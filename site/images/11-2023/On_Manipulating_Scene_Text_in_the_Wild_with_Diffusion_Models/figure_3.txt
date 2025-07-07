@@ -1,1 +1,0 @@
-Figure 3. Qualitative comparison on COCO-Text [ 39 ] and ICDAR2013 [ 16 ] datasets. DBEST (ours) achieves superior qualitative results compared to SRNet [ 40 ], STEFFAN [ 32 ], SDEdit [ 20 ], Imagic [ 17 ], Null-Inv [ 22 ]+p2p [ 12 ], Text2Img LDM [ 30 ], Text2Live [ 3 ].

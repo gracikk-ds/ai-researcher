@@ -1,1 +1,0 @@
-Figure 9. In human-centric image editing, SeedEdit prioritizes aesthetics at the expense of identity consistency, whereas our approach ensures more precise edits aligned with the intended goals.

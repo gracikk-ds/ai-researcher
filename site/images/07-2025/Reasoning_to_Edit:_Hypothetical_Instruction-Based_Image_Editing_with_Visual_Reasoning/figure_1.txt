@@ -1,1 +1,0 @@
-(c) Causal Reasoning (d) Story Reasoning Figure 1: Current efforts fail to handle hypothetical instructions, producing incorrect results, while our method generates plausible, reasoning-aware edits.

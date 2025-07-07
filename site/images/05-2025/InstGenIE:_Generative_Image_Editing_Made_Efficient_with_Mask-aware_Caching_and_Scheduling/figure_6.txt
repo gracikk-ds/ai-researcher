@@ -1,1 +1,0 @@
-Figure 6. Token activations and attention scores in a SDXL model. Left : Cosine similarity of activations. Right : Zoomedin visualizaiton of attention scores. Tokens with ID 200-236 are masked and with ID 237-300 are unmasked.

@@ -1,1 +1,0 @@
-Figure 5. Studies on distillation loss. From left to right, we show the input image, results w/out distillation, and distillation results with DINOv2 and CLIP. The top example shows improved object localization. The bottom shows better text-to-image alignment.

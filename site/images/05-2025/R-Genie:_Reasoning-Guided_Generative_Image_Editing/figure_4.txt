@@ -1,1 +1,0 @@
-Figure 4: Qualitative result comparisons with other instruction-based image editing methods.

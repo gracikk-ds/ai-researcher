@@ -1,1 +1,0 @@
-Figure 6: Qualitative comparison of integration with additional conditions. We show the comparison results of control generation with Ours and diffusion models.

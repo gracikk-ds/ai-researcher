@@ -1,1 +1,0 @@
-Figure 10. Ablation on Inference-Time Scaling (§ 4.2 ). Our strategy significantly enhances edit quality. For example, with the instruction “get rid of the helmet,” default fixed seed incorrectly removes the character’s head—a flawed outcome prevented by VLM filtering.

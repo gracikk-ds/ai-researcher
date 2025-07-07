@@ -1,1 +1,0 @@
-Figure 7: Ablation study. We evaluate three variants of our model: (A) replacing the semantic loss with the visual concept loss proposed in [ 17 ], (B) removing the content LoRA, and (C) replacing the content-preserving noise schedule with a standard noise schedule.

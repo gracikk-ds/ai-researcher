@@ -1,1 +1,0 @@
-Figure 6. Visual comparison on image-conditioned generation . Our DreamOmni excels at using canny, depth, and segmentation maps as conditions for image generation. Compared to the classic ControlNet [ 62 ], DreamOmni not only follows the user’s prompts and image conditions more accurately but also generates content and color schemes that are visually more pleasing.

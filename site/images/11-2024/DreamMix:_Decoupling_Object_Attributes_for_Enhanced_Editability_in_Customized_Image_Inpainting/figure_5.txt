@@ -1,1 +1,0 @@
-Figure 5. Effect of different values of λ in disentangled inpainting framework. λ = 1 means only GCH stage is performed while λ = 0 means only LCG stage is used. λ is set to 0.7 in our experiments.

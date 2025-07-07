@@ -1,1 +1,0 @@
-Figure 3: Design of the Layered Diffusion Brushes UI: The name and functionality of each section are described in the text. In this example, the user has created three layers, visualized on the image canvas, along with the mask and edit prompt. The selected layer in this picture is Layer 1.

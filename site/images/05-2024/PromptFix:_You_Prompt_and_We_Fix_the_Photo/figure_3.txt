@@ -1,1 +1,0 @@
-Figure 3: Qualitative comparison between PromptFix and other instruct-driven diffusion methods (InstructP2P [ 7 ], InstructDiff [ 21 ], and MGIE [ 19 ]) for image processing, as well as low-level generalist techniques (PromptIR [50], AirNet [36], and Diff-Plugin [44]) for image restoration.

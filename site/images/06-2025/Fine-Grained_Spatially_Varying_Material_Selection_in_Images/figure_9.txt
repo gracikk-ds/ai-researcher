@@ -1,1 +1,0 @@
-Fig. 9. Editing. We use our method’s selection masks at subtexture level to perform fine-granular edits of the image’s materials in Photoshop.

@@ -1,1 +1,0 @@
-Figure 1: Our proposed pipeline for object insertion (b), in contrast to instruction-tuned methods (a). We use a pretrained inpainting model and provide it with plausible locations for object insertion.

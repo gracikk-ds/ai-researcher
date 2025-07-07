@@ -1,1 +1,0 @@
-Figure 2: Our method utilizes a layered controlled optimization strategy to refine text embeddings and a layered diffusion strategy to fine-tune the diffusion model. During inference, an iterative guidance strategy is employed to directly generate images aligning with the multiple editing actions described in the input text.

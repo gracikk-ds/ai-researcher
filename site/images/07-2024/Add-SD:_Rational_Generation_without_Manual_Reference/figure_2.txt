@@ -1,1 +1,0 @@
-Fig. 2 Our pipeline uses an object removal operation, which ensures that image pairs have a consistent background.

@@ -1,1 +1,0 @@
-Figure 1: Comparison between parallel and chain multi-instruction image editing. Parallel editing applies independent instructions simultaneously, while chain editing involves dependent instructions that must be executed in sequence.

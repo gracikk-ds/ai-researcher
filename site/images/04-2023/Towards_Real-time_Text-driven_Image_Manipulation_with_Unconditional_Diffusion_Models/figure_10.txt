@@ -1,1 +1,0 @@
-Figure 10: Visual examples produced with different single-image editing approaches. Our method, DiffusionCLIP, StyleCLIP and StyleGAN-NADA represent the methods using unconditional generative models. InstructPix2Pix and Null-text Inversion methods are based on Stable Diffusion.

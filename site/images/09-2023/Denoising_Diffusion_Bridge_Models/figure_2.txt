@@ -1,1 +1,0 @@
-Figure 2: VE bridge (left) and VP bridge (right) with their SDE (top) and ODE (bottom) visualization.

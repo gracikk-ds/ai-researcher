@@ -1,1 +1,0 @@
-D c Figure 3: Embedding layer in the text encoder. New tokens are inserted with random initialization.

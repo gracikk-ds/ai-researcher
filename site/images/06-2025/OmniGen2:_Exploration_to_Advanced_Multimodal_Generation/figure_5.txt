@@ -1,1 +1,0 @@
-Figure 5: In-Context Generation Dataset Construction Pipeline. The final input images are outlined with a red border and the target image is marked by a blue boundary.

@@ -1,1 +1,0 @@
-Fig. 10. Limitations. Our method struggles with clicks on out-of-focus regions (top) and long-horizon imagery with changing frequencies (middle). Textures without individual components (bottom) stretches our definition of subtexture.

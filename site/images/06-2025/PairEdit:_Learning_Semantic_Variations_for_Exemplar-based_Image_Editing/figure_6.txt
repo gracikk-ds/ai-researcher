@@ -1,1 +1,0 @@
-Figure 6: Composing sequential edits. Our method effectively composes different edits while preserving the original identity. Multiple semantic LoRAs are merged using the strategy illustrated in Eq. 12.

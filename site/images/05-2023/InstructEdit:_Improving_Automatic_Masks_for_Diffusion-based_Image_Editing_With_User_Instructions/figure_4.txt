@@ -1,1 +1,0 @@
-Figure 4: Qualitative results of baselines and our method. Here we use the same form of instruction “Change ... to ...” as an example.

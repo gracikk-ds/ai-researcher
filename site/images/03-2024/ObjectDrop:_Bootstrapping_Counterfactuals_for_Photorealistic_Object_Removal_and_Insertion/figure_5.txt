@@ -1,1 +1,0 @@
-Figure 5: Object removal comparison with general editing methods. We compare to general editing methods: Emu Edit and MGIE. These methods often replace the object with a new one and introduce unintended changes to the input image. For this comparison we used a text-based segmentation model to mask the object according to the instruction and passed the mask as input to our model.

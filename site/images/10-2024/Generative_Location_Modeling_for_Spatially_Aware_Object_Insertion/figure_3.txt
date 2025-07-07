@@ -1,1 +1,0 @@
-Figure 3: Annotation format for the PIPE dataset (left) and OPA dataset (right). The PIPE dataset has one groundtruth location per image, whereas OPA provides multiple positive and negative locations.

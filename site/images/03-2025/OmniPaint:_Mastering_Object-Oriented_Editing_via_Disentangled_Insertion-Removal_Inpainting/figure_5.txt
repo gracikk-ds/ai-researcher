@@ -1,1 +1,0 @@
-Figure 5. Qualitative comparison on object insertion. Given masked images and reference object images (top row), we compare results from AnyDoor [ 5 ], IMPRINT [ 34 ], and OmniPaint.

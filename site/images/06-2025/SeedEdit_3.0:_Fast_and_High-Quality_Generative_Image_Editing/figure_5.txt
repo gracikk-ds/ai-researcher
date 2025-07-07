@@ -1,1 +1,0 @@
-Figure 5 Model architecture with meta info embedding that connect VLM and the causal diffusion models.

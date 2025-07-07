@@ -1,1 +1,0 @@
-Fig. 3: Comparisons of methods on ADE20k dataset for free-form and outpainting masks. Our method achieves better results in terms of color consistency between the generated and existing pixels and sharpness in the generated parts.

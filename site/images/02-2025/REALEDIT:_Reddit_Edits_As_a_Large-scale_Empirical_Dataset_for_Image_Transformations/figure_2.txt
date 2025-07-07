@@ -1,1 +1,0 @@
-Figure 2. Baselines struggle on simple, practical tasks, such as restoring a damaged photograph. Our model is successful.

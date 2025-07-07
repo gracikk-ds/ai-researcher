@@ -1,1 +1,0 @@
-Figure 8. Impact of adding multiple objects. We observe that training without multiple objects leads to (a) poor reflection generation and (b) artifacts like object blending, supporting the need for finetuning the model on such scenarios.

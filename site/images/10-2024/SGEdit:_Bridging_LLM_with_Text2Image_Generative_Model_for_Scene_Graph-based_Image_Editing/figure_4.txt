@@ -1,1 +1,0 @@
-Fig. 4. Contents represented by the detailed description and optimized token. The leftmost column shows the input images, while the three right columns display images generated using the optimized token, detailed description, and their combination. The combination best preserves the woman’s visual identity. The input image is from © Unsplash.

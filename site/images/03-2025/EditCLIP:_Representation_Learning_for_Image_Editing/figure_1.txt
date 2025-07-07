@@ -1,1 +1,0 @@
-Figure 1. EditCLIP provides a unified representation of image edits by encoding the transformation between an image and its edited counterpart within the CLIP space. We demonstrate the effectiveness of EditCLIP embeddings in exemplar-based image editing and automated evaluation of image editing pipelines, where it achieves better alignment with human assessment.

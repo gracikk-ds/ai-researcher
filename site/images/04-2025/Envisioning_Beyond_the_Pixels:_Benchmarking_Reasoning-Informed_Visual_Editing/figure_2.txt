@@ -1,1 +1,0 @@
-Figure 2: Overview of RISEBench. We present illustrative example questions from each of the four problem categories, each demanding profound image understanding and reasoning capabilities.

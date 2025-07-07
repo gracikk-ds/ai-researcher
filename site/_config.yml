@@ -1,8 +1,0 @@
-title: "Autonomous Reports"
-source: site
-destination: _site
-markdown: kramdown
-collections:
-  reports:
-    output: true
-    permalink: /reports/:path/

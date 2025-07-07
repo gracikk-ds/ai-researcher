@@ -1,1 +1,0 @@
-Figure 4: Examples of continuous editing by our method. By adjusting the scaling factor of the learned LoRA, our method enables a high-fidelity and fine-grained control over the semantic from exemplar images.

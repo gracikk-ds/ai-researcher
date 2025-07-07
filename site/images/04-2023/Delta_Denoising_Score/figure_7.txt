@@ -1,1 +1,0 @@
-Figure 7: Ablation study. We train a cat-to-lion image translation network under various settings. The ﬁrst and second columns show the input and output results of our full method, respectively. The third row shows the results when training without CFG warmup, and the last column shows the results when training with SDS instead of DDS.

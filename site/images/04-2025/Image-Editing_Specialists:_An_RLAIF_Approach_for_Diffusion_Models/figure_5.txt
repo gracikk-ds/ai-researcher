@@ -1,1 +1,0 @@
-Figure 5. Examples of a simulated scene edited by our method, showcasing enhanced realism compared to the original image across various styles. See Appendix 6.4 for more variants.

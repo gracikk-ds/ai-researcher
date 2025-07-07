@@ -1,1 +1,0 @@
-Figure 4: Comparison to state-of-the-art on generated images. Our method produces results with higher ﬁdelity to the source image and the edit prompt compared to SDEdit [ 26 ], DALL-E 2 [ 30 ] and InstructPix2Pix [ 4 ].

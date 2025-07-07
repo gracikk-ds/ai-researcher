@@ -1,1 +1,0 @@
-Coherence : 80 Fig. 7: Examples of different Coherence. As the Coherence score increases, the image quality improves significantly.

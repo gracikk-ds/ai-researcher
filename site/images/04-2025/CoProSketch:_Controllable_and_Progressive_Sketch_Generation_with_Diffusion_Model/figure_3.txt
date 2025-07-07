@@ -1,1 +1,0 @@
-Figure 3. Details of UDF representation. Given a binarized sketch, we compute its UDF representation and transform it by f ( u ) to adapt it for training networks.

@@ -1,1 +1,0 @@
-Figure 6. Illustrating the decomposition of the graphic design images into the combination of background image layers, object image layers, and object alpha masks.

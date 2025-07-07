@@ -1,1 +1,0 @@
-Figure 3: Examples of generation results of GPT4o using GenEval [ 18 ], covering single object, two objects, counting, colors, position, and attribute binding.

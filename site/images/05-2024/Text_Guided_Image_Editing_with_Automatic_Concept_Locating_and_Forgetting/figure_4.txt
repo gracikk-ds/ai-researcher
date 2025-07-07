@@ -1,1 +1,0 @@
-Figure 4: Visual editing results under Varying Forgetting Guidance η . Example images are respectively "Skillet filled with salami, broccoli and other vegetables." and "A tennis ball on a tennis court."

@@ -1,1 +1,0 @@
-Fig. 8. The generated images with different text prompts. When the prompt is “Large Fire”, the edited image area will have an unreasonable result of grass on the deck. However, when the prompt is “heavily burning”, the results will much more logical.

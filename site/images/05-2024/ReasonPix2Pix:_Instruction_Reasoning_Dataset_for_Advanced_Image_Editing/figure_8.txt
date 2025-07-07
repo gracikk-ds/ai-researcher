@@ -1,1 +1,0 @@
-Figure 8. Method Overview. Multi-modal LLava takes both input image and instruction.

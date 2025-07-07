@@ -1,1 +1,0 @@
-Figure 11. Comparison to the state-of-the-art systems on D ESIGNER I NTENTION benchmark. We choose the DeepFloyd/IF-XL and SDXL-1.0 + SDXLRefiner-1.0 models due to their superior performance. The superscript † symbol indicates that GPT4 is used to convert user intentions into detailed captions.

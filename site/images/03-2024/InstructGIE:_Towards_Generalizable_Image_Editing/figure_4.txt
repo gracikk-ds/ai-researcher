@@ -1,1 +1,0 @@
-Fig. 4: Dataset generation process Our dataset generation consists of two phases. Data Generation is to generate sets of image pairs under one editing caption. Data Processing is randomly pick image pairs under the same editing instruction and concatenate them together as one input for training.

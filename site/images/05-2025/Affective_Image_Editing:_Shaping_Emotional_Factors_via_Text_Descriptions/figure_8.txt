@@ -1,1 +1,0 @@
-Fig. 8 Visual quality comparisons with general text-driven image editing methods and affective image editing methods. AIEdiT could understand emotional requests and shape corresponding emotional factors based on text descriptions.

@@ -1,1 +1,0 @@
-Fig. 6 Generation visualization and grounding results. Add-SD generates diverse synthetic images with new instances, which are then grounded to boxes for training on downstream tasks.

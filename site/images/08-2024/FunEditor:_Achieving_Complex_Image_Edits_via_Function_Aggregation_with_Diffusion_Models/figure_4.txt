@@ -1,1 +1,0 @@
-Figure 4: Harmonization without cross-attention masking affects the entire image (a). While with masking, edits are confined to the masked region, (b), preventing changes to unmasked areas. Mask is indicated by the top right minifigure.

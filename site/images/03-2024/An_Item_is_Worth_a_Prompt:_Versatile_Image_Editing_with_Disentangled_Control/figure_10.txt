@@ -1,1 +1,0 @@
-Figure 10: Post-editing refinement can be performed when obtaining imperfect results due to imperfect segmentation.

@@ -1,1 +1,0 @@
-Figure 6: The causal diagram G B and samples for "Backdoor" setting. There are more red larger digits and green smaller digits; larger digits are less likely to have a bar on top; red digits are less likely to have a bar on top.

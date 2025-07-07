@@ -1,1 +1,0 @@
-Fig. 6. Structure Alignment. DIFT-aligned queries produce unnatural edits, while our matching algorithm with adjustable blending weights ( 𝛽 ) enables transitions between full structure alignment and new layout generation.

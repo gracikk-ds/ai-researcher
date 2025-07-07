@@ -1,1 +1,0 @@
-Figure 1. Incremental image generation at 1024 × 1024 using LazyDiffusion with 20 diffusion steps. The model generates content according to a text prompt in an area specified by a mask. Each update generates only the masked pixels, with a runtime that depends chiefly on the size of the mask, rather than that of the image.

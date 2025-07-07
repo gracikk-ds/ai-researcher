@@ -1,1 +1,0 @@
-Figure 3. Qualitative comparison on CUB and Ourdoor Scenes. From top to bottom: input image, Text2LIVE [ 1 ], Imagic [ 9 ], ControlNet [ 40 ], and ours. Generated images have 512 pixels on their shorter side. See Section 4.2 for discussion.

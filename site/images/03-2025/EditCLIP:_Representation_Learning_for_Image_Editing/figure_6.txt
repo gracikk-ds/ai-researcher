@@ -1,1 +1,0 @@
-Figure 6. Ablation of different conditioning embeddings using the original CLIP visual encoder F θ . EditCLIP embedding greatly outperforms all CLIP variations.

@@ -1,1 +1,0 @@
-Figure 1 Example images edited by SeedEdit3.0 with real and generated images as input, which provides high detail in ID preservation and strong edit intention understanding.

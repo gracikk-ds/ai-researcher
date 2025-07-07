@@ -1,1 +1,0 @@
-Figure 1. PhotoDoodle can mimic the styles and techniques of human artists in creating photo doodles, adding decorative elements to photos while maintaining perfect consistency between the preand post-edit states.

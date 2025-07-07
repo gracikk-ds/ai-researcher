@@ -1,1 +1,0 @@
-Figure 5. Qualitative Evaluation. Our model follows the spatial comprehension and attribute assignment in the the prompt.

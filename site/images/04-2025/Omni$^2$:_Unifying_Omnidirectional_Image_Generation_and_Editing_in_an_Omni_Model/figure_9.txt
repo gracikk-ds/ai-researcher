@@ -1,1 +1,0 @@
-Figure 9: Visual results of ablation studies. Top: ablation on viewport-based bidirectional attention mask; Middle: ablation on weighed loss for object-level editing tasks; Bottom: ablation on normal loss for decoration task.

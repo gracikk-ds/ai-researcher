@@ -1,1 +1,0 @@
-Figure 6: AI models tend to increase overall image aesthetics. While both requests (a) and (b) ask for changes in the background, AI editors tend to enhance the subject’s facial features. SeedEdit

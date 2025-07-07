@@ -1,1 +1,0 @@
-Figure 4: Overall improvement of the attention module.

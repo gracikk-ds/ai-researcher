@@ -1,1 +1,0 @@
-Figure 3: Qualitative comparison. We present exemplar-based image editing results of our method and three baseline methods, including VISII [ 39 ], Analogist [ 20 ], and Slider [ 17 ]. Our method demonstrates superior performance in accurately editing the original image while preserving its content.

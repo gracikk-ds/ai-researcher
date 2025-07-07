@@ -1,1 +1,0 @@
-Figure 1: In real-world scenarios, users may desire the ability to provide masks and selectively modify only the regions within the mask that they consider unsatisfactory. As shown in the provided example, The user specifies different masks and edits prompt from ”Mountaineering Wallpapers” to ”Mountaineering Wallpapers under fireworks” .

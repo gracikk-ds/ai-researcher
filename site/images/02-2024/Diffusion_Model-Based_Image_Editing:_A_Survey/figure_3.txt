@@ -1,1 +1,0 @@
-Fig. 3: Common framework of instructional image editing methods. The sample images are from InstructPix2Pix [179], InstructAny2Pix [189] and MagicBrush [275].

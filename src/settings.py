@@ -25,10 +25,6 @@ class Settings(BaseSettings):
         protected_namespaces=("settings_",),  # Added to resolve the warning
     )
 
-    github_url_template: str = Field(
-        "https://gracikk-ds.github.io/ai-researcher/reports/{month_year}/{title}/",
-        description="Base GitHub repository URL.",
-    )
     gemini_model_name: str = Field("gemini-2.5-pro", description="Gemini model name.")
     site_reports_dir: str = Field("site/_reports", description="Site reports directory.")
     telegram_token: str = Field(..., description="Telegram bot token.")

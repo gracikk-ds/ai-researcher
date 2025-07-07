@@ -1,1 +1,0 @@
-Figure 6: E DIT V AL correlation with human-score from AMT Study for six edit-types . We obtain human annotation scores falling in the range of { 0 , 1 , 2 , 3 } for all the images involving a given edit-type; the correlation is then computed b/w these scores and E DIT V AL binary scores. The general trend depicts a moderate-to-strong correlation b/w two evaluations.

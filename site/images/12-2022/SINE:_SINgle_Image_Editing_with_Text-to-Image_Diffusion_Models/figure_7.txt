@@ -1,1 +1,0 @@
-Figure 7. Analysis on guidance step K . Varying K , we can decide the steps where the model-based guidance is applied, which controls the details from the source image and edits to be applied.

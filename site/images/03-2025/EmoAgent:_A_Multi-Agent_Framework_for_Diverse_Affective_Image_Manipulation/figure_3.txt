@@ -1,1 +1,0 @@
-Fig. 3. Three-layer decision space . The agent designates the target emotion as the root node, identifies appropriate editing elements as branch nodes, and assigns corresponding editing methods as leaf nodes.

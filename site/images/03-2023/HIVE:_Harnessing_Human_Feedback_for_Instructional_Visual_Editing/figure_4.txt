@@ -1,1 +1,0 @@
-Figure 4. Comparisons between IP2P-Official (InstructPix2Pix official model), IP2P-Ours (InstructPix2Pix using our data) and HIVE. HIVE can boost performance by understanding the instruction correctly.

@@ -1,1 +1,0 @@
-Fig. 2. Comparison between TurboEdit [ 10 ] and our correspondence-aware editing approach. Due to misalignment between the source and target images, artifacts are visible in TurboEdit results, such as texture inconsistencies in (a) , silhouette artifacts in the legs and fins in (b, d) , and undesired elements in (c) . Please zoom in for a clearer view of these artifacts.

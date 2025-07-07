@@ -1,1 +1,0 @@
-Figure 3: Iterative Style-Destyle Tuning and Editing pipeline. Following a de-style editing, filtering, style tuning, stylize editing, filtering and de-style tuning steps, Iterative Style-Destyle Tuning and Editing leverages the image quality and usability.

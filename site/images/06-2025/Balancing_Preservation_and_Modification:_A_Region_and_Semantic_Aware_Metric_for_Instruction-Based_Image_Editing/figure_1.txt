@@ -1,1 +1,0 @@
-Figure 1: (a) The scores rated by existing metrics LPIPS, CLIPScore and DINOScore all witness a contradict trends with human evaluation, while our proposed BPM aligns with human evaluation. (b) Previous metrics favor excessively preserved or modified result, while our BPM favor the well-edited image.

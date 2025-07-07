@@ -1,1 +1,0 @@
-Figure 5. The figure compares the fourth edit step in Fig. 3 between image space and latent space iteration. Green boxes 2 , 3 and 5 shows improved preservation of semantic concepts from the previous edit step, while box 4 shows how newer related concepts are added, while keeping the image less noisy (box 1 ). Kindly zoom in for fine details.

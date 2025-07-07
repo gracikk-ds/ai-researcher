@@ -1,1 +1,0 @@
-Figure 1 The output results and multimodal interactive demos of Ming-Lite-Uni . Our model supports basic multimodal chatting, text-to-image generation, image editing, and image style transfer based on textual instructions.

@@ -1,1 +1,0 @@
-Figure 5: Qualitative comparison of AnyText and state-of-the-art models or APIs in English text generation. All captions are selected from the English evaluation dataset in AnyText-benchmark.

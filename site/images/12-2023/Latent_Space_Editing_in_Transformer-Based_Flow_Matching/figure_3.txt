@@ -1,1 +1,0 @@
-Figure 3: Compose multiple attributes sequentially. We gradually enforce three different semantic directions on a single reference image. The semantic direction of the three attributes is simply averaged by scale w = 2 .

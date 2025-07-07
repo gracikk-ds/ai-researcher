@@ -1,1 +1,0 @@
-Figure 1. The gallery of DreamOmni. DreamOmni, as a native unified image generation and editing model, can handle various tasks.

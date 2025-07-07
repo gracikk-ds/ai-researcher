@@ -1,1 +1,0 @@
-Figure 2. We construct one training set, i.e ., MOS Dataset, and two real-world evaluation sets, i.e ., Moving DESOBA Dataset (without ground truths) and Video DESOBA Dataset (with ground truths), to train and evaluate the effectiveness of MetaShadow.

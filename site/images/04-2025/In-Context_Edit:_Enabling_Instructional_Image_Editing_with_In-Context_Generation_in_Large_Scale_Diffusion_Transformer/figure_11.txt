@@ -1,1 +1,0 @@
-Figure 11. Our method achieves more harmonious editing results by automatically incorporating shadow effects and style alignment, leading to significantly improved outcomes (§ 4.3 ).

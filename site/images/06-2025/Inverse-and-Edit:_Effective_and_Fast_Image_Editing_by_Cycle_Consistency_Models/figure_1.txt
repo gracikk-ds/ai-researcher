@@ -1,1 +1,0 @@
-Figure 1: (a): Visual comparison of results produced by our fine-tuned model and the baseline. (b): Quantitative evaluation of the reconstruction quality of our method and the baseline on the MS-COCO validation set.

@@ -1,1 +1,0 @@
-Figure 9. Comparison with other mask-guided inpainting models. (a) shows qualitative the comparison of large object removal ability, with our method not causing obvious blurriness or filling the removed area with unrelated elements. (b) shows the user study results of 452 votes from 113 users, with our method achieving a 51% preference percentage.

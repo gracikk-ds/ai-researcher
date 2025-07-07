@@ -1,1 +1,0 @@
-Figure 5. Analysis for expert selection by the router. We show the expert weight distribution assigned by the router for SDv1.5 with four experts (N = 4).

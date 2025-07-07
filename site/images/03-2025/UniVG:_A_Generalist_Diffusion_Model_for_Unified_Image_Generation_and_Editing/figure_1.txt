@@ -1,1 +1,0 @@
-Figure 1. We introduce UniVG, a single generalist model that can support diverse image generation tasks, including text-to-image, inpainting, identity-preserving generation, layout-guided generation, instruction-based editing, depth estimation, and referring segmentation.

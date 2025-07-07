@@ -1,1 +1,0 @@
-Figure 6. Visual examples for ablation studies on identity preservation (top row) and attribute editing (bottom row).

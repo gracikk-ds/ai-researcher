@@ -1,1 +1,0 @@
-Figure 2. The pipeline of our proposed method. The process is divided into 2 steps. One-shot style adaptation for fine-tuning the diffusion model and text recognition guidance for optimizing the target embedding.

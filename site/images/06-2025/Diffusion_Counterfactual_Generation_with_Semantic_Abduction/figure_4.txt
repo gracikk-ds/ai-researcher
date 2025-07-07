@@ -1,1 +1,0 @@
-Figure 4. CelebA-HQ: Effect of guidance scale ( ω ), depicted by the number on each dot, on composition, model identity preservation (IDP) and effectiveness of amortised anti-causally guided mechanisms trained with p ∅ = 0 . 1 .

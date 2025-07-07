@@ -1,1 +1,0 @@
-Figure 6. Generated results using MaskGIT [ 8 ] as the image synthesis model. Aside from using the Stable Diffusion, our method can also generate reasonable editing results with the non-autoregressive transformer-based MaskGIT.

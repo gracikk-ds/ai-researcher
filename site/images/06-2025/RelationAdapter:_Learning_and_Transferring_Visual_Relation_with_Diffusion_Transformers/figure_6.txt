@@ -1,1 +1,0 @@
-Figure 6: Ablation study results . Our strategy shows better editorial consistency.

@@ -1,1 +1,0 @@
-Figure 2. Core concept of SDD. Our method involves two steps: 1) selecting the semantically-related timestep and 2) distilling the appropriate semantic knowledge into an image manipulator, f ϕ .

@@ -1,1 +1,0 @@
-Fig. 7 Visualization of the correspondences between manipulated emotional factors and the number of noise-adding steps t = 25 , 37 , 49 .

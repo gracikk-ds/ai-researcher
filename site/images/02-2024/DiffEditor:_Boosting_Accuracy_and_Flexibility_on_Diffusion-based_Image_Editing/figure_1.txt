@@ -1,1 +1,0 @@
-Figure 1. We propose DiffEditor , which can perform various fine-grained image editing operations on general images. Given an image, users can select an object to move or resize, or they can select sevaral pixel points for more accurate content dragging. Moreover, users can also choose a reference image for cross-image editing, i.e. , object pasting and appearance replacing.

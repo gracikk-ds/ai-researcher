@@ -1,1 +1,0 @@
-Figure 5. Comparison with existing methods. We compare our method with existing text-driven image editing methods. From left to right: Input image, Plug-and-Play [ 54 ], InstructPix2Pix [ 4 ], Null-text [ 38 ], DiffEdit [ 10 ], MasaCtrl [ 6 ], and ours.

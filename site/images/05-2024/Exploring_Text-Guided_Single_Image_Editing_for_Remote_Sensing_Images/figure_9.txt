@@ -1,1 +1,0 @@
-Fig. 9. The overall structure of PE. The text prompt provided by the user is converted into a set of various synonymous texts via GPT, and then the text set is embedded and averaged by the CLIP text encoder as a guide for image editing.

@@ -1,1 +1,0 @@
-Fig. 2: Original image (left) and edited images resulting of “changing the color of the boat to black (center) / yellow (right)”, using InstructPix2Pix.

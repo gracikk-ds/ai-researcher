@@ -1,1 +1,0 @@
-Figure 6: Comparison of different grounding strategies. Blend words are marked in red.

@@ -1,1 +1,0 @@
-Figure 7. Comparison with baseline models on the Emu Edit test set (§ 4.1 ). Our method demonstrates superior performance in both edit-instruction accuracy and preservation of non-edited regions compared to the baseline models. ü Zoom in for detailed view.

@@ -1,1 +1,0 @@
-Figure 4: Qualitative results of ParallelEdits. We denote the edits in arrows with edit actions and aspects for each pair of images. The last image pair is a failure case of ParallelEdits.

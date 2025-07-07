@@ -1,1 +1,0 @@
-Figure 8. Comparison between synchronous pipeline and asynchronous pipeline.

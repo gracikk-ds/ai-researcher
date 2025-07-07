@@ -1,1 +1,0 @@
-Figure 3: Overview of our proposed training and inference pipeline. During the basic task training phase (a) the diffusion model learns to perform various simple tasks based on the provided task tokens and masks. During inference (b), we could implement complex edit functions by combining multiple task masks and tokens.

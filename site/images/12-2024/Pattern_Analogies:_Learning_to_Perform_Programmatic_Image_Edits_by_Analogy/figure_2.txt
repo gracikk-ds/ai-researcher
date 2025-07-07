@@ -1,1 +1,0 @@
-Figure 2. Overview : To create high-quality visual patterns, we introduce a custom DSL called S PLIT W EAVE . Pairs of S PLIT W EAVE programs ( A, B ) are then jointly edited to create analogical quartets. This synthetic data is then used to train T RI F USER , a neural network for analogical pattern editing.

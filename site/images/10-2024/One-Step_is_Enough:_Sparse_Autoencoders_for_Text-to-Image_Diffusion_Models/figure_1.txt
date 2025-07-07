@@ -1,1 +1,0 @@
-Figure 1: Enabling features learned by sparse autoencoders results in interpretable changes in SDXL Turbo’s, SDXL’s, and Flux-schnell’s image generation processes. The image captions correspond to feature codes comprised of transformer block name and feature index.

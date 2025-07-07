@@ -1,1 +1,0 @@
-Figure 6. Qualitative Comparison of ControlNet-xs and ControlNet-Vxs.

@@ -12,6 +12,7 @@ from loguru import logger
 from src.ai_researcher.gemini_researcher import GeminiApiClient
 from src.fetcher.arxiv_fetcher import ArxivFetcher
 from src.notifier.notifier import Notifier
+from src.notion_db.add_content_to_page import MarkdownToNotionUploader
 from src.settings import Settings
 from src.utils.add_images_to_md import add_images_to_md, extract_paper_summary
 from src.utils.aux import get_skipped_titles
@@ -123,6 +124,7 @@ class Entrypoint:
                 }
                 add_images_to_md(md_path, images_path, paper_info)
                 paper.summary = extract_paper_summary(md_path)
+                paper.md_path = md_path
 
     def start_research(
         self,
@@ -232,6 +234,7 @@ def main(  # noqa: WPS216,WPS210
     settings = Settings()  # type: ignore
     entrypoint = Entrypoint(gemini_model_name=settings.gemini_model_name, site_reports_dir=settings.site_reports_dir)
     notifier = Notifier(settings=settings)
+    uploader = MarkdownToNotionUploader()
     papers, exculded_by_classifier_paths = entrypoint.start_research(
         start_date=start_date,
         end_date=end_date,
@@ -242,17 +245,22 @@ def main(  # noqa: WPS216,WPS210
     skipped_titles = get_skipped_titles(exculded_by_classifier_paths)
     click.echo(f"Fetched {len(papers)} papers.")
     click.echo(f"Skipped {len(skipped_titles)} papers.")
-    skipped_message = prepare_message_for_skipped_papers(skipped_titles)
-    if skipped_message:
-        logger.info(f"Sending skipped message: {skipped_message}")
+
+    # Send skipped papers message
+    if skipped_titles:
+        skipped_message = prepare_message_for_skipped_papers(skipped_titles)
+        logger.info(f"Sending skipped papers message: {skipped_message}")
         notifier.send(skipped_message)
-    site_dir = str(Path(settings.site_reports_dir).parent)
-    add_and_commit_reports_to_git(site_dir, start_date, end_date)
+
     for paper in papers:
-        published = datetime.strptime(paper.published, "%Y-%m-%d").strftime("%m-%Y")
-        title = paper.title.replace(" ", "_")
-        report_url = settings.github_url_template.format(month_year=published, title=title)
-        message = prepare_message(paper, report_url)
+        # Upload report to Notion
+        notion_page_url = None
+        if paper.md_path is not None:
+            notion_page_url = uploader.upload_markdown_file(paper.md_path)
+            time.sleep(1)
+
+        # Notify about the paper
+        message = prepare_message(paper, notion_page_url)
         notifier.send(message)
 
 

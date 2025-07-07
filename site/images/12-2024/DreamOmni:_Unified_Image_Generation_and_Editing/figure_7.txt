@@ -1,1 +1,0 @@
-Figure 7. Visual comparison on subject-driven generation . Compared with BLIP-Diffusion [ 28 ] and IP-adapter [ 60 ], DreamOmni excels at accurately following user prompts while preserving the specified subject. Furthermore, its success across both photo and anime cases underscores DreamOmni’s generalization capabilities.

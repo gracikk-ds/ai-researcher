@@ -1,1 +1,0 @@
-Figure 4. Key-Masking Self-Attention Mechanism at time step t. The figure shows the diagram for the removal latent Z S t at timestep t . The surroundings of pixel features are kept by the source latent Z S t . M remove and M refine are utilized on key features to reduce attention within the mask.

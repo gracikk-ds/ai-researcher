@@ -1,1 +1,0 @@
-Figure 3. Data distribution of each task in ICE-Bench .

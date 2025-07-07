@@ -1,1 +1,0 @@
-Figure 5. Qualitative comparison of AnyText2 and other methods. From the perspectives of text accuracy, text-image integration, attribute customization, and multilingual support, AnyText2 demonstrated significant advantages.

@@ -1,1 +1,0 @@
-Figure 6. Aggregated HATIE scores with Varied Editing Intensity for Prompt-to-Prompt. Larger τ means a weaker edit.

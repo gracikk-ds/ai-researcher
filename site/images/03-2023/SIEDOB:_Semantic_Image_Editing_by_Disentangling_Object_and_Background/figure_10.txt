@@ -1,1 +1,0 @@
-Figure 10. Out-of-distribution editing. Our method can add cars in the middle of the road or on the sidewalk, which do not exist in the training dataset.

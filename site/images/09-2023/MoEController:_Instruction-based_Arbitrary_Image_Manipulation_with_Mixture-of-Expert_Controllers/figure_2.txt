@@ -1,1 +1,0 @@
-Fig. 2 : Cross-attention heat map of the core words and generated image of different methods.

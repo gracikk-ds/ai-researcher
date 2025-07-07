@@ -1,1 +1,0 @@
-Fig. 1. UniTune edits preserving visual and semantic fidelity to the user supplied image.

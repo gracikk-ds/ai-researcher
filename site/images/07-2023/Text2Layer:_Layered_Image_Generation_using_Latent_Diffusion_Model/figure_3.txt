@@ -1,1 +1,0 @@
-Fig. 3. Failure cases of salient object segmentation (left) and inpainting (middle and right). The red shaded regions indicate the object to be removed.

@@ -1,1 +1,0 @@
-Figure 1. Generated results from the model trained on our dataset. Given an implicit instruction, our model can understand the instruction and then produce an appropriate edited image.

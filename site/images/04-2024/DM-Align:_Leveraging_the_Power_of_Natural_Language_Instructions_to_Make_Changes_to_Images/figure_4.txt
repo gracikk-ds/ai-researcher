@@ -1,1 +1,0 @@
-Figure 4: Word alignment example. Blue: identical words, Purple: substituted words, Green: nouns with different modifiers, Red: nouns mentioned only in the source caption c 1 .

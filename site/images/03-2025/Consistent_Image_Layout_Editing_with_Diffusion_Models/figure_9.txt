@@ -1,1 +1,0 @@
-Figure 9. Qualitative comparison with baselines. Compared with Image-level manipulation, DesignEdit [ 13 ] and CLED [ 43 ]. Our method has advantage in handling occlusions and generating realistic lighting and shadow effects.

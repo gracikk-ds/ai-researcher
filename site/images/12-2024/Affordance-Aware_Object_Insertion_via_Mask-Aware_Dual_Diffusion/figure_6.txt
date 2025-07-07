@@ -1,1 +1,0 @@
-Figure 6. MADD can work on images of higher resolution, generating sharper edges, clearer reflections, improved texture details.

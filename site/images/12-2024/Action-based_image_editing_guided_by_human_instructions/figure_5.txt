@@ -1,1 +1,0 @@
-Figure 5. Illustrations of EditAction’s reasoning capabilities, which allow it to extend the scene of the input image based on the action-based text command.

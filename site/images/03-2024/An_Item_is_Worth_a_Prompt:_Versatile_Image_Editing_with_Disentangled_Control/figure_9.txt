@@ -1,1 +1,0 @@
-Figure 9: Different types of mask-based editing: (a) Moving/swapping items; (b) reshaping an item; (c) Resizing an item.

@@ -1,1 +1,0 @@
-Fig. 4. Qualitative Comparisons to Appearance Transfer Methods. Our method can effectively integrate appearance and structural information from different images.

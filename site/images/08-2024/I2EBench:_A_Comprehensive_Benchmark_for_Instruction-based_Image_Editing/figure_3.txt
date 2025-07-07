@@ -1,1 +1,0 @@
-Figure 3: Word cloud visualization (a,b) and image quantity statistics (c) of I 2 EBench.

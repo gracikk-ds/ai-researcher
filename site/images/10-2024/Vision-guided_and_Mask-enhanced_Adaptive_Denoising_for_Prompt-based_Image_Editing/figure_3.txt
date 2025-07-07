@@ -1,1 +1,0 @@
-Figure 3: Illustration of our self-attention-guided iterative editing area grounding strategy.

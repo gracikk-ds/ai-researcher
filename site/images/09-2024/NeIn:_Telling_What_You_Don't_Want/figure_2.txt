@@ -1,1 +1,0 @@
-Figure 2. The process to create our dataset. It consists of two main steps: generation and filtering. ITM and VQA are image-text matching and visual question answering, respectively.

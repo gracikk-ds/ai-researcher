@@ -1,1 +1,0 @@
-Figure 5. Toy Dataset made using background images, randomly selected masks and SD-Inpaint.

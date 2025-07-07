@@ -28,3 +28,4 @@ class Paper(BaseModel):
     pdf_url: str
     categories: list[str]
     citation_count: Optional[int] = None
+    md_path: Optional[str] = None

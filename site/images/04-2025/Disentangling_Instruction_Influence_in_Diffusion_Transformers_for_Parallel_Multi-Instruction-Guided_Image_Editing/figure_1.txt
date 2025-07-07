@@ -1,1 +1,0 @@
-Figure 1. Comparison of our proposed Instruction Influence Disentanglement (IID) framework with step-by-step editing and compositing all instructions into a single one for multi-instruction image editing.

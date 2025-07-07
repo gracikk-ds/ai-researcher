@@ -1,1 +1,0 @@
-Figure 2: The Data Pipeline and Model Architecture. (Left) Our pipeline includes pre-filter, grounding and segmentation, caption generation, in-painting and post-processing, leveraging lots of state-of-the-arts models. (Right) ImgEdit-E1 includes a Qwen2.5-VL-7B [ 4 ] as text and image encoder, a SigLIP [68] provides low-level feature, and FLUX [13] as DiT backbone.

@@ -1,1 +1,0 @@
-Fig. 9. Qualitative ablation study on the refer-attention modules. w/o RA. denotes the primitive self-attention module without the introduction of reference features. RASA denotes Refer-Attention in Self-Attention. DRRA denotes Decoupled Residual Refer-Attention.

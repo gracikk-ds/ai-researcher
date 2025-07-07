@@ -1,1 +1,0 @@
-Figure 5: Qualitative comparison between baselines and O MNI -E DIT on a subset of the test set.

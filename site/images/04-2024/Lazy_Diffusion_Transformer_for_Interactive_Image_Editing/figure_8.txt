@@ -1,1 +1,0 @@
-Figure 8. Our model readily supports additional forms of local conditioning. For example, similar to SDEdit [ 29 ], a user can draw a simplistic colored sketch, providing the model shape and color information.

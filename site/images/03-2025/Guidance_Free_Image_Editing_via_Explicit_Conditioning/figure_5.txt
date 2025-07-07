@@ -1,1 +1,0 @@
-Figure 5. Qualitative evaluations. (a) input context image, (b) CFG × 1 pass, i.e. s I = 1 . 0 , s P = 1 . 0 (c) CFG × 3 passes, i.e. s I = 1 . 6 , s P = 7 . 5 . (d) our proposed × 1 pass explicit conditioning. Our method outperforms CFG while being × 3 faster.

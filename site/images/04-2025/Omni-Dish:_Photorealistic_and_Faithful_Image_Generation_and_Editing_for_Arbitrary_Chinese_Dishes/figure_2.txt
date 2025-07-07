@@ -1,1 +1,0 @@
-Figure 2: Existing methods face challenges in generating photorealistic and faithful images of arbitrary Chinese dishes. Row 1 shows reference images that are real photographs.

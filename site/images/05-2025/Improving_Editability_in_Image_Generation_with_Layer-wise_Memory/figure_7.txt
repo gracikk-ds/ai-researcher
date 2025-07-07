@@ -1,1 +1,0 @@
-Figure 7. Comparison in interactive scenarios with existing T2I generative models. Stable Diffusion XL [ 38 ] and PixArtα [ 13 ] use text input only.

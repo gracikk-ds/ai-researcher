@@ -1,1 +1,0 @@
-Fig. 5. Comparison with SOTAs including latent diffusion, GLIDE, blended diffusion, and CLIP-guided diffusion.

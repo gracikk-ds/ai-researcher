@@ -1,1 +1,0 @@
-Fig. 1. Illustration of limitations of prior works on rigid and non-rigid editing tasks.

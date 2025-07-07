@@ -1,1 +1,0 @@
-Fig. 3. More manipulation results by RDM. Across rows: different inputs; across columns: diverse editing masks and results.

@@ -1,1 +1,0 @@
-Fig. 1. Our approach, PartEdit , enables a wide range of fine-grained edits, allowing users to create highly customizable changes. The edits are seamless, precisely localized, and of high visual quality with no leakage into unedited regions.

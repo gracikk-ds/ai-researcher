@@ -1,1 +1,0 @@
-Figure 2. Impact of singular values on their main singular vectors on Unconditional Diffusion Models (CelebA-HQ dataset on the left and LSUN-Cat and LSUN-Church datasets on the right). Fine-grained attributes, such as colours and texture appearances, are changing with respect to their singular values at earlier diffusion time steps.

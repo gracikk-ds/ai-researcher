@@ -1,1 +1,0 @@
-Fig. 1. Semantic mismatches between text and images. In the image, semantic information encompasses not just the bridge but also the river, bush, bare land, and other surrounding elements. However, the corresponding textual semantic information often refers to the most prominent part of the image, which in this case is the bridge.

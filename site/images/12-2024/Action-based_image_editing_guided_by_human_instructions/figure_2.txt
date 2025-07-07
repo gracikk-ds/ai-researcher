@@ -1,1 +1,0 @@
-Figure 2. Comparison between EditAction and the baselines on the LC and HC datasets. Unlike the baselines, our model can implement actions while preserving the background and the appearance of the objects involved in the action. More examples are presented in Figure 9 (in Appendix).

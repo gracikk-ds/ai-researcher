@@ -1,1 +1,0 @@
-Fig. 5. The illustration of our Attention Modulated Object Removal and Insertion. The left part shows the attention modulation in self-attention for object removal, and the right part shows the attention modulation in both self and cross-attention for object insertion.

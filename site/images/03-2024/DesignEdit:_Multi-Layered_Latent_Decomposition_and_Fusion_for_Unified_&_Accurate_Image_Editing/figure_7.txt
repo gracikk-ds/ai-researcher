@@ -1,1 +1,0 @@
-Figure 7. Illustration of the mask usage in camera panning and zooming out tasks. The figure presents two cases of image adjustment and the formation of their related masks.

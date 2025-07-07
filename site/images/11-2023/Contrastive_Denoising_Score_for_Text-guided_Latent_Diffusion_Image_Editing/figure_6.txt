@@ -1,1 +1,0 @@
-Figure 6. Qualitative results for ablation study on feature extraction location for contrastive loss.

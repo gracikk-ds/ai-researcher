@@ -1,1 +1,0 @@
-Figure 1: Object removal and insertion. Our method models the effect of an object on the scene including occlusions, reflections, and shadows, enabling photorealistic object removal and insertion. It significantly outperforms state-of-theart baselines.

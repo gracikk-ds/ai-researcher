@@ -1,1 +1,0 @@
-Figure 10. In-the-wild human face manipulation. We conduct various editing on human face photos, locally or globally. The models are trained and edited at a resolution of 512 × 512 .

@@ -1,1 +1,0 @@
-Figure 8: Overview of OmniContext benchmark. Left: Image genres included in OmniContext. Right: Example images for each genre in OmniContext.

@@ -1,1 +1,0 @@
-Figure 8: Fixed noise leads to more balanced results . Different noises can lead to large variations in the output. Using the same training noises yields a balanced trade-off between editing manipulation and image reconstruction.

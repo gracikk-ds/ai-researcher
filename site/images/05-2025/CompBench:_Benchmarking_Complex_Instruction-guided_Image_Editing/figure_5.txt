@@ -1,1 +1,0 @@
-Figure 5: Overall Model Performance. (a) Top 5 model performace in five major evaluation tasks. (b) Overall model performace across all tasks.

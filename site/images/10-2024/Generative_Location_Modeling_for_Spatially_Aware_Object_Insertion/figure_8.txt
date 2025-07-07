@@ -1,1 +1,0 @@
-Figure 8: Comparison between our method + powerpaint, and instruction-guided image editing models on the PIPE dataset. Additional results are available in Section F . Best viewed electronically.

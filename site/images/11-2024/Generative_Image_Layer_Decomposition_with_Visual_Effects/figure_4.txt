@@ -1,1 +1,0 @@
-Figure 4. Object removal comparison with ObjectDrop [ 22 ]. Based on their released examples, our model demonstrates comparable quality in photorealistic object removal in the background layer, while decomposing the foreground with intact visual effects.

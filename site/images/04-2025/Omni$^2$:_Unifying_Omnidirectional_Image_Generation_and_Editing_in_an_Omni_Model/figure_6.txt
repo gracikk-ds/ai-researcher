@@ -1,1 +1,0 @@
-(b) “A 360 view of a beautiful under water scenario.” Figure 6: Text-instructed outpainting comparison between PanoDiff [32] and ours.

@@ -1,1 +1,0 @@
-Figure 2: Comparing the proposed PaRa with LoRA [ 18 ] and SVDiff [ 15 ] on single-subject generation. Each subject has 5 training images. PaRa includes results with ranks r ranging from 1 to 16. For LoRA, we adopt a rank of 8. We provide more generation results on Dreambooth and Textual Inversion in Appendix F.

@@ -1,1 +1,0 @@
-Fig. 5: Real image editing results on anime character images. It is clear that our KV inversion method can achieve very good action editing performance on anime characters and their limbs correspond to natural action semantics.

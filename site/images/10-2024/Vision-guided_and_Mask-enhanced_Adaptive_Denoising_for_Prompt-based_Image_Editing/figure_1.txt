@@ -1,1 +1,0 @@
-Figure 1: Illustration of the prompt-based image editing task and the dual-branch editing paradigm.

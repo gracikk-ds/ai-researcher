@@ -1,1 +1,0 @@
-Figure 8. Visualization of the intermediate multi-scale feature maps of our Shadow Analyzer. Given an object mask, Shadow Analyzer detects and removes the shadow for specific objects. Thus, the feature maps effectively capture the shadow knowledge, especially in the target shadow regions.

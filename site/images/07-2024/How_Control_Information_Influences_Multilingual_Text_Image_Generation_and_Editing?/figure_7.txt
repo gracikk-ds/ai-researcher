@@ -1,1 +1,0 @@
-Figure 7: Qualitative comparison of generation performance in English texts. Our TextGen can generate more artistic and realistic texts.

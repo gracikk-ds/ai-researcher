@@ -1,1 +1,0 @@
-Figure 4. Multiple edit options. Imagic utilizes a probabilistic model, enabling it to generate multiple options with different random seeds.

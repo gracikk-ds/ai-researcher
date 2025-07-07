@@ -1,1 +1,0 @@
-Decoded Noisy Images Figure 4. Fine-tuning on a single denoising time step leads to texture and structure tradeoff. Low time step values tend to preserve the texture details of the object and result in input image structure distortion. In contrast, high time step values tend to preserve the image structure but lose textural details.

@@ -1,1 +1,0 @@
-Figure 7. Examples of failure cases compared with InstructPix2Pix (IP2P) [ 1 ] and MagicBrush (MagBr) [ 32 ] performed on the original (Ori) images.

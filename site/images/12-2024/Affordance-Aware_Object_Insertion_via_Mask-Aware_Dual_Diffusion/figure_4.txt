@@ -1,1 +1,0 @@
-Figure 4. Qualitative results of MADD on the SAM-FB test set. Each row corresponds to one type of prompt, i.e ., point, bounding box, mask, and null, respectively. Our MADD simultaneously predicts the RGB image and the object mask.

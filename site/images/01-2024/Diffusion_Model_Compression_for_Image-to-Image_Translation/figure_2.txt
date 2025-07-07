@@ -1,1 +1,0 @@
-Fig. 2: (a) Depth-skip pruning eliminates all layers deeper than a certain depth level, effectively reducing the model size. (b) Given a fixed number of time steps, our timestep optimization finds differently biased time step sequences for different I2I tasks.

@@ -1,1 +1,0 @@
-Figure 10: Effect of our recaption strategy. The recaption help the model learn more details, such as the abalone in Fo Tiao Qiang and the sweet and sour sauce in Pot-fried pork.

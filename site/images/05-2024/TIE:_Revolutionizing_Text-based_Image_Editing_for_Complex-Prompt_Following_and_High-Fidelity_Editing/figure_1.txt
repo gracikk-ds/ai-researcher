@@ -1,1 +1,0 @@
-Figure 1: Illustration of our proposed framework as a Chain-of-Thought (CoT) process.

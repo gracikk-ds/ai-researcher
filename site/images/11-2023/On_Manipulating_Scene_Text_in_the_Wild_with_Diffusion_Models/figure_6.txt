@@ -1,1 +1,0 @@
-Figure 6. Result from a single image with different target texts. The input image is represented by green box , the edited image without one-shot diffusion model is shown by blue box and the final edited version by red box .

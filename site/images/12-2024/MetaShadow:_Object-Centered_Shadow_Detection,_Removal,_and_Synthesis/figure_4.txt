@@ -1,1 +1,0 @@
-Figure 4. Respective limitations of GAN-based and diffusion-based methods on shadow synthesis. For more discussion, please see Sec. 5.2 .

@@ -1,1 +1,0 @@
-Figure 2: (a): Visual comparison of editing results produced by our fine-tuned model and the baseline. (b): Quantitative evaluation of the editing results from our method and the baseline.

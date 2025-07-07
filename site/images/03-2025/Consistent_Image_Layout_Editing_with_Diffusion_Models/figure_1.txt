@@ -1,1 +1,0 @@
-Figure 1. Examples of layout editing for a single real image. Given a single real image, our method can be used to transform its layout and preserve consistent visual appearance compared to self-guidance-diffusion(SGD [ 8 ]).

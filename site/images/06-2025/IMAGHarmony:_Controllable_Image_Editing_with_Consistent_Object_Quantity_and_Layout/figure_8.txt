@@ -1,1 +1,0 @@
-“ Six Cats ” Figure 8: Effect of attention weights on editing quality. Setting both α and β to 1.0 produces the best results.

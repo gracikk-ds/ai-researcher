@@ -1,1 +1,0 @@
-Figure 3: Nuanced descriptions not only help Omni-Dish generate faithful dish images, but also endowing it with fine-grained instruction-following capabilities.

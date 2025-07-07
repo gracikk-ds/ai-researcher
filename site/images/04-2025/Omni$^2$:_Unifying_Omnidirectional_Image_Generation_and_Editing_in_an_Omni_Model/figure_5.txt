@@ -1,1 +1,0 @@
-Figure 5: Outpainting comparison between SIG-SS [12], OmniDreamer [2], PanoDiffusion [36], PanoDiff [32], and ours.

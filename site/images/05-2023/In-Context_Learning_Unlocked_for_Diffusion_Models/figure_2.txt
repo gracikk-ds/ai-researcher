@@ -1,1 +1,0 @@
-Figure 2: Illustration of Prompt Diffusion trained jointly on six different vision-language tasks. Each gray-dashed box represents a task example: prompt → output . The output is a random generation from our trained model given a vision-language prompt, where the query image aligns in type with the source image from the example.

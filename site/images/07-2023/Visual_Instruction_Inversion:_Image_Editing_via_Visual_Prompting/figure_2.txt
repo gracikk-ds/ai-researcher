@@ -1,1 +1,0 @@
-Figure 2: Image editing with visual prompting. (a) Text-conditioned scheme (Prior work): Model takes an input image and a text prompt to perform the desired edit. (b) Visual prompting scheme (Ours): Given a pair of before-after images of an edit, our goal is to learn an implicit text-based editing instruction, and then apply it to new images.

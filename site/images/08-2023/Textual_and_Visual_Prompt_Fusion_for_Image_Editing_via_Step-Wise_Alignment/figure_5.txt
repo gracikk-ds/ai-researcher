@@ -1,1 +1,0 @@
-Fig. 5: Editing results of SWA on various datasets.

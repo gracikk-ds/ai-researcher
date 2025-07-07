@@ -1,1 +1,0 @@
-Figure 7. Illustrating the Typography JSON file. The text highlighted in red is predicted by the Design LLM. The image on the left depicts the effects of rendering visual text accordingly.

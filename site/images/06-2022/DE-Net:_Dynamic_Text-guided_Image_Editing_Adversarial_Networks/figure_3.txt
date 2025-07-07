@@ -1,1 +1,0 @@
-Figure 3. Illustration of the proposed Comp-Pred and DCBlock. (a) The Comp-Pred predicts the combination weights for DEBlock. (b) The DEBlock composes suitable editing processes for each input pair according to the combined weights of C-Afﬁne and S-Afﬁne.

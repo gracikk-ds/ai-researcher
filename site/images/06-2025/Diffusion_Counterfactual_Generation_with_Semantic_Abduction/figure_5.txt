@@ -1,1 +1,0 @@
-Figure 5. CelebA-HQ: Effect of step size ( η ) and guidance scale ( ω ) on model identity preservation (IDP) when using dynamic abduction with amortised anti-causally guided semantic mechanism ( p ∅ = 0 . 1 ) on 200 randomly chosen images from the val. set.

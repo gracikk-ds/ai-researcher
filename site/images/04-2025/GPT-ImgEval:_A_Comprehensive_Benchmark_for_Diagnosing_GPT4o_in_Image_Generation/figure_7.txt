@@ -1,1 +1,0 @@
-Figure 7: We present a complete architectural speculation, proposing four possible candidates that differ in their choice of visual encoder while all share a diffusion-based head for image decoding.

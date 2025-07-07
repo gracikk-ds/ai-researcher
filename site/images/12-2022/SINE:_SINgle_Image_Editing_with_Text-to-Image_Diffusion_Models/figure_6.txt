@@ -1,1 +1,0 @@
-Figure 6. Analysis of model-based classifier-free guidance. Directly sampling with target text using the fine-tuned model (w/o guidance) fails to generate images corresponding to the text prompt. In contrast, the model-based classifier-free guidance (w/ guidance) can synthesize high-fidelity images.

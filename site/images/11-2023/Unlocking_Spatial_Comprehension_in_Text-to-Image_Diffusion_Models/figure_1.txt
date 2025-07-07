@@ -1,1 +1,0 @@
-Figure 1. Examples from CompFuser. Different from existing text-to-image diffusion systems, we enable the understanding of prompts specifying spatial relationships between objects and their attribute assignment.

@@ -1,1 +1,0 @@
-Figure 2. More visual results. Our approach can handle a wide variety of reference images and source images.

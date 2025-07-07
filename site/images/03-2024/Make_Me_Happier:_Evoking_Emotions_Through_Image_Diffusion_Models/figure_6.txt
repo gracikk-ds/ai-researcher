@@ -1,1 +1,0 @@
-Figure 6: Visualization of Generated Images from Different Methods. The target emotion is highlighted in red and the source image is framed with green. See Supp. Fig.S10 for more examples.

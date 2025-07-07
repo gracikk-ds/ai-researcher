@@ -1,1 +1,0 @@
-Figure 2: The location ablation of the guidance injection when editing male . Early time step injection is best, injection during full time step will lead to over-constraining. The first row is signal injection before the first 5, 10, 20, 30, 50, and 100 steps of the backward ODE process. The second row is guidance injection evenly throughout 100 steps.

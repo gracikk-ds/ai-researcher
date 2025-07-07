@@ -1,1 +1,0 @@
-Figure 3 | Overall framework of the HiDream-I1 model.

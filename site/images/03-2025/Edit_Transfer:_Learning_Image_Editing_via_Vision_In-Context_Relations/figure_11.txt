@@ -1,1 +1,0 @@
-Figure 11. Limitations. Our method struggles with low-level properties transfer e.g. color.

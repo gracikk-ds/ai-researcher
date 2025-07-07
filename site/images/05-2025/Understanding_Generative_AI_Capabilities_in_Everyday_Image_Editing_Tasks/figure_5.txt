@@ -1,1 +1,0 @@
-Figure 5: o 1 judge occasionally fails to notice details in edited images, here, overlooking the position of the hand and the configuration of the fingers.

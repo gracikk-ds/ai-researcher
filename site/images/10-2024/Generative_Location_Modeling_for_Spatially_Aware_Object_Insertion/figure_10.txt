@@ -1,1 +1,0 @@
-Figure 10: Example failure case observed when inpainting large areas, for instruction “add a horse”.

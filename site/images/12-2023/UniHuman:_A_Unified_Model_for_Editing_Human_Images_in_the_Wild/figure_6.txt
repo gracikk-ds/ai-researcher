@@ -1,1 +1,0 @@
-Figure 6. Results of text manipulation. Our model manipulates the clothing to match the specified concept.

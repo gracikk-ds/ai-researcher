@@ -1,1 +1,0 @@
-Fig. 5. In-the-wild image augmentation.

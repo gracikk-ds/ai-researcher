@@ -1,1 +1,0 @@
-Figure 5. Three stages in CoSTA ∗ : (1) an LLM generates a subtask tree based on the input and task dependencies; (2) the subtask tree spans a tool subgraph that maintains tool dependencies; and (3) A ∗ search finds the best toolpath balancing efficiency and quality.

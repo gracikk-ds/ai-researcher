@@ -1,1 +1,0 @@
-Figure 4. Exploration of Two Training-Free In-Context Edit Structures (§ 3.1 ). Example images for each framework are edited outputs from them. Despite some artifacts, they demonstrate potential for instruction-based editing tasks.

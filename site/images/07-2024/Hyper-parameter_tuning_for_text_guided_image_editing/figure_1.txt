@@ -1,1 +1,0 @@
-Figure 1: The workflow of Forgedit, the most usual flow of editing process is highlighted in the figure, i.e. simple vector subtraction and default forgetting strategies according to our findings of the disentangle rules of UNet.

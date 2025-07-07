@@ -1,1 +1,0 @@
-Figure 3: More examples of instruction-guided image editing in HumanEdit.

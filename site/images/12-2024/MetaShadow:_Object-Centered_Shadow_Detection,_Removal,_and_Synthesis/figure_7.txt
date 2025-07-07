@@ -1,1 +1,0 @@
-Figure 7. Visual comparison on different random seeds reveals a critical issue with the previous diffusion-based method [ 28 ]: inconsistent shadow generation across various sampled noises. Empirically, our model does not exhibit this weakness.

@@ -1,1 +1,0 @@
-Figure 3. Dataset curation pipeline. We source data from r/estoration and r/PhotoshopRequest. From the posts, we extract input images and edit instructions. The instructions are processed using a VLM to isolate the editing task. From the comments, we collect up to 5 human-edited outputs per post.

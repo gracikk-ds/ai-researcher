@@ -1,1 +1,0 @@
-Figure 4. Qualitative comparison. We compare the editing performance of FireEdit with SOTA methods on the Emu Edit test set. Each editing instruction is written below each row of images. Compared with other SOTA methods, our approach is superior in accurately locating the edited objects or regions and preserving the detailed information of the input image.

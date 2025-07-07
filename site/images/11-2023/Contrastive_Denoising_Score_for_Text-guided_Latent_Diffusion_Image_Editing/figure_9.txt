@@ -1,1 +1,0 @@
-Figure 9. Results on NeRF editing. As an extension of our proposed framework, we applied our method to the NeRF 3D object editing task.

@@ -1,1 +1,0 @@
-Figure 2: Architecture Comparison Between Single Agent Framework and Marmot. We decompose self-correction into counting, attributes, and spatial dimensions, achieving superior results using only 8B MLLMs and LLMs.

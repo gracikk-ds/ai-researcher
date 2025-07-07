@@ -1,1 +1,0 @@
-Figure 6. Skin marker removal on EMBED (192 × 192) using an amortised, anti-causally guided semantic mechanism with and without dynamic abduction; (orange: circle, green: triangle).

@@ -1,1 +1,0 @@
-Figure 7. Comparison of SDD and StyleCLIP in pose manipulation . Text prompt: “side view”. The results demonstrate that the diffusion model provides superior semantic guidance, enabling a broader range of manipulations.

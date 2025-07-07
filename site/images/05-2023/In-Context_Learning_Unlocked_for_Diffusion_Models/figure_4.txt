@@ -1,1 +1,0 @@
-Figure 4: Qualitative Results of forward tasks and inverse tasks. We show examples of applying our Prompt Diffusion on the six trained tasks (inv-depth/hed/seg and forward-depth/hed/seg).

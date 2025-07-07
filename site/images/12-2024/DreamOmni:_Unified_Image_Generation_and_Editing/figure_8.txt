@@ -1,1 +1,0 @@
-Figure 8. Visual comparison on instruction-based editing . Our DreamOmni achieves more precise editing (including addition, removal, and replacement) compared to competitive methods such as MGIE [ 17 ] and InstructP2P [ 8 ].

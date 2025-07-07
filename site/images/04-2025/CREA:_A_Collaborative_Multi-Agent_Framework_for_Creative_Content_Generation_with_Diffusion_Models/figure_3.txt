@@ -1,1 +1,0 @@
-Figure 3. Qualitative Results for Creative Image Editing and Generation Tasks. (a) Qualitative results illustrating CREA’s disentangled creative edits. (b) Generation results across diverse objects and domains, demonstrating CREA’s ability to produce a wide range of creative variations. For more results, please visit Supplementary Material.

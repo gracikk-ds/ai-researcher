@@ -1,1 +1,0 @@
-Figure 6. Failure cases caused by (1) Wrong target pose, (2) Incomplete texture map, (3) Squeezed texture map, (4) Missing face information, (5) Significant view changes.

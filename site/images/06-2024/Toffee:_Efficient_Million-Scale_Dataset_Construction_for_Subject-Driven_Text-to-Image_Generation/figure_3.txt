@@ -1,1 +1,0 @@
-Figure 3: The proposed dataset construction framework.

@@ -1,1 +1,0 @@
-Figure 6. The visual comparison between SDD and diffusionbased image manipulations. α ranges from zero to one and represents the noise level. SDEdit and DDIB fail to manipulate the semantics at a noise level of 0.7, while SDD successfully manipulates the semantics with less distortion.

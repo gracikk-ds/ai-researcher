@@ -1,1 +1,0 @@
-Figure 6: Comparison of different repaint steps R without clip reranking. Without repaint, the edited region often does not blend well with the background, while too many repaint steps can also cause unrealistic images (corgi, hair). We generally ﬁnd R = 5 to work best. Note that the images are downscaled from the full resolution.

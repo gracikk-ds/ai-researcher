@@ -1,1 +1,0 @@
-Fig. 5. Statistics for the FreeBench dataset. The first four parent classes in FreeBench are animals, food, kitchenware, and vehicles. FreeBench covers the vast majority of categories in daily life, allowing us to train a generalizable zero-shot reference-based image editing model.

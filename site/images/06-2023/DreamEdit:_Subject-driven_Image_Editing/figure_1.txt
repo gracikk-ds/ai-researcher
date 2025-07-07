@@ -1,1 +1,0 @@
-Figure 1: The leftmost column is the customized subject, the middle column is the Subject Replacement task, the rightmost column is the Subject Addition task. The output is the generated results by DreamEditor

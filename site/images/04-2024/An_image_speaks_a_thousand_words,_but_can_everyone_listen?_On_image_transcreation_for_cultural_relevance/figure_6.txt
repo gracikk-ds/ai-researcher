@@ -1,1 +1,0 @@
-Figure 6: Human ratings for the concept dataset : Our primary goal is to test whether the edited image belongs to the same universal category as the original image ( C1 ) and whether it increases cultural relevance ( C3 ). We plot the count of images that can do both above ( C1+C3 ), and observe that the best pipeline’s performance ranges between 5% (Nigeria) to 30% (Japan).

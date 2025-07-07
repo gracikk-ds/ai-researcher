@@ -1,1 +1,0 @@
-Figure 4. Arbitrary resolution editing. Our method achieves higher-resolution image editing without artifacts like duplicates, even on ones that change the height-width ratio drastically.

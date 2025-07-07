@@ -1,1 +1,0 @@
-Figure 6: Visualizations of dense image prediction examples.

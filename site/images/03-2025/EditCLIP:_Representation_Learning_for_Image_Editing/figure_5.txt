@@ -1,1 +1,0 @@
-Figure 5. EditCLIP can perform complex edits when the exemplars contain multiple edits in a single step.

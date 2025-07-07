@@ -1,1 +1,0 @@
-Figure 1: Stylized samples of our StyleAR. Our StyleAR is capable of generating images that are highly consistent in style with the reference images across a diverse range of styles, and highly aligned in semantics with the input prompts of various categories.

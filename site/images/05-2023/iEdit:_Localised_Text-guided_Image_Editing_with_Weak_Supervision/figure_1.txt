@@ -1,1 +1,0 @@
-Figure 1: Examples showing that our method can edit images with a textual prompt while preserving image ﬁdelity in the regions not related to the edit.

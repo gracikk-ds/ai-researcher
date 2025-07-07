@@ -1,1 +1,0 @@
-Figure 5: (a) IoU curves drawn by varying the threshold from 0.0 to 1.0 for MO-Set . (b) We show some images for comparisons between the Null-Text inversion [ 28 ] and our method DPL demonstrated in cross-attention maps.

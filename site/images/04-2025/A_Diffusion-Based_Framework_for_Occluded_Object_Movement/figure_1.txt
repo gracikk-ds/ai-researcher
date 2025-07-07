@@ -1,1 +1,0 @@
-(f) Ours (e) DiffEditor (d) DragDiffusion Figure 1: Comparison with other methods for occluded object movement. Given a real-world image, our method can seamlessly move the occluded object to a user-specified position while completing the occluded portion.

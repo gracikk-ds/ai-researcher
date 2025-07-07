@@ -1,1 +1,0 @@
-Figure 1: Example images edited by our method with one unified model and instructions only.

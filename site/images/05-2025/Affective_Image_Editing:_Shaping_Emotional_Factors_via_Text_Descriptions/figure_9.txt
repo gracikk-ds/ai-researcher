@@ -1,1 +1,0 @@
-Fig. 9 Ablation study results with different variants of the AIEdiT. After removing the proposed modules, the created images cannot accurately reflect users’ emotional requests.

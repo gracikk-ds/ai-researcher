@@ -1,1 +1,0 @@
-Figure 1. An example highlighting the importance of consistency in image editing. (a) Original image (b) Edited images for a prompt “Make her smile”. The left result is more consistent with the input than the right one, better preserving her identity.

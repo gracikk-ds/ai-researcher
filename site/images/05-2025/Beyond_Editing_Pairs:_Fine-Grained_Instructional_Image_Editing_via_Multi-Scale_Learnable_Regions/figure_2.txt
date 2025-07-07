@@ -1,1 +1,0 @@
-Figure 2: Multi-Scale Learnable Region. The learnable region adapts to multi-scale editing requirements from different types of editing operations and varying sizes of target objects.

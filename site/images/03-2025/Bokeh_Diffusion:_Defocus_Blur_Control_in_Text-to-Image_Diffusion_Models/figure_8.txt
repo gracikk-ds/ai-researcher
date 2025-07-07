@@ -1,1 +1,0 @@
-Fig. 8. Visual comparison with related generative models conditioned on photographic controls CSaT [ Fang et al. 2024 ] and GenPhoto [ Yuan et al. 2024 ].

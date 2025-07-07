@@ -1,1 +1,0 @@
-Figure 4: We perform a feature transfer experiment , computing semantic image segmentation masks using grounded SAM2 [ 48 ] for a source and a target image. We collect features inside the mask of the source image at SDXL Turbo’s intermediate layers and insert them during the target forward pass. The resulting image is a blend of the two forward passes.

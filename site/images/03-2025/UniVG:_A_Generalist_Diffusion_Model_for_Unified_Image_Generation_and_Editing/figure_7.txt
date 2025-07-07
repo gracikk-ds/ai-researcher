@@ -1,1 +1,0 @@
-Figure 7. Qualitative examples of background in/outpainting and text-guided in/outpainting.

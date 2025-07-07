@@ -1,1 +1,0 @@
-Fig. 8. UniTune shows comparable editing capabilities to models trained on a single domain like portrait photos.

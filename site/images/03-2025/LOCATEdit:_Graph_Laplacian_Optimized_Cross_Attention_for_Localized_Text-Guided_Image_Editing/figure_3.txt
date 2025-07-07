@@ -1,1 +1,0 @@
-Figure 3. Overview of our text-guided image editing pipeline. LOCATEdit refines cross-attention maps with graph Laplacian regularization for spatial consistency, uses an IP-Adapter for additional guidance, and employs selective pruning on text embeddings to suppress noise, ensuring the edited image preserves key structural details.

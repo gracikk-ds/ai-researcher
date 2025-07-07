@@ -1,1 +1,0 @@
-Figure 5: Qualitative Results on Real Images. iEdit outperforms compared methods showing high ﬁdelity to the edit prompt and the input image.

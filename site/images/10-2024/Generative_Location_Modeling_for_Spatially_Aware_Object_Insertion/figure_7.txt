@@ -1,1 +1,0 @@
-Figure 7: Comparison between our method + powerpaint, and instruction-guided image editing models on the OPA dataset. Best viewed electronically.

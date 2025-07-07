@@ -1,1 +1,0 @@
-Figure 2. Overview of the proposed method. To reduce the complexity of modeling the entire edited region, we use a heterogeneous model to synthesize foreground objects and backgrounds separately, which contains three components: (1) Background generation, (2) object generation, (3) fusion network.

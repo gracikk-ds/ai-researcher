@@ -1,1 +1,0 @@
-Figure 10. Generalization performance of Edit Transfer. Our model demonstrates remarkable generalization by: (b) Generating novel pose variations within a given editing type, even if such variations were unseen during training; (c) Flexibly combining different editing types; (d) Transferring its capabilities across other species.

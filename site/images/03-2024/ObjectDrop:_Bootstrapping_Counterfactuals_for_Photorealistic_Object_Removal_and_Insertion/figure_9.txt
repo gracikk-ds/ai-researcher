@@ -1,1 +1,0 @@
-Figure 9: Counterfactual dataset size. Increasing the size of the training dataset improves object removal performance. The results are of high quality with 2500 examples, but may improve further with more images.

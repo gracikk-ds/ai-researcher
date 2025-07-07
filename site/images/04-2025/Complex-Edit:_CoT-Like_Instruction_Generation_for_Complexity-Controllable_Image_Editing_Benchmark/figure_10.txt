@@ -1,1 +1,0 @@
-Figure 10. A real image edited with a C 8 instruction. Outputs from certain models tend to lose the realistic style completely.

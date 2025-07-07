@@ -1,1 +1,0 @@
-Fig. 6: Ablation study of upgrading self-attention layer to CP-attn in different reverse timesteps (top) and U-Net places (bottom).

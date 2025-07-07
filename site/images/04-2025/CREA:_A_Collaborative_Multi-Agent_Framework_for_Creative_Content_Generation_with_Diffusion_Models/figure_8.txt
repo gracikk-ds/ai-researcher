@@ -1,1 +1,0 @@
-Figure 8. Video Generation . Comparison between baseline generations from CogVideoX and outputs generated using our creative agentic pipeline. Our method enables the creation of visually diverse and creative video scenes.

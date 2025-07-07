@@ -1,1 +1,0 @@
-Figure 5. Smooth interpolation. We can smoothly interpolate between the optimized text embedding and the target text embedding, resulting in a gradual editing of the input image toward the required text as η increases (See animated GIFs in supplementary material).

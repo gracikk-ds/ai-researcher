@@ -1,1 +1,0 @@
-Figure 3. Qualitative examples of text-to-image generation. Note that we simplify the prompt for better presentation.

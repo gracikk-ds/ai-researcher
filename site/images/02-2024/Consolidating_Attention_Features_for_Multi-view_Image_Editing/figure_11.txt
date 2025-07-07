@@ -1,1 +1,0 @@
-Figure 11. Qualitative results of our method. Here we edit the images with a loose depth map [ 4 ], and show a sample of three different views for each example.

@@ -1,1 +1,0 @@
-Figure 2. Dataset construction pipeline for SAM-FB. The pipeline automatically converts any input image into a tetrad output through four stages, ensuring high-quality foreground and background retention via a rigorous data quality control process.

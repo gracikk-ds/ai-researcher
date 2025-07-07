@@ -1,1 +1,0 @@
-Figure 4. Qualitative evaluations, failure cases. (a) input context image, (b) CFG × 3 passes, i.e. s I = 1 . 6 , s P = 7 . 5 . (c) our proposed × 1 pass explicit conditioning.

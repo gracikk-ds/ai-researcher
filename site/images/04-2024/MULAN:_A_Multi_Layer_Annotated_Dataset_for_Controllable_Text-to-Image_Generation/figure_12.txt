@@ -1,1 +1,0 @@
-Figure 12. Visualisation of 3 decompositions from MuLAn-COCO (top) and MuLAn-LAION (bottom 2). From left to right: original image, instance RGBA image with green alpha overlay (top row); reconstructed images by adding layers one by one (bottom row).

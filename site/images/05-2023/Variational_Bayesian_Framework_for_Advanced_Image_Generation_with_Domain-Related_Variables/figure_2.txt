@@ -1,1 +1,0 @@
-Fig. 2 . VBITN enables efficient unsupervised image-to-image translation as well as semantic editing and mixed domain translation: (a) Paintings are translated to photos with different semantics; (b) Mixed domain translation on human face attributes.

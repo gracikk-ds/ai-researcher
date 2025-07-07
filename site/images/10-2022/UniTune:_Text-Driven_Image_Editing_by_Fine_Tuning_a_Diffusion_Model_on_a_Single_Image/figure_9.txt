@@ -1,1 +1,0 @@
-Fig. 9. More UniTune examples. The bottom two rows demonstrate visual and semantic fidelity. See the appendix for the full edit prompts and parameter settings used to generate the images in this figure. Input source: Unsplash.

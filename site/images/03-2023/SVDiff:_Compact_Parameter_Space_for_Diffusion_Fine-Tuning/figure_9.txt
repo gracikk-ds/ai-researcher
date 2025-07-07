@@ -1,1 +1,0 @@
-Figure 9. Results of style transfer. Changing coarse class word: (d) and (i); Appending “in style of”: (e) and (j); Combined spectral shifts: (a,b,f,g).

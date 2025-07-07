@@ -1,1 +1,0 @@
-Figure 1: The proposed image editor utilizes a source caption to describe the initial image and a target text instruction to define the desired edited image. To accomplish this task, we employ the two captions to generate a diffusion mask, refining it further by incorporating regions of words that we want to keep or alter in the image.

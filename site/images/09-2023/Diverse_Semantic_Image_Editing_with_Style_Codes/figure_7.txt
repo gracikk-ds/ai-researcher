@@ -1,1 +1,0 @@
-Fig. 7: Adding diverse objects with our method. The chair is erased from the image and is inpainted with different style codes that are extracted from corresponding semantic classes of the style images.

@@ -1,1 +1,0 @@
-Fig. 3: Good subject preservation example for InstructPix2Pix edit with the prompt Change the color of the dog to red . The subject of this edit is the dog .

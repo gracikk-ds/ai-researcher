@@ -1,1 +1,0 @@
-Figure 9. Comparison with SDI+Depth baseline. We observe color leakage issues in “SDI+Depth” generations. A dual-branch architecture proves to be a better choice, yielding superior outcomes.

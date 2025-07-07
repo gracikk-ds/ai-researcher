@@ -1,1 +1,0 @@
-(b) Change the time of the day to night Figure 6: Example results of different methods on the Emu Edit benchmark.

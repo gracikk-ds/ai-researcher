@@ -1,1 +1,0 @@
-Fig. 2 The processing of dialogue and image editing dataset construction

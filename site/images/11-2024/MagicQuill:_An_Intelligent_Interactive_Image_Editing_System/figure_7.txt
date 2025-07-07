@@ -1,1 +1,0 @@
-Figure 7. Visual comparison with stroke-based editing baselines.

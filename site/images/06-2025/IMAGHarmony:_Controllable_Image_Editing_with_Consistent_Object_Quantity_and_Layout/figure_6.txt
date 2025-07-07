@@ -1,1 +1,0 @@
-Figure 6: Attention map comparison. (a) w/o HA. (b) w/ HA. HA module better captures object count and layout.

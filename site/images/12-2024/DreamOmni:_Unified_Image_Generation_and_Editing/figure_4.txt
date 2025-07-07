@@ -1,1 +1,0 @@
-Figure 4. Visual comparison on T2I generation . Compared to other competitive methods (including SD3-Medium [ 15 ], SDXL [ 39 ], SD-Cascade, and SD1.5 [ 44 ]), our DreamOmni not only better adheres to user prompts but also generate more visually appealing results with delicate details, elegant composition, and so on.

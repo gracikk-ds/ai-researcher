@@ -1,1 +1,0 @@
-Figure 2: Blob Formula. A blob can be represented in two equivalent forms: geometrically as an ellipse parameterized by center coordinates ( C x , C y ) , axes lengths ( a, b ) , and orientation θ ; and statistically as a 2D Gaussian distribution characterized by mean µ and covariance matrix Σ . The two forms are exactly equivalent and interchangeable.

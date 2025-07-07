@@ -1,1 +1,0 @@
-Figure 1. Image editing performance for the context image in (a) with the instruction prompt: ”Make her a bride”. CFG (Eq. 10 ) are shown with × 1 pass ( s I = 1 . 0 , s P = 1 . 0 ) in (d), × 2 passes ( s I = 1 . 0 , s P = 7 . 5 ) in (e), and × 3 passes ( s I = 1 . 6 , s P = 7 . 5 ) in (f). Our proposed explicit conditioning result with a single pass is shown in (c).

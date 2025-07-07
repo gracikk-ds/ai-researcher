@@ -1,1 +1,0 @@
-Figure 4. Illustration of the DCBlock. The text-attended features are predicted by the text-conditioned convolution layer.

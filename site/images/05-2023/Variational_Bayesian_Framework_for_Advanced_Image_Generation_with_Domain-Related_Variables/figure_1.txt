@@ -1,1 +1,0 @@
-Fig. 1 . The network architecture of the proposed VBITN. The framework consists of VAE-based networks which individually extract latent variables from different domain images. Then the learned latent variables are combined to generate new images.

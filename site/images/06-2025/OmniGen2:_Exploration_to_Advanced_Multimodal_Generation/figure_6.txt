@@ -1,1 +1,0 @@
-Figure 6: In-Context Editing Dataset Construction Pipeline. The final input and target images are outlined by red and blue consistent with Figure 5.

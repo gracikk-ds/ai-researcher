@@ -1,1 +1,0 @@
-Figure 9: Qualitative results on Real-Edit. The three scores below the image are given by GPT-4o in three aspects: instruction following, detail preservation, and generation quality.

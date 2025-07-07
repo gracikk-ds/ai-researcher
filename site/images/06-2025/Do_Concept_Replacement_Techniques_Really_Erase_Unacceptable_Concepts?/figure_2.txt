@@ -1,1 +1,0 @@
-Figure 2: Diffusion-based image generation pipeline. An input image is encoded into a latent space via a VAE. Standard Gaussian noise is added as part of the DDPM inversion, followed by denoising using a UNet enhanced with various stateof-the-art CRTs. Despite using CRTs, when the input image contains an unacceptable concept, it is not replaced during reconstruction

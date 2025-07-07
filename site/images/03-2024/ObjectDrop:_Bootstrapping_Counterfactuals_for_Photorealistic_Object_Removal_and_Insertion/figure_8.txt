@@ -1,1 +1,0 @@
-Figure 8: Bootstrapping ablation. Bootstrap supervision improves model quality.

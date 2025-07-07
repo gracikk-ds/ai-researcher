@@ -1,1 +1,0 @@
-Figure 3. A visualization of the visual encoder’s attention in EditCLIP compared to the original CLIP. We visualize the attention of the [ CLS ] token from the last attention head. Unlike CLIP, where attention is dispersed across the image, EditCLIP focuses on the differences between the input and edited image, indicating that it effectively captures the edited regions.

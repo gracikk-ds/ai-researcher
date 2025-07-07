@@ -1,1 +1,0 @@
-Figure 3. Qualitative comparison of our method against SDEdit [ 27 ], DALL-E 2 [ 31 ], DiffEdit [ 11 ] and InstructPixtoPix [ 8 ] using both generated and real images.

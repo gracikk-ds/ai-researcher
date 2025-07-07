@@ -1,1 +1,0 @@
-Fig. 5: Comparisons of methods on ADE20k-Room dataset for adding objects setting. Our method can add objects with diverse styles which improves realism.

@@ -1,1 +1,0 @@
-Figure 3: Visual comparisons between Hive, IP2P, SD and our method in dataset MagicBrush. The red annotations indicate the visual concepts in the original image that need to be edited, while the blue annotations represent the new visual elements that should be introduced based on the provided textual prompt.

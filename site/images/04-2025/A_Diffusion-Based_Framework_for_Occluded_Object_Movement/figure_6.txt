@@ -1,1 +1,0 @@
-Figure 6: Qualitative comparison on occluded object movement. The target objects are marked by yellow masks. The starting and ending points of the orange arrows represent the original and target positions of the moved object.

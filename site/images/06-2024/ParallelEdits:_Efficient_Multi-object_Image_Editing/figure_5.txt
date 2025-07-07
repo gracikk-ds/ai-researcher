@@ -1,1 +1,0 @@
-Figure 5: Qualitative results comparison. Current methods fail to edit multiple aspects effectively, even using sequential edits (noted as *). Methods marked with ⋆⋆ taking additional inputs other than source image and plain text.

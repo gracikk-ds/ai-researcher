@@ -1,1 +1,0 @@
-Figure 3: Our pipeline. The original instruction is first parsed by a VLM into atomic operations, which are then sequentially executed via a neural program interpreter.

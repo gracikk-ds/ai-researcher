@@ -1,1 +1,0 @@
-Figure 2: The implementation of DM-Align. The aim is to update the input image described by the text instruction c 1 (“A clear sky and a ship landed on the sand") according to the text instruction c 2 (“A clear sky and a ship landed on the ocean").

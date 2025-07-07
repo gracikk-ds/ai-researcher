@@ -1,1 +1,0 @@
-Figure 6. Despite being trained on a limited number of actions, EditAction can implement actions using verbs unseen during the training, such as ”wipe” for the LC dataset and ”place” for the HC dataset.

@@ -1,1 +1,0 @@
-Figure 1. Applications of SVDiff. Style-Mixing : mix styles from personalized objects and create novel renderings; Multi-Subject : generate multiple subjects in the same scene; Single-Image Editing : text-based editing from a single image.

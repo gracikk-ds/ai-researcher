@@ -1,1 +1,0 @@
-Figure 10. Our framework can synthesize realistic and diverse results from the same source image and exemplar image.

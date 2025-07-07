@@ -1,1 +1,0 @@
-Figure 2. We observe that current state-of-the-art T2I models, SD3.5 [ 2 ] (top row) and Flux [ 22 ] (bottom row), face significant challenges in producing consistent and geometrically accurate reflections when prompted to generate reflections in the scene. 1. Introduction

@@ -1,1 +1,0 @@
-Figure 7. MADD can give different feasible solutions for ambiguous prompts such as point and blank.

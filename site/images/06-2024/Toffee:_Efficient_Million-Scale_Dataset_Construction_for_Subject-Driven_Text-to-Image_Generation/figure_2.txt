@@ -1,1 +1,0 @@
-Figure 2: Comparison of resulting dataset size and construction cost.

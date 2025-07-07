@@ -1,1 +1,0 @@
-Figure 4. Qualitative comparison on the effect of Query Disentanglement (QD).

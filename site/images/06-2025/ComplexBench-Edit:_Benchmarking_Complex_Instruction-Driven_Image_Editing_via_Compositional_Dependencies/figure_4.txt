@@ -1,1 +1,0 @@
-Figure 4: Diagram of the proposed Chain-of-Thought (CoT) reasoning approach for image editing.

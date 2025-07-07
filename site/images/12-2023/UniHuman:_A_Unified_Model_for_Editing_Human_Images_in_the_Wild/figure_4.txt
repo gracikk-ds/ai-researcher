@@ -1,1 +1,0 @@
-(b) Out-of-domain examples on WPose. Figure 4. Visualized results of reposing (256x256). Our model transfers the texture patterns better, particularly in out-of-domain samples. More results can be found in Supp.

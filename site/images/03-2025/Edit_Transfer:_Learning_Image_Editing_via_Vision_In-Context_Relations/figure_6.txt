@@ -1,1 +1,0 @@
-Figure 6. Results of user study and VLM evaluation. We compare our Edit Transfer (IV) with P2P [ 20 ] (I), RF-Solver-Edit [ 23 ] (II) and MimicBrush [ 13 ] (III). (a) The values show the proportion of users who prefer our method over the others. (b) The values represent the average scores given to each method by GPT-4o [ 31 ].

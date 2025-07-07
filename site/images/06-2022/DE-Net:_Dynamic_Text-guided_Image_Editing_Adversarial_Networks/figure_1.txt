@@ -1,1 +1,0 @@
-Figure 1. Beneﬁting from dynamic editing design, our DE-Net can deal with various editing tasks (e.g., color changing, content editing). Furthermore, the text-adaptive convolution in DCBlock enables more accurate manipulations.

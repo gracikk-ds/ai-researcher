@@ -1,1 +1,0 @@
-Figure 3: Image Processing Pipeline to Access the Skin Tone Information

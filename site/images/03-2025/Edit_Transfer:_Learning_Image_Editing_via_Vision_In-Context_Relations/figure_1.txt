@@ -1,1 +1,0 @@
-Figure 1. Edit Transfer aims to learn a transformation from a given source–target editing example, and apply the edit to a query image. Our framework can effectively transfer both (b) single and (c) compositional non-rigid edits via proposed visual relation in-context learning.

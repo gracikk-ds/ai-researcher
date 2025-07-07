@@ -1,1 +1,0 @@
-Fig. 6. Examples of UniTune performing local edits (adding objects) without masks.

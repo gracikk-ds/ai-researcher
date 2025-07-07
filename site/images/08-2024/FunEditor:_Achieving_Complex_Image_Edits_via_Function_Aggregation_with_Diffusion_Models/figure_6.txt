@@ -1,1 +1,0 @@
-Figure 6: Visual comparison between our method and baseline methods for object pasting from a reference image into a target image. FunEditor applies harmonization and edge enhancement functions to seamlessly paste an object into another image.
