@@ -8,7 +8,7 @@ from typing import Any, Dict, List
 import requests
 
 from src.notion_db.s3_loader import S3Uploader
-from src.notion_db.utils import check_for_image, resolve_image_path
+from src.notion_db.utils import resolve_image_path
 from src.settings import settings
 
 
@@ -23,11 +23,11 @@ class MarkdownToNotionUploader:
         headers (dict): Notion API headers.
     """
 
-    def __init__(self, database_id: str) -> None:
+    def __init__(self, database_id: str = "228f6f75bb0b80babf73d46a6254a459") -> None:
         """Initialize the uploader with the provided database ID.
 
         Args:
-            database_id (str): Notion database ID.
+            database_id (str): Notion database ID. Default is "228f6f75bb0b80babf73d46a6254a459"
         """
         self.api_token = settings.notion_token
         self.project_root = settings.site_reports_dir.split("/")[0]
@@ -155,7 +155,27 @@ class MarkdownToNotionUploader:
 
         return False, lines_to_remove  # don't skip the line and continue
 
-    def markdown_to_blocks(self, markdown: str) -> List[Dict[str, Any]]:  # noqa: WPS231
+    def _upload_image(self, local_path: str, blocks: List[Dict[str, Any]]) -> None:
+        """Upload an image to S3 and add it to the blocks.
+
+        Args:
+            local_path (str): Path to the image.
+            blocks (List[Dict[str, Any]]): List of Notion blocks.
+        """
+        s3_key = os.path.join(*os.path.normpath(local_path).split(os.sep)[-2:])  # noqa: WPS221
+        public_url = self.bucket.upload_file(local_path, s3_key)
+        blocks.append(
+            {
+                "object": "block",
+                "type": "image",
+                "image": {
+                    "type": "external",
+                    "external": {"url": public_url},
+                },
+            },
+        )
+
+    def markdown_to_blocks(self, markdown: str) -> List[Dict[str, Any]]:  # noqa: WPS231,C901
         """
         Convert basic Markdown text to Notion blocks. Support headings, paragraphs, bullet points.
 
@@ -166,8 +186,9 @@ class MarkdownToNotionUploader:
             List[Dict[str, Any]]: List of Notion blocks.
         """
         lines = markdown.splitlines()
-        blocks = []
+        blocks: List[Dict[str, Any]] = []
         lines_to_remove = False
+        first_heading = True
 
         for line in lines:
             line = line.rstrip()
@@ -177,21 +198,14 @@ class MarkdownToNotionUploader:
             if skip_line:
                 continue
 
+            if first_heading and line.startswith("## "):
+                first_heading = False
+                continue
+
             # Parse images
             local_path = resolve_image_path(line, self.project_root)
             if local_path:
-                s3_key = os.path.join(*os.path.normpath(local_path).split(os.sep)[-2:])  # noqa: WPS221
-                public_url = self.bucket.upload_file(local_path, s3_key)
-                blocks.append(
-                    {
-                        "object": "block",
-                        "type": "image",
-                        "image": {
-                            "type": "external",
-                            "external": {"url": public_url},
-                        },
-                    },
-                )
+                self._upload_image(local_path, blocks)
                 continue
 
             # Parse headings
@@ -251,7 +265,7 @@ class MarkdownToNotionUploader:
 
 
 if __name__ == "__main__":
-    DATABASE_ID = "228f6f75bb0b80babf73d46a6254a459"
+
     FILE_PATH = "site/_reports/01-2024/Diffusion_Model_Compression_for_Image-to-Image_Translation.md"
     TITLE = "Diffusion Model Compression for Image-to-Image Translation"
     properties = {
@@ -261,5 +275,5 @@ if __name__ == "__main__":
         "Published": {"date": {"start": "2024-01-01"}},
     }
 
-    uploader = MarkdownToNotionUploader(database_id=DATABASE_ID)
+    uploader = MarkdownToNotionUploader()
     uploader.upload_markdown_file(FILE_PATH, TITLE, properties)

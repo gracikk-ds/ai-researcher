@@ -4,18 +4,6 @@ import os
 import re
 
 
-def check_for_image(line: str) -> bool:
-    """Check if the line contains an image.
-
-    Args:
-        line (str): Line of text to check.
-
-    Returns:
-        bool: True if the line contains an image, False otherwise.
-    """
-    return "Figure " in line or "Fig. " in line
-
-
 def resolve_image_path(url: str, project_root: str) -> str:
     """Resolve the path to an image.
 
