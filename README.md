@@ -1,6 +1,6 @@
 # Arxiv Research Agent
 
-A service to automatically load research papers from arXiv by topic and date, analyze them using AI agents (Gemini), select the most relevant ones, generate concise summaries and published them in github.io page.
+A service to automatically load research papers from arXiv by topic and date, analyze them using AI agents (Gemini), select the most relevant ones, generate concise summaries and published them in Notion DB.
 
 ## Features
 
@@ -9,6 +9,7 @@ A service to automatically load research papers from arXiv by topic and date, an
 - **Download PDFs**: Download PDFs and extract images from them.
 - **Summarization**: Use Gemini model to generate summaries of selected papers.
 - **Report Generation**: Generate markdown reports with images for each paper.
+- **Publish Reports**:  Publish reports to Notion DB.
 
 ## Installation
 
@@ -32,7 +33,3 @@ You can run the service to fetch and analyze papers by specifying a topic and da
 ```bash
 python src/entrypoint.py --start-date 2025-06-01 (included) --end-date 2025-06-30 (excluded)
 ```
-
-## Configuration
-
-You need to set GOOGLE_APPLICATION_CREDENTIALS, TELEGRAM_TOKEN and TELEGRAM_CHAT_ID in your .env file
