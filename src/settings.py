@@ -35,6 +35,10 @@ class Settings(BaseSettings):
     telegram_chat_id: int = Field(..., description="Chat ID to send notifications to.")
     check_interval_minutes: int = Field(1, description="Interval between checks in minutes.")  # noqa: WPS432
     notion_token: str = Field(..., description="Notion API token.")
+    aws_access_key_id: str = Field(..., description="AWS access key ID.")
+    aws_secret_access_key: str = Field(..., description="AWS secret access key.")
+    endpoint_url: str = Field(..., description="AWS endpoint URL.")
+    s3_bucket: str = Field(..., description="S3 bucket name.")
 
 
 settings = Settings()  # type: ignore

@@ -1,17 +1,14 @@
 """Upload a Markdown file to a Notion database page."""
 
 import json
+import os
 import re
 from typing import Any, Dict, List
 
 import requests
 
-from src.ai_researcher.google_bucket import GoogleBucket
-from src.notion_db.utils import (
-    check_for_image,
-    extract_image_links,
-    resolve_image_path,
-)
+from src.notion_db.s3_loader import S3Uploader
+from src.notion_db.utils import check_for_image, resolve_image_path
 from src.settings import settings
 
 
@@ -26,12 +23,11 @@ class MarkdownToNotionUploader:
         headers (dict): Notion API headers.
     """
 
-    def __init__(self, database_id: str, bucket_prefix: str = "report_images") -> None:
+    def __init__(self, database_id: str) -> None:
         """Initialize the uploader with the provided database ID.
 
         Args:
             database_id (str): Notion database ID.
-            bucket_prefix (str): Prefix for the Google Bucket.
         """
         self.api_token = settings.notion_token
         self.project_root = settings.site_reports_dir.split("/")[0]
@@ -42,7 +38,7 @@ class MarkdownToNotionUploader:
             "Notion-Version": "2022-06-28",
             "Content-Type": "application/json",
         }
-        self.bucket = GoogleBucket(bucket_prefix)
+        self.bucket = S3Uploader()
 
     def _parse_rich_text(self, line: str) -> List[Dict[str, Any]]:
         """
@@ -136,23 +132,28 @@ class MarkdownToNotionUploader:
             return True
         return False
 
-    def collect_images(self, markdown: str) -> Dict[str, str]:
-        """Collect images from the markdown.
+    def _remove_meta_lines(self, line: str, lines_to_remove: bool) -> tuple[bool, bool]:  # noqa: WPS212
+        """Check whether the line is a meta line.
 
         Args:
-            markdown (str): Markdown text to check.
+            line (str): Line of text to parse.
+            lines_to_remove (bool): True if we in the meta lines block, False otherwise.
 
         Returns:
-            Dict[str, str]: Dictionary mapping original URLs to public URLs.
+            tuple[bool, bool]: Should we skip the line, and whether we are in the meta lines block.
         """
-        image_map = {}
+        if line.startswith("---") and lines_to_remove:  # end of meta lines block
+            lines_to_remove = False
+            return True, lines_to_remove  # skip the line and end the meta lines block
 
-        # Upload images and map their original URLs to public URLs
-        for _, url in extract_image_links(markdown):
-            local_path = resolve_image_path(url, self.project_root)
-            public_url = self.bucket.upload_public_file(local_path)
-            image_map[local_path] = public_url
-        return image_map
+        if line.startswith("---"):  # start of meta lines block
+            lines_to_remove = True
+            return True, lines_to_remove  # skip the line and start the meta lines block
+
+        if lines_to_remove:
+            return True, lines_to_remove  # skip the line and continue
+
+        return False, lines_to_remove  # don't skip the line and continue
 
     def markdown_to_blocks(self, markdown: str) -> List[Dict[str, Any]]:  # noqa: WPS231
         """
@@ -166,30 +167,38 @@ class MarkdownToNotionUploader:
         """
         lines = markdown.splitlines()
         blocks = []
-        image_map = self.collect_images(markdown)
+        lines_to_remove = False
 
         for line in lines:
             line = line.rstrip()
 
+            # Check if the line is a meta line
+            skip_line, lines_to_remove = self._remove_meta_lines(line, lines_to_remove)
+            if skip_line:
+                continue
+
             # Parse images
-            img_match = check_for_image(line)
-            if img_match:
-                _, url = img_match.groups()
-                public_url = image_map.get(resolve_image_path(url, self.project_root))
-                if public_url:
-                    blocks.append(
-                        {
-                            "object": "block",
-                            "type": "image",
-                            "image": {
-                                "type": "external",
-                                "external": {"url": public_url},
-                            },
+            local_path = resolve_image_path(line, self.project_root)
+            if local_path:
+                s3_key = os.path.join(*os.path.normpath(local_path).split(os.sep)[-2:])  # noqa: WPS221
+                public_url = self.bucket.upload_file(local_path, s3_key)
+                blocks.append(
+                    {
+                        "object": "block",
+                        "type": "image",
+                        "image": {
+                            "type": "external",
+                            "external": {"url": public_url},
                         },
-                    )
+                    },
+                )
+                continue
+
+            # Parse headings
             if self._parse_heading(line, blocks):
                 continue
 
+            # Parse bullet points
             if line.startswith("- ") or line.startswith("* "):
                 # Bullet list item
                 blocks.append(
@@ -199,8 +208,10 @@ class MarkdownToNotionUploader:
                         "bulleted_list_item": {"rich_text": self._parse_rich_text(line[2:])},
                     },
                 )
+            elif line == "":
+                continue
             else:
-                # Paragraph
+                # Parse paragraphs
                 blocks.append(
                     {
                         "object": "block",

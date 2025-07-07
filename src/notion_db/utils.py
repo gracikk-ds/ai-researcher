@@ -2,23 +2,9 @@
 
 import os
 import re
-from typing import List, Match, Optional, Tuple
 
 
-def extract_image_links(markdown: str) -> List[Tuple[str, str]]:
-    """Extract image links from Markdown text.
-
-    Args:
-        markdown (str): Markdown text to extract image links from.
-
-    Returns:
-        List[Tuple[str, str]]: List of tuples containing the alt text and URL of the image.
-    """
-    pattern = r"!\[([^\]]*)\]\(([^)]+)\)"
-    return re.findall(pattern, markdown)
-
-
-def check_for_image(line: str) -> Optional[Match[str]]:
+def check_for_image(line: str) -> bool:
     """Check if the line contains an image.
 
     Args:
@@ -27,7 +13,7 @@ def check_for_image(line: str) -> Optional[Match[str]]:
     Returns:
         bool: True if the line contains an image, False otherwise.
     """
-    return re.match(r"!\[([^\]]*)\]\(([^)]+)\)", line)
+    return "Figure " in line or "Fig. " in line
 
 
 def resolve_image_path(url: str, project_root: str) -> str:
@@ -40,8 +26,9 @@ def resolve_image_path(url: str, project_root: str) -> str:
     Returns:
         str: Path to the image.
     """
-    match = re.match(r"\{\{\s*'([^']+)'\s*\|\s*relative_url\s*\}\}", url)
+    pattern = r"\{\{\s*'([^']+)'\s*\|\s*relative_url\s*\}\}"
+    match = re.search(pattern, url)
     if match:
         relative_path = match.group(1)
         return os.path.join(project_root, relative_path.lstrip("/"))
-    return os.path.join(project_root, url.lstrip("/"))
+    return ""
